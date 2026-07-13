@@ -5,7 +5,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "if not exist out\\.nojekyll (type nul > out\\.nojekyll)",
     "start": "next start",
     "lint": "eslint .",
     "db:push": "prisma db push",

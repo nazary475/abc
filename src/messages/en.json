@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "localeName": "English",
+    "localeFlag": "EN"
+  },
+  "nav": {
+    "solutions": "Solutions",
+    "projects": "Projects",
+    "research": "Research",
+    "network": "Network",
+    "about": "About",
+    "contact": "Contact",
+    "exploreSolutions": "Explore Solutions",
+    "toggleNav": "Toggle navigation"
+  },
+  "brand": {
+    "tagline": "Engineering Intelligent Systems"
+  },
+  "hero": {
+    "badge": "Deep-tech AI engineering",
+    "title1": "Engineering Intelligent",
+    "title2": "Systems for the",
+    "title3": "Future",
+    "subtitle": "Haal Lab builds advanced AI solutions including large language model applications, retrieval systems, automation platforms, and private AI infrastructure — engineered for organizations that take intelligence seriously.",
+    "exploreSolutions": "Explore Solutions",
+    "contactUs": "Contact Us",
+    "feature1": "Privacy-first architecture",
+    "feature2": "Production-grade engineering",
+    "feature3": "Research-driven design"
+  },
+  "solutions": {
+    "eyebrow": "Capabilities",
+    "title": "Four pillars of a modern AI stack",
+    "lead": "From private local inference to enterprise knowledge systems — each capability is engineered to operate independently or compose into a unified platform.",
+    "learnMore": "Learn more"
+  },
+  "projects": {
+    "eyebrow": "Featured Work",
+    "title": "Engineering we ship",
+    "lead": "Representative projects that show how Haal Lab turns modern AI research into systems that hold up in production.",
+    "viewAll": "View all projects"
+  },
+  "why": {
+    "eyebrow": "Why Haal Lab",
+    "title": "Principles we engineer against",
+    "lead": "Three commitments that shape every system we design — and every line of code we ship."
+  },
+  "services": {
+    "eyebrow": "Services",
+    "title": "How we engage",
+    "lead": "A focused set of services that cover the full lifecycle of an AI system — from research and architecture to deployment and operation."
+  },
+  "aboutTeaser": {
+    "eyebrow": "About Haal Lab",
+    "title": "An AI engineering company, not an agency.",
+    "body1": "Haal Lab is an AI engineering company focused on developing intelligent software systems using modern machine learning and language model technologies.",
+    "body2": "We treat AI as an engineering discipline — with rigor, evaluation, and production discipline at the core. Our work spans local inference platforms, retrieval systems, agent orchestration, and the infrastructure required to run them reliably at scale.",
+    "readMission": "Read our mission"
+  },
+  "contactCta": {
+    "eyebrow": "Start a conversation",
+    "title": "Have a system worth building?",
+    "lead": "Tell us about the problem you are solving. We respond to every serious inquiry with a concrete technical perspective — usually within two business days.",
+    "contactUs": "Contact Us"
+  },
+  "partners": {
+    "eyebrow": "Network",
+    "title": "Built on a trusted ecosystem",
+    "lead": "We partner with the technology, infrastructure, cloud, and research organizations that make production AI possible — with a focus on European sovereignty, open-weight models, and open-source infrastructure.",
+    "viewAll": "View all partners & advisors",
+    "count": "{count} partners"
+  },
+  "advisors": {
+    "eyebrow": "Advisory Board",
+    "title": "People who keep us sharp",
+    "lead": "Our advisors bring deep expertise across AI research, infrastructure, privacy law, security, and product strategy. They review our architecture, pressure-test our decisions, and keep us honest about the gap between research and production.",
+    "viewAll": "Meet the full advisory board"
+  },
+  "footer": {
+    "description": "A deep-tech AI engineering company building private, intelligent, and reliable AI systems — from local LLM platforms to enterprise knowledge infrastructure.",
+    "pages": "Pages",
+    "home": "Home",
+    "getInTouch": "Get in touch",
+    "rights": "© {year} Haal Lab. All rights reserved."
+  },
+  "relatedLinks": {
+    "eyebrow": "Continue",
+    "title": "Explore more",
+    "readMore": "Read more"
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions"
+  },
+  "languageSwitcher": {
+    "label": "Language",
+    "selectLanguage": "Select language"
+  },
+  "pageHeaders": {
+    "solutions": {
+      "eyebrow": "Solutions",
+      "title": "AI capabilities, engineered for production.",
+      "lead": "Four interlocking capabilities that cover the full AI stack — from private local inference to enterprise knowledge systems. Each can be delivered standalone or composed into a unified platform.",
+      "meta": "haal-lab.solutions / capabilities"
+    },
+    "projects": {
+      "eyebrow": "Projects",
+      "title": "Technical case studies in AI engineering.",
+      "lead": "Representative work that shows how Haal Lab turns modern AI research into systems that hold up under real workloads. Each project below covers the problem, the approach, and the architecture we shipped.",
+      "meta": "haal-lab.solutions / projects"
+    },
+    "research": {
+      "eyebrow": "Research",
+      "title": "Technical notes from the engineering floor.",
+      "lead": "Articles, experiments, and AI insights from the Haal Lab team. We write about the systems we ship — what worked, what didn't, and the reasoning behind the choices.",
+      "meta": "haal-lab.solutions / research"
+    },
+    "network": {
+      "eyebrow": "Network",
+      "title": "Partners and advisors who make our work possible.",
+      "lead": "Haal Lab is built on a network of technology, infrastructure, cloud, and research partners — and an advisory board that keeps our engineering honest. Together they let us deliver production AI systems that meet the constraints European organizations actually face.",
+      "meta": "haal-lab.solutions / network"
+    },
+    "about": {
+      "eyebrow": "About",
+      "title": "An AI engineering company, not an agency.",
+      "lead": "Haal Lab is an AI engineering company focused on developing intelligent software systems using modern machine learning and language model technologies.",
+      "meta": "haal-lab.solutions / about"
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "title": "Tell us what you are trying to build.",
+      "lead": "We respond to every serious inquiry with a concrete technical perspective — usually within two business days. The more context you share, the more useful our reply will be.",
+      "meta": "haal-lab.solutions / contact"
+    }
+  }
+}

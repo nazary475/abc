@@ -1,0 +1,20 @@
+{
+  "name": "Haal Lab — Engineering Intelligent Systems for the Future",
+  "short_name": "Haal Lab",
+  "description": "A deep-tech AI engineering company building private, intelligent, and reliable AI systems.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080B12",
+  "theme_color": "#080B12",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["technology", "business", "productivity", "developer"],
+  "lang": "en",
+  "scope": "/"
+}

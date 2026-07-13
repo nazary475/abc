@@ -1,0 +1,101 @@
+# Haal Lab
+
+> Haal Lab is a deep-tech AI engineering company building private, intelligent, and reliable AI systems — including large language model applications, retrieval systems, automation platforms, and private AI infrastructure.
+
+Haal Lab is an AI engineering company, not an agency. We treat AI as an engineering discipline — with rigor, evaluation, and production discipline at the core. Our work spans local inference platforms, retrieval systems, agent orchestration, and the infrastructure required to run them reliably at scale.
+
+We build on open-weight models and open-source infrastructure. You own the system, the weights, and the data — no platform lock-in.
+
+## Capabilities
+
+- **Local AI Systems**: Private AI solutions that run securely on your infrastructure — on-prem, air-gapped, or on workstations. We use GGUF format, llama.cpp, vLLM, and CUDA acceleration.
+- **LLM Applications**: Custom AI assistants, agents, and intelligent automation systems built with evaluation harnesses, guardrails, and observability from day one.
+- **Knowledge Intelligence**: Advanced RAG systems, semantic search, and document intelligence. Hybrid retrieval (BM25 + dense embeddings), cross-encoder reranking, BGE-M3, OCR, and source attribution.
+- **AI Infrastructure**: Deployment, optimization, and scalable AI engineering — model serving with vLLM/Triton, GPU scheduling, observability, and evaluation-driven CI/CD.
+
+## Services
+
+- Custom AI Development
+- Retrieval-Augmented Generation Systems
+- LLM Integration
+- AI Automation
+- Private AI Deployment
+- AI Consulting
+
+## Featured Projects
+
+### GGUF Loader
+An offline AI platform enabling users to run large language models locally with privacy and control. Built around the GGUF format with CUDA acceleration via llama.cpp and retrieval-augmented generation.
+Tags: Python, LLMs, GGUF, RAG, CUDA
+
+### Legal Intelligence System
+A semantic retrieval system for complex legal document analysis and knowledge discovery. Uses BGE-M3 embeddings, vector database, cross-encoder reranking, and OCR over heterogeneous legal corpora.
+Tags: BGE-M3, Vector Database, Reranking, OCR
+
+## Principles
+
+1. **Privacy First** — Building AI systems where your data remains under your control. Local execution, encrypted pipelines, zero data leakage by default.
+2. **Research Driven** — Transforming modern AI research into practical solutions. We track the frontier and translate it into engineering that ships.
+3. **Engineering Excellence** — Designing reliable AI systems from prototype to production. Observability, evaluation, and reproducibility built in.
+
+## Partners
+
+- **Technology**: NVIDIA (GPU/CUDA), Hugging Face (open-weight models), Qdrant (vector database), Mistral AI (European LLMs), Aleph Alpha (sovereign AI), Apache Software Foundation (vLLM, Kafka, Spark)
+- **Cloud**: Hetzner (European GPU servers, GDPR-compliant), Scaleway (French sovereign cloud)
+- **Infrastructure**: Gaia-X (European federated data infrastructure), Linux Foundation (open governance)
+- **Research**: Fraunhofer (applied AI research), INRIA (French national digital science research)
+
+## Advisory Board
+
+- **Dr. Elena Vogt** — AI Research Advisor. Expertise: retrieval systems, multilingual NLP, evaluation methodology.
+- **Marcus Reiner** — Infrastructure & DevOps Advisor. Expertise: GPU optimization, Kubernetes, model serving.
+- **Sophie Laurent** — Privacy & Compliance Advisor. Expertise: GDPR, EU AI Act, data sovereignty.
+- **Dr. Rafael Mendes** — Applied ML Advisor. Expertise: fine-tuning, agent orchestration, RAG.
+- **Anika Chandran** — Product & Strategy Advisor. Expertise: product strategy, enterprise AI, go-to-market.
+- **Dr. Tomas Bjork** — Security & Threat Modeling Advisor. Expertise: AI security, threat modeling, air-gapped systems.
+
+## Engagement Model
+
+1. **Discovery** — We start with the problem, not the model. Understand constraints, data, success criteria, and the production environment.
+2. **Architecture** — We design the system end-to-end — model choices, retrieval strategy, infrastructure, evaluation harness.
+3. **Build** — Engineering in small, demonstrable increments with evaluation reports at every milestone.
+4. **Deploy** — Ship to your environment (cloud, on-prem, or air-gapped) with observability, runbooks, and documentation.
+
+## Mission
+
+Make advanced AI systems private, reliable, and useful in production. We exist to close the gap between AI research and AI in production — particularly for organizations that cannot deploy cloud-hosted models due to privacy, latency, cost, or compliance constraints.
+
+## Vision
+
+A world where every organization can run its own intelligence. The most valuable AI systems of the next decade will be private, grounded, and owned by the organizations that use them.
+
+## Contact
+
+- Email: hello@haal-lab.solutions
+- Website: https://haal-lab.solutions
+- GitHub: https://github.com/haal-lab
+- LinkedIn: https://www.linkedin.com/company/haal-lab
+
+## Pages
+
+- [Home](https://haal-lab.solutions/)
+- [Solutions](https://haal-lab.solutions/solutions)
+- [Projects](https://haal-lab.solutions/projects)
+- [Research](https://haal-lab.solutions/research)
+- [Network](https://haal-lab.solutions/network) — partners and advisory board
+- [About](https://haal-lab.solutions/about)
+- [Contact](https://haal-lab.solutions/contact)
+
+## Key Terms
+
+- **RAG (Retrieval-Augmented Generation)**: An architecture that grounds LLM responses in your own documents by retrieving relevant passages and feeding them as context.
+- **GGUF (GPT-Generated Unified Format)**: A file format for storing quantized language models so they can run efficiently on consumer hardware.
+- **BGE-M3**: A multilingual embedding model producing dense, sparse, and ColBERT-style representations for semantic search.
+- **Reranking**: A second-stage retrieval step using a cross-encoder to re-score and reorder top results for higher precision.
+- **Open-weight model**: A language model whose weights are publicly available for download and local execution (e.g. Llama, Mistral, Qwen).
+- **Air-gapped**: A deployment with no network connection to the outside world — used in regulated environments.
+
+## Optional
+
+- [Sitemap](https://haal-lab.solutions/sitemap.xml)
+- [Robots](https://haal-lab.solutions/robots.txt)

@@ -1,0 +1,64 @@
+import type { Metadata } from "next";
+import { setRequestLocale } from "next-intl/server";
+import { NetworkPage } from "@/components/pages/network-page";
+import { PageSchemas } from "@/components/site/json-ld";
+import { Breadcrumbs } from "@/components/site/breadcrumbs";
+import { FaqSection } from "@/components/site/faq-section";
+import { RelatedLinks } from "@/components/site/related-links";
+import { FAQS } from "@/lib/seo";
+import { Locale } from "@/i18n/routing";
+
+export const metadata: Metadata = {
+  title: "Network — Partners & Advisors",
+  description:
+    "Haal Lab's technology, infrastructure, cloud, and research partners — including NVIDIA, Hugging Face, Qdrant, Mistral AI, Aleph Alpha, Hetzner, Scaleway, Gaia-X, Fraunhofer, and INRIA — plus our advisory board of AI, security, privacy, and product experts.",
+  alternates: {
+    canonical: "/network",
+  },
+  openGraph: {
+    title: "Network — Partners & Advisors",
+    description:
+      "Technology, infrastructure, cloud, and research partners — plus our advisory board of AI, security, privacy, and product experts.",
+    url: "/network",
+    type: "website",
+  },
+  keywords: [
+    "Haal Lab partners",
+    "AI advisory board",
+    "NVIDIA partner",
+    "Hugging Face partner",
+    "Qdrant partner",
+    "Mistral AI partner",
+    "Aleph Alpha partner",
+    "European AI research",
+    "Fraunhofer",
+    "INRIA",
+    "Gaia-X partner",
+    "AI advisors",
+    "AI consultants",
+    "sovereign AI partners",
+  ],
+};
+
+export default async function Network({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale as Locale);
+  return (
+    <>
+      <PageSchemas path="/network" />
+      <Breadcrumbs path="/network" />
+      <NetworkPage />
+      <FaqSection
+        faqs={FAQS.network}
+        eyebrow="FAQ"
+        title="Questions about our network"
+        intro="Who we partner with, how our advisory board works, and how to join the network."
+      />
+      <RelatedLinks current="/network" title="Continue exploring" eyebrow="Next" />
+    </>
+  );
+}

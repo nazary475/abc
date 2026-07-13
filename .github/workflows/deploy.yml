@@ -1,0 +1,78 @@
+# Build and deploy the Haal Lab website to GitHub Pages.
+#
+# Setup:
+#   1. Push this repo to GitHub.
+#   2. In the repo, go to Settings → Pages → Source → "GitHub Actions".
+#   3. Push to `main` (or merge a PR). This workflow builds the static site
+#      and publishes it to GitHub Pages automatically.
+#
+# Custom domain (haal-lab.solutions):
+#   - Add a CNAME file in the repo root (or set it in Settings → Pages → Custom domain).
+#   - Configure DNS: A record or CNAME pointing to your GitHub Pages endpoint.
+#
+# Project page (username.github.io/haal-lab):
+#   - Set the repository secret or variable `NEXT_PUBLIC_BASE_PATH` to `/haal-lab`
+#     (replace with your repo name, no trailing slash).
+#   - The build picks it up via env.
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build static site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Build static site
+        env:
+          # For project pages (username.github.io/repo-name), set this secret
+          # to "/repo-name". Leave empty for user/org pages or custom domains.
+          NEXT_PUBLIC_BASE_PATH: ${{ secrets.NEXT_PUBLIC_BASE_PATH }}
+          # Optional: set to a Formspree endpoint to enable backend form submission.
+          NEXT_PUBLIC_FORMSPREE_ENDPOINT: ${{ secrets.NEXT_PUBLIC_FORMSPREE_ENDPOINT }}
+        run: bun run build
+
+      - name: Add .nojekyll
+        run: touch out/.nojekyll
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

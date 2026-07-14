@@ -1,15 +1,17 @@
 import { redirect } from "next/navigation";
 import type { Metadata } from "next";
+import { LocaleRedirect } from "@/components/site/locale-redirect";
 
 /**
- * Root page — redirects to the default locale (English at /en/).
+ * Root page — redirects to the appropriate locale.
  *
  * With localePrefix: "always" (required for static export), every locale
- * gets a URL prefix including English. The root path redirects to /en/.
+ * gets a URL prefix including English.
  *
- * For visitors with browser language preferences, a client-side redirect
- * could be added here to detect and redirect to their preferred locale.
- * For now, we default to English.
+ * Server-side: redirects to /en (default)
+ * Client-side: JavaScript detects browser language and redirects accordingly
+ * 
+ * This approach works with static export (GitHub Pages compatible).
  */
 
 export const metadata: Metadata = {
@@ -50,5 +52,7 @@ export const metadata: Metadata = {
 };
 
 export default function RootPage() {
-  redirect("/en");
+  // This server-side redirect is a fallback for crawlers/bots
+  // Client-side component will detect browser language and redirect
+  return <LocaleRedirect />;
 }

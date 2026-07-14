@@ -7,34 +7,43 @@ import { FaqSection } from "@/components/site/faq-section";
 import { RelatedLinks } from "@/components/site/related-links";
 import { FAQS } from "@/lib/seo";
 import { Locale } from "@/i18n/routing";
+import { getPageMetadata } from "@/lib/page-metadata";
 
-export const metadata: Metadata = {
-  title: "About — An AI Engineering Company, Not an Agency",
-  description:
-    "Haal Lab is an AI engineering company focused on developing intelligent software systems using modern machine learning and language model technologies. Our mission, vision, and engineering principles.",
-  alternates: {
-    canonical: "/about",
-  },
-  openGraph: {
-    title: "About — An AI Engineering Company, Not an Agency",
-    description:
-      "Haal Lab is an AI engineering company focused on developing intelligent software systems using modern ML and LLM technologies. Mission, vision, and principles.",
-    url: "/about",
-    type: "website",
-  },
-  keywords: [
-    "about Haal Lab",
-    "AI engineering company",
-    "AI mission",
-    "AI vision",
-    "privacy-first AI",
-    "research-driven AI",
-    "engineering excellence",
-    "open-weight AI",
-    "AI consulting company",
-    "custom AI development company",
-  ],
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const currentLocale = locale as Locale;
+  const meta = getPageMetadata("about", currentLocale);
+
+  return {
+    title: meta.title,
+    description: meta.description,
+    alternates: {
+      canonical: `/${locale}/about`,
+    },
+    openGraph: {
+      title: meta.title,
+      description: meta.description,
+      url: `/${locale}/about`,
+      type: "website",
+    },
+    keywords: [
+      "about Haal Lab",
+      "AI engineering company",
+      "AI mission",
+      "AI vision",
+      "privacy-first AI",
+      "research-driven AI",
+      "engineering excellence",
+      "open-weight AI",
+      "AI consulting company",
+      "custom AI development company",
+    ],
+  };
+}
 
 export default async function About({
   params,

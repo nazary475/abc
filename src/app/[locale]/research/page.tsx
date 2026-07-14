@@ -7,38 +7,47 @@ import { FaqSection } from "@/components/site/faq-section";
 import { RelatedLinks } from "@/components/site/related-links";
 import { FAQS } from "@/lib/seo";
 import { Locale } from "@/i18n/routing";
+import { getPageMetadata } from "@/lib/page-metadata";
 
-export const metadata: Metadata = {
-  title: "Research — Technical Notes from the Engineering Floor",
-  description:
-    "Articles, experiments, and AI insights from the Haal Lab team. Technical writing on local LLM inference, reranking, BGE-M3, evaluation-driven CI, agent orchestration, and private AI threat modeling.",
-  alternates: {
-    canonical: "/research",
-  },
-  openGraph: {
-    title: "Research — Technical Notes from the Engineering Floor",
-    description:
-      "Articles, experiments, and AI insights from the Haal Lab team — local LLM stacks, reranking, BGE-M3, evaluation CI, agent patterns, and private AI security.",
-    url: "/research",
-    type: "website",
-  },
-  keywords: [
-    "AI research",
-    "AI engineering blog",
-    "local LLM inference",
-    "reranking",
-    "BGE-M3",
-    "evaluation CI",
-    "agent orchestration",
-    "private AI security",
-    "RAG",
-    "llama.cpp",
-    "vLLM",
-    "GGUF",
-    "AI threat modeling",
-    "production AI",
-  ],
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const currentLocale = locale as Locale;
+  const meta = getPageMetadata("research", currentLocale);
+
+  return {
+    title: meta.title,
+    description: meta.description,
+    alternates: {
+      canonical: `/${locale}/research`,
+    },
+    openGraph: {
+      title: meta.title,
+      description: meta.description,
+      url: `/${locale}/research`,
+      type: "website",
+    },
+    keywords: [
+      "AI research",
+      "AI engineering blog",
+      "local LLM inference",
+      "reranking",
+      "BGE-M3",
+      "evaluation CI",
+      "agent orchestration",
+      "private AI security",
+      "RAG",
+      "llama.cpp",
+      "vLLM",
+      "GGUF",
+      "AI threat modeling",
+      "production AI",
+    ],
+  };
+}
 
 export default async function Research({
   params,

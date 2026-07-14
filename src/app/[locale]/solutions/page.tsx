@@ -8,40 +8,49 @@ import { RelatedLinks } from "@/components/site/related-links";
 import { GlossarySection } from "@/components/site/glossary-section";
 import { FAQS } from "@/lib/seo";
 import { Locale } from "@/i18n/routing";
+import { getPageMetadata } from "@/lib/page-metadata";
 
-export const metadata: Metadata = {
-  title: "Solutions — AI Capabilities Engineered for Production",
-  description:
-    "Four interlocking AI capabilities from Haal Lab: Local AI Systems, LLM Applications, Knowledge Intelligence, and AI Infrastructure. Each can be delivered standalone or composed into a unified platform.",
-  alternates: {
-    canonical: "/solutions",
-  },
-  openGraph: {
-    title: "Solutions — AI Capabilities Engineered for Production",
-    description:
-      "Four interlocking AI capabilities from Haal Lab: Local AI Systems, LLM Applications, Knowledge Intelligence, and AI Infrastructure.",
-    url: "/solutions",
-    type: "website",
-  },
-  keywords: [
-    "AI solutions",
-    "local AI systems",
-    "LLM applications",
-    "knowledge intelligence",
-    "RAG systems",
-    "AI infrastructure",
-    "private AI deployment",
-    "custom AI development",
-    "on-prem AI",
-    "air-gapped AI",
-    "GGUF",
-    "BGE-M3",
-    "vLLM",
-    "llama.cpp",
-    "vector database",
-    "agent orchestration",
-  ],
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const currentLocale = locale as Locale;
+  const meta = getPageMetadata("solutions", currentLocale);
+
+  return {
+    title: meta.title,
+    description: meta.description,
+    alternates: {
+      canonical: `/${locale}/solutions`,
+    },
+    openGraph: {
+      title: meta.title,
+      description: meta.description,
+      url: `/${locale}/solutions`,
+      type: "website",
+    },
+    keywords: [
+      "AI solutions",
+      "local AI systems",
+      "LLM applications",
+      "knowledge intelligence",
+      "RAG systems",
+      "AI infrastructure",
+      "private AI deployment",
+      "custom AI development",
+      "on-prem AI",
+      "air-gapped AI",
+      "GGUF",
+      "BGE-M3",
+      "vLLM",
+      "llama.cpp",
+      "vector database",
+      "agent orchestration",
+    ],
+  };
+}
 
 export default async function Solutions({
   params,

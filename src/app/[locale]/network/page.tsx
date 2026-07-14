@@ -7,38 +7,47 @@ import { FaqSection } from "@/components/site/faq-section";
 import { RelatedLinks } from "@/components/site/related-links";
 import { FAQS } from "@/lib/seo";
 import { Locale } from "@/i18n/routing";
+import { getPageMetadata } from "@/lib/page-metadata";
 
-export const metadata: Metadata = {
-  title: "Network — Partners & Advisors",
-  description:
-    "Haal Lab's technology, infrastructure, cloud, and research partners — including NVIDIA, Hugging Face, Qdrant, Mistral AI, Aleph Alpha, Hetzner, Scaleway, Gaia-X, Fraunhofer, and INRIA — plus our advisory board of AI, security, privacy, and product experts.",
-  alternates: {
-    canonical: "/network",
-  },
-  openGraph: {
-    title: "Network — Partners & Advisors",
-    description:
-      "Technology, infrastructure, cloud, and research partners — plus our advisory board of AI, security, privacy, and product experts.",
-    url: "/network",
-    type: "website",
-  },
-  keywords: [
-    "Haal Lab partners",
-    "AI advisory board",
-    "NVIDIA partner",
-    "Hugging Face partner",
-    "Qdrant partner",
-    "Mistral AI partner",
-    "Aleph Alpha partner",
-    "European AI research",
-    "Fraunhofer",
-    "INRIA",
-    "Gaia-X partner",
-    "AI advisors",
-    "AI consultants",
-    "sovereign AI partners",
-  ],
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const currentLocale = locale as Locale;
+  const meta = getPageMetadata("network", currentLocale);
+
+  return {
+    title: meta.title,
+    description: meta.description,
+    alternates: {
+      canonical: `/${locale}/network`,
+    },
+    openGraph: {
+      title: meta.title,
+      description: meta.description,
+      url: `/${locale}/network`,
+      type: "website",
+    },
+    keywords: [
+      "Haal Lab partners",
+      "AI advisory board",
+      "NVIDIA partner",
+      "Hugging Face partner",
+      "Qdrant partner",
+      "Mistral AI partner",
+      "Aleph Alpha partner",
+      "European AI research",
+      "Fraunhofer",
+      "INRIA",
+      "Gaia-X partner",
+      "AI advisors",
+      "AI consultants",
+      "sovereign AI partners",
+    ],
+  };
+}
 
 export default async function Network({
   params,

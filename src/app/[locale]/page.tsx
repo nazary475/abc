@@ -7,21 +7,30 @@ import { RelatedLinks } from "@/components/site/related-links";
 import { FAQS } from "@/lib/seo";
 import { getFAQsByLocale } from "@/lib/seo-faqs";
 import { Locale } from "@/i18n/routing";
+import { getPageMetadata } from "@/lib/page-metadata";
 
-export const metadata: Metadata = {
-  title: {
-    default: "Haal Lab — Engineering Intelligent Systems for the Future",
-    template: "%s · Haal Lab",
-  },
-  description:
-    "Haal Lab is a deep-tech AI engineering company building private, intelligent, and reliable AI systems — large language model applications, retrieval systems, automation platforms, and private AI infrastructure.",
-  openGraph: {
-    title: "Haal Lab — Engineering Intelligent Systems for the Future",
-    description:
-      "A deep-tech AI engineering company building private, intelligent, and reliable AI systems — LLM applications, retrieval systems, automation platforms, and private AI infrastructure.",
-    type: "website",
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const currentLocale = locale as Locale;
+  const meta = getPageMetadata("home", currentLocale);
+
+  return {
+    title: {
+      default: meta.title,
+      template: "%s · Haal Lab",
+    },
+    description: meta.description,
+    openGraph: {
+      title: meta.title,
+      description: meta.description,
+      type: "website",
+    },
+  };
+}
 
 export default async function Home({
   params,

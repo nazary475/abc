@@ -7,37 +7,46 @@ import { FaqSection } from "@/components/site/faq-section";
 import { RelatedLinks } from "@/components/site/related-links";
 import { FAQS } from "@/lib/seo";
 import { Locale } from "@/i18n/routing";
+import { getPageMetadata } from "@/lib/page-metadata";
 
-export const metadata: Metadata = {
-  title: "Projects — Technical Case Studies in AI Engineering",
-  description:
-    "Representative AI engineering projects from Haal Lab, including GGUF Loader (offline LLM platform) and the Legal Intelligence System (semantic retrieval with BGE-M3). Each case study covers the problem, approach, and architecture shipped.",
-  alternates: {
-    canonical: "/projects",
-  },
-  openGraph: {
-    title: "Projects — Technical Case Studies in AI Engineering",
-    description:
-      "Representative AI engineering projects from Haal Lab — GGUF Loader and the Legal Intelligence System. Problem, approach, and architecture for each.",
-    url: "/projects",
-    type: "website",
-  },
-  keywords: [
-    "AI projects",
-    "GGUF Loader",
-    "Legal Intelligence System",
-    "BGE-M3",
-    "vector database",
-    "RAG",
-    "CUDA",
-    "local LLM",
-    "semantic retrieval",
-    "AI case study",
-    "offline AI platform",
-    "legal AI",
-    "document intelligence",
-  ],
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const currentLocale = locale as Locale;
+  const meta = getPageMetadata("projects", currentLocale);
+
+  return {
+    title: meta.title,
+    description: meta.description,
+    alternates: {
+      canonical: `/${locale}/projects`,
+    },
+    openGraph: {
+      title: meta.title,
+      description: meta.description,
+      url: `/${locale}/projects`,
+      type: "website",
+    },
+    keywords: [
+      "AI projects",
+      "GGUF Loader",
+      "Legal Intelligence System",
+      "BGE-M3",
+      "vector database",
+      "RAG",
+      "CUDA",
+      "local LLM",
+      "semantic retrieval",
+      "AI case study",
+      "offline AI platform",
+      "legal AI",
+      "document intelligence",
+    ],
+  };
+}
 
 export default async function Projects({
   params,

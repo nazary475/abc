@@ -26,7 +26,7 @@ export function FounderSection() {
               Building the future of private AI
             </SectionHeading>
             <Lead className="mt-6">
-              Haal Lab was founded by Ali Zafar Najafi, an AI engineer with a vision to
+              Haal Lab was founded by Jaafar Najafi Rad, an AI engineer with a vision to
               make advanced AI systems accessible, private, and truly owned by the
               organizations that use them.
             </Lead>
@@ -36,7 +36,7 @@ export function FounderSection() {
             <div className="mt-8 space-y-4">
               <p className="text-base leading-relaxed text-foreground/90">
                 With deep expertise in machine learning, language models, and production AI
-                systems, Ali recognized a critical gap: organizations needed AI solutions
+                systems, Jaafar recognized a critical gap: organizations needed AI solutions
                 that respected data sovereignty, ran on their own infrastructure, and
                 didn&apos;t compromise on capability or privacy.
               </p>
@@ -82,7 +82,7 @@ export function FounderSection() {
                   <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-hl-surface-2 to-hl-surface">
                     <div className="text-center">
                       <div className="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-full border-2 border-hl-border bg-hl-surface-2">
-                        <span className="text-4xl font-bold text-hl-cyan">AZ</span>
+                        <span className="text-4xl font-bold text-hl-cyan">JN</span>
                       </div>
                       <p className="font-mono text-xs uppercase tracking-wider text-hl-muted">
                         Photo Coming Soon
@@ -92,8 +92,8 @@ export function FounderSection() {
                   
                   {/* Uncomment this when photo is added */}
                   {/* <Image
-                    src="/founder-ali-zafar-najafi.jpg"
-                    alt="Ali Zafar Najafi - Founder of Haal Lab"
+                    src="/founder-jaafar-najafi-rad.jpg"
+                    alt="Jaafar Najafi Rad - Founder of Haal Lab"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
@@ -104,7 +104,7 @@ export function FounderSection() {
                 {/* Info Card */}
                 <div className="relative mt-4 rounded-xl border border-hl-border bg-hl-surface/80 p-4 backdrop-blur">
                   <h3 className="text-xl font-bold tracking-tight text-foreground">
-                    Ali Zafar Najafi
+                    Jaafar Najafi Rad
                   </h3>
                   <p className="mt-1 font-mono text-sm uppercase tracking-wider text-hl-cyan">
                     Founder · Haal Lab
@@ -113,7 +113,7 @@ export function FounderSection() {
                   {/* Social Links */}
                   <div className="mt-4 flex items-center gap-2">
                     <a
-                      href="https://www.linkedin.com/in/ali-zafar-najafi"
+                      href="https://www.linkedin.com/in/jaafar-najafi-rad"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex h-9 w-9 items-center justify-center rounded-lg border border-hl-border bg-hl-surface-2 text-hl-muted transition-colors hover:border-hl-cyan/40 hover:text-hl-cyan"
@@ -122,7 +122,7 @@ export function FounderSection() {
                       <Linkedin className="h-4 w-4" />
                     </a>
                     <a
-                      href="https://github.com/alizafarnajafi"
+                      href="https://github.com/jaafarnajafirad"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex h-9 w-9 items-center justify-center rounded-lg border border-hl-border bg-hl-surface-2 text-hl-muted transition-colors hover:border-hl-cyan/40 hover:text-hl-cyan"

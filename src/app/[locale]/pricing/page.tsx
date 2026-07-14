@@ -11,14 +11,14 @@ import { Locale } from "@/i18n/routing";
 export const metadata: Metadata = {
   title: "Pricing — AI Engineering Packages for Every Stage",
   description:
-    "Four pricing tiers from Haal Lab: Explorer (€4,900), Professional (€14,900), Enterprise (€39,900+), and Research & Academic (custom). Production AI systems — not demos.",
+    "Five pricing tiers from Haal Lab: Starter (€1,900), Explorer (€4,900), Professional (€14,900), Enterprise (€39,900+), and Research & Academic (custom). Production AI systems — not demos.",
   alternates: {
     canonical: "/pricing",
   },
   openGraph: {
     title: "Pricing — AI Engineering Packages for Every Stage",
     description:
-      "Four pricing tiers from Haal Lab: Explorer, Professional, Enterprise, and Research & Academic. Production AI systems — not demos.",
+      "Five pricing tiers from Haal Lab: Starter, Explorer, Professional, Enterprise, and Research & Academic. Production AI systems — not demos.",
     url: "/pricing",
     type: "website",
   },

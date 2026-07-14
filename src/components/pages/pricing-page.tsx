@@ -38,6 +38,29 @@ type Tier = {
 
 const TIERS: Tier[] = [
   {
+    id: "starter",
+    icon: FlaskConical,
+    name: "Starter",
+    tagline: "Perfect for solo founders and freelancers who want to test AI for their specific use case.",
+    price: "€1,900",
+    priceSuffix: "one-time",
+    features: [
+      "1-hour consultation call",
+      "Feasibility assessment",
+      "Quick prototype (3-5 days)",
+      "Setup guidance & documentation",
+      "Email support for 2 weeks",
+    ],
+    details: [
+      { label: "Duration", value: "1 week" },
+      { label: "Use cases", value: "1 simple" },
+      { label: "Delivery", value: "Prototype + guide" },
+    ],
+    cta: "Get started",
+    accent: "from-[#10B981]/20 to-transparent",
+    accentGlow: "rgba(16, 185, 129, 0.15)",
+  },
+  {
     id: "explorer",
     icon: FlaskConical,
     name: "Explorer",
@@ -172,11 +195,11 @@ export function PricingPage() {
         <SectionHeader
           eyebrow="Pricing"
           heading="Packages built for real AI needs"
-          lead="Four tiers designed for startups, businesses, enterprises, and research institutions. Every package delivers a working system — not a slide deck."
+          lead="Five tiers designed for solo founders, startups, businesses, enterprises, and research institutions. Every package delivers a working system — not a slide deck."
           align="center"
         />
 
-        <div className="mt-16 grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-16 grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-5">
           {TIERS.map((tier, i) => (
             <Reveal key={tier.id} delay={i * 0.08}>
               <article
@@ -372,6 +395,7 @@ export function PricingPage() {
 
 type FeatureRow = {
   feature: string;
+  starter: boolean | string;
   explorer: boolean | string;
   professional: boolean | string;
   enterprise: boolean | string;
@@ -379,20 +403,20 @@ type FeatureRow = {
 };
 
 const COMPARISON: FeatureRow[] = [
-  { feature: "Discovery workshop", explorer: true, professional: true, enterprise: true, research: true },
-  { feature: "Feasibility report", explorer: true, professional: true, enterprise: true, research: true },
-  { feature: "Proof-of-concept", explorer: true, professional: true, enterprise: true, research: true },
-  { feature: "Production AI system", explorer: false, professional: "1 system", enterprise: "Up to 3", research: "Scoped" },
-  { feature: "API / tool integration", explorer: false, professional: true, enterprise: true, research: true },
-  { feature: "Evaluation harness", explorer: false, professional: true, enterprise: true, research: true },
-  { feature: "On-prem / air-gapped", explorer: false, professional: false, enterprise: true, research: "Optional" },
-  { feature: "GDPR & EU AI Act compliance", explorer: false, professional: false, enterprise: true, research: false },
-  { feature: "GPU optimization", explorer: false, professional: false, enterprise: true, research: "Optional" },
-  { feature: "Full observability", explorer: false, professional: false, enterprise: true, research: false },
-  { feature: "Team training & runbooks", explorer: false, professional: false, enterprise: true, research: "Optional" },
-  { feature: "Post-launch support", explorer: false, professional: "30 days", enterprise: "90 days + SLA", research: "Flexible" },
-  { feature: "Academic discount", explorer: false, professional: false, enterprise: false, research: "30–40%" },
-  { feature: "Co-authorship option", explorer: false, professional: false, enterprise: false, research: true },
+  { feature: "Consultation", starter: "1 hour", explorer: "2 hours", professional: "2 hours", enterprise: "2 hours", research: "2 hours" },
+  { feature: "Feasibility report", starter: "Brief", explorer: true, professional: true, enterprise: true, research: true },
+  { feature: "Proof-of-concept", starter: "Quick prototype", explorer: true, professional: true, enterprise: true, research: true },
+  { feature: "Production AI system", starter: false, explorer: false, professional: "1 system", enterprise: "Up to 3", research: "Scoped" },
+  { feature: "API / tool integration", starter: false, explorer: false, professional: true, enterprise: true, research: true },
+  { feature: "Evaluation harness", starter: false, explorer: false, professional: true, enterprise: true, research: true },
+  { feature: "On-prem / air-gapped", starter: false, explorer: false, professional: false, enterprise: true, research: "Optional" },
+  { feature: "GDPR & EU AI Act compliance", starter: false, explorer: false, professional: false, enterprise: true, research: false },
+  { feature: "GPU optimization", starter: false, explorer: false, professional: false, enterprise: true, research: "Optional" },
+  { feature: "Full observability", starter: false, explorer: false, professional: false, enterprise: true, research: false },
+  { feature: "Team training & runbooks", starter: false, explorer: false, professional: false, enterprise: true, research: "Optional" },
+  { feature: "Post-launch support", starter: "2 weeks email", explorer: false, professional: "30 days", enterprise: "90 days + SLA", research: "Flexible" },
+  { feature: "Academic discount", starter: false, explorer: false, professional: false, enterprise: false, research: "30–40%" },
+  { feature: "Co-authorship option", starter: false, explorer: false, professional: false, enterprise: false, research: true },
 ];
 
 function CellValue({ value }: { value: boolean | string }) {
@@ -409,6 +433,7 @@ function CellValue({ value }: { value: boolean | string }) {
 
 function ComparisonTable() {
   const headers = [
+    { key: "starter", label: "Starter" },
     { key: "explorer", label: "Explorer" },
     { key: "professional", label: "Professional" },
     { key: "enterprise", label: "Enterprise" },

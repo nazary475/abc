@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
-import { Linkedin, Github, Mail, ArrowRight } from "lucide-react";
+import { Mail, ArrowRight } from "lucide-react";
 import {
   Reveal,
   SectionShell,
@@ -109,35 +109,6 @@ export function FounderSection() {
                   <p className="mt-1 font-mono text-sm uppercase tracking-wider text-hl-cyan">
                     Founder · Haal Lab
                   </p>
-                  
-                  {/* Social Links */}
-                  <div className="mt-4 flex items-center gap-2">
-                    <a
-                      href="https://www.linkedin.com/in/jaafar-najafi-rad"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex h-9 w-9 items-center justify-center rounded-lg border border-hl-border bg-hl-surface-2 text-hl-muted transition-colors hover:border-hl-cyan/40 hover:text-hl-cyan"
-                      aria-label="LinkedIn"
-                    >
-                      <Linkedin className="h-4 w-4" />
-                    </a>
-                    <a
-                      href="https://github.com/jaafarnajafirad"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex h-9 w-9 items-center justify-center rounded-lg border border-hl-border bg-hl-surface-2 text-hl-muted transition-colors hover:border-hl-cyan/40 hover:text-hl-cyan"
-                      aria-label="GitHub"
-                    >
-                      <Github className="h-4 w-4" />
-                    </a>
-                    <a
-                      href="mailto:hussain.nazary@haal-lab.solutions"
-                      className="flex h-9 w-9 items-center justify-center rounded-lg border border-hl-border bg-hl-surface-2 text-hl-muted transition-colors hover:border-hl-cyan/40 hover:text-hl-cyan"
-                      aria-label="Email"
-                    >
-                      <Mail className="h-4 w-4" />
-                    </a>
-                  </div>
                 </div>
               </div>
 

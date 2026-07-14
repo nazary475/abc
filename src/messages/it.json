@@ -4,81 +4,81 @@
     "localeFlag": "IT"
   },
   "nav": {
-    "solutions": "Soluzioni",
-    "projects": "Progetti",
-    "research": "Ricerca",
-    "network": "Rete",
+    "solutions": "Cosa facciamo",
+    "projects": "Il nostro lavoro",
+    "research": "Approfondimenti",
+    "network": "Partner",
     "about": "Chi siamo",
     "contact": "Contatti",
     "pricing": "Prezzi",
-    "exploreSolutions": "Esplora soluzioni",
+    "exploreSolutions": "Vedi cosa facciamo",
     "toggleNav": "Toggle navigazione"
   },
   "brand": {
-    "tagline": "Ingegneria di sistemi intelligenti"
+    "tagline": "Costruire sistemi intelligenti"
   },
   "hero": {
-    "badge": "Ingegneria AI deep-tech",
-    "title1": "Ingegneria di sistemi",
-    "title2": "intelligenti per il",
-    "title3": "futuro",
-    "subtitle": "Haal Lab costruisce soluzioni AI avanzate tra cui applicazioni con modelli di linguaggio di grandi dimensioni, sistemi di retrieval, piattaforme di automazione e infrastrutture AI private — per organizzazioni che prendono l'intelligenza sul serio.",
-    "exploreSolutions": "Esplora soluzioni",
-    "contactUs": "Contattaci",
-    "feature1": "Architettura privacy-first",
-    "feature2": "Ingegneria di grado produttivo",
-    "feature3": "Design guidato dalla ricerca"
+    "badge": "Laboratorio di ingegneria IA",
+    "title1": "La tua IA.",
+    "title2": "I tuoi dati.",
+    "title3": "Il tuo controllo.",
+    "subtitle": "Ogni soluzione viene distribuita all'interno del vostro ambiente, dandovi la piena proprietà dei vostri dati, modelli e operazioni.",
+    "exploreSolutions": "Vedi cosa facciamo",
+    "contactUs": "Parlaci",
+    "feature1": "Privacy",
+    "feature2": "Sicurezza",
+    "feature3": "Conveniente"
   },
   "solutions": {
-    "eyebrow": "Capacità",
-    "title": "Quattro pilastri di uno stack AI moderno",
-    "lead": "Dall'inference locale privata ai sistemi di conoscenza aziendale — ogni capacità è progettata per operare indipendentemente o comporsi in una piattaforma unificata.",
+    "eyebrow": "Cosa facciamo",
+    "title": "Quattro modi per aiutarti a usare l'IA",
+    "lead": "Ogni servizio funziona da solo o insieme come un sistema completo. Ci concentriamo su ciò di cui la vostra azienda ha bisogno — non sull'inseguire l'ultima tendenza.",
     "learnMore": "Scopri di più"
   },
   "projects": {
-    "eyebrow": "Lavori in evidenza",
-    "title": "Ingegneria che consegniamo",
-    "lead": "Progetti rappresentativi che mostrano come Haal Lab trasforma la ricerca AI moderna in sistemi che reggono in produzione.",
+    "eyebrow": "Il nostro lavoro",
+    "title": "Sistemi reali che abbiamo costruito",
+    "lead": "Niente demo. Niente prototipi. Questi sono sistemi IA funzionanti che risolvono problemi reali per organizzazioni reali.",
     "viewAll": "Vedi tutti i progetti"
   },
   "why": {
     "eyebrow": "Perché Haal Lab",
-    "title": "Principi che applichiamo",
-    "lead": "Tre impegni che modellano ogni sistema che progettiamo — e ogni riga di codice che consegniamo."
+    "title": "Cosa ci distingue",
+    "lead": "Tre impegni che plasmano tutto ciò che costruiamo — e ogni relazione che abbiamo con i clienti."
   },
   "services": {
     "eyebrow": "Servizi",
-    "title": "Come collaboriamo",
-    "lead": "Un set mirato di servizi che copre l'intero ciclo di vita di un sistema AI — dalla ricerca e architettura al deployment e funzionamento."
+    "title": "Come possiamo aiutare",
+    "lead": "Da un singolo assistente IA a una piattaforma IA privata completa, ti incontriamo dove sei."
   },
   "aboutTeaser": {
     "eyebrow": "Su Haal Lab",
-    "title": "Un'azienda di ingegneria AI, non un'agenzia.",
-    "body1": "Haal Lab è un'azienda di ingegneria AI focalizzata sullo sviluppo di sistemi software intelligenti utilizzando tecnologie moderne di machine learning e modelli di linguaggio.",
-    "body2": "Trattiamo l'AI come una disciplina ingegneristica — con rigore, valutazione e disciplina di produzione al centro. Il nostro lavoro copre piattaforme di inference locali, sistemi di retrieval, orchestrazione di agenti e l'infrastruttura necessaria per farli funzionare in modo affidabile su larga scala.",
+    "title": "Siamo ingegneri, non marketer.",
+    "body1": "Haal Lab è un'azienda di ingegneria IA. Costruiamo sistemi software intelligenti che aiutano le organizzazioni a lavorare in modo più intelligente — senza inviare i loro dati a servizi di terze parti.",
+    "body2": "Trattiamo l'IA come un mestiere, non come una parola d'ordine. Il nostro lavoro va dall'IA che funziona interamente sui vostri computer, alla ricerca intelligente nei vostri documenti, ai modelli IA personalizzati costruiti specificamente per i vostri compiti.",
     "readMission": "Leggi la nostra missione"
   },
   "contactCta": {
     "eyebrow": "Inizia una conversazione",
-    "title": "Un sistema che vale la pena costruire?",
-    "lead": "Raccontaci il problema che stai risolvendo. Rispondiamo a ogni seria richiesta con una prospettiva tecnica concreta — di solito entro due giorni lavorativi.",
-    "contactUs": "Contattaci"
+    "title": "Hai un problema che l'IA potrebbe risolvere?",
+    "lead": "Dicci cosa stai cercando di ottenere. Ti daremo una risposta onesta e pratica — di solito entro due giorni lavorativi. Nessuna pressione di vendita, nessun gergo.",
+    "contactUs": "Parlaci"
   },
   "partners": {
-    "eyebrow": "Rete",
-    "title": "Costruito su un ecosistema di fiducia",
-    "lead": "Ci associamo con le organizzazioni tecnologiche, di infrastruttura, cloud e di ricerca che rendono possibile l'AI di produzione — con focus su sovranità europea, modelli open-weight e infrastruttura open-source.",
-    "viewAll": "Vedi tutti i partner & consulenti",
+    "eyebrow": "Partner",
+    "title": "Lavorare con i migliori",
+    "lead": "Abbiamo costruito relazioni con le aziende tecnologiche e le istituzioni di ricerca che contano — così beneficiate degli strumenti giusti per le vostre esigenze specifiche.",
+    "viewAll": "Vedi tutti i partner",
     "count": "{count} partner"
   },
   "advisors": {
     "eyebrow": "Comitato consultivo",
-    "title": "Persone che ci mantengono affilati",
-    "lead": "I nostri consulenti portano esperienza profonda in ricerca AI, infrastruttura, diritto della privacy, sicurezza e strategia di prodotto. Revisionano la nostra architettura, mettono alla prova le nostre decisioni e ci mantengono onesti sul divario tra ricerca e produzione.",
-    "viewAll": "Conosci l'intero comitato consultivo"
+    "title": "Esperti che guidano il nostro lavoro",
+    "lead": "I nostri consulenti portano esperienza profonda nella ricerca IA, ingegneria, diritto della privacy e sicurezza. Esaminano il nostro lavoro e ci mantengono onesti.",
+    "viewAll": "Conosci il comitato consultivo"
   },
   "footer": {
-    "description": "Un'azienda di ingegneria AI deep-tech che costruisce sistemi AI privati, intelligenti e affidabili — da piattaforme LLM locali a infrastrutture di conoscenza aziendale.",
+    "description": "Costruiamo sistemi IA personalizzati che funzionano privatamente sui vostri computer — dalla ricerca intelligente di documenti agli assistenti IA che fanno il lavoro.",
     "pages": "Pagine",
     "home": "Home",
     "getInTouch": "Mettiti in contatto",
@@ -99,44 +99,44 @@
   },
   "pageHeaders": {
     "solutions": {
-      "eyebrow": "Soluzioni",
-      "title": "Capacità AI, ingegnerizzate per la produzione.",
-      "lead": "Quattro capacità interconnesse che coprono l'intero stack AI — dall'inference locale privata ai sistemi di conoscenza aziendale. Ognuna può essere consegnata autonomamente o composta in una piattaforma unificata.",
-      "meta": "haal-lab.solutions / soluzioni"
+      "eyebrow": "Cosa facciamo",
+      "title": "Soluzioni IA progettate per la tua azienda.",
+      "lead": "Quattro modi per aiutare le organizzazioni a usare l'IA — ognuno può funzionare da solo o insieme come un sistema completo. Ci concentriamo sulla risoluzione del vostro problema reale, non sulla promozione di una particolare tecnologia.",
+      "meta": "haal-lab.solutions / cosa-facciamo"
     },
     "projects": {
-      "eyebrow": "Progetti",
-      "title": "Casi di studio tecnici in ingegneria AI.",
-      "lead": "Lavori rappresentativi che mostrano come Haal Lab trasforma la ricerca AI moderna in sistemi che reggono sotto carichi reali. Ogni progetto copre il problema, l'approccio e l'architettura consegnata.",
-      "meta": "haal-lab.solutions / progetti"
+      "eyebrow": "Il nostro lavoro",
+      "title": "Sistemi IA reali che abbiamo costruito.",
+      "lead": "Non sono demo o prototipi. Sono sistemi funzionanti che risolvono problemi reali. Ogni progetto mostra la sfida, il nostro approccio e il risultato.",
+      "meta": "haal-lab.solutions / nostro-lavoro"
     },
     "research": {
-      "eyebrow": "Ricerca",
-      "title": "Note tecniche dal reparto ingegneristico.",
-      "lead": "Articoli, esperimenti e insight AI dal team Haal Lab. Scriviamo sui sistemi che costruiamo — cosa ha funzionato, cosa no, e il ragionamento dietro le scelte.",
-      "meta": "haal-lab.solutions / ricerca"
+      "eyebrow": "Approfondimenti",
+      "title": "Cosa stiamo imparando sull'IA.",
+      "lead": "Condividiamo ciò che impariamo mentre costruiamo — cosa funziona, cosa no e cosa viene dopo. Scritto in linguaggio semplice per leader aziendali e team tecnici.",
+      "meta": "haal-lab.solutions / approfondimenti"
     },
     "network": {
-      "eyebrow": "Rete",
-      "title": "Partner e consulenti che rendono possibile il nostro lavoro.",
-      "lead": "Haal Lab si basa su una rete di partner tecnologici, di infrastruttura, cloud e di ricerca — oltre a un comitato consultivo che mantiene onesta la nostra ingegneria. Insieme ci permettono di consegnare sistemi AI di produzione che soddisfano i vincoli reali delle organizzazioni europee.",
-      "meta": "haal-lab.solutions / rete"
+      "eyebrow": "Partner",
+      "title": "Le persone e le organizzazioni dietro il nostro lavoro.",
+      "lead": "Haal Lab è costruito su una rete di partner tecnologici e consulenti esperti. Insieme, ci aiutano a fornire sistemi IA che soddisfano le reali esigenze delle organizzazioni europee.",
+      "meta": "haal-lab.solutions / partner"
     },
     "about": {
       "eyebrow": "Chi siamo",
-      "title": "Un'azienda di ingegneria AI, non un'agenzia.",
-      "lead": "Haal Lab è un'azienda di ingegneria AI focalizzata sullo sviluppo di sistemi software intelligenti utilizzando tecnologie moderne di machine learning e modelli di linguaggio.",
+      "title": "Un'azienda IA basata sull'ingegneria, non sull'hype.",
+      "lead": "Haal Lab costruisce sistemi software intelligenti che aiutano le organizzazioni a lavorare in modo più intelligente — senza inviare i loro dati a servizi di terze parti.",
       "meta": "haal-lab.solutions / chi-siamo"
     },
     "contact": {
       "eyebrow": "Contatti",
-      "title": "Raccontaci cosa stai cercando di costruire.",
-      "lead": "Rispondiamo a ogni seria richiesta con una prospettiva tecnica concreta — di solito entro due giorni lavorativi. Più contesto condividi, più utile sarà la nostra risposta.",
+      "title": "Dicci cosa stai cercando di ottenere.",
+      "lead": "Rispondiamo a ogni richiesta seria con una risposta pratica e onesta — di solito entro due giorni lavorativi. Più ci dici, più utile sarà la nostra risposta.",
       "meta": "haal-lab.solutions / contatti"
     },
     "pricing": {
       "eyebrow": "Prezzi",
-      "title": "Prezzi trasparenti per veri sistemi di intelligenza artificiale.",
+      "title": "Prezzi trasparenti per veri sistemi IA.",
       "lead": "Quattro pacchetti progettati per startup, aziende, grandi imprese e istituti di ricerca. Ogni livello fornisce un sistema funzionante — non una presentazione di diapositive.",
       "meta": "haal-lab.solutions / prezzi"
     }

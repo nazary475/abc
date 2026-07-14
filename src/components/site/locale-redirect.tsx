@@ -47,6 +47,14 @@ export function LocaleRedirect() {
         textAlign: 'center',
         padding: '2rem',
       }}>
+        <h1 style={{
+          fontSize: '24px',
+          fontWeight: '700',
+          marginBottom: '1.5rem',
+          color: '#E6EAF2',
+        }}>
+          Haal Lab — Engineering Intelligent Systems
+        </h1>
         <div style={{
           width: '48px',
           height: '48px',

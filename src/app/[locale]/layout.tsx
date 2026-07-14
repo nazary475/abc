@@ -141,7 +141,7 @@ export default async function LocaleLayout({
     <>
       <JsonLd locale={currentLocale} />
       <NextIntlClientProvider locale={currentLocale} messages={messages}>
-        <div className="flex min-h-screen flex-col bg-background">
+        <div className="flex min-h-screen flex-col bg-background" lang={currentLocale}>
           <Navbar />
           <main className="flex-1">{children}</main>
           <Footer />

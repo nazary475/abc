@@ -25,11 +25,12 @@ export function Navbar() {
 
   const closeMobile = () => setMobileOpen(false);
 
-  const NAV_ITEMS: { label: string; href: "/solutions" | "/projects" | "/research" | "/network" | "/about" }[] = [
+  const NAV_ITEMS: { label: string; href: "/solutions" | "/projects" | "/research" | "/network" | "/pricing" | "/about" }[] = [
     { label: t("solutions"), href: "/solutions" },
     { label: t("projects"), href: "/projects" },
     { label: t("research"), href: "/research" },
     { label: t("network"), href: "/network" },
+    { label: t("pricing"), href: "/pricing" },
     { label: t("about"), href: "/about" },
   ];
 

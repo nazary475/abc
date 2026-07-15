@@ -43,6 +43,22 @@ export function organizationSchema() {
       contactType: "sales",
       availableLanguage: ["English"],
     },
+    employee: [
+      {
+        "@type": "Person",
+        name: "Hussain Nazary",
+        jobTitle: "Chief Technology Officer",
+        description: "AI Engineer & CTO at Haal Lab",
+        email: SITE.email,
+        knowsAbout: [
+          "Artificial Intelligence",
+          "Machine Learning",
+          "Large Language Models",
+          "AI Engineering",
+          "Full Stack Development",
+        ],
+      },
+    ],
     knowsAbout: [
       "Artificial Intelligence",
       "Large Language Models",
@@ -69,6 +85,15 @@ export function websiteSchema() {
       "@type": "Organization",
       name: SITE.name,
       url: SITE.url,
+    },
+    author: {
+      "@type": "Person",
+      name: "Hussain Nazary",
+      jobTitle: "Chief Technology Officer & AI Engineer",
+      worksFor: {
+        "@type": "Organization",
+        name: SITE.name,
+      },
     },
     description: SITE.shortDescription,
   };
@@ -245,9 +270,13 @@ export function articleSchema(opts: {
     datePublished: opts.date,
     dateModified: opts.date,
     author: {
-      "@type": "Organization",
-      name: SITE.name,
+      "@type": "Person",
+      name: "Hussain Nazary",
       url: SITE.url,
+      worksFor: {
+        "@type": "Organization",
+        name: SITE.name,
+      },
     },
     publisher: {
       "@type": "Organization",

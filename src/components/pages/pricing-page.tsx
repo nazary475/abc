@@ -38,70 +38,73 @@ type Tier = {
 
 const TIERS: Tier[] = [
   {
-    id: "starter",
-    icon: FlaskConical,
-    name: "Starter",
-    tagline: "Perfect for solo founders and freelancers who want to test AI for their specific use case.",
+    id: "founder",
+    icon: GraduationCap,
+    name: "Founder Program",
+    tagline: "Designed for solo founders, researchers, PhD students, and early-stage startups exploring AI opportunities.",
     price: "€1,900",
     priceSuffix: "one-time",
     features: [
-      "1-hour consultation call",
-      "Feasibility assessment",
-      "Quick prototype (3-5 days)",
-      "Setup guidance & documentation",
-      "Email support for 2 weeks",
+      "Strategy consultation",
+      "AI feasibility assessment",
+      "Opportunity mapping",
+      "Architecture recommendation",
+      "Technical roadmap",
+      "Cost and timeline estimate",
     ],
     details: [
       { label: "Duration", value: "1 week" },
-      { label: "Use cases", value: "1 simple" },
-      { label: "Delivery", value: "Prototype + guide" },
+      { label: "Best For", value: "Startup founders" },
+      { label: "Delivery", value: "Assessment" },
     ],
     cta: "Get started",
     accent: "from-[#10B981]/20 to-transparent",
     accentGlow: "rgba(16, 185, 129, 0.15)",
   },
   {
-    id: "explorer",
+    id: "pilot",
     icon: FlaskConical,
-    name: "Explorer",
-    tagline: "Validate whether AI can solve your specific problem — before committing budget.",
-    price: "€4,900",
-    priceSuffix: "one-time",
+    name: "AI Pilot",
+    tagline: "Validate an AI use case before committing to a larger investment.",
+    price: "€9,900+",
+    priceSuffix: "starting at",
     features: [
-      "2-hour discovery workshop",
-      "Written feasibility report",
-      "Architecture sketch",
+      "Discovery workshop",
       "Working proof-of-concept",
-      "Cloud-hosted demo delivery",
+      "Real data testing",
+      "Technical feasibility report",
+      "Deployment roadmap",
     ],
     details: [
-      { label: "Duration", value: "2 weeks" },
-      { label: "Use cases", value: "1 focused" },
-      { label: "Delivery", value: "Demo + report" },
+      { label: "Duration", value: "2–4 weeks" },
+      { label: "Best For", value: "Startups & SMEs" },
+      { label: "Delivery", value: "POC + report" },
     ],
-    cta: "Start exploring",
+    cta: "Start pilot",
     accent: "from-[#2563EB]/20 to-transparent",
     accentGlow: "rgba(37, 99, 235, 0.15)",
   },
   {
-    id: "professional",
+    id: "production",
     icon: Rocket,
-    name: "Professional",
-    tagline: "A production-ready AI system — built, integrated, and deployed for your business.",
-    price: "€14,900",
-    priceSuffix: "per project",
+    name: "Production AI System",
+    tagline: "A production-ready AI solution deployed for real-world use.",
+    price: "€24,900+",
+    priceSuffix: "starting at",
     popular: true,
     features: [
-      "Everything in Explorer",
-      "1 complete AI system (assistant, search, or automation)",
-      "Integration with your existing tools & APIs",
-      "Evaluation harness with quality metrics",
-      "Cloud or self-hosted deployment",
-      "30 days post-launch support",
+      "System design",
+      "Development",
+      "Integrations",
+      "Evaluation framework",
+      "Deployment",
+      "Documentation",
+      "Team onboarding",
+      "30-day support",
     ],
     details: [
-      { label: "Duration", value: "6–8 weeks" },
-      { label: "Systems", value: "1 production" },
+      { label: "Duration", value: "6–10 weeks" },
+      { label: "Examples", value: "AI assistants, RAG" },
       { label: "Support", value: "30 days" },
     ],
     cta: "Get a proposal",
@@ -111,77 +114,112 @@ const TIERS: Tier[] = [
   {
     id: "enterprise",
     icon: Building2,
-    name: "Enterprise",
-    tagline: "Private AI infrastructure with compliance, multi-system orchestration, and full ownership.",
-    price: "€39,900+",
-    priceSuffix: "per engagement",
+    name: "Enterprise & Research Infrastructure",
+    tagline: "Custom AI platforms for organizations requiring scale, security, compliance, and long-term ownership.",
+    price: "€60,000+",
+    priceSuffix: "starting at",
     features: [
-      "Everything in Professional",
-      "Up to 3 interconnected AI systems",
-      "On-prem / air-gapped deployment",
-      "GDPR & EU AI Act compliance by design",
-      "GPU optimization & hardware-aware quantization",
-      "Full observability: traces, metrics, eval drift",
-      "Team training, runbooks & documentation",
-      "90-day post-launch support + SLA",
+      "Architecture design",
+      "Infrastructure deployment",
+      "Security review",
+      "Monitoring and observability",
+      "Team training",
+      "Runbooks and documentation",
+      "Extended support options",
     ],
     details: [
-      { label: "Duration", value: "12–16 weeks" },
-      { label: "Systems", value: "Up to 3" },
-      { label: "Support", value: "90 days + SLA" },
+      { label: "Duration", value: "2–6 months" },
+      { label: "Examples", value: "AI platforms" },
+      { label: "Support", value: "Extended" },
     ],
     cta: "Book a call",
     accent: "from-[#4AF3F8]/20 to-transparent",
     accentGlow: "rgba(74, 243, 248, 0.12)",
   },
+];
+
+/* ────────────── Services ────────────── */
+
+const SERVICES: { name: string; description: string; price: string }[] = [
   {
-    id: "research",
-    icon: GraduationCap,
-    name: "Research & Academic",
-    tagline: "Specialized AI systems for university labs, research institutions, and grant-funded projects.",
-    price: "Custom",
-    priceSuffix: "academic pricing",
-    features: [
-      "Scoped to research budget & grant cycles",
-      "RAG / retrieval systems for research corpora",
-      "Reproducible experiment infrastructure",
-      "Open-weight models — publishable results",
-      "Co-authorship option on system design",
-      "30–40% below commercial rates",
-    ],
-    details: [
-      { label: "Duration", value: "Flexible" },
-      { label: "Pricing", value: "Academic rates" },
-      { label: "Scope", value: "Grant-aligned" },
-    ],
-    cta: "Discuss your project",
-    accent: "from-[#29C4F8]/20 to-transparent",
-    accentGlow: "rgba(41, 196, 248, 0.12)",
+    name: "AI Readiness Assessment",
+    description: "Evaluate where AI can create measurable value within your organization.",
+    price: "€2,500+",
+  },
+  {
+    name: "Fractional AI Architect",
+    description: "Ongoing technical leadership for startups and growing organizations.",
+    price: "€3,500/month+",
+  },
+  {
+    name: "Research Corpus Search Systems",
+    description: "Semantic search and retrieval systems for academic and research datasets.",
+    price: "€7,500+",
+  },
+  {
+    name: "Reproducible Research Infrastructure",
+    description: "Infrastructure for repeatable experiments and AI research workflows.",
+    price: "€15,000+",
+  },
+  {
+    name: "RAG Audit",
+    description: "Independent review of retrieval-augmented generation systems.",
+    price: "€3,500+",
+  },
+  {
+    name: "LLM Infrastructure Audit",
+    description: "Review model deployment, architecture, cost efficiency, and security.",
+    price: "€5,000+",
+  },
+  {
+    name: "Executive AI Workshop",
+    description: "A strategic workshop for leadership teams evaluating AI adoption.",
+    price: "€2,500/session",
+  },
+  {
+    name: "Technical Team Workshop",
+    description: "Hands-on training for engineering and technical teams.",
+    price: "€3,500/session",
   },
 ];
 
-/* ────────────── Add-ons ────────────── */
+/* ────────────── Managed Services ────────────── */
 
-const ADDONS: { name: string; description: string; price: string }[] = [
+const MANAGED_SERVICES: { name: string; description: string; price: string }[] = [
   {
-    name: "Extended Support",
-    description: "Ongoing engineering support beyond the post-launch window.",
-    price: "€2,400 / month",
+    name: "AI Operations Support",
+    description: "Keep AI systems reliable, monitored, and continuously improving.",
+    price: "€2,500/month+",
   },
   {
-    name: "Additional Integrations",
-    description: "Connect your AI system to more tools, APIs, or data sources.",
-    price: "€3,900 / integration",
+    name: "Managed AI Platform",
+    description: "Fully managed AI operations for production environments.",
+    price: "€5,000/month+",
+  },
+];
+
+/* ────────────── Specialized Solutions ────────────── */
+
+const SPECIALIZED: { name: string; description: string; price: string }[] = [
+  {
+    name: "Private AI Deployment",
+    description: "Deploy AI systems entirely within your infrastructure.",
+    price: "€15,000+",
   },
   {
-    name: "Team Training Workshop",
-    description: "Half-day hands-on workshop for your engineering or operations team.",
-    price: "€1,900 / session",
+    name: "RAG System Development",
+    description: "Build knowledge retrieval systems over documents, databases, and internal knowledge.",
+    price: "€15,000+",
   },
   {
-    name: "Evaluation & Monitoring",
-    description: "Continuous evaluation pipeline with drift detection and alerting.",
-    price: "€2,900 / month",
+    name: "Multi-Agent Automation Systems",
+    description: "Design autonomous workflows and AI-powered operational systems.",
+    price: "€20,000+",
+  },
+  {
+    name: "AI Knowledge Platforms",
+    description: "Enterprise search, organizational memory, and knowledge management systems.",
+    price: "€25,000+",
   },
 ];
 
@@ -205,7 +243,7 @@ export function PricingPage() {
           </Reveal>
           <Reveal delay={0.16}>
             <Lead className="mt-5">
-              Five tiers designed for solo founders, startups, businesses, enterprises, and research institutions. Every package delivers a working system — not a slide deck.
+              Built for founders, startups, businesses, enterprises, and research institutions. Every engagement is focused on delivering measurable outcomes, working systems, and practical AI adoption.
             </Lead>
           </Reveal>
         </div>
@@ -213,7 +251,7 @@ export function PricingPage() {
 
       {/* ── Tier cards ── */}
       <SectionShell id="pricing-tiers">
-        <div className="mt-16 grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-5">
+        <div className="mt-16 grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
           {TIERS.map((tier, i) => (
             <Reveal key={tier.id} delay={i * 0.08}>
               <article
@@ -312,33 +350,32 @@ export function PricingPage() {
         </div>
       </SectionShell>
 
-      {/* ── Add-ons ── */}
+      {/* ── Services ── */}
       <SectionShell className="border-t border-hl-border bg-hl-surface/30">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <Reveal>
-            <Eyebrow>Add-ons</Eyebrow>
+            <Eyebrow>Services</Eyebrow>
             <SectionHeading className="mt-4">
-              Extend any package
+              Professional Services
             </SectionHeading>
             <Lead className="mt-4">
-              Need more support, integrations, or ongoing monitoring? Add these
-              to any tier.
+              Workshops, assessments, audits, and advisory services to support your AI journey.
             </Lead>
           </Reveal>
         </div>
 
         <div className="mt-14 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-hl-border bg-hl-border sm:grid-cols-2 lg:grid-cols-4">
-          {ADDONS.map((addon, i) => (
-            <Reveal key={addon.name} delay={i * 0.06}>
+          {SERVICES.map((service, i) => (
+            <Reveal key={service.name} delay={i * 0.06}>
               <article className="flex h-full flex-col bg-hl-surface/80 p-7 transition-colors hover:bg-hl-surface-2">
                 <h3 className="text-base font-semibold tracking-tight text-foreground">
-                  {addon.name}
+                  {service.name}
                 </h3>
                 <p className="mt-2 flex-1 text-sm font-medium leading-relaxed text-hl-muted">
-                  {addon.description}
+                  {service.description}
                 </p>
                 <p className="mt-4 font-mono text-sm font-bold tracking-tight text-hl-cyan">
-                  {addon.price}
+                  {service.price}
                 </p>
               </article>
             </Reveal>
@@ -346,17 +383,97 @@ export function PricingPage() {
         </div>
       </SectionShell>
 
-      {/* ── Comparison table ── */}
-      <SectionShell>
-        <SectionHeader
-          eyebrow="Compare"
-          heading="What's in each package"
-          lead="A side-by-side breakdown of what you get at every tier."
-          align="center"
-        />
-        <Reveal delay={0.1}>
-          <div className="mt-14 overflow-x-auto">
-            <ComparisonTable />
+      {/* ── Managed Services ── */}
+      <SectionShell className="border-t border-hl-border bg-hl-surface/30">
+        <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+          <Reveal>
+            <Eyebrow>Managed Services</Eyebrow>
+            <SectionHeading className="mt-4">
+              Ongoing Operations
+            </SectionHeading>
+            <Lead className="mt-4">
+              Continuous support and management for your AI systems.
+            </Lead>
+          </Reveal>
+        </div>
+
+        <div className="mt-14 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-hl-border bg-hl-border sm:grid-cols-2">
+          {MANAGED_SERVICES.map((service, i) => (
+            <Reveal key={service.name} delay={i * 0.06}>
+              <article className="flex h-full flex-col bg-hl-surface/80 p-7 transition-colors hover:bg-hl-surface-2">
+                <h3 className="text-base font-semibold tracking-tight text-foreground">
+                  {service.name}
+                </h3>
+                <p className="mt-2 flex-1 text-sm font-medium leading-relaxed text-hl-muted">
+                  {service.description}
+                </p>
+                <p className="mt-4 font-mono text-sm font-bold tracking-tight text-hl-cyan">
+                  {service.price}
+                </p>
+              </article>
+            </Reveal>
+          ))}
+        </div>
+      </SectionShell>
+
+      {/* ── Specialized Solutions ── */}
+      <SectionShell className="border-t border-hl-border bg-hl-surface/30">
+        <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+          <Reveal>
+            <Eyebrow>Specialized Solutions</Eyebrow>
+            <SectionHeading className="mt-4">
+              Custom Development
+            </SectionHeading>
+            <Lead className="mt-4">
+              Tailored AI solutions for specific use cases and requirements.
+            </Lead>
+          </Reveal>
+        </div>
+
+        <div className="mt-14 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-hl-border bg-hl-border sm:grid-cols-2 lg:grid-cols-4">
+          {SPECIALIZED.map((solution, i) => (
+            <Reveal key={solution.name} delay={i * 0.06}>
+              <article className="flex h-full flex-col bg-hl-surface/80 p-7 transition-colors hover:bg-hl-surface-2">
+                <h3 className="text-base font-semibold tracking-tight text-foreground">
+                  {solution.name}
+                </h3>
+                <p className="mt-2 flex-1 text-sm font-medium leading-relaxed text-hl-muted">
+                  {solution.description}
+                </p>
+                <p className="mt-4 font-mono text-sm font-bold tracking-tight text-hl-cyan">
+                  {solution.price}
+                </p>
+              </article>
+            </Reveal>
+          ))}
+        </div>
+      </SectionShell>
+
+      {/* ── Founding Client Program ── */}
+      <SectionShell className="border-t border-hl-border bg-hl-surface/30">
+        <Reveal>
+          <div className="relative overflow-hidden rounded-3xl border border-hl-cyan/40 bg-hl-surface/60 p-10 md:p-16 hl-card-glow shadow-[0_0_60px_-20px_rgba(74,243,248,0.25)]">
+            <div className="pointer-events-none absolute inset-0 hl-grid-bg-fine opacity-50" />
+            <div className="pointer-events-none absolute -right-32 -top-32 h-80 w-80 rounded-full bg-hl-cyan/10 blur-3xl" />
+            
+            <div className="relative">
+              <Eyebrow>Limited Availability</Eyebrow>
+              <SectionHeading className="mt-4">
+                Founding Client Program
+              </SectionHeading>
+              <Lead className="mt-4 max-w-3xl">
+                Selected startups, researchers, and early-stage companies may qualify for reduced pricing in exchange for case study participation, feedback sessions, public testimonial, and product collaboration opportunities.
+              </Lead>
+              <div className="mt-8">
+                <Link
+                  href="/contact"
+                  className="group inline-flex items-center justify-center gap-2 rounded-full bg-hl-cyan px-6 py-3.5 text-sm font-semibold text-[#04141A] transition-all hover:bg-hl-cyan/90 hover:shadow-[0_0_40px_-8px_rgba(74,243,248,0.6)]"
+                >
+                  Apply during your discovery call
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                </Link>
+              </div>
+            </div>
           </div>
         </Reveal>
       </SectionShell>
@@ -405,89 +522,4 @@ export function PricingPage() {
   );
 }
 
-/* ────────────── Comparison table ────────────── */
 
-type FeatureRow = {
-  feature: string;
-  starter: boolean | string;
-  explorer: boolean | string;
-  professional: boolean | string;
-  enterprise: boolean | string;
-  research: boolean | string;
-};
-
-const COMPARISON: FeatureRow[] = [
-  { feature: "Consultation", starter: "1 hour", explorer: "2 hours", professional: "2 hours", enterprise: "2 hours", research: "2 hours" },
-  { feature: "Feasibility report", starter: "Brief", explorer: true, professional: true, enterprise: true, research: true },
-  { feature: "Proof-of-concept", starter: "Quick prototype", explorer: true, professional: true, enterprise: true, research: true },
-  { feature: "Production AI system", starter: false, explorer: false, professional: "1 system", enterprise: "Up to 3", research: "Scoped" },
-  { feature: "API / tool integration", starter: false, explorer: false, professional: true, enterprise: true, research: true },
-  { feature: "Evaluation harness", starter: false, explorer: false, professional: true, enterprise: true, research: true },
-  { feature: "On-prem / air-gapped", starter: false, explorer: false, professional: false, enterprise: true, research: "Optional" },
-  { feature: "GDPR & EU AI Act compliance", starter: false, explorer: false, professional: false, enterprise: true, research: false },
-  { feature: "GPU optimization", starter: false, explorer: false, professional: false, enterprise: true, research: "Optional" },
-  { feature: "Full observability", starter: false, explorer: false, professional: false, enterprise: true, research: false },
-  { feature: "Team training & runbooks", starter: false, explorer: false, professional: false, enterprise: true, research: "Optional" },
-  { feature: "Post-launch support", starter: "2 weeks email", explorer: false, professional: "30 days", enterprise: "90 days + SLA", research: "Flexible" },
-  { feature: "Academic discount", starter: false, explorer: false, professional: false, enterprise: false, research: "30–40%" },
-  { feature: "Co-authorship option", starter: false, explorer: false, professional: false, enterprise: false, research: true },
-];
-
-function CellValue({ value }: { value: boolean | string }) {
-  if (value === true) {
-    return <Check className="mx-auto h-4 w-4 text-hl-cyan" />;
-  }
-  if (value === false) {
-    return <span className="mx-auto block h-px w-4 bg-hl-border" />;
-  }
-  return (
-    <span className="text-xs font-medium text-foreground">{value}</span>
-  );
-}
-
-function ComparisonTable() {
-  const headers = [
-    { key: "starter", label: "Starter" },
-    { key: "explorer", label: "Explorer" },
-    { key: "professional", label: "Professional" },
-    { key: "enterprise", label: "Enterprise" },
-    { key: "research", label: "Research" },
-  ] as const;
-
-  return (
-    <table className="w-full min-w-[640px] text-left">
-      <thead>
-        <tr className="border-b border-hl-border">
-          <th className="pb-4 pr-4 text-left font-mono text-[11px] uppercase tracking-[0.18em] text-hl-muted">
-            Feature
-          </th>
-          {headers.map((h) => (
-            <th
-              key={h.key}
-              className="pb-4 text-center font-mono text-[11px] uppercase tracking-[0.18em] text-hl-muted"
-            >
-              {h.label}
-            </th>
-          ))}
-        </tr>
-      </thead>
-      <tbody>
-        {COMPARISON.map((row) => (
-          <tr
-            key={row.feature}
-            className="border-b border-hl-border/50 transition-colors hover:bg-hl-surface/40"
-          >
-            <td className="py-3.5 pr-4 text-sm font-medium text-foreground/90">
-              {row.feature}
-            </td>
-            {headers.map((h) => (
-              <td key={h.key} className="py-3.5 text-center">
-                <CellValue value={row[h.key]} />
-              </td>
-            ))}
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
-}

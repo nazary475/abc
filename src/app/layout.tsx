@@ -29,7 +29,10 @@ export const metadata: Metadata = {
   description:
     "Deep-tech AI engineering company. We build private AI systems, LLM applications, RAG, and AI infrastructure for European organizations.",
   applicationName: "Haal Lab",
-  authors: [{ name: "Haal Lab", url: "https://haal-lab.solutions" }],
+  authors: [
+    { name: "Hussain Nazary", url: "https://haal-lab.solutions" },
+    { name: "Haal Lab", url: "https://haal-lab.solutions" }
+  ],
   generator: "Next.js",
   keywords: [
     "AI engineering",
@@ -42,7 +45,7 @@ export const metadata: Metadata = {
     "European AI",
   ],
   referrer: "origin-when-cross-origin",
-  creator: "Haal Lab",
+  creator: "Hussain Nazary",
   publisher: "Haal Lab",
   robots: {
     index: true,
@@ -56,9 +59,21 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/logo.svg",
-    shortcut: "/logo.svg",
-    apple: "/logo.svg",
+    icon: [
+      { url: '/icon', sizes: '32x32', type: 'image/png' },
+      { url: '/logo.svg', sizes: 'any', type: 'image/svg+xml' },
+    ],
+    shortcut: '/icon',
+    apple: [
+      { url: '/apple-icon', sizes: '180x180', type: 'image/png' },
+    ],
+    other: [
+      {
+        rel: 'mask-icon',
+        url: '/logo.svg',
+        color: '#00E0FF',
+      },
+    ],
   },
   manifest: "/manifest.json",
   openGraph: {
@@ -110,6 +125,10 @@ export default function RootLayout({
       <head>
         <meta charSet="utf-8" />
         <meta name="language" content="English" />
+        <meta name="author" content="Hussain Nazary, CTO & AI Engineer at Haal Lab" />
+        <meta name="copyright" content="Haal Lab © 2024-2025" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="alternate icon" href="/icon" type="image/png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         {/* Add .js class immediately so reveal animations only run with JS enabled. */}

@@ -78,27 +78,14 @@ export function FounderSection() {
                 
                 {/* Photo Container */}
                 <div className="relative aspect-[3/4] overflow-hidden rounded-xl border border-hl-border bg-hl-surface-2">
-                  {/* Placeholder for founder photo */}
-                  <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-hl-surface-2 to-hl-surface">
-                    <div className="text-center">
-                      <div className="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-full border-2 border-hl-border bg-hl-surface-2">
-                        <span className="text-4xl font-bold text-hl-cyan">JN</span>
-                      </div>
-                      <p className="font-mono text-xs uppercase tracking-wider text-hl-muted">
-                        Photo Coming Soon
-                      </p>
-                    </div>
-                  </div>
-                  
-                  {/* Uncomment this when photo is added */}
-                  {/* <Image
-                    src="/founder-jaafar-najafi-rad.jpg"
+                  <Image
+                    src="/jaafar-najafi-rad.jpg"
                     alt="Jaafar Najafi Rad - Founder of Haal Lab"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                     priority
-                  /> */}
+                  />
                 </div>
 
                 {/* Info Card */}

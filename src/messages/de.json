@@ -12,6 +12,7 @@
     "contact": "Kontakt",
     "pricing": "Preise",
     "exploreSolutions": "Sehen Sie, was wir tun",
+    "discussProject": "Besprechen Sie Ihr AI-Projekt",
     "toggleNav": "Navigation umschalten"
   },
   "brand": {
@@ -25,6 +26,8 @@
     "subtitle": "Jede Lösung wird in Ihrer Umgebung bereitgestellt und gibt Ihnen die vollständige Kontrolle über Ihre Daten, Modelle und Abläufe.",
     "exploreSolutions": "Sehen Sie, was wir tun",
     "contactUs": "Sprechen Sie mit uns",
+    "discussProject": "Besprechen Sie Ihr AI-Projekt",
+    "exploreWork": "Erkunden Sie unsere Arbeit",
     "feature1": "Privatsphäre",
     "feature2": "Sicherheit",
     "feature3": "Kosteneffizient"
@@ -82,6 +85,8 @@
     "pages": "Seiten",
     "home": "Startseite",
     "getInTouch": "Kontakt aufnehmen",
+    "readyToStart": "Bereit, Ihr AI-System aufzubauen?",
+    "contactHaalLab": "Kontaktieren Sie HAAL Lab",
     "rights": "© {year} Haal Lab. Alle Rechte vorbehalten."
   },
   "relatedLinks": {
@@ -96,6 +101,67 @@
   "languageSwitcher": {
     "label": "Sprache",
     "selectLanguage": "Sprache auswählen"
+  },
+  "contactForm": {
+    "title": "Besprechen Sie Ihr AI-Projekt",
+    "subtitle": "Erzählen Sie uns von Ihren Anforderungen, technischen Umgebung und Zielen. Unser Engineering-Team wird den besten Ansatz für Ihre Organisation bewerten.",
+    "fullName": "Vollständiger Name",
+    "workEmail": "Geschäftliche E-Mail",
+    "company": "Unternehmen / Organisation",
+    "role": "Rolle",
+    "roleOptions": {
+      "ceo": "CEO / Gründer",
+      "researcher": "Forscher",
+      "engineer": "Ingenieur / Entwickler",
+      "itManager": "IT-Manager",
+      "other": "Sonstiges",
+      "otherPlaceholder": "Bitte geben Sie Ihre Rolle an..."
+    },
+    "organizationType": "Organisationstyp",
+    "organizationTypeOptions": {
+      "enterprise": "Unternehmen",
+      "university": "Universität / Forschungseinrichtung",
+      "publicOrg": "Öffentliche Organisation",
+      "startup": "Startup",
+      "other": "Sonstiges",
+      "otherPlaceholder": "Bitte geben Sie Ihren Organisationstyp an..."
+    },
+    "projectInterest": "Projektinteresse",
+    "projectInterestOptions": {
+      "privateAI": "Privater AI-Assistent",
+      "rag": "Retrieval-Augmented Generation (RAG)",
+      "docSearch": "Intelligente Dokumentensuche",
+      "automation": "AI-Automatisierung",
+      "customModels": "Benutzerdefinierte AI-Modelle",
+      "infrastructure": "AI-Infrastruktur",
+      "other": "Sonstiges",
+      "otherPlaceholder": "Bitte geben Sie Ihr Interesse an..."
+    },
+    "dataEnvironment": "Datenumgebung",
+    "dataEnvironmentOptions": {
+      "onPremise": "On-Premise-Infrastruktur",
+      "privateCloud": "Private Cloud",
+      "europeanCloud": "Europäische Cloud-Infrastruktur",
+      "notDecided": "Noch nicht entschieden"
+    },
+    "projectDescription": "Projektbeschreibung",
+    "projectDescriptionPlaceholder": "Beschreiben Sie Ihre Projektziele, technischen Anforderungen, Einschränkungen und Erfolgskriterien. Je detaillierter Sie sind, desto besser können wir helfen.",
+    "expectedTimeline": "Erwarteter Zeitplan",
+    "timelineOptions": {
+      "exploring": "Optionen erkunden",
+      "oneToThree": "1-3 Monate",
+      "threeToSix": "3-6 Monate",
+      "sixPlus": "6+ Monate"
+    },
+    "requestDiscussion": "Technische Diskussion anfordern",
+    "submitting": "Wird gesendet...",
+    "submitSuccess": "Anfrage erhalten",
+    "submitSuccessMessage": "Vielen Dank für Ihre Anfrage. Unser Engineering-Team wird Ihre Anforderungen prüfen und innerhalb von zwei Werktagen antworten.",
+    "submitError": "Etwas ist schief gelaufen",
+    "submitErrorMessage": "Das Formular konnte nicht gesendet werden. Bitte kontaktieren Sie uns direkt unter contact@haal-lab.solutions.",
+    "privacyNotice": "Mit dem Absenden stimmen Sie zu, bezüglich Ihrer Anfrage kontaktiert zu werden. Wir geben Ihre Daten niemals weiter.",
+    "sendAnother": "Weitere Anfrage senden",
+    "optional": "(optional)"
   },
   "pageHeaders": {
     "solutions": {
@@ -130,8 +196,8 @@
     },
     "contact": {
       "eyebrow": "Kontakt",
-      "title": "Sagen Sie uns, was Sie erreichen möchten.",
-      "lead": "Wir antworten auf jede ernsthafte Anfrage mit einer praktischen, ehrlichen Antwort — normalerweise innerhalb von zwei Werktagen. Je mehr Sie uns erzählen, desto nützlicher wird unsere Antwort sein.",
+      "title": "Besprechen Sie Ihr AI-Projekt",
+      "lead": "Erzählen Sie uns von Ihren Anforderungen, technischen Umgebung und Zielen. Unser Engineering-Team wird den besten Ansatz für Ihre Organisation bewerten.",
       "meta": "haal-lab.solutions / kontakt"
     },
     "pricing": {

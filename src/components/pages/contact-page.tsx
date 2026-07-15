@@ -5,7 +5,7 @@ import {
   SectionShell,
   Eyebrow,
 } from "@/components/blocks/primitives";
-import { ContactForm } from "./contact-form";
+import { EnterpriseContactForm } from "./enterprise-contact-form";
 
 export function ContactPage() {
   return (
@@ -17,7 +17,7 @@ export function ContactPage() {
           {/* Form column */}
           <div className="lg:col-span-7">
             <Reveal>
-              <ContactForm />
+              <EnterpriseContactForm />
             </Reveal>
           </div>
 
@@ -31,15 +31,14 @@ export function ContactPage() {
                     Email
                   </h2>
                   <a
-                    href="mailto:hussain.nazary@haal-lab.solutions"
-                    className="group mt-2 inline-flex items-center gap-2 text-base text-hl-cyan"
+                    href="mailto:contact@haal-lab.solutions"
+                    className="group mt-2 inline-flex items-center gap-2 text-base text-hl-cyan hover:underline"
                   >
                     <Mail className="h-4 w-4" />
-                    hussain.nazary@haal-lab.solutions
+                    contact@haal-lab.solutions
                   </a>
                   <p className="mt-4 text-sm leading-relaxed text-hl-muted">
-                    For partnerships, technical inquiries, and project scoping. We read every
-                    message ourselves.
+                    For AI project inquiries, technical discussions, and partnerships. Our engineering team reviews every message.
                   </p>
                 </div>
 
@@ -62,10 +61,10 @@ export function ContactPage() {
                       handle="Haal Lab"
                     />
                     <ChannelRow
-                      href="mailto:hussain.nazary@haal-lab.solutions"
+                      href="mailto:contact@haal-lab.solutions"
                       icon={<Mail className="h-4 w-4" />}
                       label="Email"
-                      handle="hussain.nazary@haal-lab.solutions"
+                      handle="contact@haal-lab.solutions"
                     />
                   </ul>
                 </div>

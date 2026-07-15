@@ -85,17 +85,10 @@ export function Navbar() {
           <LanguageSwitcher />
           <Button
             asChild
-            variant="ghost"
-            className="hidden text-sm font-medium text-hl-muted hover:text-foreground lg:inline-flex"
+            className="group hidden items-center gap-1.5 rounded-full bg-hl-cyan px-5 py-2.5 text-sm font-semibold text-[#04141A] shadow-sm hover:bg-hl-cyan/90 hover:shadow-[0_0_30px_-8px_rgba(0,224,255,0.5)] lg:inline-flex"
           >
-            <Link href="/contact">{t("contact")}</Link>
-          </Button>
-          <Button
-            asChild
-            className="group hidden items-center gap-1.5 rounded-full bg-hl-cyan px-4 py-2 text-sm font-semibold text-[#04141A] hover:bg-hl-cyan/90 lg:inline-flex"
-          >
-            <Link href="/solutions">
-              {t("exploreSolutions")}
+            <Link href="/contact">
+              {t("discussProject")}
               <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
             </Link>
           </Button>
@@ -133,19 +126,10 @@ export function Navbar() {
             <li className="mt-2 flex flex-col gap-2 border-t border-hl-border pt-4">
               <Button
                 asChild
-                variant="outline"
-                className="w-full justify-center rounded-full border-hl-border text-foreground"
-              >
-                <Link href="/contact" onClick={closeMobile}>
-                  {t("contact")}
-                </Link>
-              </Button>
-              <Button
-                asChild
                 className="w-full justify-center rounded-full bg-hl-cyan font-semibold text-[#04141A] hover:bg-hl-cyan/90"
               >
-                <Link href="/solutions" onClick={closeMobile}>
-                  {t("exploreSolutions")}
+                <Link href="/contact" onClick={closeMobile}>
+                  {t("discussProject")}
                 </Link>
               </Button>
             </li>

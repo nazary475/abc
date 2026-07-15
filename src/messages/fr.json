@@ -12,6 +12,7 @@
     "contact": "Contact",
     "pricing": "Tarifs",
     "exploreSolutions": "Voir ce que nous faisons",
+    "discussProject": "Discutez de votre projet IA",
     "toggleNav": "Basculer la navigation"
   },
   "brand": {
@@ -25,6 +26,8 @@
     "subtitle": "Chaque solution est déployée dans votre environnement, vous donnant une propriété complète de vos données, modèles et opérations.",
     "exploreSolutions": "Voir ce que nous faisons",
     "contactUs": "Parlez-nous",
+    "discussProject": "Discutez de votre projet IA",
+    "exploreWork": "Explorez notre travail",
     "feature1": "Confidentialité",
     "feature2": "Sécurité",
     "feature3": "Rentable"
@@ -82,6 +85,8 @@
     "pages": "Pages",
     "home": "Accueil",
     "getInTouch": "Entrer en contact",
+    "readyToStart": "Prêt à construire votre système IA ?",
+    "contactHaalLab": "Contactez HAAL Lab",
     "rights": "© {year} Haal Lab. Tous droits réservés."
   },
   "relatedLinks": {
@@ -96,6 +101,67 @@
   "languageSwitcher": {
     "label": "Langue",
     "selectLanguage": "Choisir la langue"
+  },
+  "contactForm": {
+    "title": "Discutez de votre projet IA",
+    "subtitle": "Parlez-nous de vos besoins, environnement technique et objectifs. Notre équipe d'ingénieurs évaluera la meilleure approche pour votre organisation.",
+    "fullName": "Nom complet",
+    "workEmail": "E-mail professionnel",
+    "company": "Entreprise / Organisation",
+    "role": "Rôle",
+    "roleOptions": {
+      "ceo": "PDG / Fondateur",
+      "researcher": "Chercheur",
+      "engineer": "Ingénieur / Développeur",
+      "itManager": "Responsable IT",
+      "other": "Autre",
+      "otherPlaceholder": "Veuillez préciser votre rôle..."
+    },
+    "organizationType": "Type d'organisation",
+    "organizationTypeOptions": {
+      "enterprise": "Entreprise",
+      "university": "Université / Institution de recherche",
+      "publicOrg": "Organisation publique",
+      "startup": "Startup",
+      "other": "Autre",
+      "otherPlaceholder": "Veuillez préciser le type d'organisation..."
+    },
+    "projectInterest": "Intérêt du projet",
+    "projectInterestOptions": {
+      "privateAI": "Assistant IA privé",
+      "rag": "Génération augmentée par récupération (RAG)",
+      "docSearch": "Recherche intelligente de documents",
+      "automation": "Automatisation IA",
+      "customModels": "Modèles IA personnalisés",
+      "infrastructure": "Infrastructure IA",
+      "other": "Autre",
+      "otherPlaceholder": "Veuillez préciser votre intérêt..."
+    },
+    "dataEnvironment": "Environnement de données",
+    "dataEnvironmentOptions": {
+      "onPremise": "Infrastructure sur site",
+      "privateCloud": "Cloud privé",
+      "europeanCloud": "Infrastructure cloud européenne",
+      "notDecided": "Pas encore décidé"
+    },
+    "projectDescription": "Description du projet",
+    "projectDescriptionPlaceholder": "Décrivez vos objectifs de projet, exigences techniques, contraintes et critères de réussite. Plus vous fournissez de détails, mieux nous pourrons vous aider.",
+    "expectedTimeline": "Chronologie prévue",
+    "timelineOptions": {
+      "exploring": "Explorer les options",
+      "oneToThree": "1-3 mois",
+      "threeToSix": "3-6 mois",
+      "sixPlus": "6+ mois"
+    },
+    "requestDiscussion": "Demander une discussion technique",
+    "submitting": "Envoi en cours...",
+    "submitSuccess": "Demande reçue",
+    "submitSuccessMessage": "Merci pour votre demande. Notre équipe d'ingénieurs examinera vos besoins et répondra dans les deux jours ouvrables.",
+    "submitError": "Quelque chose s'est mal passé",
+    "submitErrorMessage": "Impossible d'envoyer le formulaire. Veuillez nous contacter directement à contact@haal-lab.solutions.",
+    "privacyNotice": "En soumettant, vous acceptez d'être contacté concernant votre demande. Nous ne partageons jamais vos données.",
+    "sendAnother": "Envoyer une autre demande",
+    "optional": "(optionnel)"
   },
   "pageHeaders": {
     "solutions": {
@@ -130,8 +196,8 @@
     },
     "contact": {
       "eyebrow": "Contact",
-      "title": "Dites-nous ce que vous essayez d'accomplir.",
-      "lead": "Nous répondons à chaque demande sérieuse avec une réponse pratique et honnête — généralement dans les deux jours ouvrables. Plus vous nous en dites, plus notre réponse sera utile.",
+      "title": "Discutez de votre projet IA",
+      "lead": "Parlez-nous de vos besoins, environnement technique et objectifs. Notre équipe d'ingénieurs évaluera la meilleure approche pour votre organisation.",
       "meta": "haal-lab.solutions / contact"
     },
     "pricing": {

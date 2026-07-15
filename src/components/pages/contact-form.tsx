@@ -1,12 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 import { ArrowRight, CheckCircle2, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { toast } from "@/hooks/use-toast";
 
 const INTERESTS = [
   "Local AI Systems",
@@ -17,21 +17,13 @@ const INTERESTS = [
   "Other",
 ] as const;
 
-/**
- * Optional: set NEXT_PUBLIC_FORMSPREE_ENDPOINT to a Formspree (or compatible)
- * form endpoint, e.g. "https://formspree.io/f/abcdwxyz". When set, the form
- * POSTs to that endpoint. When unset, the form falls back to a mailto: link
- * that opens the visitor's email client pre-filled — no backend required.
- *
- * This makes the form work on static hosts like GitHub Pages.
- */
-const FORMSPREE_ENDPOINT = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT || "";
 const CONTACT_EMAIL = "hussain.nazary@haal-lab.solutions";
 
 export function ContactForm() {
-  const [submitting, setSubmitting] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
+  // Use the Formspree React hook - it handles submission, loading, and errors
+  const [state, handleSubmit] = useForm("xbdnlvrd");
   const [selectedInterests, setSelectedInterests] = useState<string[]>([]);
+  const [otherInterest, setOtherInterest] = useState("");
 
   const toggleInterest = (i: string) => {
     setSelectedInterests((prev) =>
@@ -39,104 +31,25 @@ export function ContactForm() {
     );
   };
 
-  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setSubmitting(true);
-
-    const formData = new FormData(e.currentTarget);
-    const payload = {
-      name: formData.get("name") as string,
-      email: formData.get("email") as string,
-      company: (formData.get("company") as string) || "",
-      interests: selectedInterests.join(", "),
-      message: formData.get("message") as string,
-    };
-
-    try {
-      if (FORMSPREE_ENDPOINT) {
-        // POST to Formspree / Getform / Basin — works on any static host.
-        const res = await fetch(FORMSPREE_ENDPOINT, {
-          method: "POST",
-          body: formData,
-          headers: { Accept: "application/json" },
-        });
-        if (!res.ok) throw new Error(`Form service responded ${res.status}`);
-      } else {
-        // No backend — fall back to mailto: with pre-filled body.
-        // Opens the visitor's email client. No server required.
-        const subject = encodeURIComponent(
-          `[Haal Lab inquiry] from ${payload.name}${payload.company ? ` (${payload.company})` : ""}`
-        );
-        const body = encodeURIComponent(
-          [
-            `Name: ${payload.name}`,
-            `Email: ${payload.email}`,
-            payload.company ? `Company: ${payload.company}` : null,
-            selectedInterests.length ? `Interests: ${selectedInterests.join(", ")}` : null,
-            "",
-            "Message:",
-            payload.message,
-          ]
-            .filter(Boolean)
-            .join("\n")
-        );
-        window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
-        // Small delay so the mailto: navigation completes before we flip state.
-        await new Promise((resolve) => setTimeout(resolve, 600));
-      }
-
-      setSubmitted(true);
-      toast({
-        title: FORMSPREE_ENDPOINT ? "Message sent" : "Opening your email client",
-        description: FORMSPREE_ENDPOINT
-          ? "We will respond within two business days."
-          : "Your email client should now have a pre-filled message to hussain.nazary@haal-lab.solutions.",
-      });
-    } catch (err) {
-      console.error("[Haal Lab contact] submission failed:", err);
-      toast({
-        title: "Something went wrong",
-        description:
-          "Could not send the form. Please email us directly at hussain.nazary@haal-lab.solutions.",
-      });
-    } finally {
-      setSubmitting(false);
-    }
-  };
-
-  if (submitted) {
+  // Success state handled by Formspree
+  if (state.succeeded) {
     return (
       <div className="flex h-full min-h-[420px] flex-col items-start justify-center rounded-2xl border border-hl-border bg-hl-surface/60 p-10">
         <div className="flex h-12 w-12 items-center justify-center rounded-full border border-hl-cyan/40 bg-hl-cyan/10 text-hl-cyan">
           <CheckCircle2 className="h-6 w-6" />
         </div>
         <h2 className="mt-6 text-2xl font-semibold tracking-tight text-foreground">
-          {FORMSPREE_ENDPOINT ? "Message received." : "Ready to send."}
+          Message received.
         </h2>
         <p className="mt-3 max-w-md text-base leading-relaxed text-hl-muted">
-          {FORMSPREE_ENDPOINT ? (
-            <>
-              Thank you for reaching out. We will review your inquiry and respond from{" "}
-              <span className="text-foreground">hussain.nazary@haal-lab.solutions</span> within two
-              business days.
-            </>
-          ) : (
-            <>
-              Your email client should have opened with a pre-filled message. If it
-              didn&apos;t, email us directly at{" "}
-              <span className="text-foreground">hussain.nazary@haal-lab.solutions</span> — we
-              respond within two business days.
-            </>
-          )}
+          Thank you for reaching out. We will review your inquiry and respond from{" "}
+          <span className="text-foreground">{CONTACT_EMAIL}</span> within two business days.
         </p>
         <Button
           type="button"
           variant="outline"
           className="mt-8 rounded-full border-hl-border text-foreground"
-          onClick={() => {
-            setSubmitted(false);
-            setSelectedInterests([]);
-          }}
+          onClick={() => window.location.reload()}
         >
           Send another message
         </Button>
@@ -146,7 +59,7 @@ export function ContactForm() {
 
   return (
     <form
-      onSubmit={onSubmit}
+      onSubmit={handleSubmit}
       className="rounded-2xl border border-hl-border bg-hl-surface/60 p-7 md:p-9"
     >
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
@@ -159,6 +72,7 @@ export function ContactForm() {
             placeholder="Ada Lovelace"
             className="bg-hl-surface-2"
           />
+          <ValidationError prefix="Name" field="name" errors={state.errors} />
         </Field>
         <Field label="Email" htmlFor="email">
           <Input
@@ -170,6 +84,7 @@ export function ContactForm() {
             placeholder="ada@company.com"
             className="bg-hl-surface-2"
           />
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
         </Field>
       </div>
 
@@ -208,6 +123,31 @@ export function ContactForm() {
             );
           })}
         </div>
+        
+        {/* Show text input when "Other" is selected */}
+        {selectedInterests.includes("Other") && (
+          <div className="mt-4">
+            <Input
+              id="otherInterest"
+              name="otherInterest"
+              value={otherInterest}
+              onChange={(e) => setOtherInterest(e.target.value)}
+              placeholder="Please specify your interest..."
+              className="bg-hl-surface-2"
+            />
+          </div>
+        )}
+        
+        {/* Hidden field to submit selected interests */}
+        <input 
+          type="hidden" 
+          name="interests" 
+          value={
+            selectedInterests.includes("Other") && otherInterest
+              ? selectedInterests.filter(i => i !== "Other").concat(`Other: ${otherInterest}`).join(", ")
+              : selectedInterests.join(", ")
+          } 
+        />
       </div>
 
       <div className="mt-6">
@@ -220,6 +160,7 @@ export function ContactForm() {
             placeholder="What problem are you solving? What does success look like? What constraints (privacy, latency, budget, hardware) should we know about?"
             className="bg-hl-surface-2 resize-none"
           />
+          <ValidationError prefix="Message" field="message" errors={state.errors} />
         </Field>
       </div>
 
@@ -230,10 +171,10 @@ export function ContactForm() {
         </p>
         <Button
           type="submit"
-          disabled={submitting}
+          disabled={state.submitting}
           className="group inline-flex items-center gap-2 rounded-full bg-hl-cyan px-6 py-3 text-sm font-semibold text-[#04141A] transition-all hover:bg-hl-cyan/90 disabled:opacity-60"
         >
-          {submitting ? (
+          {state.submitting ? (
             <>
               <Loader2 className="h-4 w-4 animate-spin" />
               Sending...

@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import { Logo } from "./logo";
-import { Github, Linkedin, Mail, ArrowUpRight } from "lucide-react";
+import { Github, Linkedin, Mail, ArrowUpRight, ArrowRight } from "lucide-react";
 
 export function Footer() {
   const t = useTranslations("footer");
@@ -20,6 +20,36 @@ export function Footer() {
 
   return (
     <footer className="mt-auto border-t border-hl-border bg-hl-surface/40">
+      {/* CTA Section */}
+      <div className="border-b border-hl-border">
+        <div className="hl-container hl-section-pad py-16 md:py-20">
+          <div className="flex flex-col items-center text-center">
+            <h2 className="text-2xl font-bold tracking-tight text-foreground md:text-3xl lg:text-4xl">
+              {t("readyToStart")}
+            </h2>
+            <p className="mt-4 max-w-2xl text-base text-hl-muted md:text-lg">
+              Tell us about your requirements and goals. Our engineering team will evaluate the best approach.
+            </p>
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+              <Link
+                href="/contact"
+                className="group inline-flex items-center gap-2 rounded-full bg-hl-cyan px-6 py-3.5 text-sm font-semibold text-[#04141A] transition-all hover:bg-hl-cyan/90 hover:shadow-[0_0_30px_-8px_rgba(0,224,255,0.5)]"
+              >
+                {t("contactHaalLab")}
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+              </Link>
+              <a
+                href="mailto:contact@haal-lab.solutions"
+                className="inline-flex items-center gap-2 rounded-full border border-hl-border bg-hl-surface/60 px-6 py-3.5 text-sm font-medium text-foreground backdrop-blur transition-colors hover:border-hl-cyan/40 hover:text-hl-cyan"
+              >
+                <Mail className="h-4 w-4" />
+                contact@haal-lab.solutions
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="hl-container hl-section-pad py-14">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
           {/* Brand */}

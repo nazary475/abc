@@ -82,7 +82,7 @@ export function FounderSection() {
                     src="/jaafar-najafi-rad.jpg"
                     alt="Jaafar Najafi Rad - Founder of Haal Lab"
                     fill
-                    className="object-cover object-top"
+                    className="object-contain"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                     priority
                   />

@@ -40,6 +40,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
         with:
@@ -55,10 +60,25 @@ jobs:
           NEXT_PUBLIC_BASE_PATH: ${{ secrets.NEXT_PUBLIC_BASE_PATH }}
           # Optional: set to a Formspree endpoint to enable backend form submission.
           NEXT_PUBLIC_FORMSPREE_ENDPOINT: ${{ secrets.NEXT_PUBLIC_FORMSPREE_ENDPOINT }}
+          NODE_ENV: production
         run: bun run build
 
       - name: Add .nojekyll
         run: touch out/.nojekyll
+
+      - name: Verify build output
+        run: |
+          echo "Checking build output..."
+          ls -la out/
+          if [ ! -f "out/index.html" ]; then
+            echo "Error: index.html not found!"
+            exit 1
+          fi
+          echo "Build output verified successfully"
+          echo "Checking for localized pages..."
+          ls -la out/en/ || echo "Warning: No /en directory found"
+          echo "Checking for CNAME..."
+          ls -la out/CNAME || echo "Warning: CNAME not found"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

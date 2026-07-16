@@ -271,13 +271,6 @@ export function PricingPage() {
                   style={{ background: `radial-gradient(circle, ${tier.accentGlow}, transparent 70%)` }}
                 />
 
-                {/* Popular badge */}
-                {tier.popular && (
-                  <span className="absolute right-5 top-5 inline-flex items-center rounded-full bg-hl-cyan px-2.5 py-1 font-mono text-[10px] font-bold uppercase tracking-wider text-gray-900">
-                    Most Popular
-                  </span>
-                )}
-
                 <div className="relative flex flex-1 flex-col">
                   {/* Icon & name */}
                   <div className="flex items-center gap-3">

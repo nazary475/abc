@@ -91,11 +91,12 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Founder - New Column */}
           <div className="md:col-span-4">
-            <h2 className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-foreground/80">
-              Founder
-            </h2>
+            <div className="mb-3">
+              <span className="inline-block rounded-full border-2 border-hl-cyan bg-hl-cyan/20 px-4 py-1 font-mono text-xs font-extrabold uppercase tracking-widest text-hl-cyan shadow-[0_0_16px_-4px_rgba(96,165,250,0.6)]">
+                Founder
+              </span>
+            </div>
             <div className="flex items-start gap-4">
               <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-xl border-2 border-hl-border bg-hl-surface-2">
                 <Image
@@ -111,10 +112,7 @@ export function Footer() {
                   Jaafar Najafi Rad
                 </h3>
                 <p className="mt-1 font-mono text-sm font-bold uppercase tracking-wider text-hl-cyan">
-                  Founder & Engineer
-                </p>
-                <p className="mt-2 text-sm leading-relaxed text-hl-muted">
-                  Building private, production-ready AI systems for organizations that value data sovereignty.
+                  Phd, Smart Aerospace an autonomous System
                 </p>
               </div>
             </div>

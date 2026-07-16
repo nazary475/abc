@@ -38,7 +38,7 @@ Vercel supports Next.js API routes natively and can handle environment variables
    
    ```
    Name: GROQ_API_KEY
-   Value: <your_groq_api_key>
+   Value: <your_groq_api_key_from_console.groq.com>
    
    Name: NEXT_PUBLIC_FORMSPREE_ENDPOINT
    Value: https://formspree.io/f/xbdnlvrd
@@ -125,7 +125,7 @@ Deploy to your own server (like Hetzner, DigitalOcean, etc.)
 
 3. **Create `.env.local`**:
    ```bash
-   echo "GROQ_API_KEY=<your_groq_api_key>" > .env.local
+   echo "GROQ_API_KEY=<your_api_key_here>" > .env.local
    echo "NEXT_PUBLIC_FORMSPREE_ENDPOINT=https://formspree.io/f/xbdnlvrd" >> .env.local
    ```
 

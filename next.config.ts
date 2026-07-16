@@ -21,12 +21,13 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 // Detect if we're building for static export (GitHub Pages) or server (Vercel)
 // If VERCEL environment variable exists, we're on Vercel and should NOT use static export
-const isVercel = process.env.VERCEL === "1";
+const isVercel = !!process.env.VERCEL;
 
 const nextConfig: NextConfig = {
   // Only use static export for GitHub Pages, not for Vercel
   ...(isVercel ? {} : { output: "export" }),
-  trailingSlash: true,
+  // Don't use trailing slash on Vercel (causes issues with API routes)
+  trailingSlash: !isVercel,
   basePath: basePath || undefined,
   images: {
     unoptimized: true,

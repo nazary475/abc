@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "node -e \"const fs = require('fs'); if(!fs.existsSync('out/.nojekyll')) fs.writeFileSync('out/.nojekyll', '')\"",
+    "build:static": "next build && node -e \"const fs = require('fs'); if(!fs.existsSync('out/.nojekyll')) fs.writeFileSync('out/.nojekyll', '')\"",
     "start": "next start",
     "lint": "eslint .",
     "db:push": "prisma db push",

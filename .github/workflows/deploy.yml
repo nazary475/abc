@@ -61,10 +61,17 @@ jobs:
           # See DEPLOYMENT_GUIDE.md for instructions.
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           NODE_ENV: production
-        run: npm run build
+        run: npm run build:static
 
       - name: Add .nojekyll
-        run: touch out/.nojekyll
+        run: |
+          if [ ! -d "out" ]; then
+            echo "Note: 'out' directory not found (likely building for Vercel, not static export)"
+            echo "Skipping .nojekyll creation"
+          else
+            touch out/.nojekyll
+            echo ".nojekyll file created"
+          fi
 
       - name: Verify build output
         run: |

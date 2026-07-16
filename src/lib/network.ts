@@ -1,13 +1,8 @@
 /**
- * Partners & Advisors data for Haal Lab.
- *
- * All entries are placeholders — replace with real partner names, logos,
- * advisor bios, and photos before going live.
+ * Partners data for Haal Lab.
  *
  * Used by:
  * - PartnersSection (homepage + /network)
- * - AdvisorsSection (homepage + /network)
- * - Person JSON-LD (advisors)
  * - /network page content
  */
 
@@ -23,17 +18,7 @@ export type Partner = {
   logoUrl?: string;
 };
 
-export type Advisor = {
-  id: string;
-  name: string;
-  role: string;
-  expertise: string[];
-  bio: string;
-  linkedin?: string;
-  github?: string;
-  /** Initials shown in the avatar placeholder. */
-  initials: string;
-};
+
 
 /* ───────────────────────── Partners ───────────────────────── */
 
@@ -168,62 +153,4 @@ export const PARTNER_CATEGORIES = [
   "Research",
 ] as const;
 
-/* ───────────────────────── Advisors ───────────────────────── */
 
-export const ADVISORS: Advisor[] = [
-  {
-    id: "advisor-1",
-    name: "Dr. Elena Vogt",
-    role: "AI Research Advisor",
-    expertise: ["Retrieval Systems", "Multilingual NLP", "Evaluation"],
-    bio: "Former senior researcher at a European AI lab. Elena advises Haal Lab on retrieval architecture, evaluation methodology, and multilingual model selection. She holds a PhD in machine learning and has published extensively on dense and sparse retrieval.",
-    linkedin: "https://www.linkedin.com/in/",
-    initials: "EV",
-  },
-  {
-    id: "advisor-2",
-    name: "Marcus Reiner",
-    role: "Infrastructure & DevOps Advisor",
-    expertise: ["GPU Optimization", "Kubernetes", "Model Serving"],
-    bio: "Twenty years building production infrastructure at scale. Marcus guides our AI infrastructure practice — model serving, GPU scheduling, observability, and the operational discipline required to run LLMs in production without firefighting.",
-    linkedin: "https://www.linkedin.com/in/",
-    initials: "MR",
-  },
-  {
-    id: "advisor-3",
-    name: "Sophie Laurent",
-    role: "Privacy & Compliance Advisor",
-    expertise: ["GDPR", "EU AI Act", "Data Sovereignty"],
-    bio: "Technology lawyer specializing in EU digital regulation. Sophie helps us architect systems that meet GDPR and EU AI Act requirements by construction — not afterthought. She works at the intersection of law and engineering.",
-    linkedin: "https://www.linkedin.com/in/",
-    initials: "SL",
-  },
-  {
-    id: "advisor-4",
-    name: "Dr. Rafael Mendes",
-    role: "Applied ML Advisor",
-    expertise: ["Fine-tuning", "Agent Orchestration", "RAG"],
-    bio: "Applied ML researcher with production experience at several European startups. Rafael advises on agent orchestration patterns, fine-tuning strategy, and the practical tradeoffs between retrieval, fine-tuning, and prompt engineering.",
-    linkedin: "https://www.linkedin.com/in/",
-    github: "https://github.com/",
-    initials: "RM",
-  },
-  {
-    id: "advisor-5",
-    name: "Anika Chandran",
-    role: "Product & Strategy Advisor",
-    expertise: ["Product Strategy", "Enterprise AI", "Go-to-market"],
-    bio: "Product leader who has shipped AI products to enterprise customers across Europe. Anika helps us bridge the gap between engineering depth and product clarity — making sure the systems we build solve real problems for real users.",
-    linkedin: "https://www.linkedin.com/in/",
-    initials: "AC",
-  },
-  {
-    id: "advisor-6",
-    name: "Dr. Tomas Bjork",
-    role: "Security & Threat Modeling Advisor",
-    expertise: ["AI Security", "Threat Modeling", "Air-gapped Systems"],
-    bio: "Security researcher focused on AI system threats — prompt injection, model supply chain, and inference-time attacks. Tomas helps us design private AI deployments that hold up against realistic adversaries, not just compliance checklists.",
-    linkedin: "https://www.linkedin.com/in/",
-    initials: "TB",
-  },
-];

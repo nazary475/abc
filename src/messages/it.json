@@ -74,12 +74,6 @@
     "viewAll": "Vedi tutti i partner",
     "count": "{count} partner"
   },
-  "advisors": {
-    "eyebrow": "Comitato consultivo",
-    "title": "Esperti che guidano il nostro lavoro",
-    "lead": "I nostri consulenti portano esperienza profonda nella ricerca IA, ingegneria, diritto della privacy e sicurezza. Esaminano il nostro lavoro e ci mantengono onesti.",
-    "viewAll": "Conosci il comitato consultivo"
-  },
   "footer": {
     "description": "Costruiamo sistemi IA personalizzati che funzionano privatamente sui vostri computer — dalla ricerca intelligente di documenti agli assistenti IA che fanno il lavoro.",
     "pages": "Pagine",

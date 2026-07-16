@@ -74,12 +74,6 @@
     "viewAll": "Voir tous les partenaires",
     "count": "{count} partenaires"
   },
-  "advisors": {
-    "eyebrow": "Conseil consultatif",
-    "title": "Experts qui guident notre travail",
-    "lead": "Nos conseillers apportent une expérience approfondie en recherche IA, ingénierie, droit de la confidentialité et sécurité. Ils examinent notre travail et nous gardent honnêtes.",
-    "viewAll": "Rencontrer le conseil consultatif"
-  },
   "footer": {
     "description": "Nous construisons des systèmes IA personnalisés qui fonctionnent en privé sur vos propres ordinateurs — de la recherche intelligente de documents aux assistants IA qui font le travail.",
     "pages": "Pages",

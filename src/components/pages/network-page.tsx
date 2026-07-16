@@ -1,6 +1,5 @@
 import { PageHeader } from "@/components/blocks/page-header";
 import { PartnersSection } from "@/components/site/partners-section";
-import { AdvisorsSection } from "@/components/site/advisors-section";
 import {
   Reveal,
   SectionShell,
@@ -9,7 +8,7 @@ import {
   Lead,
 } from "@/components/blocks/primitives";
 
-/** NetworkPage — full partner list + full advisor bios. */
+/** NetworkPage — full partner list. */
 export function NetworkPage() {
   return (
     <>
@@ -17,9 +16,6 @@ export function NetworkPage() {
 
       {/* Partners — full variant with descriptions */}
       <PartnersSection variant="full" />
-
-      {/* Advisors — full variant with full bios */}
-      <AdvisorsSection variant="full" />
 
       {/* Become a partner CTA */}
       <SectionShell className="border-t border-hl-border">

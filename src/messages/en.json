@@ -74,12 +74,6 @@
     "viewAll": "See all partners",
     "count": "{count} partners"
   },
-  "advisors": {
-    "eyebrow": "Advisory Board",
-    "title": "Experts who guide our work",
-    "lead": "Our advisors bring deep experience across AI research, engineering, privacy law, and security. They review our work and keep us honest.",
-    "viewAll": "Meet the advisory board"
-  },
   "footer": {
     "description": "We build custom AI systems that run privately on your own computers — from smart document search to AI assistants that get work done.",
     "pages": "Pages",

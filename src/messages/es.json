@@ -75,12 +75,6 @@
     "viewAll": "Ver todos los socios",
     "count": "{count} socios"
   },
-  "advisors": {
-    "eyebrow": "Junta asesora",
-    "title": "Expertos que guían nuestro trabajo",
-    "lead": "Nuestros asesores aportan experiencia profunda en investigación IA, ingeniería, derecho de privacidad y seguridad. Revisan nuestro trabajo y nos mantienen honestos.",
-    "viewAll": "Conocer la junta asesora"
-  },
   "footer": {
     "description": "Construimos sistemas IA personalizados que se ejecutan de forma privada en sus propias computadoras — desde búsqueda inteligente de documentos hasta asistentes IA que hacen el trabajo.",
     "pages": "Páginas",

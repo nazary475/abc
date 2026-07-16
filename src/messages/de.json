@@ -74,12 +74,6 @@
     "viewAll": "Alle Partner ansehen",
     "count": "{count} Partner"
   },
-  "advisors": {
-    "eyebrow": "Beirat",
-    "title": "Experten, die unsere Arbeit leiten",
-    "lead": "Unsere Berater bringen tiefe Erfahrung in AI-Forschung, Engineering, Datenschutzrecht und Sicherheit mit. Sie überprüfen unsere Arbeit und halten uns ehrlich.",
-    "viewAll": "Beirat kennenlernen"
-  },
   "footer": {
     "description": "Wir bauen maßgeschneiderte AI-Systeme, die privat auf Ihren eigenen Computern laufen — von intelligenter Dokumentensuche bis zu AI-Assistenten, die Arbeit erledigen.",
     "pages": "Seiten",

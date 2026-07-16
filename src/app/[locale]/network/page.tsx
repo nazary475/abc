@@ -32,7 +32,6 @@ export async function generateMetadata({
     },
     keywords: [
       "Haal Lab partners",
-      "AI advisory board",
       "NVIDIA partner",
       "Hugging Face partner",
       "Qdrant partner",
@@ -42,8 +41,6 @@ export async function generateMetadata({
       "Fraunhofer",
       "INRIA",
       "Gaia-X partner",
-      "AI advisors",
-      "AI consultants",
       "sovereign AI partners",
     ],
   };
@@ -65,7 +62,7 @@ export default async function Network({
         faqs={FAQS.network}
         eyebrow="FAQ"
         title="Questions about our network"
-        intro="Who we partner with, how our advisory board works, and how to join the network."
+        intro="Who we partner with and how to join the network."
       />
       <RelatedLinks current="/network" title="Continue exploring" eyebrow="Next" />
     </>

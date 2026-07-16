@@ -175,24 +175,24 @@ export const PAGE_METADATA: Record<string, Record<Locale, PageMetadata>> = {
   },
   network: {
     en: {
-      title: "Network — Partners & Advisors",
+      title: "Network — Partners",
       description:
-        "Haal Lab's technology, infrastructure, cloud, and research partners — including NVIDIA, Hugging Face, Qdrant, Mistral AI, Aleph Alpha, Hetzner, Scaleway, Gaia-X, Fraunhofer, and INRIA — plus our advisory board of AI, security, privacy, and product experts.",
+        "Haal Lab's technology, infrastructure, cloud, and research partners — including NVIDIA, Hugging Face, Qdrant, Mistral AI, Aleph Alpha, Hetzner, Scaleway, Gaia-X, Fraunhofer, and INRIA.",
     },
     de: {
-      title: "Netzwerk — Partner & Berater",
+      title: "Netzwerk — Partner",
       description:
-        "Haal Labs Technologie-, Infrastruktur-, Cloud- und Forschungspartner — darunter NVIDIA, Hugging Face, Qdrant, Mistral AI, Aleph Alpha, Hetzner, Scaleway, Gaia-X, Fraunhofer und INRIA — sowie unser Beirat aus KI-, Sicherheits-, Datenschutz- und Produktexperten.",
+        "Haal Labs Technologie-, Infrastruktur-, Cloud- und Forschungspartner — darunter NVIDIA, Hugging Face, Qdrant, Mistral AI, Aleph Alpha, Hetzner, Scaleway, Gaia-X, Fraunhofer und INRIA.",
     },
     fr: {
-      title: "Réseau — Partenaires et conseillers",
+      title: "Réseau — Partenaires",
       description:
-        "Partenaires technologiques, d'infrastructure, cloud et de recherche de Haal Lab — notamment NVIDIA, Hugging Face, Qdrant, Mistral AI, Aleph Alpha, Hetzner, Scaleway, Gaia-X, Fraunhofer et INRIA — ainsi que notre conseil consultatif composé d'experts en IA, sécurité, confidentialité et produits.",
+        "Partenaires technologiques, d'infrastructure, cloud et de recherche de Haal Lab — notamment NVIDIA, Hugging Face, Qdrant, Mistral AI, Aleph Alpha, Hetzner, Scaleway, Gaia-X, Fraunhofer et INRIA.",
     },
     es: {
-      title: "Red — Socios y asesores",
+      title: "Red — Socios",
       description:
-        "Socios de tecnología, infraestructura, nube e investigación de Haal Lab — incluidos NVIDIA, Hugging Face, Qdrant, Mistral AI, Aleph Alpha, Hetzner, Scaleway, Gaia-X, Fraunhofer e INRIA — además de nuestro consejo asesor de expertos en IA, seguridad, privacidad y productos.",
+        "Socios de tecnología, infraestructura, nube e investigación de Haal Lab — incluidos NVIDIA, Hugging Face, Qdrant, Mistral AI, Aleph Alpha, Hetzner, Scaleway, Gaia-X, Fraunhofer e INRIA.",
     },
     it: {
       title: "Rete — Partner e consulenti",

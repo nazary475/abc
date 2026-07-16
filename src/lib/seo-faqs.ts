@@ -152,11 +152,6 @@ export const FAQS_EN: Record<string, FAQ[]> = {
         "Yes. We collaborate with European research organizations including Fraunhofer and INRIA on applied AI, retrieval systems, multilingual NLP, and evaluation methodology. These partnerships keep our engineering grounded in current research.",
     },
     {
-      question: "What does Haal Lab's advisory board do?",
-      answer:
-        "Our advisory board includes experts in AI research, infrastructure engineering, EU privacy law (GDPR and AI Act), security and threat modeling, and product strategy. They review our architecture, pressure-test our decisions, and ensure our work holds up in production — not just in demos.",
-    },
-    {
       question: "How do I become a Haal Lab partner?",
       answer:
         "We partner with organizations that share our commitment to open-weight models, European sovereignty, and production-grade engineering. If you build technology, infrastructure, or research that aligns with our practice, reach out at hussain.nazary@haal-lab.solutions.",

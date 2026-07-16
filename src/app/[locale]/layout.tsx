@@ -6,6 +6,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Navbar } from "@/components/site/navbar";
 import { Footer } from "@/components/site/footer";
 import { JsonLd } from "@/components/site/json-ld";
+import { ChatAssistant } from "@/components/chat-assistant";
 import { SITE } from "@/lib/seo";
 import { routing, locales, type Locale } from "@/i18n/routing";
 
@@ -147,6 +148,7 @@ export default async function LocaleLayout({
           <Footer />
         </div>
         <Toaster />
+        <ChatAssistant />
       </NextIntlClientProvider>
     </>
   );

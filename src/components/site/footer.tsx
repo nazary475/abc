@@ -10,9 +10,9 @@ export function Footer() {
   const t = useTranslations("footer");
   const tNav = useTranslations("nav");
 
-  const FOOTER_LINKS: { label: string; href: "/solutions" | "/projects" | "/research" | "/network" | "/about" | "/contact" }[] = [
+  const FOOTER_LINKS: { label: string; href: "/solutions" | "/how-we-work" | "/research" | "/network" | "/about" | "/contact" }[] = [
     { label: tNav("solutions"), href: "/solutions" },
-    { label: tNav("projects"), href: "/projects" },
+    { label: tNav("howWeWork"), href: "/how-we-work" },
     { label: tNav("research"), href: "/research" },
     { label: tNav("network"), href: "/network" },
     { label: tNav("about"), href: "/about" },

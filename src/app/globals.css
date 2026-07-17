@@ -191,21 +191,29 @@
     color: #0A1A3A;
   }
 
-  /* Custom scrollbar */
+  /* Custom scrollbar — always visible */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #CBD9EF #F0F5FF;
+  }
   ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
+    display: block;
   }
   ::-webkit-scrollbar-track {
     background: #F0F5FF;
   }
   ::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.08);
+    background: #CBD9EF;
     border-radius: 8px;
-    border: 2px solid #FFFFFF;
+    border: 2px solid #F0F5FF;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: rgba(37, 99, 235, 0.4);
+    background: #2563EB;
+  }
+  ::-webkit-scrollbar-button {
+    display: none;
   }
 }
 

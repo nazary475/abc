@@ -1,176 +1,164 @@
 import { Link } from "@/i18n/routing";
-import {
-  ShieldCheck,
-  FlaskConical,
-  Layers,
-  Cpu,
-  Target,
-  Compass,
-  ArrowRight,
-} from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { PageHeader } from "@/components/blocks/page-header";
 import {
   Reveal,
   SectionShell,
-  Eyebrow,
-  SectionHeading,
-  Lead,
 } from "@/components/blocks/primitives";
-
-const PRINCIPLES: { icon: typeof ShieldCheck; title: string; description: string }[] = [
-  {
-    icon: ShieldCheck,
-    title: "Privacy by architecture",
-    description:
-      "We treat data sovereignty as an engineering property of the system, not a policy document. Where it matters, the model runs on your hardware — full stop.",
-  },
-  {
-    icon: FlaskConical,
-    title: "Research as a discipline",
-    description:
-      "We follow the frontier seriously — retrieval architectures, inference acceleration, evaluation methodology — and translate it into systems that ship.",
-  },
-  {
-    icon: Layers,
-    title: "Engineering as a craft",
-    description:
-      "Observability, evaluation, and reproducibility are part of the deliverable. AI systems should be operable, not magical.",
-  },
-  {
-    icon: Cpu,
-    title: "Open by default",
-    description:
-      "We build on open-weight models and open-source infrastructure. You own the system, the weights, and the data — no platform lock-in.",
-  },
-];
 
 export function AboutPage() {
   return (
     <>
       <PageHeader pageKey="about" />
 
-      {/* Mission & Vision */}
       <SectionShell className="border-t border-hl-border">
-        <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
-          <Reveal>
-            <article className="h-full rounded-2xl border border-hl-border bg-hl-surface/60 p-8 md:p-10">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-hl-border bg-hl-surface-2 text-hl-cyan">
-                <Target className="h-5 w-5" />
-              </div>
-              <h2 className="mt-5 font-mono text-[11px] uppercase tracking-[0.18em] text-hl-muted">
-                Mission
-              </h2>
-              <p className="mt-3 text-2xl font-semibold leading-snug tracking-tight text-foreground md:text-3xl">
-                Make advanced AI systems private, reliable, and useful in production.
-              </p>
-              <p className="mt-5 text-base leading-relaxed text-hl-muted">
-                We exist to close the gap between AI research and AI in production. Too many
-                organizations can access capable models but cannot deploy them under the
-                constraints that actually matter — privacy, latency, cost, and
-                reproducibility. We build the systems that close that gap.
-              </p>
-            </article>
-          </Reveal>
-
-          <Reveal delay={0.1}>
-            <article className="h-full rounded-2xl border border-hl-border bg-hl-surface/60 p-8 md:p-10">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-hl-border bg-hl-surface-2 text-hl-cyan">
-                <Compass className="h-5 w-5" />
-              </div>
-              <h2 className="mt-5 font-mono text-[11px] uppercase tracking-[0.18em] text-hl-muted">
-                Vision
-              </h2>
-              <p className="mt-3 text-2xl font-semibold leading-snug tracking-tight text-foreground md:text-3xl">
-                A world where every organization can run its own intelligence.
-              </p>
-              <p className="mt-5 text-base leading-relaxed text-hl-muted">
-                We believe the most valuable AI systems of the next decade will be private,
-                grounded, and owned by the organizations that use them. Our work is to make
-                that accessible — engineering the infrastructure, retrieval, and applications
-                that let any serious team operate its own intelligent software.
-              </p>
-            </article>
-          </Reveal>
-        </div>
-      </SectionShell>
-
-      {/* Principles */}
-      <SectionShell className="border-t border-hl-border bg-hl-surface/30">
         <Reveal>
-          <Eyebrow>Principles</Eyebrow>
-          <SectionHeading className="mt-4">
-            How we make engineering decisions
-          </SectionHeading>
-          <Lead className="mt-4">
-            Four principles that shape every architectural choice we make — from model
-            selection to deployment topology to evaluation methodology.
-          </Lead>
+          <div className="max-w-3xl space-y-6">
+            <p className="text-lg leading-relaxed text-justify text-hl-muted">
+              Haal Lab is a deep-tech artificial intelligence laboratory focused on
+              researching, engineering, and deploying advanced AI systems for organizations
+              seeking to adopt artificial intelligence with confidence.
+            </p>
+            <p className="text-lg leading-relaxed text-justify text-hl-muted">
+              We help companies, research institutions, and organizations transform AI from
+              an emerging technology into practical capabilities that improve
+              decision-making, efficiency, knowledge management, and innovation.
+            </p>
+            <p className="text-lg leading-relaxed text-justify text-hl-muted">
+              By combining AI research, software engineering, and strategic implementation,
+              Haal Lab develops intelligent systems designed for real-world organizational
+              challenges.
+            </p>
+          </div>
         </Reveal>
-
-        <div className="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2">
-          {PRINCIPLES.map((p, i) => (
-            <Reveal key={p.title} delay={i * 0.08}>
-              <article className="flex h-full gap-5 p-2">
-                <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-hl-cyan/10 text-hl-cyan">
-                  <p.icon className="h-6 w-6" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold tracking-tight text-foreground">
-                    {p.title}
-                  </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-hl-muted">
-                    {p.description}
-                  </p>
-                </div>
-              </article>
-            </Reveal>
-          ))}
-        </div>
       </SectionShell>
 
-      {/* Stats */}
       <SectionShell className="border-t border-hl-border">
-        <div className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-hl-border bg-hl-border md:grid-cols-4">
-          {[
-            { value: "4", label: "Capability areas" },
-            { value: "100%", label: "Open-weight by default" },
-            { value: "0", label: "Third-party data sharing" },
-            { value: "24/7", label: "Production-grade ops" },
-          ].map((s, i) => (
-            <Reveal key={s.label} delay={i * 0.06}>
-              <div className="bg-hl-surface/80 p-7 text-center">
-                <p className="hl-text-cyan-gradient text-3xl font-semibold tracking-tight md:text-4xl">
-                  {s.value}
-                </p>
-                <p className="mt-2 font-mono text-[10px] uppercase tracking-wider text-hl-muted">
-                  {s.label}
-                </p>
-              </div>
-            </Reveal>
-          ))}
-        </div>
+        <Reveal>
+          <div className="max-w-3xl space-y-6">
+            <h2 className="text-2xl font-bold tracking-tight text-foreground">
+              Our Mission
+            </h2>
+            <p className="text-lg leading-relaxed text-justify text-hl-muted">
+              Artificial intelligence is becoming a fundamental technology shaping the
+              future of organizations and industries. However, successful AI adoption
+              requires more than access to powerful models. Organizations need a clear
+              strategy, reliable technology, and systems that align with their operational
+              goals.
+            </p>
+            <p className="text-lg leading-relaxed text-justify text-hl-muted">
+              Haal Lab exists to bridge the gap between AI research and real-world
+              implementation by creating AI systems that are secure, adaptable,
+              transparent, and valuable for organizations.
+            </p>
+          </div>
+        </Reveal>
       </SectionShell>
 
-      {/* CTA */}
-      <SectionShell className="border-t border-hl-border bg-hl-surface/30">
+      <SectionShell className="border-t border-hl-border">
         <Reveal>
-          <div className="flex flex-col items-start gap-6 rounded-3xl border border-hl-border bg-hl-surface/60 p-10 md:flex-row md:items-center md:justify-between md:p-14 hl-card-glow">
-            <div>
-              <Eyebrow>Work with us</Eyebrow>
-              <SectionHeading className="mt-4">
-                Let&apos;s build the system you have in mind.
-              </SectionHeading>
-              <Lead className="mt-4">
-                If your problem needs an engineering team that takes AI seriously — we should
-                talk.
-              </Lead>
-            </div>
+          <div className="max-w-3xl space-y-6">
+            <h2 className="text-2xl font-bold tracking-tight text-foreground">
+              What We Do
+            </h2>
+
+            <h3 className="text-xl font-semibold text-foreground">
+              AI Transformation and Strategic Implementation
+            </h3>
+            <p className="text-lg leading-relaxed text-justify text-hl-muted">
+              Haal Lab helps organizations explore, design, and implement artificial
+              intelligence solutions that create measurable impact. We work with
+              organizations to identify meaningful AI opportunities, develop effective
+              strategies, and build systems that integrate AI into existing workflows and
+              operations. Our focus is helping organizations move from AI experimentation
+              toward practical and scalable AI adoption.
+            </p>
+
+            <h3 className="text-xl font-semibold text-foreground">
+              Enterprise AI Systems and Intelligent Infrastructure
+            </h3>
+            <p className="text-lg leading-relaxed text-justify text-hl-muted">
+              Modern organizations contain valuable knowledge, data, and processes that can
+              be enhanced through artificial intelligence. Haal Lab designs and develops
+              enterprise AI systems that help organizations improve operational efficiency,
+              transform internal knowledge into actionable intelligence, automate complex
+              workflows, enhance research and decision-making, and develop new AI-powered
+              capabilities.
+            </p>
+
+            <h3 className="text-xl font-semibold text-foreground">
+              Private and Trustworthy AI Solutions
+            </h3>
+            <p className="text-lg leading-relaxed text-justify text-hl-muted">
+              Organizations increasingly require AI systems that provide security,
+              transparency, and control over their information. Haal Lab develops AI
+              architectures designed around data privacy, secure deployment, responsible AI
+              practices, system transparency, and long-term reliability. We believe
+              organizations should be able to understand, manage, and evolve the AI systems
+              they depend on.
+            </p>
+          </div>
+        </Reveal>
+      </SectionShell>
+
+      <SectionShell className="border-t border-hl-border">
+        <Reveal>
+          <div className="max-w-3xl space-y-6">
+            <h2 className="text-2xl font-bold tracking-tight text-foreground">
+              Research and Engineering
+            </h2>
+            <p className="text-lg leading-relaxed text-justify text-hl-muted">
+              As an AI laboratory, Haal Lab combines scientific exploration with practical
+              engineering. Our research focuses on advancing areas such as artificial
+              intelligence systems, large language model applications, knowledge
+              intelligence, AI automation, retrieval and reasoning systems, and AI
+              evaluation and reliability.
+            </p>
+            <p className="text-lg leading-relaxed text-justify text-hl-muted">
+              Our goal is not only to explore new AI capabilities, but to transform them
+              into dependable technologies that solve real organizational problems.
+            </p>
+          </div>
+        </Reveal>
+      </SectionShell>
+
+      <SectionShell className="border-t border-hl-border">
+        <Reveal>
+          <div className="max-w-3xl space-y-6">
+            <h2 className="text-2xl font-bold tracking-tight text-foreground">
+              Our Vision
+            </h2>
+            <p className="text-lg leading-relaxed text-justify text-hl-muted">
+              The future of AI will be shaped by organizations that can successfully
+              integrate intelligence into their operations while maintaining control,
+              trust, and strategic independence.
+            </p>
+            <p className="text-lg leading-relaxed text-justify text-hl-muted">
+              Haal Lab envisions a future where artificial intelligence becomes a reliable
+              foundation for organizations — helping them innovate, operate efficiently,
+              and make better decisions.
+            </p>
+          </div>
+        </Reveal>
+      </SectionShell>
+
+      <SectionShell className="border-t border-hl-border">
+        <Reveal>
+          <div className="max-w-3xl">
+            <h2 className="text-2xl font-bold tracking-tight text-foreground">
+              Partner With Haal Lab
+            </h2>
+            <p className="mt-4 text-lg leading-relaxed text-justify text-hl-muted">
+              Haal Lab collaborates with companies, institutions, and research
+              organizations looking to explore the opportunities of artificial intelligence
+              and build the next generation of intelligent systems.
+            </p>
             <Link
               href="/contact"
-              className="group inline-flex items-center gap-2 rounded-full bg-hl-cyan px-6 py-3.5 text-sm font-bold text-gray-900 transition-all hover:bg-hl-cyan/90"
+              className="mt-6 inline-flex items-center gap-2 text-hl-cyan hover:underline"
             >
-              Start a conversation
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+              Get in touch
+              <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
         </Reveal>

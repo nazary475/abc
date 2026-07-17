@@ -45,11 +45,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       description: "Pricing Plans & Packages" 
     },
-    { 
-      path: "/projects", 
-      priority: 0.8, 
+    {
+      path: "/how-we-work",
+      priority: 0.8,
       changeFrequency: "weekly" as const,
-      description: "Case Studies & Projects" 
+      description: "How We Work - AI Engineering Process"
     },
     { 
       path: "/network", 

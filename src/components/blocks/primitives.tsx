@@ -53,7 +53,7 @@ export function Lead({
 }) {
   return (
     <p
-      className={`max-w-2xl text-base font-medium leading-relaxed text-hl-muted md:text-lg ${className}`}
+      className={`max-w-2xl text-base font-medium leading-relaxed text-justify text-hl-muted md:text-lg ${className}`}
     >
       {children}
     </p>

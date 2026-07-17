@@ -5,7 +5,7 @@
   },
   "nav": {
     "solutions": "What We Do?",
-    "projects": "Our Work",
+    "howWeWork": "How We Work?",
     "research": "Research Articles",
     "network": "Partners",
     "about": "About",
@@ -39,9 +39,9 @@
     "learnMore": "Learn more"
   },
   "projects": {
-    "eyebrow": "Our Work",
-    "title": "Real systems we've built",
-    "lead": "Not demos. Not prototypes. These are working AI systems that solve real problems for real organizations.",
+    "eyebrow": "How We Work",
+    "title": "Research-driven AI engineering from discovery to deployment.",
+    "lead": "Every challenge has different requirements, data environments, security considerations, and operational goals. Our process combines research, experimentation, engineering, and continuous evaluation to identify and build the most suitable AI approach for each organization.",
     "viewAll": "See all projects"
   },
   "why": {

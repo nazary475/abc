@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
-import { ProjectsPage } from "@/components/pages/projects-page";
+import { HowWeWorkPage } from "@/components/pages/how-we-work-page";
 import { PageSchemas } from "@/components/site/json-ld";
 import { Breadcrumbs } from "@/components/site/breadcrumbs";
 import { FaqSection } from "@/components/site/faq-section";
@@ -16,39 +16,32 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const currentLocale = locale as Locale;
-  const meta = getPageMetadata("projects", currentLocale);
+  const meta = getPageMetadata("howWeWork", currentLocale);
 
   return {
     title: meta.title,
     description: meta.description,
     alternates: {
-      canonical: `/${locale}/projects`,
+      canonical: `/${locale}/how-we-work`,
     },
     openGraph: {
       title: meta.title,
       description: meta.description,
-      url: `/${locale}/projects`,
+      url: `/${locale}/how-we-work`,
       type: "website",
     },
     keywords: [
-      "AI projects",
-      "GGUF Loader",
-      "Legal Intelligence System",
-      "BGE-M3",
-      "vector database",
-      "RAG",
-      "CUDA",
-      "local LLM",
-      "semantic retrieval",
-      "AI case study",
-      "offline AI platform",
-      "legal AI",
-      "document intelligence",
+      "AI engineering process",
+      "how Haal Lab works",
+      "AI research-driven engineering",
+      "AI experimentation",
+      "AI deployment",
+      "AI development process",
     ],
   };
 }
 
-export default async function Projects({
+export default async function HowWeWork({
   params,
 }: {
   params: Promise<{ locale: string }>;
@@ -57,16 +50,16 @@ export default async function Projects({
   setRequestLocale(locale as Locale);
   return (
     <>
-      <PageSchemas path="/projects" locale={locale} />
-      <Breadcrumbs path="/projects" />
-      <ProjectsPage />
+      <PageSchemas path="/how-we-work" locale={locale} />
+      <Breadcrumbs path="/how-we-work" />
+      <HowWeWorkPage />
       <FaqSection
-        faqs={FAQS.projects}
+        faqs={FAQS.howWeWork}
         eyebrow="FAQ"
-        title="Questions about our projects"
-        intro="Details on GGUF Loader, the Legal Intelligence System, and how to access our work."
+        title="Questions about our process"
+        intro="How Haal Lab approaches AI engineering — from discovery to deployment."
       />
-      <RelatedLinks current="/projects" title="Continue exploring" eyebrow="Next" />
+      <RelatedLinks current="/how-we-work" title="Continue exploring" eyebrow="Next" />
     </>
   );
 }

@@ -119,31 +119,31 @@ export const PAGE_METADATA: Record<string, Record<Locale, PageMetadata>> = {
         "Cinque livelli di prezzo di Haal Lab: Starter (1.900 €), Explorer (4.900 €), Professional (14.900 €), Enterprise (39.900 €+) e Ricerca e Accademica (personalizzato). Sistemi IA di produzione — non demo.",
     },
   },
-  projects: {
+  howWeWork: {
     en: {
-      title: "Projects — Technical Case Studies in AI Engineering",
+      title: "How We Work — Research-Driven AI Engineering",
       description:
-        "Representative AI engineering projects from Haal Lab, including GGUF Loader (offline LLM platform) and the Legal Intelligence System (semantic retrieval with BGE-M3). Each case study covers the problem, approach, and architecture shipped.",
+        "Haal Lab's research-driven AI engineering process — from discovery and exploration to experimentation, development, and continuous deployment.",
     },
     de: {
-      title: "Projekte — Technische Fallstudien im KI-Engineering",
+      title: "Wie wir arbeiten — Forschungsgetriebenes KI-Engineering",
       description:
-        "Repräsentative KI-Engineering-Projekte von Haal Lab, einschließlich GGUF Loader (Offline-LLM-Plattform) und Legal Intelligence System (semantisches Retrieval mit BGE-M3). Jede Fallstudie behandelt das Problem, den Ansatz und die gelieferte Architektur.",
+        "Haal Labs forscherorientierter KI-Engineering-Prozess — von der Entdeckung und Exploration bis hin zu Experimenten, Entwicklung und kontinuierlichem Deployment.",
     },
     fr: {
-      title: "Projets — Études de cas techniques en ingénierie IA",
+      title: "Comment nous travaillons — Ingénierie IA pilotée par la recherche",
       description:
-        "Projets d'ingénierie IA représentatifs de Haal Lab, notamment GGUF Loader (plateforme LLM hors ligne) et Legal Intelligence System (récupération sémantique avec BGE-M3). Chaque étude de cas couvre le problème, l'approche et l'architecture livrée.",
+        "Le processus d'ingénierie IA piloté par la recherche de Haal Lab — de la découverte et de l'exploration à l'expérimentation, au développement et au déploiement continu.",
     },
     es: {
-      title: "Proyectos — Estudios de caso técnicos en ingeniería de IA",
+      title: "Cómo trabajamos — Ingeniería de IA impulsada por investigación",
       description:
-        "Proyectos de ingeniería de IA representativos de Haal Lab, incluidos GGUF Loader (plataforma LLM sin conexión) y Legal Intelligence System (recuperación semántica con BGE-M3). Cada estudio de caso cubre el problema, el enfoque y la arquitectura entregada.",
+        "El proceso de ingeniería de IA impulsado por investigación de Haal Lab — desde el descubrimiento y la exploración hasta la experimentación, el desarrollo y el despliegue continuo.",
     },
     it: {
-      title: "Progetti — Casi studio tecnici nell'ingegneria IA",
+      title: "Come lavoriamo — Ingegneria IA guidata dalla ricerca",
       description:
-        "Progetti di ingegneria IA rappresentativi di Haal Lab, tra cui GGUF Loader (piattaforma LLM offline) e Legal Intelligence System (recupero semantico con BGE-M3). Ogni caso studio copre il problema, l'approccio e l'architettura fornita.",
+        "Il processo di ingeneria IA guidato dalla ricerca di Haal Lab — dalla scoperta e all'esplorazione fino all'esperimentazione, lo sviluppo e il deployment continuo.",
     },
   },
   research: {

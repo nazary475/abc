@@ -36,10 +36,10 @@ export const NAV: { label: string; href: string; description: string }[] = [
       "Four AI capabilities: Local AI Systems, LLM Applications, Knowledge Intelligence, and AI Infrastructure.",
   },
   {
-    label: "Projects",
-    href: "/projects",
+    label: "How We Work",
+    href: "/how-we-work",
     description:
-      "Technical case studies including GGUF Loader (offline LLM platform) and Legal Intelligence System (semantic retrieval).",
+      "Research-driven AI engineering process — from discovery and exploration to experimentation, development, and deployment.",
   },
   {
     label: "Research",
@@ -112,9 +112,9 @@ export const BREADCRUMBS: Record<string, { name: string; path: string }[]> = {
     { name: "Home", path: "" },
     { name: "Solutions", path: "/solutions" },
   ],
-  "/projects": [
+  "/how-we-work": [
     { name: "Home", path: "" },
-    { name: "Projects", path: "/projects" },
+    { name: "How We Work", path: "/how-we-work" },
   ],
   "/research": [
     { name: "Home", path: "" },
@@ -253,21 +253,21 @@ export const FAQS: LocaleFAQs = {
         "Yes. We routinely sign mutual NDAs before detailed technical discussions. We treat your data and your problem description as confidential by default — and because we build private AI systems, data sovereignty is part of our engineering practice, not just a policy.",
     },
   ],
-  projects: [
+  howWeWork: [
     {
-      question: "What is GGUF Loader?",
+      question: "How does Haal Lab approach AI projects?",
       answer:
-        "GGUF Loader is an offline AI platform built by Haal Lab that enables users to run large language models locally with privacy and control. It uses the GGUF model format, CUDA acceleration via llama.cpp, and includes a retrieval layer for grounded answers — all without sending data to a cloud API.",
+        "Haal Lab follows a research-driven engineering process: understanding the challenge, researching and exploring possible approaches, experimenting and evaluating solutions, engineering and developing the system, then deploying with continuous improvement. Every project starts with the problem, not the model.",
     },
     {
-      question: "What is the Legal Intelligence System?",
+      question: "What happens during the research and exploration phase?",
       answer:
-        "The Legal Intelligence System is a semantic retrieval platform built by Haal Lab for complex legal document analysis. It uses BGE-M3 embeddings, a vector database, cross-encoder reranking, and OCR to ingest heterogeneous legal corpora (contracts, statutes, case law) and return the right clause with citation.",
+        "Before committing to an approach, we investigate available technologies and possible architectures. We explore different AI methods, evaluate suitable models and techniques, test possible architectures, and study trade-offs between performance, cost, security, and scalability.",
     },
     {
-      question: "Can I see Haal Lab's code or projects?",
+      question: "How does Haal Lab evaluate AI solutions?",
       answer:
-        "Some of our work is open source and available on GitHub at github.com/haal-lab. Client engagements are proprietary and owned by the client. The case studies on our Projects page describe the problem, approach, and architecture of representative work.",
+        "We build experiments and prototypes to evaluate different solutions before full implementation. We measure effectiveness, reliability, performance, integration requirements, and long-term sustainability to make informed decisions based on results.",
     },
   ],
   research: [

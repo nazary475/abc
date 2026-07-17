@@ -15,6 +15,9 @@ import {
   ArrowUpRight,
   GitBranch,
   FileSearch,
+  Search,
+  Settings2,
+  Shield,
   type LucideIcon,
 } from "lucide-react";
 import {
@@ -190,7 +193,7 @@ export function ProjectsSection() {
         />
         <Reveal delay={0.2}>
           <Link
-            href="/projects"
+            href="/how-we-work"
             className="group inline-flex items-center gap-1.5 text-sm font-medium text-hl-cyan"
           >
             {t("viewAll")}
@@ -218,7 +221,7 @@ export function ProjectsSection() {
                     </h3>
                   </div>
                   <Link
-                    href="/projects"
+                    href="/how-we-work"
                     aria-label={`Open ${p.name} case study`}
                     className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-hl-border text-hl-muted transition-all group-hover:border-hl-cyan/40 group-hover:text-hl-cyan"
                   >
@@ -259,22 +262,22 @@ export function ProjectsSection() {
 
 const WHY: { icon: LucideIcon; title: string; description: string }[] = [
   {
-    icon: ShieldCheck,
-    title: "Private by Design",
+    icon: Search,
+    title: "Research Before Building",
     description:
-      "Data remains under organizational control. Systems can operate entirely on private infrastructure — not because of a policy, but by architectural design.",
+      "Every AI project starts with understanding, not implementation.\n\nWe study your organization's objectives, workflows, data environment, existing systems, and constraints before choosing an approach.\n\nHaal Lab evaluates different technologies, experiments with possible methods, and identifies the most suitable path based on evidence — ensuring the final system is designed around your actual needs.",
   },
   {
-    icon: FlaskConical,
-    title: "Production Ready",
+    icon: Settings2,
+    title: "Engineered for Your Environment",
     description:
-      "Monitoring, evaluation, deployment, and operational reliability are built into every solution. Not demos that break in production.",
+      "AI systems succeed when they fit naturally into the organization using them.\n\nWe design and develop solutions around your infrastructure, operational requirements, and security expectations — rather than forcing your organization to adapt to a predefined technology.\n\nFrom architecture to deployment, every decision is made with your environment and long-term goals in mind.",
   },
   {
-    icon: Layers,
-    title: "Open by Default",
+    icon: Shield,
+    title: "Your Data. Your Infrastructure. Your AI.",
     description:
-      "Organizations retain ownership of their models, infrastructure, and data without vendor lock-in. Full transparency and control.",
+      "AI should create independence, not dependency.\n\nHaal Lab builds systems where organizations maintain ownership of their data, control over their infrastructure, and visibility into how their AI capabilities operate.\n\nYour knowledge stays yours. Your AI capabilities stay yours.",
   },
 ];
 
@@ -304,9 +307,13 @@ export function WhySection() {
                 <h3 className="mt-6 text-xl font-bold tracking-tight text-foreground">
                   {w.title}
                 </h3>
-                <p className="mt-3 text-base leading-relaxed text-hl-muted">
-                  {w.description}
-                </p>
+                <div className="mt-3 space-y-3">
+                  {w.description.split("\n\n").map((paragraph, j) => (
+                    <p key={j} className="text-base leading-relaxed text-hl-muted">
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
               </div>
             </article>
           </Reveal>

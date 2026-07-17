@@ -80,7 +80,7 @@ A world where every organization can run its own intelligence. The most valuable
 
 - [Home](https://haal-lab.solutions/)
 - [Solutions](https://haal-lab.solutions/solutions)
-- [Projects](https://haal-lab.solutions/projects)
+- [How We Work](https://haal-lab.solutions/how-we-work)
 - [Research](https://haal-lab.solutions/research) — Technical articles on AI deployment and LLM engineering
 - [Network](https://haal-lab.solutions/network) — partners and advisory board
 - [About](https://haal-lab.solutions/about)

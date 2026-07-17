@@ -414,7 +414,7 @@ export function ArchitectureSection() {
 
       <div className="mt-14">
         <Reveal>
-          <div className="relative aspect-[2/1] w-full overflow-hidden rounded-3xl border border-hl-border bg-hl-surface/60 p-8 hl-card-glow md:p-12">
+          <div className="hidden md:block relative aspect-[2/1] w-full overflow-hidden rounded-3xl border border-hl-border bg-hl-surface/60 p-8 hl-card-glow md:p-12">
             <div className="absolute inset-0 hl-grid-bg-fine opacity-50" />
             <div className="absolute inset-0 hl-radial-glow opacity-40" />
             <div className="relative h-full">

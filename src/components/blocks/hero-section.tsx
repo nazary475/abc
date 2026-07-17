@@ -104,25 +104,6 @@ export function HeroSection() {
                 <div className="absolute inset-0 p-4">
                   <HeroVisual />
                 </div>
-                <div className="absolute left-4 top-4 flex items-center gap-1.5">
-                  <span className="h-2 w-2 rounded-full bg-white/15" />
-                  <span className="h-2 w-2 rounded-full bg-white/15" />
-                  <span className="h-2 w-2 rounded-full bg-white/15" />
-                  <span className="ml-3 font-mono text-[10px] uppercase tracking-[0.18em] text-hl-muted">
-                    haal-lab · data-to-intelligence
-                  </span>
-                </div>
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 0.6 }}
-                  className="absolute bottom-4 right-4 rounded-lg border border-hl-border bg-background/80 px-3 py-2 backdrop-blur"
-                >
-                  <p className="font-mono text-[10px] uppercase tracking-wider text-hl-muted">
-                    Your data
-                  </p>
-                  <p className="font-mono text-sm font-bold text-hl-cyan">→ Intelligence</p>
-                </motion.div>
               </motion.div>
             </Reveal>
           </div>

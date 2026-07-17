@@ -135,7 +135,7 @@ export function AboutPage() {
             </p>
             <p className="text-lg leading-relaxed text-justify text-hl-muted">
               Haal Lab envisions a future where artificial intelligence becomes a reliable
-              foundation for organizations — helping them innovate, operate efficiently,
+              foundation for organizations, helping them innovate, operate efficiently,
               and make better decisions.
             </p>
           </div>

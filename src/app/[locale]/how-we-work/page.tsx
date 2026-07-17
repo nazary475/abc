@@ -57,7 +57,7 @@ export default async function HowWeWork({
         faqs={FAQS.howWeWork}
         eyebrow="FAQ"
         title="Questions about our process"
-        intro="How Haal Lab approaches AI engineering — from discovery to deployment."
+        intro="How Haal Lab approaches AI engineering, from discovery to deployment."
       />
       <RelatedLinks current="/how-we-work" title="Continue exploring" eyebrow="Next" />
     </>

@@ -265,13 +265,13 @@ const WHY: { icon: LucideIcon; title: string; description: string }[] = [
     icon: Search,
     title: "Research Before Building",
     description:
-      "Every AI project starts with understanding, not implementation.\n\nWe study your organization's objectives, workflows, data environment, existing systems, and constraints before choosing an approach.\n\nHaal Lab evaluates different technologies, experiments with possible methods, and identifies the most suitable path based on evidence — ensuring the final system is designed around your actual needs.",
+      "Every AI project starts with understanding, not implementation.\n\nWe study your organization's objectives, workflows, data environment, existing systems, and constraints before choosing an approach.\n\nHaal Lab evaluates different technologies, experiments with possible methods, and identifies the most suitable path based on evidence, ensuring the final system is designed around your actual needs.",
   },
   {
     icon: Settings2,
     title: "Engineered for Your Environment",
     description:
-      "AI systems succeed when they fit naturally into the organization using them.\n\nWe design and develop solutions around your infrastructure, operational requirements, and security expectations — rather than forcing your organization to adapt to a predefined technology.\n\nFrom architecture to deployment, every decision is made with your environment and long-term goals in mind.",
+      "AI systems succeed when they fit naturally into the organization using them.\n\nWe design and develop solutions around your infrastructure, operational requirements, and security expectations, rather than forcing your organization to adapt to a predefined technology.\n\nFrom architecture to deployment, every decision is made with your environment and long-term goals in mind.",
   },
   {
     icon: Shield,
@@ -309,7 +309,7 @@ export function WhySection() {
                 </h3>
                 <div className="mt-3 space-y-3">
                   {w.description.split("\n\n").map((paragraph, j) => (
-                    <p key={j} className="text-base leading-relaxed text-hl-muted">
+                    <p key={j} className="text-base leading-relaxed text-justify text-hl-muted">
                       {paragraph}
                     </p>
                   ))}

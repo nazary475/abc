@@ -33,7 +33,7 @@ const CAPABILITIES: Capability[] = [
     title: "Local AI Systems",
     tagline: "Private AI solutions that run securely on your infrastructure.",
     overview:
-      "We build AI systems that operate entirely inside your environment — on workstations, on-prem servers, or air-gapped clusters. Local execution removes the trust, latency, and compliance constraints of cloud-hosted models, while preserving the full capabilities of modern open-weight LLMs. Our deployments are designed around quantized inference runtimes, GPU/CPU co-scheduling, and hardware-aware model selection so that the system remains responsive on whatever hardware you already own.",
+      "We build AI systems that operate entirely inside your environment, on workstations, on-prem servers, or air-gapped clusters. Local execution removes the trust, latency, and compliance constraints of cloud-hosted models, while preserving the full capabilities of modern open-weight LLMs. Our deployments are designed around quantized inference runtimes, GPU/CPU co-scheduling, and hardware-aware model selection so that the system remains responsive on whatever hardware you already own.",
     capabilities: [
       "On-prem inference with GGUF, llama.cpp, vLLM, and TGI",
       "Air-gapped deployment for regulated environments",
@@ -49,7 +49,7 @@ const CAPABILITIES: Capability[] = [
     title: "LLM Applications",
     tagline: "Custom AI assistants, agents, and intelligent automation systems.",
     overview:
-      "We design and ship LLM applications that go beyond chat — assistants that take action, agents that orchestrate tools, and automation systems that integrate cleanly with your existing software. Every application is built with evaluation harnesses, guardrails, and observability from day one, so behaviour stays predictable as you scale from prototype to production traffic.",
+      "We design and ship LLM applications that go beyond chat, assistants that take action, agents that orchestrate tools, and automation systems that integrate cleanly with your existing software. Every application is built with evaluation harnesses, guardrails, and observability from day one, so behaviour stays predictable as you scale from prototype to production traffic.",
     capabilities: [
       "Agent orchestration with structured tool calling",
       "Tool-augmented LLMs over your internal APIs",
@@ -65,7 +65,7 @@ const CAPABILITIES: Capability[] = [
     title: "Knowledge Intelligence",
     tagline: "Advanced RAG systems, semantic search, and document intelligence.",
     overview:
-      "We build retrieval systems that actually find the right answer. Our RAG pipelines combine dense and sparse retrieval, cross-encoder reranking, query rewriting, and source attribution into a single, observable system. For document-heavy domains we add OCR, layout-aware chunking, and table understanding — so the system works on contracts, research papers, and scanned archives, not just clean text.",
+      "We build retrieval systems that actually find the right answer. Our RAG pipelines combine dense and sparse retrieval, cross-encoder reranking, query rewriting, and source attribution into a single, observable system. For document-heavy domains we add OCR, layout-aware chunking, and table understanding, so the system works on contracts, research papers, and scanned archives, not just clean text.",
     capabilities: [
       "Hybrid retrieval (BM25 + dense embeddings)",
       "Cross-encoder reranking for precision",
@@ -81,7 +81,7 @@ const CAPABILITIES: Capability[] = [
     title: "AI Infrastructure",
     tagline: "Deployment, optimization, and scalable AI engineering.",
     overview:
-      "We build the infrastructure layer that makes AI systems run reliably in production. That means model serving tuned for your hardware, autoscaling that respects GPU memory, observability that surfaces latency and quality drift, and CI/CD pipelines that evaluate models — not just unit tests. The result is an AI platform your team can iterate on without firefighting.",
+      "We build the infrastructure layer that makes AI systems run reliably in production. That means model serving tuned for your hardware, autoscaling that respects GPU memory, observability that surfaces latency and quality drift, and CI/CD pipelines that evaluate models, not just unit tests. The result is an AI platform your team can iterate on without firefighting.",
     capabilities: [
       "Model serving with vLLM, TGI, and Triton",
       "GPU scheduling, batching, and memory tuning",
@@ -104,7 +104,7 @@ const ENGAGEMENT_STEPS: { step: string; title: string; description: string }[] =
     step: "02",
     title: "Architecture",
     description:
-      "We design the system end-to-end — model choices, retrieval strategy, infrastructure, evaluation harness — and pressure-test it against your real workloads before committing.",
+      "We design the system end-to-end, model choices, retrieval strategy, infrastructure, evaluation harness, and pressure-test it against your real workloads before committing.",
   },
   {
     step: "03",
@@ -116,7 +116,7 @@ const ENGAGEMENT_STEPS: { step: string; title: string; description: string }[] =
     step: "04",
     title: "Deploy",
     description:
-      "We ship to your environment — cloud, on-prem, or air-gapped — with the observability, runbooks, and documentation your team needs to operate it confidently.",
+      "We ship to your environment, cloud, on-prem, or air-gapped, with the observability, runbooks, and documentation your team needs to operate it confidently.",
   },
 ];
 
@@ -194,7 +194,7 @@ export function SolutionsPage() {
             <Eyebrow>Engagement</Eyebrow>
             <SectionHeading className="mt-4">How we work</SectionHeading>
             <Lead className="mt-4">
-              A four-stage engagement model designed to de-risk AI projects — and to leave
+              A four-stage engagement model designed to de-risk AI projects, and to leave
               your team with a system they can operate and extend.
             </Lead>
           </Reveal>

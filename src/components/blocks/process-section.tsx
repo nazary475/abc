@@ -15,46 +15,28 @@ import {
   SectionHeader,
 } from "@/components/blocks/primitives";
 
-const PROCESS_PHASES = [
-  {
-    icon: Search,
-    title: "Discovery",
-    description:
-      "Understand business requirements, constraints, and goals. Map existing systems, data sources, and success criteria.",
-  },
-  {
-    icon: Layers,
-    title: "Architecture",
-    description:
-      "Design models, infrastructure, workflows, and evaluation framework. Define deployment strategy and monitoring approach.",
-  },
-  {
-    icon: Code,
-    title: "Development",
-    description:
-      "Build and validate the system incrementally. Continuous testing, evaluation, and refinement with stakeholder feedback.",
-  },
-  {
-    icon: Rocket,
-    title: "Deployment",
-    description:
-      "Deploy into the target environment. Configure infrastructure, security, and access controls. Knowledge transfer and documentation.",
-  },
-  {
-    icon: LineChart,
-    title: "Monitoring & Improvement",
-    description:
-      "Observe performance, quality, and reliability over time. Continuous optimization based on real-world usage patterns.",
-  },
-];
+const PHASE_ICONS = [Search, Layers, Code, Rocket, LineChart];
+
+function getProcessPhases(t: ReturnType<typeof useTranslations>) {
+  return [
+    { icon: Search, title: t("phases.phase1.title"), description: t("phases.phase1.description") },
+    { icon: Layers, title: t("phases.phase2.title"), description: t("phases.phase2.description") },
+    { icon: Code, title: t("phases.phase3.title"), description: t("phases.phase3.description") },
+    { icon: Rocket, title: t("phases.phase4.title"), description: t("phases.phase4.description") },
+    { icon: LineChart, title: t("phases.phase5.title"), description: t("phases.phase5.description") },
+  ];
+}
 
 export function ProcessSection() {
+  const t = useTranslations("process");
+  const PROCESS_PHASES = getProcessPhases(t);
+
   return (
     <SectionShell id="process" className="border-y border-hl-border bg-hl-surface/30">
       <SectionHeader
-        eyebrow="Engineering Process"
-        heading="How We Build AI Systems"
-        lead="A structured engineering process designed for reliability, transparency, and long-term ownership."
+        eyebrow={t("eyebrow")}
+        heading={t("heading")}
+        lead={t("lead")}
       />
 
       <div className="mt-14 relative">
@@ -93,7 +75,7 @@ export function ProcessSection() {
                     <div className="mt-4 flex items-center gap-2 text-hl-muted/60">
                       <ArrowRight className="h-4 w-4" />
                       <span className="font-mono text-xs uppercase tracking-wider">
-                        Next
+                        {t("next")}
                       </span>
                     </div>
                   )}
@@ -109,17 +91,17 @@ export function ProcessSection() {
             <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
               <div>
                 <h3 className="text-lg font-semibold tracking-tight text-foreground">
-                  Need a custom AI system?
+                  {t("ctaTitle")}
                 </h3>
                 <p className="mt-1 text-sm text-hl-muted">
-                  Tell us about your technical environment and requirements.
+                  {t("ctaDescription")}
                 </p>
               </div>
               <a
                 href="/contact"
                 className="group inline-flex items-center gap-2 rounded-full bg-hl-cyan px-6 py-3 text-sm font-bold text-gray-900 transition-all hover:bg-hl-cyan/90 hover:shadow-[0_0_30px_-8px_rgba(96,165,250,0.5)] md:shrink-0"
               >
-                Request Technical Discussion
+                {t("ctaButton")}
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
               </a>
             </div>

@@ -36,7 +36,133 @@
     "eyebrow": "Lo que hacemos",
     "title": "Cuatro formas de ayudarlo a usar IA",
     "lead": "Cada servicio funciona por sí solo o en conjunto como un sistema completo. Nos enfocamos en lo que su negocio necesita , no en perseguir la última tendencia.",
-    "learnMore": "Saber más"
+    "learnMore": "Saber más",
+    "moreInfo": "Más información",
+    "ctaTitle": "¿Necesita un sistema IA adaptado a su organización?",
+    "ctaDescription": "Cuéntenos sobre sus requisitos, entorno técnico y objetivos. Evaluaremos el enfoque más adecuado.",
+    "ctaButton": "Solicitar discusión técnica",
+    "cards": {
+      "card1": {
+        "title": "Agentes IA y automatización empresarial",
+        "description": "Automatice los flujos de trabajo que ralentizan su organización.\n\nConstruimos agentes IA privados que analizan sus procesos, identifican oportunidades de automatización y gestionan tareas repetitivas dentro de su entorno existente.\n\nReduzca costos operativos. Aumente la velocidad de su equipo. Mantenga el control de sus datos.",
+        "detailTitle": "Agentes IA y automatización empresarial",
+        "detailIntro1": "Analizamos sus flujos de trabajo existentes para identificar procesos donde la IA puede reducir el esfuerzo manual, mejorar los tiempos de respuesta y aumentar la eficiencia operativa.",
+        "detailIntro2": "Nuestro proceso comienza por entender cómo trabajan sus equipos: las tareas repetitivas que realizan, la información que utilizan, los sistemas de los que dependen y dónde se producen retrasos o costos innecesarios. Luego diseñamos e implementamos agentes IA privados que automatizan tareas específicas mientras mantenemos el control de su organización.",
+        "phaseTitle": "Cómo construimos sistemas de automatización",
+        "phase1Title": "1. Análisis de flujos de trabajo",
+        "phase1Desc": "Estudiamos sus procesos empresariales para identificar:",
+        "phase1Items": ["Tareas manuales que consumen mucho tiempo", "Procesos de decisión repetitivos", "Cuellos de botella en la información", "Áreas donde los empleados dedican tiempo a buscar, revisar o procesar datos"],
+        "phase2Title": "2. Diseño del sistema IA",
+        "phase2Desc": "Diseñamos agentes en torno a sus operaciones reales:",
+        "phase2Items": ["Conexión únicamente a sistemas internos aprobados", "Definición de lo que la IA puede acceder y ejecutar", "Creación de flujos de trabajo con aprobación humana cuando sea necesario", "Selección de los modelos e infraestructura apropiados según sus requisitos"],
+        "phase3Title": "3. Implementación de IA privada",
+        "phase3Desc": "El sistema IA se ejecuta dentro de su infraestructura o entorno privado confiable:",
+        "phase3Items": ["Su organización posee y controla el entorno de producción de IA", "Los modelos y servicios de IA operan dentro de su infraestructura en lugar de depender de plataformas externas", "Sin dependencia de uso de APIs externas ni costos impredecibles por token", "Su equipo controla el acceso, las operaciones, la seguridad y los cambios futuros"],
+        "impactTitle": "Impacto empresarial",
+        "impact1Title": "Reducir costos",
+        "impact1Items": ["Automatizar tareas repetitivas", "Reducir el tiempo dedicado al procesamiento manual", "Evitar la dependencia continua de costos de APIs IA externas", "Construir infraestructura IA con gastos operativos predecibles"],
+        "impact2Title": "Aumentar la velocidad",
+        "impact2Items": ["Acceso más rápido a la información", "Ejecución más rápida de flujos de trabajo rutinarios", "Tiempos de respuesta y procesamiento más cortos", "Capacidades IA disponibles directamente dentro de su organización"],
+        "impact3Title": "Proteger sus datos",
+        "impact3Items": ["Los sistemas IA pueden ejecutarse dentro de su propio entorno", "El acceso a datos está controlado por su organización", "La información sensible no necesita salir de su infraestructura", "Sus datos no se utilizan para operar servicios de IA de terceros"],
+        "impact4Title": "Crear ventaja competitiva",
+        "impact4Items": ["Construir capacidades IA alrededor de sus flujos de trabajo únicos", "Preservar el conocimiento operativo", "Crear sistemas que los competidores no pueden simplemente comprar a un proveedor", "Desarrollar capacidades internas de IA que crecen con su organización"],
+        "impact5Title": "Mantener la propiedad",
+        "impact5Items": ["Su organización controla la implementación, los modelos, los datos y las operaciones", "El sistema se construye en torno a sus requisitos, no a una plataforma de terceros", "Su infraestructura IA sigue siendo un activo organizacional a largo plazo"],
+        "phase1Approach": "",
+        "phase1ApproachItems": []
+      },
+      "card2": {
+        "title": "Sistemas de inteligencia de conocimiento",
+        "description": "Transforme la información de su organización en una ventaja estratégica.\n\nConstruimos sistemas IA privados que entienden sus documentos, investigaciones y conocimiento interno — ayudando a sus equipos a encontrar respuestas confiables al instante.\n\n tome mejores decisiones con el conocimiento que ya posee.",
+        "detailTitle": "Sistemas de inteligencia de conocimiento",
+        "detailIntro1": "Analizamos el panorama informacional de su organización para identificar dónde el conocimiento valioso es difícil de acceder, está distribuido en múltiples documentos o está encerrado en sistemas desconectados.",
+        "detailIntro2": "Nuestro proceso comienza por entender cómo sus equipos crean, almacenan y utilizan la información: los documentos de los que dependen, las preguntas que responden repetidamente, las brechas de conocimiento que ralentizan las decisiones y dónde la experiencia importante es difícil de recuperar. Luego diseñamos e implementamos sistemas IA de conocimiento privados que hacen que la información de su organización sea buscable y utilizable mientras mantenemos el control total de sus datos.",
+        "phaseTitle": "Cómo construimos sistemas de conocimiento",
+        "phase1Title": "1. Análisis de conocimiento",
+        "phase1Desc": "Estudiamos su entorno informacional para identificar:",
+        "phase1Items": ["Colecciones importantes de documentos y fuentes de conocimiento interno", "Información almacenada en sistemas desconectados", "Áreas donde los empleados dedican tiempo a buscar respuestas", "Preguntas repetidas y solicitudes de conocimiento entre equipos", "Experiencia crítica que necesita ser preservada y hacerse accesible"],
+        "phase2Title": "2. Diseño del sistema de conocimiento IA",
+        "phase2Desc": "Diseñamos sistemas de recuperación en torno a la información de su organización:",
+        "phase2Items": ["Conexión únicamente a documentos, bases de datos y fuentes de conocimiento aprobados", "Procesamiento y comprensión de información interna mediante tecnologías de recuperación IA", "Proporcionar respuestas basadas en el conocimiento propio de su organización", "Incluir referencias y citas de fuentes para verificación", "Definir reglas de acceso según sus requisitos de seguridad"],
+        "phase3Title": "3. Implementación de IA privada",
+        "phase3Desc": "El sistema de conocimiento se ejecuta dentro de su infraestructura o entorno privado confiable:",
+        "phase3Items": ["Sus documentos y conocimiento organizacional permanecen bajo su control", "Los modelos IA y sistemas de recuperación pueden operar dentro de su propio entorno", "Sin dependencia de plataformas IA externas ni procesamiento de datos de terceros", "Sin costos impredecibles por consulta o token de proveedores IA externos", "Su equipo controla el acceso, la seguridad, las actualizaciones y la expansión futura"],
+        "impactTitle": "Impacto empresarial",
+        "impact1Title": "Reducir costos",
+        "impact1Items": ["Reducir el tiempo dedicado a buscar manualmente en documentos", "Minimizar solicitudes de investigación e información repetidas", "Disminuir la dependencia de plataformas externas de conocimiento", "Hacer que el conocimiento organizacional existente sea más valioso"],
+        "impact2Title": "Aumentar la velocidad",
+        "impact2Items": ["Encontrar información relevante en segundos en lugar de horas", "Acelerar la investigación, el análisis y la toma de decisiones", "Dar a los empleados acceso inmediato a conocimiento interno confiable", "Reducir los retrasos causados por información fragmentada"],
+        "impact3Title": "Proteger sus datos",
+        "impact3Items": ["Los documentos permanecen dentro de su entorno controlado", "El acceso a la información sigue los permisos de su organización", "Las respuestas de IA se generan de fuentes internas aprobadas", "El conocimiento sensible no necesita salir de su infraestructura"],
+        "impact4Title": "Crear ventaja competitiva",
+        "impact4Items": ["Transformar el conocimiento interno en una capacidad operativa", "Preservar la experiencia acumulada a lo largo de años de trabajo", "Permitir decisiones más rápidas e informadas", "Construir inteligencia organizacional que los competidores no pueden simplemente comprar"],
+        "impact5Title": "Mantener la propiedad",
+        "impact5Items": ["Su organización posee el sistema de conocimiento, los datos y la infraestructura", "Sus equipos controlan la implementación, el acceso y las operaciones", "El sistema se construye en torno a su conocimiento y requisitos, no a una plataforma de terceros"],
+        "phase1Approach": "",
+        "phase1ApproachItems": []
+      },
+      "card3": {
+        "title": "Infraestructura IA privada",
+        "description": "Adopte IA sin perder el control.\n\nImplementamos sistemas IA dentro de su infraestructura o entorno privado, manteniendo sus datos, seguridad y operaciones bajo su control.\n\nIA empresarial sin dependencia externa.",
+        "detailTitle": "Infraestructura IA privada",
+        "detailIntro1": "Diseñamos e implementamos la base técnica necesaria para organizaciones que desean adoptar IA manteniendo el control total de sus datos, modelos, infraestructura y operaciones.",
+        "detailIntro2": "Nuestro proceso comienza por entender su entorno tecnológico actual, requisitos de seguridad, objetivos de IA y restricciones operativas. Luego construimos una infraestructura IA privada que permite a su organización ejecutar, gestionar y escalar sistemas IA dentro de su propio entorno controlado.",
+        "phaseTitle": "Cómo construimos infraestructura IA privada",
+        "phase1Title": "1. Evaluación de infraestructura",
+        "phase1Desc": "Analizamos su entorno técnico para identificar:",
+        "phase1Items": ["Servidores, recursos en la nube y capacidades de cómputo existentes", "Requisitos de seguridad, cumplimiento y protección de datos", "Cargas de trabajo de IA y expectativas de rendimiento", "Requisitos de almacenamiento, procesamiento e integración de datos", "Objetivos futuros de adopción de IA y necesidades de escalabilidad"],
+        "phase2Title": "2. Diseño de infraestructura",
+        "phase2Desc": "Diseñamos la base necesaria para operaciones de IA confiables:",
+        "phase2Items": ["Entornos de implementación de IA privada", "Sistemas de servicio de modelos locales o privados", "Optimización de GPU y cómputo", "Infraestructura de aplicaciones y recuperación IA", "Tuberías de procesamiento de datos", "Sistemas de monitoreo, evaluación y gestión operativa"],
+        "phase3Title": "3. Implementación de IA privada",
+        "phase3Desc": "La infraestructura opera dentro de su entorno controlado:",
+        "phase3Items": ["Los modelos y sistemas IA se ejecutan en sus propios servidores o nube privada", "Su organización posee el entorno de producción de IA", "No es necesario enviar datos sensibles a proveedores IA externos", "Sin dependencia de la disponibilidad de APIs externas ni modelos de precios cambiantes", "Su equipo controla el acceso, la seguridad, el mantenimiento y la expansión futura"],
+        "impactTitle": "Impacto empresarial",
+        "impact1Title": "Reducir costos",
+        "impact1Items": ["Reducir la dependencia a largo plazo de plataformas IA externas", "Evitar costos impredecibles de APIs IA basados en uso", "Optimizar las cargas de trabajo de IA para su infraestructura disponible", "Construir fundamentos de IA reutilizables en toda su organización"],
+        "impact2Title": "Aumentar la velocidad",
+        "impact2Items": ["Implementar capacidades IA más rápidamente en todos los departamentos", "Crear una base confiable para nuevas aplicaciones IA", "Reducir la complejidad de integración entre sistemas IA y operaciones empresariales", "Permitir una experimentación y adopción más rápidas"],
+        "impact3Title": "Proteger sus datos",
+        "impact3Items": ["La información sensible permanece dentro de su entorno controlado", "Las políticas de seguridad son definidas y aplicadas por su organización", "Las operaciones de IA son transparentes y observables", "El procesamiento de datos sigue sus requisitos internos"],
+        "impact4Title": "Crear ventaja competitiva",
+        "impact4Items": ["Construir capacidades internas de IA en lugar de alquilar acceso temporal", "Crear una base para la adopción de IA a largo plazo", "Desarrollar sistemas alineados con los requisitos únicos de su organización", "Reducir la dependencia estratégica de proveedores IA externos"],
+        "impact5Title": "Mantener la propiedad",
+        "impact5Items": ["Su organización posee y controla la infraestructura de IA", "Sus equipos controlan los modelos, la implementación, los datos y las operaciones", "La infraestructura se convierte en un activo organizacional a largo plazo, no en una dependencia por suscripción"],
+        "phase1Approach": "",
+        "phase1ApproachItems": []
+      },
+      "card4": {
+        "title": "Modelos IA personalizados y entrenamiento",
+        "description": "Construya capacidades IA diseñadas específicamente para su organización.\n\nAjustamos y entrenamos modelos IA para tareas especializadas donde la IA de propósito general no es lo suficientemente precisa, eficiente o privada.\n\nCree capacidades IA únicas basadas en sus datos y experiencia.",
+        "detailTitle": "Modelos IA personalizados y entrenamiento",
+        "detailIntro1": "Desarrollamos y adaptamos modelos IA para organizaciones que requieren capacidades especializadas más allá de los sistemas IA de propósito general.",
+        "detailIntro2": "Nuestro proceso comienza por entender las tareas específicas que su organización necesita que la IA resuelva, los datos disponibles para entrenamiento o adaptación, el nivel de rendimiento requerido y el entorno de implementación. Luego ajustamos, optimizamos o entrenamos modelos IA diseñados alrededor de los requisitos de su organización mientras mantenemos el control sobre el sistema final.",
+        "phaseTitle": "Cómo construimos modelos IA personalizados",
+        "phase1Title": "1. Análisis de tareas y datos",
+        "phase1Desc": "Analizamos los requisitos de IA para identificar:",
+        "phase1Items": ["El problema empresarial específico que el modelo necesita resolver", "Fuentes de datos y activos de conocimiento existentes", "Objetivos requeridos de precisión, velocidad y fiabilidad", "Terminología y flujos de trabajo específicos del dominio", "Requisitos de seguridad, privacidad e implementación"],
+        "phase1Approach": "Determinamos el enfoque más adecuado, incluyendo:",
+        "phase1ApproachItems": ["Ajuste fino de modelos de código abierto existentes", "Adaptación a un dominio específico", "Tuberías de entrenamiento personalizadas", "Sistemas de modelos mejorados con recuperación", "Arquitecturas IA especializadas"],
+        "phase2Title": "2. Desarrollo y optimización de modelos",
+        "phase2Desc": "Construimos y mejoramos modelos IA mediante:",
+        "phase2Items": ["Ajuste fino de modelos con datos específicos de la organización", "Entrenamiento de modelos para tareas y dominios especializados", "Creación de procesos de evaluación para medir el rendimiento", "Optimización de modelos para su hardware e infraestructura", "Reducción del tamaño del modelo y requisitos de recursos cuando sea necesario"],
+        "phase3Title": "3. Implementación de IA privada",
+        "phase3Desc": "El modelo opera dentro de su entorno controlado:",
+        "phase3Items": ["Su organización posee el entorno de producción de IA", "Los modelos pueden ejecutarse en su propia infraestructura o nube privada", "El entrenamiento y la inferencia pueden realizarse sin enviar datos sensibles a proveedores externos", "Sin dependencia de APIs IA externas ni modelos de precios por token", "Su equipo controla el acceso, las actualizaciones y el ciclo de vida del modelo"],
+        "impactTitle": "Impacto empresarial",
+        "impact1Title": "Reducir costos",
+        "impact1Items": ["Construir modelos más pequeños y eficientes optimizados para tareas específicas", "Reducir el uso innecesario de servicios IA de propósito general costosos", "Disminuir costos operativos mediante inferencia optimizada", "Crear gastos operativos de IA predecibles"],
+        "impact2Title": "Aumentar la velocidad",
+        "impact2Items": ["Entregar resultados más rápidos para flujos de trabajo especializados", "Reducir el tiempo de análisis y procesamiento manual", "Mejorar el rendimiento de IA para tareas específicas de la organización", "Permitir una toma de decisiones más rápida con capacidades especializadas"],
+        "impact3Title": "Proteger sus datos",
+        "impact3Items": ["El entrenamiento y la adaptación de modelos pueden ocurrir dentro de entornos controlados", "Los datos sensibles de la organización permanecen privados", "El uso de datos y el comportamiento del modelo siguen gobernados por su organización"],
+        "impact4Title": "Crear ventaja competitiva",
+        "impact4Items": ["Construir capacidades IA basadas en sus datos y experiencia únicos", "Desarrollar modelos optimizados para el dominio de su organización", "Crear sistemas especializados que los competidores no pueden simplemente acceder a través de herramientas públicas", "Convertir el conocimiento y los procesos internos en capacidades IA"],
+        "impact5Title": "Mantener la propiedad",
+        "impact5Items": ["Su organización controla el modelo, la implementación y el ciclo de vida operativo", "El sistema IA se construye en torno a sus requisitos, infraestructura y objetivos", "Sus modelos se convierten en un activo organizacional a largo plazo en lugar de una dependencia de proveedores externos"]
+      }
+    }
   },
   "projects": {
     "eyebrow": "Nuestro trabajo",
@@ -47,20 +173,98 @@
   "why": {
     "eyebrow": "Por qué Haal Lab",
     "title": "Lo que nos distingue",
-    "lead": "Tres compromisos que dan forma a todo lo que construimos , y cada relación que tenemos con los clientes."
+    "lead": "Tres compromisos que dan forma a todo lo que construimos , y cada relación que tenemos con los clientes.",
+    "sectionEyebrow": "Por qué HAAL Lab",
+    "sectionHeading": "Por qué las organizaciones eligen HAAL Lab",
+    "sectionLead": "Tres compromisos que dan forma a todo lo que construimos , y cada relación que tenemos con los clientes.",
+    "items": {
+      "item1": {
+        "title": "Investigación antes de construir",
+        "description": "Cada proyecto IA comienza con comprensión, no con implementación.\n\nEstudiamos los objetivos, flujos de trabajo, entorno de datos, sistemas existentes y restricciones de su organización antes de elegir un enfoque.\n\nHaal Lab evalúa diferentes tecnologías, experimenta con posibles métodos y identifica el camino más adecuado basado en evidencia, asegurando que el sistema final se diseñe en torno a sus necesidades reales."
+      },
+      "item2": {
+        "title": "Ingeniería para su entorno",
+        "description": "Los sistemas IA tienen éxito cuando se integran naturalmente en la organización que los utiliza.\n\nDiseñamos y desarrollamos soluciones en torno a su infraestructura, requisitos operativos y expectativas de seguridad, en lugar de obligar a su organización a adaptarse a una tecnología predefinida.\n\nDesde la arquitectura hasta la implementación, cada decisión se toma con su entorno y objetivos a largo plazo en mente."
+      },
+      "item3": {
+        "title": "Sus datos. Su infraestructura. Su IA.",
+        "description": "La IA debe crear independencia, no dependencia.\n\nHaal Lab construye sistemas donde las organizaciones mantienen la propiedad de sus datos, el control de su infraestructura y la visibilidad de cómo operan sus capacidades IA.\n\nSu conocimiento sigue siendo suyo. Sus capacidades IA siguen siendo suyas."
+      }
+    }
   },
   "services": {
     "eyebrow": "Servicios",
     "title": "Cómo podemos ayudar",
     "lead": "Desde un solo asistente IA hasta una plataforma IA privada completa, lo encontramos donde está.",
-    "learnMore": "Saber más"
+    "items": {
+      "item1": {
+        "title": "Desarrollo IA personalizado",
+        "description": "Sistemas IA construidos específicamente para su problema empresarial , no herramientas genéricas recicladas."
+      },
+      "item2": {
+        "title": "Búsqueda inteligente de documentos",
+        "description": "IA que lee sus documentos y responde preguntas con fuentes que puede verificar."
+      },
+      "item3": {
+        "title": "Integración IA",
+        "description": "Conectamos capacidades IA en su software existente , de forma segura y confiable."
+      },
+      "item4": {
+        "title": "Automatización de flujos de trabajo",
+        "description": "IA que gestiona tareas repetitivas para que su equipo pueda enfocarse en trabajo de mayor valor."
+      },
+      "item5": {
+        "title": "Configuración de IA privada",
+        "description": "Instalamos y configuramos la IA para que se ejecute completamente en sus propios equipos , sin necesidad de nube."
+      },
+      "item6": {
+        "title": "Consultoría IA",
+        "description": "¿No sabe por dónde empezar? Le ayudamos a entender qué puede hacer la IA por su negocio , en lenguaje sencillo."
+      }
+    }
   },
   "aboutTeaser": {
     "eyebrow": "Acerca de Haal Lab",
     "title": "Somos ingenieros, no vendedores.",
     "body1": "Haal Lab es una empresa de ingeniería IA. Construimos sistemas de software inteligentes que ayudan a las organizaciones a trabajar de manera más inteligente , sin enviar sus datos a servicios de terceros.",
     "body2": "Tratamos la IA como un oficio, no como una palabra de moda. Nuestro trabajo abarca desde IA que se ejecuta completamente en sus propias computadoras, hasta búsqueda inteligente en sus documentos, hasta modelos IA personalizados construidos específicamente para sus tareas.",
-    "readMission": "Leer nuestra misión"
+    "readMission": "Leer nuestra misión",
+    "details": {
+      "focus": { "label": "Enfoque", "value": "IA privada" },
+      "approach": { "label": "Enfoque", "value": "Construido para usted" },
+      "delivery": { "label": "Entrega", "value": "De principio a fin" },
+      "method": { "label": "Método", "value": "Orientado a la investigación" }
+    }
+  },
+  "architecture": {
+    "eyebrow": "Arquitectura",
+    "heading": "De datos a inteligencia",
+    "lead": "Una plataforma moderna de conocimiento IA transforma sus documentos, bases de datos y fuentes de datos en inteligencia accionable.",
+    "description": "Cada sistema que construimos está diseñado para sus fuentes de datos, flujos de trabajo y requisitos específicos. Sin soluciones genéricas.",
+    "ctaButton": "Discuta su arquitectura"
+  },
+  "projectsList": {
+    "item1": {
+      "name": "GGUF Loader",
+      "description": "Una plataforma que le permite ejecutar modelos IA potentes en su propia computadora , sin necesidad de internet, sin enviar datos a ningún lugar. Solo instale y empiece.",
+      "tags": ["Python", "Modelos IA", "Sin conexión", "Privado"],
+      "metrics": {
+        "label1": "Ejecución", "value1": "En su PC",
+        "label2": "Internet", "value2": "No necesaria",
+        "label3": "Datos enviados", "value3": "Ninguno"
+      }
+    },
+    "item2": {
+      "name": "Sistema de inteligencia legal",
+      "description": "Una herramienta de búsqueda inteligente para documentos legales. Haga una pregunta en lenguaje sencillo y obtenga el párrafo exacto , con el documento fuente citado , incluso entre miles de archivos.",
+      "tags": ["Búsqueda inteligente", "Multilingüe", "Citas", "Documentos IA"],
+      "metrics": {
+        "label1": "Búsquedas", "value1": "En lenguaje sencillo",
+        "label2": "Resultados", "value2": "Con fuentes",
+        "label3": "Idiomas", "value3": "Múltiples"
+      }
+    },
+    "projectPrefix": "/ Proyecto"
   },
   "contactCta": {
     "eyebrow": "Iniciar una conversación",
@@ -200,6 +404,195 @@
       "title": "Precios transparentes para sistemas IA reales.",
       "lead": "Cuatro paquetes diseñados para startups, empresas, grandes empresas e instituciones de investigación. Cada nivel entrega un sistema funcional , no una presentación de diapositivas.",
       "meta": "haal-lab.solutions / precios"
+    }
+  },
+  "caseStudies": {
+    "eyebrow": "Casos de ingeniería seleccionados",
+    "heading": "Sistemas IA prácticos para desafíos complejos",
+    "lead": "Proyectos representativos que demuestran enfoques para resolver problemas complejos de ingeniería IA para organizaciones, grupos de investigación y equipos técnicos.",
+    "ctaTitle": "¿Enfrenta un desafío complejo de ingeniería IA?",
+    "ctaDescription": "Describa sus requisitos técnicos, restricciones y objetivos. Nuestro equipo de ingeniería evaluará los enfoques potenciales y proporcionará una evaluación práctica.",
+    "ctaButton": "Discuta sus requisitos",
+    "contextTitle": "Contexto",
+    "challengeTitle": "Desafío",
+    "approachTitle": "Enfoque de ingeniería",
+    "considerationsTitle": "Consideraciones técnicas",
+    "outcomeTitle": "Resultado",
+    "studies": {
+      "study1": {
+        "eyebrow": "Ingeniería de investigación",
+        "title": "Acelerando el descubrimiento de conocimiento en archivos de investigación",
+        "description": "Diseñar una arquitectura de búsqueda semántica para permitir a los investigadores ubicar información relevante de manera eficiente en repositorios de documentos distribuidos.",
+        "tags": ["Procesamiento de documentos", "Búsqueda semántica", "Organización del conocimiento"],
+        "contextItems": [
+          "Una organización de investigación acumuló años de artículos científicos, informes técnicos y documentación experimental en múltiples repositorios desconectados",
+          "El volumen de información aumentó significativamente, dificultando que los investigadores determinaran si un trabajo específico ya había sido realizado",
+          "Los investigadores dedicaban tiempo sustancial a buscar conocimiento existente en lugar de enfocarse en análisis y descubrimiento"
+        ],
+        "challengeItems": [
+          "La información estaba distribuida en sistemas desconectados con formatos y estructuras organizativas variables",
+          "La búsqueda basada en palabras clave omitía documentos conceptualmente relacionados que utilizaban terminología diferente",
+          "El conocimiento institucional residía en documentos que eran difíciles de localizar mediante métodos de búsqueda tradicionales",
+          "Los nuevos investigadores necesitaban tiempo significativo para entender qué trabajo se había completado y dónde encontrar documentación relevante"
+        ],
+        "approachItems": [
+          "Diseñar flujos de trabajo de procesamiento de documentos para normalizar e indexar contenido de fuentes heterogéneas",
+          "Implementar una arquitectura de recuperación semántica basada en coincidencias de similitud mediante embeddings en lugar de solo búsqueda por palabras clave",
+          "Desarrollar acceso a información consciente de las fuentes, asegurando que cada recuperación enlace de vuelta a los documentos originales",
+          "Crear una interfaz de búsqueda orientada a la investigación que soporte tanto descubrimiento exploratorio como consultas dirigidas"
+        ],
+        "considerationsItems": [
+          "Procesar colecciones grandes mientras se mantiene un tiempo de indexación razonable",
+          "Manejar documentos multilingües y recuperación de información entre idiomas",
+          "Mantener la trazabilidad de las fuentes para respaldar los requisitos de reproducibilidad de investigación",
+          "Abordar políticas de propiedad de datos y control de acceso en diferentes tipos de documentos"
+        ],
+        "outcomeItems": [
+          "Los investigadores obtuvieron acceso más rápido a trabajo existente, reduciendo el tiempo de búsqueda y aumentando el enfoque en el análisis",
+          "Mejoró el descubrimiento de trabajo relacionado en diferentes terminologías y marcos conceptuales",
+          "Los nuevos miembros del equipo pudieron comprender de manera más eficiente la investigación completada y localizar documentación relevante",
+          "La organización mejoró la utilización del conocimiento institucional existente"
+        ]
+      },
+      "study2": {
+        "eyebrow": "Ingeniería operativa",
+        "title": "Apoyando las operaciones de investigación mediante asistencia inteligente",
+        "description": "Desarrollar un sistema de flujos de trabajo asistido por IA para gestionar la recuperación de conocimiento interno y automatizar procesos operativos repetitivos.",
+        "tags": ["Automatización de flujos de trabajo", "Acceso al conocimiento", "Integración de procesos"],
+        "contextItems": [
+          "El equipo técnico gestionaba volúmenes crecientes de preguntas internas, solicitudes de documentación y flujos de trabajo administrativos repetitivos",
+          "El tiempo del personal se consumía respondiendo preguntas repetidas y realizando tareas rutinarias de recuperación de información",
+          "El conocimiento organizacional residía en varios sistemas, dificultando la localización rápida de información"
+        ],
+        "challengeItems": [
+          "Las mismas preguntas se repetían entre equipos, requiriendo respuestas manuales cada vez",
+          "El proceso de localizar información dispersa en documentación y sistemas consumía mucho tiempo",
+          "Los flujos de trabajo administrativos repetitivos reducían la capacidad para trabajo técnico de mayor valor",
+          "La dificultad para conectar el conocimiento organizacional existente con las preguntas operativas diarias"
+        ],
+        "approachItems": [
+          "Diseñar un sistema de flujos de trabajo conectado al conocimiento que proporcione información contextual para preguntas operativas comunes",
+          "Integrar con herramientas y sistemas de documentación existentes en lugar de requerir cambios en los flujos de trabajo",
+          "Implementar mecanismos de asistencia para procesos repetitivos manteniendo la supervisión humana apropiada",
+          "Desarrollar una interfaz de consultas internas que recupere información de las bases de conocimiento organizacional"
+        ],
+        "considerationsItems": [
+          "Control de acceso asegurando que los usuarios solo recuperen información para la que están autorizados",
+          "Requisitos de privacidad de datos para manejar información organizacional interna",
+          "Requisitos de fiabilidad asegurando la disponibilidad del sistema para uso operativo",
+          "Puntos de integración con herramientas existentes de flujos de trabajo y sistemas de gestión del conocimiento",
+          "Mecanismos de supervisión humana para operaciones sensibles o de consecuencia"
+        ],
+        "outcomeItems": [
+          "Reducción del tiempo dedicado a la recuperación repetitiva de información y tareas administrativas rutinarias",
+          "Acceso más rápido al conocimiento organizacional cuando se necesitaba para decisiones operativas",
+          "Capacidad del personal liberada para trabajo técnico y analítico de mayor valor",
+          "Mejora en la consistencia de cómo se ejecutan los procesos rutinarios"
+        ]
+      },
+      "study3": {
+        "eyebrow": "Ingeniería de infraestructura",
+        "title": "Estableciendo capacidades de IA seguras dentro de la infraestructura organizacional",
+        "description": "Diseñar una infraestructura de implementación de IA privada para habilitar capacidades modernas manteniendo estrictos requisitos de control de datos y seguridad.",
+        "tags": ["Implementación privada", "Arquitectura de seguridad", "Infraestructura"],
+        "contextItems": [
+          "La organización requería capacidades modernas de IA para operaciones internas manteniendo estricto control sobre información sensible",
+          "Los servicios de IA externos planteaban riesgos inaceptables de privacidad y seguridad de datos para los casos de uso de la organización",
+          "Los marcos de cumplimiento y regulación requerían que ciertos datos nunca abandonaran los límites organizacionales"
+        ],
+        "challengeItems": [
+          "Los requisitos de privacidad de datos prohibían enviar información sensible a servicios de IA externos",
+          "Las políticas de seguridad restringían qué sistemas podían procesar ciertas categorías de información",
+          "Las consideraciones de cumplimiento requerían controles documentados de manejo y procesamiento de datos",
+          "La organización necesitaba capacidades de IA sin comprometer los límites de seguridad establecidos"
+        ],
+        "approachItems": [
+          "Diseñar una arquitectura de implementación privada para operaciones de IA dentro de los límites de la infraestructura organizacional",
+          "Implementar manejo seguro de datos asegurando que la información sensible permanezca bajo el control de la organización",
+          "Desarrollar infraestructura que opere sin dependencias externas para operaciones de inferencia",
+          "Crear procedimientos operativos para implementación y mantenimiento de modelos controlados por la organización"
+        ],
+        "considerationsItems": [
+          "Requisitos de soberanía de datos asegurando que la información nunca cruce los límites organizacionales",
+          "Arquitectura de seguridad que cumpla con las políticas organizacionales y marcos de cumplimiento",
+          "Requisitos de recursos de infraestructura para ejecutar modelos capaces internamente",
+          "Modelo de propiedad operativa y responsabilidades de mantenimiento continuo",
+          "Procedimientos de actualización y mejora de modelos bajo control organizacional"
+        ],
+        "outcomeItems": [
+          "Las capacidades de IA se volvieron disponibles para uso interno cumpliendo con los requisitos de seguridad",
+          "El procesamiento de información sensible se mantuvo dentro de los límites de control organizacional",
+          "La organización retuvo la propiedad de los sistemas implementados y procedimientos operativos",
+          "Los requisitos de cumplimiento se satisfacieron mediante una arquitectura controlada de manejo de datos"
+        ]
+      },
+      "study4": {
+        "eyebrow": "Ingeniería de modelos",
+        "title": "Mejorando la comprensión especializada de documentos mediante modelos IA personalizados",
+        "description": "Desarrollar modelos IA específicos para tareas para manejar requisitos de clasificación y análisis especializados de manera más eficiente que los sistemas de propósito general.",
+        "tags": ["Modelos personalizados", "Adaptación de dominio", "Optimización de tareas"],
+        "contextItems": [
+          "La organización requería capacidades de IA para tareas altamente específicas de clasificación y análisis de documentos dentro de un dominio especializado",
+          "Los modelos IA de propósito general producían resultados inconsistentes debido a la falta de comprensión específica del dominio",
+          "El procesamiento manual era preciso pero demasiado lento para manejar los volúmenes de documentos requeridos"
+        ],
+        "challengeItems": [
+          "Los modelos IA generales carecían de la especificidad suficiente para los requisitos especializados de la organización",
+          "La terminología y el contexto específicos del dominio requerían una comprensión que los modelos amplios no poseían",
+          "El procesamiento manual aseguraba precisión pero no podía escalar para cumplir con los requisitos de volumen de procesamiento",
+          "La consistencia era difícil de mantener entre diferentes revisores humanos y a lo largo del tiempo"
+        ],
+        "approachItems": [
+          "Desarrollar un modelo específico para la tarea enfocado en los requisitos estrechos de clasificación de la organización",
+          "Aplicar técnicas de adaptación de dominio para incorporar conocimiento y terminología especializados",
+          "Diseñar flujos de trabajo de evaluación para medir la precisión contra los estándares de calidad de la organización",
+          "Optimizar el modelo para una implementación eficiente dadas las restricciones de infraestructura de la organización"
+        ],
+        "considerationsItems": [
+          "Eficiencia del modelo para permitir implementación práctica en la infraestructura disponible",
+          "Metodologías de evaluación de precisión alineadas con los requisitos de calidad organizacionales",
+          "Restricciones de implementación incluyendo latencia, rendimiento y disponibilidad de recursos",
+          "Procedimientos de mantenimiento para actualizaciones del modelo a medida que evolucionan los requisitos",
+          "Procesos de aseguramiento de calidad para detectar casos límite y entradas inesperadas"
+        ],
+        "outcomeItems": [
+          "Procesamiento más consistente alineado con los estándares y requisitos organizacionales",
+          "Mejor precisión en tareas específicas del dominio comparado con alternativas de propósito general",
+          "Flujos de trabajo más eficientes permitiendo mayores volúmenes de procesamiento",
+          "La organización obtuvo comprensión de dónde los modelos especializados aportan valor versus los sistemas de propósito general"
+        ]
+      }
+    }
+  },
+  "process": {
+    "eyebrow": "Proceso de ingeniería",
+    "heading": "Cómo construimos sistemas IA",
+    "lead": "Un proceso de ingeniería estructurado diseñado para la fiabilidad, la transparencia y la propiedad a largo plazo.",
+    "next": "Siguiente",
+    "ctaTitle": "¿Necesita un sistema IA personalizado?",
+    "ctaDescription": "Cuéntenos sobre su entorno técnico y sus requisitos.",
+    "ctaButton": "Solicitar discusión técnica",
+    "phases": {
+      "phase1": {
+        "title": "Descubrimiento",
+        "description": "Comprender los requisitos empresariales, las restricciones y los objetivos. Mapear los sistemas existentes, las fuentes de datos y los criterios de éxito."
+      },
+      "phase2": {
+        "title": "Arquitectura",
+        "description": "Diseñar modelos, infraestructura, flujos de trabajo y marco de evaluación. Definir la estrategia de implementación y el enfoque de monitoreo."
+      },
+      "phase3": {
+        "title": "Desarrollo",
+        "description": "Construir y validar el sistema de manera incremental. Pruebas, evaluación y refinamiento continuos con retroalimentación de las partes interesadas."
+      },
+      "phase4": {
+        "title": "Implementación",
+        "description": "Implementar en el entorno objetivo. Configurar la infraestructura, la seguridad y los controles de acceso. Transferencia de conocimiento y documentación."
+      },
+      "phase5": {
+        "title": "Monitoreo y mejora",
+        "description": "Observar el rendimiento, la calidad y la fiabilidad a lo largo del tiempo. Optimización continua basada en patrones de uso reales."
+      }
     }
   }
 }

@@ -36,7 +36,133 @@
     "eyebrow": "Vision",
     "title": "Four AI capabilities we build for organizations",
     "lead": "Each service stands on its own or works together as a complete system. We focus on what your business needs , not on chasing the latest trend.",
-    "learnMore": "Learn more"
+    "learnMore": "Learn more",
+    "moreInfo": "More info",
+    "ctaTitle": "Need an AI system tailored to your organization?",
+    "ctaDescription": "Tell us about your requirements, technical environment, and goals. We'll evaluate the most appropriate approach.",
+    "ctaButton": "Request Technical Discussion",
+    "cards": {
+      "card1": {
+        "title": "AI Agents & Business Automation",
+        "description": "Automate the workflows slowing your organization down.\n\nWe build private AI agents that analyze your processes, identify automation opportunities, and handle repetitive tasks inside your existing environment.\n\nReduce operational costs. Increase team speed. Keep control of your data.",
+        "detailTitle": "AI Agents & Business Automation",
+        "detailIntro1": "We analyze your existing workflows to identify processes where AI can reduce manual effort, improve response times, and increase operational efficiency.",
+        "detailIntro2": "Our process starts by understanding how your teams work: the repetitive tasks they perform, the information they use, the systems they depend on, and where delays or unnecessary costs occur. We then design and deploy private AI agents that automate specific tasks while keeping your organization in control.",
+        "phaseTitle": "How we build automation systems",
+        "phase1Title": "1. Workflow analysis",
+        "phase1Desc": "We study your business processes to identify:",
+        "phase1Items": ["Time-consuming manual tasks", "Repetitive decision processes", "Information bottlenecks", "Areas where employees spend time searching, reviewing, or processing data"],
+        "phase2Title": "2. AI system design",
+        "phase2Desc": "We design agents around your actual operations:",
+        "phase2Items": ["Connect only to approved internal systems", "Define what the AI can access and execute", "Create workflows with human approval where required", "Select the appropriate models and infrastructure based on your requirements"],
+        "phase3Title": "3. Private AI deployment",
+        "phase3Desc": "The AI system runs within your infrastructure or trusted private environment:",
+        "phase3Items": ["Your organization owns and controls the AI production environment", "Models and AI services operate within your infrastructure instead of relying on external platforms", "No dependency on external API usage or unpredictable per-token costs", "Your team controls access, operations, security, and future changes"],
+        "impactTitle": "Business impact",
+        "impact1Title": "Reduce costs",
+        "impact1Items": ["Automate repetitive tasks", "Reduce time spent on manual processing", "Avoid ongoing dependency on external AI API costs", "Build AI infrastructure with predictable operational expenses"],
+        "impact2Title": "Increase speed",
+        "impact2Items": ["Faster access to information", "Faster execution of routine workflows", "Shorter response and processing times", "AI capabilities available directly within your organization"],
+        "impact3Title": "Protect your data",
+        "impact3Items": ["AI systems can run inside your own environment", "Data access is controlled by your organization", "Sensitive information does not need to leave your infrastructure", "Your data is not used to operate third-party AI services"],
+        "impact4Title": "Create competitive advantage",
+        "impact4Items": ["Build AI capabilities around your unique workflows", "Preserve operational knowledge", "Create systems competitors cannot simply purchase from a vendor", "Develop internal AI capabilities that grow with your organization"],
+        "impact5Title": "Maintain ownership",
+        "impact5Items": ["Your organization controls the deployment, models, data, and operations", "The system is built around your requirements, not a third-party platform", "Your AI infrastructure remains a long-term organizational asset"],
+        "phase1Approach": "",
+        "phase1ApproachItems": []
+      },
+      "card2": {
+        "title": "Knowledge Intelligence Systems",
+        "description": "Turn your organization's information into a strategic advantage.\n\nWe build private AI systems that understand your documents, research, and internal knowledge — helping your teams find trusted answers instantly.\n\nMake better decisions with the knowledge you already own.",
+        "detailTitle": "Knowledge Intelligence Systems",
+        "detailIntro1": "We analyze your organization's information landscape to identify where valuable knowledge is difficult to access, distributed across documents, or locked inside disconnected systems.",
+        "detailIntro2": "Our process starts by understanding how your teams create, store, and use information: the documents they depend on, the questions they repeatedly answer, the knowledge gaps that slow decisions, and where important expertise is difficult to retrieve. We then design and deploy private AI knowledge systems that make your organization's information searchable and usable while keeping full control over your data.",
+        "phaseTitle": "How we build knowledge systems",
+        "phase1Title": "1. Knowledge analysis",
+        "phase1Desc": "We study your information environment to identify:",
+        "phase1Items": ["Important document collections and internal knowledge sources", "Information stored across disconnected systems", "Areas where employees spend time searching for answers", "Repeated questions and knowledge requests across teams", "Critical expertise that needs to be preserved and made accessible"],
+        "phase2Title": "2. AI knowledge system design",
+        "phase2Desc": "We design retrieval systems around your organization's information:",
+        "phase2Items": ["Connect only to approved documents, databases, and knowledge sources", "Process and understand internal information using AI retrieval technologies", "Provide answers based on your organization's own knowledge", "Include source references and citations for verification", "Define access rules based on your security requirements"],
+        "phase3Title": "3. Private AI deployment",
+        "phase3Desc": "The knowledge system runs within your infrastructure or trusted private environment:",
+        "phase3Items": ["Your documents and organizational knowledge remain under your control", "AI models and retrieval systems can operate inside your own environment", "No dependency on external AI platforms or third-party data processing", "No unpredictable per-query or per-token costs from external AI providers", "Your team controls access, security, updates, and future expansion"],
+        "impactTitle": "Business impact",
+        "impact1Title": "Reduce costs",
+        "impact1Items": ["Reduce time spent manually searching through documents", "Minimize repeated research and information requests", "Decrease dependency on external knowledge platforms", "Make existing organizational knowledge more valuable"],
+        "impact2Title": "Increase speed",
+        "impact2Items": ["Find relevant information in seconds instead of hours", "Accelerate research, analysis, and decision-making", "Give employees immediate access to trusted internal knowledge", "Reduce delays caused by fragmented information"],
+        "impact3Title": "Protect your data",
+        "impact3Items": ["Documents remain inside your controlled environment", "Information access follows your organization's permissions", "AI responses are generated from approved internal sources", "Sensitive knowledge does not need to leave your infrastructure"],
+        "impact4Title": "Create competitive advantage",
+        "impact4Items": ["Transform internal knowledge into an operational capability", "Preserve expertise accumulated across years of work", "Enable faster and better-informed decisions", "Build organizational intelligence that competitors cannot simply purchase"],
+        "impact5Title": "Maintain ownership",
+        "impact5Items": ["Your organization owns the knowledge system, data, and infrastructure", "Your teams control deployment, access, and operations", "The system is built around your knowledge and requirements, not a third-party platform"],
+        "phase1Approach": "",
+        "phase1ApproachItems": []
+      },
+      "card3": {
+        "title": "Private AI Infrastructure",
+        "description": "Adopt AI without giving up control.\n\nWe deploy AI systems inside your infrastructure or private environment, keeping your data, security, and operations under your control.\n\nEnterprise AI without external dependency.",
+        "detailTitle": "Private AI Infrastructure",
+        "detailIntro1": "We design and deploy the technical foundation required for organizations that want to adopt AI while maintaining full control over their data, models, infrastructure, and operations.",
+        "detailIntro2": "Our process starts by understanding your existing technology environment, security requirements, AI objectives, and operational constraints. We then build a private AI infrastructure that allows your organization to run, manage, and scale AI systems within your own controlled environment.",
+        "phaseTitle": "How we build private AI infrastructure",
+        "phase1Title": "1. Infrastructure assessment",
+        "phase1Desc": "We analyze your technical environment to identify:",
+        "phase1Items": ["Existing servers, cloud resources, and computing capabilities", "Security, compliance, and data protection requirements", "AI workloads and performance expectations", "Data storage, processing, and integration requirements", "Future AI adoption goals and scalability needs"],
+        "phase2Title": "2. Infrastructure design",
+        "phase2Desc": "We design the foundation required for reliable AI operations:",
+        "phase2Items": ["Private AI deployment environments", "Local or private model serving systems", "GPU and compute optimization", "AI application and retrieval infrastructure", "Data processing pipelines", "Monitoring, evaluation, and operational management systems"],
+        "phase3Title": "3. Private AI deployment",
+        "phase3Desc": "The infrastructure operates within your controlled environment:",
+        "phase3Items": ["AI models and systems run on your own servers or private cloud", "Your organization owns the AI production environment", "No requirement to send sensitive data to external AI providers", "No dependency on external API availability or changing pricing models", "Your team controls access, security, maintenance, and future expansion"],
+        "impactTitle": "Business impact",
+        "impact1Title": "Reduce costs",
+        "impact1Items": ["Reduce long-term dependency on external AI platforms", "Avoid unpredictable usage-based AI API costs", "Optimize AI workloads for your available infrastructure", "Build reusable AI foundations across your organization"],
+        "impact2Title": "Increase speed",
+        "impact2Items": ["Deploy AI capabilities faster across departments", "Create a reliable foundation for new AI applications", "Reduce integration complexity between AI systems and business operations", "Enable faster experimentation and adoption"],
+        "impact3Title": "Protect your data",
+        "impact3Items": ["Sensitive information remains inside your controlled environment", "Security policies are defined and enforced by your organization", "AI operations are transparent and observable", "Data processing follows your internal requirements"],
+        "impact4Title": "Create competitive advantage",
+        "impact4Items": ["Build internal AI capabilities instead of renting temporary access", "Create a foundation for long-term AI adoption", "Develop systems aligned with your organization's unique requirements", "Reduce strategic dependency on external AI providers"],
+        "impact5Title": "Maintain ownership",
+        "impact5Items": ["Your organization owns and controls the AI infrastructure", "Your teams control models, deployment, data, and operations", "The infrastructure becomes a long-term organizational asset, not a subscription dependency"],
+        "phase1Approach": "",
+        "phase1ApproachItems": []
+      },
+      "card4": {
+        "title": "Custom AI Models & Training",
+        "description": "Build AI capabilities designed specifically for your organization.\n\nWe fine-tune and train AI models for specialized tasks where general-purpose AI is not accurate, efficient, or private enough.\n\nCreate unique AI capabilities around your data and expertise.",
+        "detailTitle": "Custom AI Models & Training",
+        "detailIntro1": "We develop and adapt AI models for organizations that require specialized capabilities beyond general-purpose AI systems.",
+        "detailIntro2": "Our process starts by understanding the specific tasks your organization needs AI to solve, the data available for training or adaptation, the required performance level, and the deployment environment. We then fine-tune, optimize, or train AI models designed around your organization's requirements while keeping control over the final system.",
+        "phaseTitle": "How we build custom AI models",
+        "phase1Title": "1. Task and data analysis",
+        "phase1Desc": "We analyze your AI requirements to identify:",
+        "phase1Items": ["The specific business problem the model needs to solve", "Existing data sources and knowledge assets", "Required accuracy, speed, and reliability targets", "Domain-specific terminology and workflows", "Security, privacy, and deployment requirements"],
+        "phase1Approach": "We determine the most suitable approach, including:",
+        "phase1ApproachItems": ["Fine-tuning existing open-source models", "Domain adaptation", "Custom training pipelines", "Retrieval-enhanced model systems", "Specialized AI architectures"],
+        "phase2Title": "2. Model development and optimization",
+        "phase2Desc": "We build and improve AI models through:",
+        "phase2Items": ["Fine-tuning models on organization-specific data", "Training models for specialized tasks and domains", "Creating evaluation processes to measure performance", "Optimizing models for your hardware and infrastructure", "Reducing model size and resource requirements where needed"],
+        "phase3Title": "3. Private AI deployment",
+        "phase3Desc": "The model operates within your controlled environment:",
+        "phase3Items": ["Your organization owns the AI production environment", "Models can run on your own infrastructure or private cloud", "Training and inference can be performed without sending sensitive data to external providers", "No dependency on external AI APIs or per-token pricing models", "Your team controls access, updates, and the model lifecycle"],
+        "impactTitle": "Business impact",
+        "impact1Title": "Reduce costs",
+        "impact1Items": ["Build smaller, efficient models optimized for specific tasks", "Reduce unnecessary usage of expensive general-purpose AI services", "Lower operational costs through optimized inference", "Create predictable AI operating expenses"],
+        "impact2Title": "Increase speed",
+        "impact2Items": ["Deliver faster results for specialized workflows", "Reduce manual analysis and processing time", "Improve AI performance for organization-specific tasks", "Enable faster decision-making with specialized capabilities"],
+        "impact3Title": "Protect your data",
+        "impact3Items": ["Training and model adaptation can happen inside controlled environments", "Sensitive organizational data remains private", "Data usage and model behavior remain governed by your organization"],
+        "impact4Title": "Create competitive advantage",
+        "impact4Items": ["Build AI capabilities based on your unique data and expertise", "Develop models optimized for your organization's domain", "Create specialized systems that competitors cannot simply access through public tools", "Turn internal knowledge and processes into AI capabilities"],
+        "impact5Title": "Maintain ownership",
+        "impact5Items": ["Your organization controls the model, deployment, and operational lifecycle", "The AI system is built around your requirements, infrastructure, and objectives", "Your models become a long-term organizational asset rather than a dependency on external providers"]
+      }
+    }
   },
   "projects": {
     "eyebrow": "How We Work",
@@ -47,19 +173,98 @@
   "why": {
     "eyebrow": "Why Haal Lab",
     "title": "What sets us apart",
-    "lead": "Three commitments that shape everything we build , and every relationship we have with clients."
+    "lead": "Three commitments that shape everything we build , and every relationship we have with clients.",
+    "sectionEyebrow": "Why HAAL Lab",
+    "sectionHeading": "Why Organizations Choose HAAL Lab",
+    "sectionLead": "Three commitments that shape everything we build , and every relationship we have with clients.",
+    "items": {
+      "item1": {
+        "title": "Research Before Building",
+        "description": "Every AI project starts with understanding, not implementation.\n\nWe study your organization's objectives, workflows, data environment, existing systems, and constraints before choosing an approach.\n\nHaal Lab evaluates different technologies, experiments with possible methods, and identifies the most suitable path based on evidence, ensuring the final system is designed around your actual needs."
+      },
+      "item2": {
+        "title": "Engineered for Your Environment",
+        "description": "AI systems succeed when they fit naturally into the organization using them.\n\nWe design and develop solutions around your infrastructure, operational requirements, and security expectations, rather than forcing your organization to adapt to a predefined technology.\n\nFrom architecture to deployment, every decision is made with your environment and long-term goals in mind."
+      },
+      "item3": {
+        "title": "Your Data. Your Infrastructure. Your AI.",
+        "description": "AI should create independence, not dependency.\n\nHaal Lab builds systems where organizations maintain ownership of their data, control over their infrastructure, and visibility into how their AI capabilities operate.\n\nYour knowledge stays yours. Your AI capabilities stay yours."
+      }
+    }
   },
   "services": {
     "eyebrow": "Services",
     "title": "How we can help",
-    "lead": "From a single AI assistant to a complete private AI platform, we meet you where you are."
+    "lead": "From a single AI assistant to a complete private AI platform, we meet you where you are.",
+    "items": {
+      "item1": {
+        "title": "Custom AI Development",
+        "description": "AI systems built specifically for your business problem , not generic tools repackaged."
+      },
+      "item2": {
+        "title": "Smart Document Search",
+        "description": "AI that reads your documents and answers questions with sources you can verify."
+      },
+      "item3": {
+        "title": "AI Integration",
+        "description": "We connect AI capabilities into your existing software , safely and reliably."
+      },
+      "item4": {
+        "title": "Workflow Automation",
+        "description": "AI that handles repetitive tasks so your team can focus on higher-value work."
+      },
+      "item5": {
+        "title": "Private AI Setup",
+        "description": "We install and configure AI to run entirely on your own computers , no cloud required."
+      },
+      "item6": {
+        "title": "AI Advisory",
+        "description": "Not sure where to start? We help you understand what AI can do for your business , in plain language."
+      }
+    }
   },
   "aboutTeaser": {
     "eyebrow": "About Haal Lab",
     "title": "We're engineers, not marketers.",
     "body1": "Haal Lab is an AI engineering company. We build intelligent software systems that help organizations work smarter , without sending their data to third-party services.",
     "body2": "We treat AI as a craft, not a buzzword. Our work spans from AI that runs entirely on your own computers, to smart search across your documents, to custom AI models built specifically for your tasks.",
-    "readMission": "Read our mission"
+    "readMission": "Read our mission",
+    "details": {
+      "focus": { "label": "Focus", "value": "Private AI" },
+      "approach": { "label": "Approach", "value": "Built for you" },
+      "delivery": { "label": "Delivery", "value": "End-to-end" },
+      "method": { "label": "Method", "value": "Research-led" }
+    }
+  },
+  "architecture": {
+    "eyebrow": "Architecture",
+    "heading": "From Data to Intelligence",
+    "lead": "A modern AI knowledge platform transforms your documents, databases, and data sources into actionable intelligence.",
+    "description": "Every system we build is designed for your specific data sources, workflows, and requirements. No generic solutions.",
+    "ctaButton": "Discuss Your Architecture"
+  },
+  "projectsList": {
+    "item1": {
+      "name": "GGUF Loader",
+      "description": "A platform that lets you run powerful AI models on your own computer , no internet needed, no data sent anywhere. Just install and go.",
+      "tags": ["Python", "AI Models", "Offline", "Private"],
+      "metrics": {
+        "label1": "Runs", "value1": "On your PC",
+        "label2": "Internet", "value2": "Not needed",
+        "label3": "Data sent", "value3": "None"
+      }
+    },
+    "item2": {
+      "name": "Legal Intelligence System",
+      "description": "A smart search tool for legal documents. Ask a question in plain language and get the exact paragraph , with the source document cited , even across thousands of files.",
+      "tags": ["Smart Search", "Multilingual", "Citations", "Document AI"],
+      "metrics": {
+        "label1": "Searches", "value1": "In plain language",
+        "label2": "Results", "value2": "With sources",
+        "label3": "Languages", "value3": "Multi"
+      }
+    },
+    "projectPrefix": "/ Project"
   },
   "contactCta": {
     "eyebrow": "Start a Conversation",
@@ -199,6 +404,195 @@
       "title": "Transparent pricing for real AI systems.",
       "lead": "Four packages designed for startups, businesses, enterprises, and research institutions. Every tier delivers a working system , not a slide deck.",
       "meta": "haal-lab.solutions / pricing"
+    }
+  },
+  "caseStudies": {
+    "eyebrow": "Selected Engineering Case Studies",
+    "heading": "Practical AI Systems for Complex Challenges",
+    "lead": "Representative engagements demonstrating approaches to solving complex AI engineering problems for organizations, research groups, and technical teams.",
+    "ctaTitle": "Facing a Complex AI Engineering Challenge?",
+    "ctaDescription": "Describe your technical requirements, constraints, and objectives. Our engineering team will evaluate potential approaches and provide a practical assessment.",
+    "ctaButton": "Discuss Your Requirements",
+    "contextTitle": "Context",
+    "challengeTitle": "Challenge",
+    "approachTitle": "Engineering Approach",
+    "considerationsTitle": "Technical Considerations",
+    "outcomeTitle": "Outcome",
+    "studies": {
+      "study1": {
+        "eyebrow": "Research Engineering",
+        "title": "Accelerating Knowledge Discovery Across Research Archives",
+        "description": "Engineering a semantic search architecture to enable researchers to efficiently locate relevant information across distributed document repositories.",
+        "tags": ["Document Processing", "Semantic Search", "Knowledge Organization"],
+        "contextItems": [
+          "Research organization accumulated years of scientific papers, technical reports, and experimental documentation across multiple disconnected repositories",
+          "Information volume increased significantly, making it difficult for researchers to determine whether specific work had already been conducted",
+          "Researchers spent substantial time searching for existing knowledge rather than focusing on analysis and discovery"
+        ],
+        "challengeItems": [
+          "Information distributed across disconnected systems with varying formats and organizational structures",
+          "Keyword-based search missed conceptually related documents using different terminology",
+          "Institutional knowledge resided in documents that were difficult to locate using traditional search methods",
+          "New researchers required significant time to understand what work had been completed and where to find relevant documentation"
+        ],
+        "approachItems": [
+          "Designed document processing workflows to normalize and index content from heterogeneous sources",
+          "Implemented semantic retrieval architecture using embedding-based similarity matching rather than keyword search alone",
+          "Developed source-aware information access ensuring every retrieval links back to originating documents",
+          "Created research-focused search interface supporting both exploratory discovery and targeted queries"
+        ],
+        "considerationsItems": [
+          "Processing large collections while maintaining reasonable indexing timeframes",
+          "Handling multilingual documents and cross-language information retrieval",
+          "Maintaining source traceability to support research reproducibility requirements",
+          "Addressing data ownership policies and access control across different document types"
+        ],
+        "outcomeItems": [
+          "Researchers gained faster access to existing work, reducing time spent searching and increasing focus on analysis",
+          "Improved discovery of related work across different terminology and conceptual frameworks",
+          "New team members could more efficiently understand completed research and locate relevant documentation",
+          "Organization improved utilization of existing institutional knowledge"
+        ]
+      },
+      "study2": {
+        "eyebrow": "Operational Engineering",
+        "title": "Supporting Research Operations Through Intelligent Assistance",
+        "description": "Developing an AI-assisted workflow system to handle internal knowledge retrieval and automate repetitive operational processes.",
+        "tags": ["Workflow Automation", "Knowledge Access", "Process Integration"],
+        "contextItems": [
+          "Technical team handled increasing volumes of internal questions, documentation requests, and repetitive administrative workflows",
+          "Staff time was consumed answering repeated questions and performing routine information retrieval tasks",
+          "Organizational knowledge resided in various systems, making it difficult to locate information quickly"
+        ],
+        "challengeItems": [
+          "Same questions repeated across teams, requiring manual responses each time",
+          "Time-consuming process to locate information scattered across documentation and systems",
+          "Repetitive administrative workflows reduced capacity for higher-value technical work",
+          "Difficulty connecting existing organizational knowledge with day-to-day operational questions"
+        ],
+        "approachItems": [
+          "Designed knowledge-connected workflow system that provides contextual information for common operational questions",
+          "Integrated with existing tools and documentation systems rather than requiring workflow changes",
+          "Implemented assistance mechanisms for repetitive processes while maintaining appropriate human oversight",
+          "Developed internal query interface that retrieves information from organizational knowledge bases"
+        ],
+        "considerationsItems": [
+          "Access control ensuring users only retrieve information they are authorized to access",
+          "Data privacy requirements for handling internal organizational information",
+          "Reliability requirements ensuring system availability for operational use",
+          "Integration points with existing workflow tools and knowledge management systems",
+          "Human oversight mechanisms for sensitive or consequential operations"
+        ],
+        "outcomeItems": [
+          "Reduced time spent on repetitive information retrieval and routine administrative tasks",
+          "Faster access to organizational knowledge when needed for operational decisions",
+          "Staff capacity freed for higher-value technical and analytical work",
+          "Improved consistency in how routine processes are executed"
+        ]
+      },
+      "study3": {
+        "eyebrow": "Infrastructure Engineering",
+        "title": "Establishing Secure AI Capabilities Within Organizational Infrastructure",
+        "description": "Architecting private AI deployment infrastructure to enable modern capabilities while maintaining strict data control and security requirements.",
+        "tags": ["Private Deployment", "Security Architecture", "Infrastructure"],
+        "contextItems": [
+          "Organization required modern AI capabilities for internal operations while maintaining strict control over sensitive information",
+          "External AI services posed unacceptable data privacy and security risks for the organization's use cases",
+          "Compliance and regulatory frameworks required that certain data never leave organizational boundaries"
+        ],
+        "challengeItems": [
+          "Data privacy requirements prohibited sending sensitive information to external AI services",
+          "Security policies restricted which systems could process certain categories of information",
+          "Compliance considerations required documented data handling and processing controls",
+          "Organization needed AI capabilities without compromising established security boundaries"
+        ],
+        "approachItems": [
+          "Designed private deployment architecture for AI operations within organizational infrastructure boundaries",
+          "Implemented secure data handling ensuring sensitive information remains under organization control",
+          "Developed infrastructure that operates without external dependencies for inference operations",
+          "Created operational procedures for organization-controlled model deployment and maintenance"
+        ],
+        "considerationsItems": [
+          "Data sovereignty requirements ensuring information never crosses organizational boundaries",
+          "Security architecture meeting organizational policies and compliance frameworks",
+          "Infrastructure resource requirements for running capable models internally",
+          "Operational ownership model and ongoing maintenance responsibilities",
+          "Model update and improvement procedures under organizational control"
+        ],
+        "outcomeItems": [
+          "AI capabilities became available for internal use while meeting security requirements",
+          "Sensitive information processing maintained within organizational control boundaries",
+          "Organization retained ownership of deployed systems and operational procedures",
+          "Compliance requirements satisfied through controlled data handling architecture"
+        ]
+      },
+      "study4": {
+        "eyebrow": "Model Engineering",
+        "title": "Improving Specialized Document Understanding Through Custom AI Models",
+        "description": "Developing task-specific AI models to handle specialized classification and analysis requirements more efficiently than general-purpose systems.",
+        "tags": ["Custom Models", "Domain Adaptation", "Task Optimization"],
+        "contextItems": [
+          "Organization required AI capabilities for highly specific document classification and analysis task within a specialized domain",
+          "General-purpose AI models produced inconsistent results due to lack of domain-specific understanding",
+          "Manual processing was accurate but too slow to handle required document volumes"
+        ],
+        "challengeItems": [
+          "General AI models lacked sufficient specificity for the organization's specialized requirements",
+          "Domain-specific terminology and context required understanding that broad models did not possess",
+          "Manual processing ensured accuracy but could not scale to meet processing volume requirements",
+          "Consistency was difficult to maintain across different human reviewers and over time"
+        ],
+        "approachItems": [
+          "Developed task-specific model focused on the organization's narrow classification requirements",
+          "Applied domain adaptation techniques to incorporate specialized knowledge and terminology",
+          "Designed evaluation workflows to measure accuracy against organization's quality standards",
+          "Optimized model for efficient deployment given organization's infrastructure constraints"
+        ],
+        "considerationsItems": [
+          "Model efficiency to enable practical deployment on available infrastructure",
+          "Accuracy evaluation methodologies aligned with organizational quality requirements",
+          "Deployment constraints including latency, throughput, and resource availability",
+          "Maintenance procedures for model updates as requirements evolve",
+          "Quality assurance processes to catch edge cases and unexpected inputs"
+        ],
+        "outcomeItems": [
+          "More consistent processing aligned with organizational standards and requirements",
+          "Better accuracy on domain-specific tasks compared to general-purpose alternatives",
+          "More efficient workflow enabling higher processing volumes",
+          "Organization gained understanding of where specialized models provide value versus general-purpose systems"
+        ]
+      }
+    }
+  },
+  "process": {
+    "eyebrow": "Engineering Process",
+    "heading": "How We Build AI Systems",
+    "lead": "A structured engineering process designed for reliability, transparency, and long-term ownership.",
+    "next": "Next",
+    "ctaTitle": "Need a custom AI system?",
+    "ctaDescription": "Tell us about your technical environment and requirements.",
+    "ctaButton": "Request Technical Discussion",
+    "phases": {
+      "phase1": {
+        "title": "Discovery",
+        "description": "Understand business requirements, constraints, and goals. Map existing systems, data sources, and success criteria."
+      },
+      "phase2": {
+        "title": "Architecture",
+        "description": "Design models, infrastructure, workflows, and evaluation framework. Define deployment strategy and monitoring approach."
+      },
+      "phase3": {
+        "title": "Development",
+        "description": "Build and validate the system incrementally. Continuous testing, evaluation, and refinement with stakeholder feedback."
+      },
+      "phase4": {
+        "title": "Deployment",
+        "description": "Deploy into the target environment. Configure infrastructure, security, and access controls. Knowledge transfer and documentation."
+      },
+      "phase5": {
+        "title": "Monitoring & Improvement",
+        "description": "Observe performance, quality, and reliability over time. Continuous optimization based on real-world usage patterns."
+      }
     }
   }
 }

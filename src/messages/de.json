@@ -36,7 +36,133 @@
     "eyebrow": "Was wir tun",
     "title": "Vier Wege, wie wir Ihnen helfen, AI zu nutzen",
     "lead": "Jeder Service steht für sich allein oder funktioniert zusammen als vollständiges System. Wir konzentrieren uns auf das, was Ihr Unternehmen braucht , nicht darauf, dem neuesten Trend hinterherzulaufen.",
-    "learnMore": "Mehr erfahren"
+    "learnMore": "Mehr erfahren",
+    "moreInfo": "Mehr Informationen",
+    "ctaTitle": "Benötigen Sie ein AI-System, das auf Ihre Organisation zugeschnitten ist?",
+    "ctaDescription": "Erzählen Sie uns von Ihren Anforderungen, Ihrer technischen Umgebung und Ihren Zielen. Wir bewerten den geeignetsten Ansatz.",
+    "ctaButton": "Technische Besprechung anfordern",
+    "cards": {
+      "card1": {
+        "title": "AI-Aganten & Geschäftsautomatisierung",
+        "description": "Automatisieren Sie die Workflows, die Ihr Unternehmen ausbremsen.\n\nWir bauen private AI-Aganten, die Ihre Prozesse analysieren, Automatisierungspotenziale identifizieren und wiederkehrende Aufgaben in Ihrer bestehenden Umgebung übernehmen.\n\nReduzieren Sie Betriebskosten. Erhöhen Sie die Geschwindigkeit Ihres Teams. Behalten Sie die Kontrolle über Ihre Daten.",
+        "detailTitle": "AI-Aganten & Geschäftsautomatisierung",
+        "detailIntro1": "Wir analysieren Ihre bestehenden Workflows, um Prozesse zu identifizieren, bei denen AI manuellen Aufwand reduzieren, Reaktionszeiten verbessern und die Betriebseffizienz steigern kann.",
+        "detailIntro2": "Unser Prozess beginnt mit dem Verständnis dafür, wie Ihre Teams arbeiten: die wiederkehrenden Aufgaben, die sie ausführen, die Informationen, die sie nutzen, die Systeme, von denen sie abhängen, und wo Verzögerungen oder unnötige Kosten entstehen. Anschließend entwerfen und implementieren wir private AI-Aganten, die spezifische Aufgaben automatisieren, während Ihre Organisation die Kontrolle behält.",
+        "phaseTitle": "Wie wir Automatisierungssysteme entwickeln",
+        "phase1Title": "1. Workflow-Analyse",
+        "phase1Desc": "Wir untersuchen Ihre Geschäftsprozesse, um Folgendes zu identifizieren:",
+        "phase1Items": ["Zeitaufwändige manuelle Aufgaben", "Wiederkehrende Entscheidungsprozesse", "Informationsengpässe", "Bereiche, in denen Mitarbeiter Zeit mit der Suche, Überprüfung oder Verarbeitung von Daten verbringen"],
+        "phase2Title": "2. AI-Systemdesign",
+        "phase2Desc": "Wir gestalten Aganten rund um Ihre tatsächlichen Abläufe:",
+        "phase2Items": ["Nur Anbindung an genehmigte interne Systeme", "Definition dessen, worauf die AI zugreifen und ausführen darf", "Erstellung von Workflows mit menschlicher Freigabe, wo erforderlich", "Auswahl der geeigneten Modelle und Infrastruktur basierend auf Ihren Anforderungen"],
+        "phase3Title": "3. Private AI-Bereitstellung",
+        "phase3Desc": "Das AI-System läuft in Ihrer Infrastruktur oder vertrauenswürdigen privaten Umgebung:",
+        "phase3Items": ["Ihr Unternehmen besitzt und kontrolliert die AI-Produktionsumgebung", "Modelle und AI-Dienste betreiben innerhalb Ihrer Infrastruktur statt über externe Plattformen", "Keine Abhängigkeit von externem API-Gebrauch oder unvorhersehbaren Token-Kosten", "Ihr Team kontrolliert Zugriff, Abläufe, Sicherheit und zukünftige Änderungen"],
+        "impactTitle": "Geschäftsauswirkungen",
+        "impact1Title": "Kosten reduzieren",
+        "impact1Items": ["Wiederkehrende Aufgaben automatisieren", "Zeit für manuelle Verarbeitung reduzieren", "Laufende Abhängigkeit von externen AI-API-Kosten vermeiden", "AI-Infrastruktur mit vorhersehbaren Betriebskosten aufbauen"],
+        "impact2Title": "Geschwindigkeit erhöhen",
+        "impact2Items": ["Schnellerer Zugriff auf Informationen", "Schnellere Ausführung routinemäßiger Workflows", "Kürzere Reaktions- und Verarbeitungszeiten", "AI-Fähigkeiten direkt innerhalb Ihrer Organisation verfügbar"],
+        "impact3Title": "Ihre Daten schützen",
+        "impact3Items": ["AI-Systeme können in Ihrer eigenen Umgebung laufen", "Der Datenzugriff wird von Ihrem Unternehmen kontrolliert", "Sensible Informationen müssen Ihre Infrastruktur nicht verlassen", "Ihre Daten werden nicht zum Betrieb von AI-Diensten Dritter verwendet"],
+        "impact4Title": "Wettbewerbsvorteile schaffen",
+        "impact4Items": ["AI-Fähigkeiten rund um Ihre einzigartigen Workflows aufbauen", "Betriebswissen bewahren", "Systeme schaffen, die Wettbewerber nicht einfach von einem Anbieter kaufen können", "Interne AI-Fähigkeiten entwickeln, die mit Ihrem Unternehmen wachsen"],
+        "impact5Title": "Kontrolle behalten",
+        "impact5Items": ["Ihr Unternehmen kontrolliert Bereitstellung, Modelle, Daten und Abläufe", "Das System wird um Ihre Anforderungen herum gebaut, nicht um eine Plattform Dritter", "Ihre AI-Infrastruktur bleibt ein langfristiger organisatorischer Vermögenswert"],
+        "phase1Approach": "",
+        "phase1ApproachItems": []
+      },
+      "card2": {
+        "title": "Wissensintelligente Systeme",
+        "description": "Verwandeln Sie die Informationen Ihrer Organisation in einen strategischen Vorteil.\n\nWir bauen private AI-Systeme, die Ihre Dokumente, Forschung und Ihr internes Wissen verstehen – und Ihren Teams helfen, sofort vertrauenswürdige Antworten zu finden.\n\nBessere Entscheidungen treffen mit dem Wissen, das Sie bereits besitzen.",
+        "detailTitle": "Wissensintelligente Systeme",
+        "detailIntro1": "Wir analysieren die Informationslandschaft Ihrer Organisation, um zu identifizieren, wo wertvolles Wissen schwer zugänglich, über Dokumente verteilt oder in nicht miteinander verbundenen Systemen gespeichert ist.",
+        "detailIntro2": "Unser Prozess beginnt mit dem Verständnis dafür, wie Ihre Teams Informationen erzeugen, speichern und nutzen: die Dokumente, auf die sie angewiesen sind, die Fragen, die sie wiederholt beantworten, die Wissenslücken, die Entscheidungen verlangsamen, und wo wichtiges Expertenwissen schwer abrufbar ist. Anschließend entwerfen und implementieren wir private AI-Wissenssysteme, die die Informationen Ihrer Organisation durchsuchbar und nutzbar machen, während Sie die volle Kontrolle über Ihre Daten behalten.",
+        "phaseTitle": "Wie wir Wissenssysteme entwickeln",
+        "phase1Title": "1. Wissensanalyse",
+        "phase1Desc": "Wir untersuchen Ihre Informationsumgebung, um Folgendes zu identifizieren:",
+        "phase1Items": ["Wichtige Dokumentensammlungen und interne Wissensquellen", "Informationen, die in nicht miteinander verbundenen Systemen gespeichert sind", "Bereiche, in denen Mitarbeiter Zeit mit der Suche nach Antworten verbringen", "Wiederkehrende Anfragen und Wissensanforderungen über Teams hinweg", "Entscheidendes Expertenwissen, das bewahrt und zugänglich gemacht werden muss"],
+        "phase2Title": "2. AI-Wissenssystemdesign",
+        "phase2Desc": "Wir gestalten Abrufsysteme rund um die Informationen Ihrer Organisation:",
+        "phase2Items": ["Nur Anbindung an genehmigte Dokumente, Datenbanken und Wissensquellen", "Interne Informationen mithilfe von AI-Abruftechnologien verarbeiten und verstehen", "Antworten basierend auf dem eigenen Wissen Ihrer Organisation bereitstellen", "Quellenverweise und Zitate zur Überprüfung einbezieen", "Zugriffsregeln basierend auf Ihren Sicherheitsanforderungen definieren"],
+        "phase3Title": "3. Private AI-Bereitstellung",
+        "phase3Desc": "Das Wissenssystem läuft in Ihrer Infrastruktur oder vertrauenswürdigen privaten Umgebung:",
+        "phase3Items": ["Ihre Dokumente und Ihr organisatorisches Wissen bleiben unter Ihrer Kontrolle", "AI-Modelle und Abrufsysteme können in Ihrer eigenen Umgebung betrieben werden", "Keine Abhängigkeit von externen AI-Plattformen oder Datenverarbeitung durch Dritte", "Keine unvorhersehbaren pro-Abfrage- oder pro-Token-Kosten von externen AI-Anbietern", "Ihr Team kontrolliert Zugriff, Sicherheit, Updates und zukünftige Erweiterungen"],
+        "impactTitle": "Geschäftsauswirkungen",
+        "impact1Title": "Kosten reduzieren",
+        "impact1Items": ["Zeit für manuelle Dokumentensuche reduzieren", "Wiederholte Recherche- und Informationsanfragen minimieren", "Abhängigkeit von externen Wissensplattformen verringern", "Bestehendes organisatorisches Wissen wertvoller machen"],
+        "impact2Title": "Geschwindigkeit erhöhen",
+        "impact2Items": ["Relevante Informationen in Sekunden statt Stunden finden", "Recherche, Analyse und Entscheidungsfindung beschleunigen", "Mitarbeitern sofortigen Zugang zu vertrauenswürdigem internem Wissen geben", "Verzögerungen durch fragmentierte Informationen reduzieren"],
+        "impact3Title": "Ihre Daten schützen",
+        "impact3Items": ["Dokumente bleiben in Ihrer kontrollierten Umgebung", "Der Informationszugriff richtet sich nach den Berechtigungen Ihrer Organisation", "AI-Antworten werden aus genehmigten internen Quellen generiert", "Sensibles Wissen muss Ihre Infrastruktur nicht verlassen"],
+        "impact4Title": "Wettbewerbsvorteile schaffen",
+        "impact4Items": ["Internes Wissen in eine betriebliche Fähigkeit verwandeln", "Über Jahre angesammeltes Expertenwissen bewahren", "Schnellere und fundiertere Entscheidungen ermöglichen", "Organisationsintelligenz aufbauen, die Wettbewerber nicht einfach kaufen können"],
+        "impact5Title": "Kontrolle behalten",
+        "impact5Items": ["Ihr Unternehmen besitzt das Wissenssystem, die Daten und die Infrastruktur", "Ihre Teams kontrollieren Bereitstellung, Zugriff und Abläufe", "Das System wird um Ihr Wissen und Ihre Anforderungen herum gebaut, nicht um eine Plattform Dritter"],
+        "phase1Approach": "",
+        "phase1ApproachItems": []
+      },
+      "card3": {
+        "title": "Private AI-Infrastruktur",
+        "description": "Übernehmen Sie AI, ohne die Kontrolle abzugeben.\n\nWir implementieren AI-Systeme in Ihrer Infrastruktur oder privaten Umgebung und halten Ihre Daten, Sicherheit und Abläufe unter Ihrer Kontrolle.\n\nEnterprise-AI ohne externe Abhängigkeit.",
+        "detailTitle": "Private AI-Infrastruktur",
+        "detailIntro1": "Wir entwerfen und implementieren die technische Grundlage für Organisationen, die AI übernehmen wollen, während sie die vollständige Kontrolle über ihre Daten, Modelle, Infrastruktur und Abläufe behalten.",
+        "detailIntro2": "Unser Prozess beginnt mit dem Verständnis Ihrer bestehenden technischen Umgebung, Sicherheitsanforderungen, AI-Ziele und betrieblichen Einschränkungen. Anschließend bauen wir eine private AI-Infrastruktur, die es Ihrer Organisation ermöglicht, AI-Systeme in Ihrer eigenen kontrollierten Umgebung auszuführen, zu verwalten und zu skalieren.",
+        "phaseTitle": "Wie wir private AI-Infrastruktur entwickeln",
+        "phase1Title": "1. Infrastrukturbewertung",
+        "phase1Desc": "Wir analysieren Ihre technische Umgebung, um Folgendes zu identifizieren:",
+        "phase1Items": ["Bestehende Server, Cloud-Ressourcen und Rechenkapazitäten", "Sicherheits-, Compliance- und Datenschutzanforderungen", "AI-Arbeitslasten und Leistungserwartungen", "Datenverarbeitungs-, Speicherungs- und Integrationsanforderungen", "Zukünftige AI-Übernahmeziele und Skalierungsbedürfnisse"],
+        "phase2Title": "2. Infrastrukturdesign",
+        "phase2Desc": "Wir entwerfen die Grundlage für zuverlässige AI-Betriebe:",
+        "phase2Items": ["Private AI-Bereitstellungsumgebungen", "Lokale oder private Modell-Server-Systeme", "GPU- und Rechenoptimierung", "AI-Anwendungs- und Abrufinfrastruktur", "Datenverarbeitungspipelines", "Überwachungs-, Evaluierungs- und Betriebsmanagementsysteme"],
+        "phase3Title": "3. Private AI-Bereitstellung",
+        "phase3Desc": "Die Infrastruktur arbeitet in Ihrer kontrollierten Umgebung:",
+        "phase3Items": ["AI-Modelle und Systeme laufen auf Ihren eigenen Servern oder der privaten Cloud", "Ihr Unternehmen besitzt die AI-Produktionsumgebung", "Keine Notwendigkeit, sensible Daten an externe AI-Anbieter zu senden", "Keine Abhängigkeit von externer API-Verfügbarkeit oder sich ändernden Preismodellen", "Ihr Team kontrolliert Zugriff, Sicherheit, Wartung und zukünftige Erweiterungen"],
+        "impactTitle": "Geschäftsauswirkungen",
+        "impact1Title": "Kosten reduzieren",
+        "impact1Items": ["Langfristige Abhängigkeit von externen AI-Plattformen reduzieren", "Unvorhersehbare nutzungsbasierte AI-API-Kosten vermeiden", "AI-Arbeitslasten für Ihre verfügbare Infrastruktur optimieren", "Wiederverwendbare AI-Grundlagen über Ihre Organisation hinweg aufbauen"],
+        "impact2Title": "Geschwindigkeit erhöhen",
+        "impact2Items": ["AI-Fähigkeiten schneller über Abteilungen hinweg bereitstellen", "Eine zuverlässige Grundlage für neue AI-Anwendungen schaffen", "Integrationskomplexität zwischen AI-Systemen und Geschäftsabläufen reduzieren", "Schnellere Experimente und Einführung ermöglichen"],
+        "impact3Title": "Ihre Daten schützen",
+        "impact3Items": ["Sensible Informationen bleiben in Ihrer kontrollierten Umgebung", "Sicherheitsrichtlinien werden von Ihrem Unternehmen definiert und durchgesetzt", "AI-Betriebe sind transparent und beobachtbar", "Datenverarbeitung folgt Ihren internen Anforderungen"],
+        "impact4Title": "Wettbewerbsvorteile schaffen",
+        "impact4Items": ["Interne AI-Fähigkeiten aufbauen statt temporären Zugang zu mieten", "Eine Grundlage für langfristige AI-Übernahme schaffen", "Systeme entwickeln, die mit den einzigartigen Anforderungen Ihrer Organisation übereinstimmen", "Strategische Abhängigkeit von externen AI-Anbietern reduzieren"],
+        "impact5Title": "Kontrolle behalten",
+        "impact5Items": ["Ihr Unternehmen besitzt und kontrolliert die AI-Infrastruktur", "Ihre Teams kontrollieren Modelle, Bereitstellung, Daten und Abläufe", "Die Infrastruktur wird zu einem langfristigen organisatorischen Vermögenswert, nicht zu einem Abonnement"],
+        "phase1Approach": "",
+        "phase1ApproachItems": []
+      },
+      "card4": {
+        "title": "Benutzerdefinierte AI-Modelle & Training",
+        "description": "Entwickeln Sie AI-Fähigkeiten, die speziell für Ihre Organisation konzipiert sind.\n\nWir optimieren und trainieren AI-Modelle für spezialisierte Aufgaben, bei denen Allzweck-AI nicht genau, effizient oder privat genug ist.\n\nEinzigartige AI-Fähigkeiten rund um Ihre Daten und Ihr Expertenwissen aufbauen.",
+        "detailTitle": "Benutzerdefinierte AI-Modelle & Training",
+        "detailIntro1": "Wir entwickeln und passen AI-Modelle für Organisationen an, die über die Fähigkeiten von Allzweck-AI-Systemen hinausgehende spezialisierte Fähigkeiten benötigen.",
+        "detailIntro2": "Unser Prozess beginnt mit dem Verständnis der spezifischen Aufgaben, die Ihre Organisation mit AI lösen muss, der für Training oder Anpassung verfügbaren Daten, des erforderlichen Leistungsniveaus und der Bereitstellungsumgebung. Anschließend optimieren, verfeinern oder trainieren wir AI-Modelle, die auf die Anforderungen Ihrer Organisation zugeschnitten sind, während wir die Kontrolle über das endgültige System behalten.",
+        "phaseTitle": "Wie wir benutzerdefinierte AI-Modelle entwickeln",
+        "phase1Title": "1. Aufgaben- und Datenanalyse",
+        "phase1Desc": "Wir analysieren Ihre AI-Anforderungen, um Folgendes zu identifizieren:",
+        "phase1Items": ["Das spezifische Geschäftsproblem, das das Modell lösen muss", "Bestehende Datenquellen und Wissensbestände", "Erforderliche Genauigkeits-, Geschwindigkeits- und Zuverlässigkeitsziele", "Domänenspezifische Terminologie und Workflows", "Sicherheits-, Datenschutz- und Bereitstellungsanforderungen"],
+        "phase1Approach": "Wir bestimmen den geeignetsten Ansatz, einschließlich:",
+        "phase1ApproachItems": ["Feinabstimmung bestehender Open-Source-Modelle", "Domänenanpassung", "Benutzerdefinierte Trainingspipelines", "Abrufgestützte Modellsysteme", "Spezialisierte AI-Architekturen"],
+        "phase2Title": "2. Modellentwicklung und Optimierung",
+        "phase2Desc": "Wir entwickeln und verbessern AI-Modelle durch:",
+        "phase2Items": ["Feinabstimmung von Modellen auf organisations-spezifischen Daten", "Training von Modellen für spezialisierte Aufgaben und Domänen", "Erstellung von Evaluierungsprozessen zur Messung der Leistung", "Optimierung von Modellen für Ihre Hardware und Infrastruktur", "Reduzierung der Modellgröße und Ressourcenanforderungen, wo erforderlich"],
+        "phase3Title": "3. Private AI-Bereitstellung",
+        "phase3Desc": "Das Modell arbeitet in Ihrer kontrollierten Umgebung:",
+        "phase3Items": ["Ihr Unternehmen besitzt die AI-Produktionsumgebung", "Modelle können auf Ihrer eigenen Infrastruktur oder privaten Cloud laufen", "Training und Inferenz können durchgeführt werden, ohne sensible Daten an externe Anbieter zu senden", "Keine Abhängigkeit von externen AI-APIs oder Token-Preismodellen", "Ihr Team kontrolliert Zugriff, Updates und den Modelllebenszyklus"],
+        "impactTitle": "Geschäftsauswirkungen",
+        "impact1Title": "Kosten reduzieren",
+        "impact1Items": ["Kleinere, effiziente Modelle für spezifische Aufgaben aufbauen", "Unnötigen Einsatz teurer Allzweck-AI-Dienste reduzieren", "Betriebskosten durch optimierte Inferenz senken", "Vorhersehbare AI-Betriebskosten schaffen"],
+        "impact2Title": "Geschwindigkeit erhöhen",
+        "impact2Items": ["Schnellere Ergebnisse für spezialisierte Workflows liefern", "Manuelle Analyse- und Verarbeitungszeit reduzieren", "AI-Leistung für organisations-spezifische Aufgaben verbessern", "Schnellere Entscheidungsfindung mit spezialisierten Fähigkeiten ermöglichen"],
+        "impact3Title": "Ihre Daten schützen",
+        "impact3Items": ["Training und Modellanpassung können in kontrollierten Umgebungen stattfinden", "Sensible organisationsinterne Daten bleiben privat", "Die Datennutzung und das Modellverhalten werden weiterhin von Ihrem Unternehmen bestimmt"],
+        "impact4Title": "Wettbewerbsvorteile schaffen",
+        "impact4Items": ["AI-Fähigkeiten auf Basis Ihrer einzigartigen Daten und Ihres Expertenwissens aufbauen", "Modelle entwickeln, die für die Domäne Ihrer Organisation optimiert sind", "Spezialisierte Systeme schaffen, die Wettbewerber nicht einfach über öffentliche Tools abrufen können", "Internes Wissen und Prozesse in AI-Fähigkeiten verwandeln"],
+        "impact5Title": "Kontrolle behalten",
+        "impact5Items": ["Ihr Unternehmen kontrolliert das Modell, die Bereitstellung und den betrieblichen Lebenszyklus", "Das AI-System wird um Ihre Anforderungen, Infrastruktur und Ziele herum gebaut", "Ihre Modelle werden zu einem langfristigen organisatorischen Vermögenswert statt einer Abhängigkeit von externen Anbietern"]
+      }
+    }
   },
   "projects": {
     "eyebrow": "Unsere Arbeit",
@@ -47,19 +173,98 @@
   "why": {
     "eyebrow": "Warum Haal Lab",
     "title": "Was uns auszeichnet",
-    "lead": "Drei Verpflichtungen, die alles prägen, was wir bauen , und jede Beziehung, die wir mit Kunden haben."
+    "lead": "Drei Verpflichtungen, die alles prägen, was wir bauen , und jede Beziehung, die wir mit Kunden haben.",
+    "sectionEyebrow": "Warum HAAL Lab",
+    "sectionHeading": "Warum Organisationen HAAL Lab wählen",
+    "sectionLead": "Drei Verpflichtungen, die alles prägen, was wir bauen , und jede Beziehung, die wir mit Kunden haben.",
+    "items": {
+      "item1": {
+        "title": "Recherche vor dem Bauen",
+        "description": "Jedes AI-Projekt beginnt mit Verständnis, nicht mit Implementierung.\n\nWir untersuchen die Ziele, Workflows, Datenumgebung, bestehenden Systeme und Einschränkungen Ihrer Organisation, bevor wir einen Ansatz wählen.\n\nHaal Lab bewertet verschiedene Technologien, experimentiert mit möglichen Methoden und identifiziert auf Basis von Evidenz den geeignetsten Weg, sodass das endgültige System um Ihre tatsächlichen Bedürfnisse herum konzipiert ist."
+      },
+      "item2": {
+        "title": "Für Ihre Umgebung entwickelt",
+        "description": "AI-Systeme funktionieren, wenn sie natürlich in die Organisation passen, die sie nutzt.\n\nWir entwerfen und entwickeln Lösungen rund um Ihre Infrastruktur, betrieblichen Anforderungen und Sicherheitserwartungen, anstatt Ihre Organisation zu zwingen, sich an eine vordefinierte Technologie anzupassen.\n\nVon der Architektur bis zur Bereitstellung wird jede Entscheidung mit Blick auf Ihre Umgebung und langfristigen Ziele getroffen."
+      },
+      "item3": {
+        "title": "Ihre Daten. Ihre Infrastruktur. Ihre AI.",
+        "description": "AI sollte Unabhängigkeit schaffen, keine Abhängigkeit.\n\nHaal Lab baut Systeme, in denen Organisationen die Kontrolle über ihre Daten behalten, ihre Infrastruktur kontrollieren und Einblick in den Betrieb ihrer AI-Fähigkeiten haben.\n\nIhr Wissen bleibt Ihres. Ihre AI-Fähigkeiten bleiben Ihres."
+      }
+    }
   },
   "services": {
     "eyebrow": "Dienstleistungen",
     "title": "Wie wir helfen können",
-    "lead": "Von einem einzelnen AI-Assistenten bis zu einer vollständigen privaten AI-Plattform treffen wir Sie dort, wo Sie sind."
+    "lead": "Von einem einzelnen AI-Assistenten bis zu einer vollständigen privaten AI-Plattform treffen wir Sie dort, wo Sie sind.",
+    "items": {
+      "item1": {
+        "title": "Individuelle AI-Entwicklung",
+        "description": "AI-Systeme, die speziell für Ihr Geschäftsproblem gebaut werden , nicht wiederaufgepackte Standardwerkzeuge."
+      },
+      "item2": {
+        "title": "Intelligente Dokumentensuche",
+        "description": "AI, die Ihre Dokumente liest und Fragen mit überprüfbaren Quellen beantwortet."
+      },
+      "item3": {
+        "title": "AI-Integration",
+        "description": "Wir binden AI-Fähigkeiten in Ihre bestehende Software ein , sicher und zuverlässig."
+      },
+      "item4": {
+        "title": "Workflow-Automatisierung",
+        "description": "AI, die wiederkehrende Aufgaben übernimmt, damit sich Ihr Team auf wertvollere Arbeit konzentrieren kann."
+      },
+      "item5": {
+        "title": "Private AI-Einrichtung",
+        "description": "Wir installieren und konfigurieren AI, damit sie vollständig auf Ihren eigenen Computern läuft , keine Cloud erforderlich."
+      },
+      "item6": {
+        "title": "AI-Beratung",
+        "description": "Nicht sicher, wo Sie anfangen sollen? Wir helfen Ihnen zu verstehen, was AI für Ihr Unternehmen tun kann , in einfacher Sprache."
+      }
+    }
   },
   "aboutTeaser": {
     "eyebrow": "Über Haal Lab",
     "title": "Wir sind Ingenieure, keine Vermarkter.",
     "body1": "Haal Lab ist ein AI-Engineering-Unternehmen. Wir bauen intelligente Softwaresysteme, die Organisationen helfen, intelligenter zu arbeiten , ohne ihre Daten an Drittanbieterdienste zu senden.",
     "body2": "Wir behandeln AI als Handwerk, nicht als Schlagwort. Unsere Arbeit reicht von AI, die vollständig auf Ihren eigenen Computern läuft, über intelligente Suche in Ihren Dokumenten bis hin zu benutzerdefinierten AI-Modellen, die speziell für Ihre Aufgaben entwickelt wurden.",
-    "readMission": "Unsere Mission lesen"
+    "readMission": "Unsere Mission lesen",
+    "details": {
+      "focus": { "label": "Fokus", "value": "Private AI" },
+      "approach": { "label": "Ansatz", "value": "Für Sie entwickelt" },
+      "delivery": { "label": "Lieferung", "value": "End-to-End" },
+      "method": { "label": "Methode", "value": "Forschungsbasiert" }
+    }
+  },
+  "architecture": {
+    "eyebrow": "Architektur",
+    "heading": "Von Daten zu Intelligenz",
+    "lead": "Eine moderne AI-Wissensplattform verwandelt Ihre Dokumente, Datenbanken und Datenquellen in handlungsfähige Intelligenz.",
+    "description": "Jedes System, das wir bauen, wird für Ihre spezifischen Datenquellen, Workflows und Anforderungen konzipiert. Keine Standardlösungen.",
+    "ctaButton": "Ihre Architektur besprechen"
+  },
+  "projectsList": {
+    "item1": {
+      "name": "GGUF Loader",
+      "description": "Eine Plattform, mit der Sie leistungsstarke AI-Modelle auf Ihrem eigenen Computer ausführen können , kein Internet benötigt, keine Daten werden irgendwohin gesendet. Einfach installieren und loslegen.",
+      "tags": ["Python", "AI-Modelle", "Offline", "Privat"],
+      "metrics": {
+        "label1": "Läuft", "value1": "Auf Ihrem PC",
+        "label2": "Internet", "value2": "Nicht benötigt",
+        "label3": "Gesendete Daten", "value3": "Keine"
+      }
+    },
+    "item2": {
+      "name": "Legal Intelligence System",
+      "description": "Ein intelligentes Suchwerkzeug für Rechtsdokumente. Stellen Sie eine Frage in einfacher Sprache und erhalten Sie den genauen Absatz , mit Quellenangabe des Originaldokuments , selbst über Tausende von Dateien hinweg.",
+      "tags": ["Intelligente Suche", "Mehrsprachig", "Zitate", "Dokument-AI"],
+      "metrics": {
+        "label1": "Suchen", "value1": "In einfacher Sprache",
+        "label2": "Ergebnisse", "value2": "Mit Quellen",
+        "label3": "Sprachen", "value3": "Mehrsprachig"
+      }
+    },
+    "projectPrefix": "/ Projekt"
   },
   "contactCta": {
     "eyebrow": "Gespräch beginnen",
@@ -199,6 +404,195 @@
       "title": "Transparente Preise für echte AI-Systeme.",
       "lead": "Vier Pakete für Startups, Unternehmen, Großunternehmen und Forschungseinrichtungen. Jede Stufe liefert ein funktionierendes System , kein Foliendeck.",
       "meta": "haal-lab.solutions / preise"
+    }
+  },
+  "caseStudies": {
+    "eyebrow": "Ausgewählte Engineering-Fallstudien",
+    "heading": "Praktische AI-Systeme für komplexe Herausforderungen",
+    "lead": "Repräsentative Projekte, die Ansätze zur Lösung komplexer AI-Engineering-Probleme für Organisationen, Forschungsgruppen und technische Teams demonstrieren.",
+    "ctaTitle": "Steht Sie vor einer komplexen AI-Engineering-Herausforderung?",
+    "ctaDescription": "Beschreiben Sie Ihre technischen Anforderungen, Einschränkungen und Ziele. Unser Engineering-Team wird potenzielle Ansätze bewerten und eine praktische Einschätzung liefern.",
+    "ctaButton": "Ihre Anforderungen besprechen",
+    "contextTitle": "Kontext",
+    "challengeTitle": "Herausforderung",
+    "approachTitle": "Engineering-Ansatz",
+    "considerationsTitle": "Technische Überlegungen",
+    "outcomeTitle": "Ergebnis",
+    "studies": {
+      "study1": {
+        "eyebrow": "Forschungs-Engineering",
+        "title": "Beschleunigung der Wissensentdeckung über Forschungsarchive hinweg",
+        "description": "Entwurf einer semantischen Sucharchitektur, die es Forschern ermöglicht, relevante Informationen effizient in verteilten Dokumentenarchiven zu finden.",
+        "tags": ["Dokumentenverarbeitung", "Semantische Suche", "Wissensorganisation"],
+        "contextItems": [
+          "Forschungsorganisation sammelte über mehrere Jahre wissenschaftliche Arbeiten, technische Berichte und experimentelle Dokumentation in mehreren nicht miteinander verbundenen Archiven",
+          "Das Informationsvolumen stieg erheblich an, sodass Forscher nur schwer feststellen konnten, ob bestimmte Arbeiten bereits durchgeführt wurden",
+          "Forscher verbrachten erhebliche Zeit mit der Suche nach vorhandenem Wissen, anstatt sich auf Analyse und Entdeckung zu konzentrieren"
+        ],
+        "challengeItems": [
+          "Informationen waren über nicht miteinander verbundene Systeme mit unterschiedlichen Formaten und Organisationsstrukturen verteilt",
+          "Die stichwortbasierte Suche übersprach konzeptuell verwandte Dokumente mit anderer Terminologie",
+          "Institutionelles Wissen befand sich in Dokumenten, die mit herkömmlichen Suchmethoden nur schwer zu finden waren",
+          "Neue Forscher benötigten erhebliche Zeit, um zu verstehen, welche Arbeiten bereits abgeschlossen waren und wo relevante Dokumentation zu finden war"
+        ],
+        "approachItems": [
+          "Entwurf von Dokumentenverarbeitungsworkflows zur Normalisierung und Indexierung von Inhalten aus heterogenen Quellen",
+          "Implementierung einer semantischen Abrufarchitektur basierend auf Embedding-Ähnlichkeitsvergleich statt ausschließlich stichwortbasierter Suche",
+          "Entwicklung eines quellenbewussten Informationszugriffs, der jeden Abruf mit den Originaldokumenten verknüpft",
+          "Erstellung einer forschungsorientierten Suchoberfläche, die sowohl explorative Entdeckung als auch gezielte Abfragen unterstützt"
+        ],
+        "considerationsItems": [
+          "Verarbeitung großer Sammlungen bei angemessenen Indexierungszeiträumen",
+          "Verarbeitung mehrsprachiger Dokumente und mehrsprachige Informationsabrufe",
+          "Aufrechterhaltung der Quellenverfolgung zur Unterstützung der Forschungsreproduzierbarkeit",
+          "Berücksichtigung von Datenschutzrichtlinien und Zugriffskontrollen für verschiedene Dokumenttypen"
+        ],
+        "outcomeItems": [
+          "Forscher erhielten schnelleren Zugang zu bisheriger Arbeit, reduzierten Suchzeit und konnten sich mehr auf die Analyse konzentrieren",
+          "Verbesserte Entdeckung verwandter Arbeiten über verschiedene Terminologie und konzeptionelle Rahmen hinweg",
+          "Neue Teammitglieder konnten abgeschlossene Forschungen effizienter verstehen und relevante Dokumentation finden",
+          "Organisation verbesserte die Nutzung des vorhandenen institutionellen Wissens"
+        ]
+      },
+      "study2": {
+        "eyebrow": "Betriebs-Engineering",
+        "title": "Unterstützung von Forschungsabläufen durch intelligente Assistenz",
+        "description": "Entwicklung eines KI-unterstützten Workflow-Systems zur Verarbeitung interner Wissensabrufe und Automatisierung repetitiver Betriebsprozesse.",
+        "tags": ["Workflow-Automatisierung", "Wissenszugriff", "Prozessintegration"],
+        "contextItems": [
+          "Technisches Team bearbeitete steigende Mengen interner Fragen, Dokumentationsanfragen und repetitiver Verwaltungsworkflows",
+          "Mitarbeiterzeit wurde durch die Beantwortung sich wiederholender Fragen und routinemäßige Informationsabrufe aufgebraucht",
+          "Organisationswissen befand sich in verschiedenen Systemen, was die schnelle Informationsfindung erschwerte"
+        ],
+        "challengeItems": [
+          "Gleiche Fragen wurden über Teams hinweg wiederholt und erforderten jedes Mal manuelle Antworten",
+          "Zeitaufwändiger Prozess, um Informationen zu finden, die über Dokumentation und Systeme verstreut waren",
+          "Repetitive Verwaltungsworkflows reduzierten die Kapazität für wertvollere technische Arbeit",
+          "Schwierigkeiten, vorhandenes organisationsinternes Wissen mit alltäglichen betrieblichen Fragen zu verknüpfen"
+        ],
+        "approachItems": [
+          "Entwurf eines wissensverknüpften Workflow-Systems, das kontextbezogene Informationen für häufige betriebliche Fragen bereitstellt",
+          "Integration mit bestehenden Tools und Dokumentationssystemen statt Änderungen an Workflows",
+          "Implementierung von Assistenzmechanismen für repetitive Prozesse bei gleichzeitig angemessener menschlicher Aufsicht",
+          "Entwicklung einer internen Abfrageschnittstelle, die Informationen aus organisationsinternen Wissensdatenbanken abruft"
+        ],
+        "considerationsItems": [
+          "Zugriffskontrollen, um sicherzustellen, dass Benutzer nur Informationen abrufen, zu denen sie berechtigt sind",
+          "Datenschutzanforderungen für die Verarbeitung interner organisationsinterner Informationen",
+          "Zuverlässigkeitsanforderungen für die Systemverfügbarkeit im operativen Einsatz",
+          "Integration mit bestehenden Workflow-Tools und Wissensmanagementsystemen",
+          "Menschliche Aufsichtsmechanismen für sensible oder folgenreiche Operationen"
+        ],
+        "outcomeItems": [
+          "Reduzierte Zeit für repetitive Informationsabrufe und routinemäßige Verwaltungsaufgaben",
+          "Schnellerer Zugang zu organisationsinternem Wissen bei betrieblichen Entscheidungen",
+          "Mitarbeiterkapazitäten für wertvollere technische und analytische Arbeit freigesetzt",
+          "Verbesserte Konsistenz bei der Durchführung routinemäßiger Prozesse"
+        ]
+      },
+      "study3": {
+        "eyebrow": "Infrastruktur-Engineering",
+        "title": "Etablierung sicherer AI-Fähigkeiten innerhalb der organisationsinternen Infrastruktur",
+        "description": "Architektur einer privaten AI-Bereitstellungsinfrastruktur zur Bereitstellung moderner Fähigkeiten bei gleichzeitig strenger Datenkontrolle und Sicherheitsanforderungen.",
+        "tags": ["Private Bereitstellung", "Sicherheitsarchitektur", "Infrastruktur"],
+        "contextItems": [
+          "Organisation benötigte moderne AI-Fähigkeiten für interne Abläufe bei gleichzeitig strenger Kontrolle über sensible Informationen",
+          "Externe AI-Dienste stellten inakzeptable Datenschutz- und Sicherheitsrisiken für die Anwendungsfälle der Organisation dar",
+          "Compliance- und regulatorische Frameworks erforderten, dass bestimmte Daten die organisationsinternen Grenzen niemals verließen"
+        ],
+        "challengeItems": [
+          "Datenschutzanforderungen untersagten das Senden sensibler Informationen an externe AI-Dienste",
+          "Sicherheitsrichtlinien beschränkten, welche Systeme bestimmte Informationskategorien verarbeiten durften",
+          "Compliance-Erwägungen erforderten dokumentierte Datenverarbeitungs- und Kontrollmechanismen",
+          "Organisation benötigte AI-Fähigkeiten ohne Kompromisse bei etablierten Sicherheitsgrenzen"
+        ],
+        "approachItems": [
+          "Entwurf einer privaten Bereitstellungsarchitektur für AI-Operationen innerhalb der organisationsinternen Infrastrukturgrenzen",
+          "Implementierung sicherer Datenverarbeitung, um sicherzustellen, dass sensible Informationen unter der Kontrolle der Organisation bleiben",
+          "Entwicklung einer Infrastruktur, die ohne externe Abhängigkeiten für Inferenzoperationen arbeitet",
+          "Erstellung betrieblicher Verfahren für organisationskontrollierte Modellbereitstellung und -wartung"
+        ],
+        "considerationsItems": [
+          "Anforderungen an die Datensouveränität, um sicherzustellen, dass Informationen die organisationsinternen Grenzen nie überschreiten",
+          "Sicherheitsarchitektur, die den organisationsinternen Richtlinien und Compliance-Frameworks entspricht",
+          "Infrastrukturerfordernisse für den Betrieb leistungsfähiger Modelle intern",
+          "Betriebliches Eigentumsmodell und laufende Wartungsverantwortlichkeiten",
+          "Modellaktualisierungs- und Verbesserungsverfahren unter organisationsinterner Kontrolle"
+        ],
+        "outcomeItems": [
+          "AI-Fähigkeiten standen für die interne Nutzung unter Einhaltung der Sicherheitsanforderungen zur Verfügung",
+          "Verarbeitung sensibler Informationen blieb innerhalb der organisationsinternen Kontrollgrenzen",
+          "Organisation behielt den Besitz an bereitgestellten Systemen und betrieblichen Verfahren",
+          "Compliance-Anforderungen wurden durch kontrollierte Datenverarbeitungsarchitektur erfüllt"
+        ]
+      },
+      "study4": {
+        "eyebrow": "Modell-Engineering",
+        "title": "Verbesserung des spezialisierten Dokumentenverständnisses durch benutzerdefinierte AI-Modelle",
+        "description": "Entwicklung aufgabenbezogener AI-Modelle zur effizienteren Bearbeitung spezialisierter Klassifizierungs- und Analyseanforderungen als Allzweck-Systeme.",
+        "tags": ["Benutzerdefinierte Modelle", "Domänenanpassung", "Aufgabenoptimierung"],
+        "contextItems": [
+          "Organisation benötigte AI-Fähigkeiten für hochspezifische Dokumentenklassifizierung und Analyseaufgaben in einer spezialisierten Domäne",
+          "Allzweck-AI-Modelle lieferten aufgrund fehlenden domänenspezifischen Verständnisses inkonsistente Ergebnisse",
+          "Manuelle Verarbeitung war genau, aber zu langsam, um die erforderlichen Dokumentenmengen zu bewältigen"
+        ],
+        "challengeItems": [
+          "Allgemeine AI-Modelle verfügten nicht über ausreichende Spezifität für die spezialisierten Anforderungen der Organisation",
+          "Domänenspezifische Terminologie und Kontext erforderten ein Verständnis, das umfassende Modelle nicht besaßen",
+          "Manuelle Verarbeitung gewährleistete Genauigkeit, konnte aber nicht auf die Anforderungen an das Verarbeitungsvolumen skaliert werden",
+          "Konsistenz war über verschiedene menschliche Prüfer und im Zeitverlauf schwer aufrechtzuerhalten"
+        ],
+        "approachItems": [
+          "Entwicklung eines aufgabenbezogenen Modells, das auf die engen Klassifizierungsanforderungen der Organisation fokussiert war",
+          "Anwendung von Domänenanpassungstechniken zur Integration spezialisierten Wissens und Terminologie",
+          "Entwicklung von Evaluierungsworkflows zur Messung der Genauigkeit gegenüber den Qualitätsstandards der Organisation",
+          "Optimierung des Modells für effiziente Bereitstellung unter Berücksichtigung der Infrastrukturbeschränkungen der Organisation"
+        ],
+        "considerationsItems": [
+          "Modelleffizienz für eine praktische Bereitstellung auf der verfügbaren Infrastruktur",
+          "Genauigkeitsbewertungsmethoden, die den organisationsinternen Qualitätsanforderungen entsprechen",
+          "Bereitstellungseinschränkungen einschließlich Latenz, Durchsatz und Ressourcenverfügbarkeit",
+          "Wartungsverfahren für Modellaktualisierungen bei sich weiterentwickelnden Anforderungen",
+          "Qualitätssicherungsprozesse zur Erkennung von Randfällen und unerwarteten Eingaben"
+        ],
+        "outcomeItems": [
+          "Konsistentere Verarbeitung im Einklang mit organisationsinternen Standards und Anforderungen",
+          "Bessere Genauigkeit bei domänenspezifischen Aufgaben im Vergleich zu Allzweck-Alternativen",
+          "Effizienterer Workflow mit höheren Verarbeitungsmengen",
+          "Organisation gewann Verständnis dafür, wo spezialisierte Modelle gegenüber Allzweck-Systemen Mehrwert bieten"
+        ]
+      }
+    }
+  },
+  "process": {
+    "eyebrow": "Engineering-Prozess",
+    "heading": "Wie wir AI-Systeme entwickeln",
+    "lead": "Ein strukturierter Engineering-Prozess, der auf Zuverlässigkeit, Transparenz und langfristigen Besitz ausgelegt ist.",
+    "next": "Weiter",
+    "ctaTitle": "Benötigen Sie ein individuelles AI-System?",
+    "ctaDescription": "Erzählen Sie uns von Ihrer technischen Umgebung und Ihren Anforderungen.",
+    "ctaButton": "Technische Besprechung anfordern",
+    "phases": {
+      "phase1": {
+        "title": "Entdeckung",
+        "description": "Geschäftsanforderungen, Einschränkungen und Ziele verstehen. Bestehende Systeme, Datenquellen und Erfolgskriterien kartieren."
+      },
+      "phase2": {
+        "title": "Architektur",
+        "description": "Modelle, Infrastruktur, Workflows und Evaluierungsframework entwerfen. Bereitstellungsstrategie und Überwachungsansatz definieren."
+      },
+      "phase3": {
+        "title": "Entwicklung",
+        "description": "Das System schrittweise aufbauen und validieren. Kontinuierliches Testen, Evaluieren und Verfeinern mit Feedback der Beteiligten."
+      },
+      "phase4": {
+        "title": "Bereitstellung",
+        "description": "In die Zielumgebung bereitstellen. Infrastruktur, Sicherheit und Zugriffskonfiguration einrichten. Wissenstransfer und Dokumentation."
+      },
+      "phase5": {
+        "title": "Überwachung & Verbesserung",
+        "description": "Leistung, Qualität und Zuverlässigkeit im Laufe der Zeit beobachten. Kontinuierliche Optimierung basierend auf realen Nutzungsmustern."
+      }
     }
   }
 }

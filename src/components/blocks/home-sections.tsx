@@ -51,420 +51,116 @@ type Solution = {
   detailContent?: React.ReactNode;
 };
 
-const SOLUTIONS: Solution[] = [
-  {
-    icon: MessagesSquare,
-    title: "AI Agents & Business Automation",
-    description: "Automate the workflows slowing your organization down.\n\nWe build private AI agents that analyze your processes, identify automation opportunities, and handle repetitive tasks inside your existing environment.\n\nReduce operational costs. Increase team speed. Keep control of your data.",
-    bullets: [],
-    detailContent: (
-      <div className="space-y-6 text-sm leading-relaxed text-hl-muted max-h-[70vh] overflow-y-auto pr-2">
-        <p>We analyze your existing workflows to identify processes where AI can reduce manual effort, improve response times, and increase operational efficiency.</p>
-        <p>Our process starts by understanding how your teams work: the repetitive tasks they perform, the information they use, the systems they depend on, and where delays or unnecessary costs occur. We then design and deploy private AI agents that automate specific tasks while keeping your organization in control.</p>
+function buildDetailContent(t: ReturnType<typeof useTranslations>, cardKey: string): React.ReactNode {
+  const phase1Items = (t.raw(`${cardKey}.phase1Items`) as string[]) || [];
+  const phase2Items = (t.raw(`${cardKey}.phase2Items`) as string[]) || [];
+  const phase3Items = (t.raw(`${cardKey}.phase3Items`) as string[]) || [];
+  const impact1Items = (t.raw(`${cardKey}.impact1Items`) as string[]) || [];
+  const impact2Items = (t.raw(`${cardKey}.impact2Items`) as string[]) || [];
+  const impact3Items = (t.raw(`${cardKey}.impact3Items`) as string[]) || [];
+  const impact4Items = (t.raw(`${cardKey}.impact4Items`) as string[]) || [];
+  const impact5Items = (t.raw(`${cardKey}.impact5Items`) as string[]) || [];
+  const phase1ApproachItems = (t.raw(`${cardKey}.phase1ApproachItems`) as string[]) || [];
 
-        <h4 className="text-foreground font-semibold text-base">How we build automation systems</h4>
+  const renderList = (items: string[]) => (
+    <ul className="mt-1 list-disc pl-5 space-y-1">
+      {items.map((item: string, idx: number) => <li key={idx}>{item}</li>)}
+    </ul>
+  );
 
-        <div>
-          <p className="font-semibold text-foreground">1. Workflow analysis</p>
-          <p>We study your business processes to identify:</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Time-consuming manual tasks</li>
-            <li>Repetitive decision processes</li>
-            <li>Information bottlenecks</li>
-            <li>Areas where employees spend time searching, reviewing, or processing data</li>
-          </ul>
-        </div>
+  return (
+    <div className="space-y-6 text-sm leading-relaxed text-hl-muted max-h-[70vh] overflow-y-auto pr-2">
+      <p>{t(`${cardKey}.detailIntro1`)}</p>
+      <p>{t(`${cardKey}.detailIntro2`)}</p>
 
-        <div>
-          <p className="font-semibold text-foreground">2. AI system design</p>
-          <p>We design agents around your actual operations:</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Connect only to approved internal systems</li>
-            <li>Define what the AI can access and execute</li>
-            <li>Create workflows with human approval where required</li>
-            <li>Select the appropriate models and infrastructure based on your requirements</li>
-          </ul>
-        </div>
+      <h4 className="text-foreground font-semibold text-base">{t(`${cardKey}.phaseTitle`)}</h4>
 
-        <div>
-          <p className="font-semibold text-foreground">3. Private AI deployment</p>
-          <p>The AI system runs within your infrastructure or trusted private environment:</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Your organization owns and controls the AI production environment</li>
-            <li>Models and AI services operate within your infrastructure instead of relying on external platforms</li>
-            <li>No dependency on external API usage or unpredictable per-token costs</li>
-            <li>Your team controls access, operations, security, and future changes</li>
-          </ul>
-        </div>
-
-        <h4 className="text-foreground font-semibold text-base">Business impact</h4>
-
-        <div>
-          <p className="font-semibold text-foreground">Reduce costs</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Automate repetitive tasks</li>
-            <li>Reduce time spent on manual processing</li>
-            <li>Avoid ongoing dependency on external AI API costs</li>
-            <li>Build AI infrastructure with predictable operational expenses</li>
-          </ul>
-        </div>
-
-        <div>
-          <p className="font-semibold text-foreground">Increase speed</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Faster access to information</li>
-            <li>Faster execution of routine workflows</li>
-            <li>Shorter response and processing times</li>
-            <li>AI capabilities available directly within your organization</li>
-          </ul>
-        </div>
-
-        <div>
-          <p className="font-semibold text-foreground">Protect your data</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>AI systems can run inside your own environment</li>
-            <li>Data access is controlled by your organization</li>
-            <li>Sensitive information does not need to leave your infrastructure</li>
-            <li>Your data is not used to operate third-party AI services</li>
-          </ul>
-        </div>
-
-        <div>
-          <p className="font-semibold text-foreground">Create competitive advantage</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Build AI capabilities around your unique workflows</li>
-            <li>Preserve operational knowledge</li>
-            <li>Create systems competitors cannot simply purchase from a vendor</li>
-            <li>Develop internal AI capabilities that grow with your organization</li>
-          </ul>
-        </div>
-
-        <div>
-          <p className="font-semibold text-foreground">Maintain ownership</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Your organization controls the deployment, models, data, and operations</li>
-            <li>The system is built around your requirements, not a third-party platform</li>
-            <li>Your AI infrastructure remains a long-term organizational asset</li>
-          </ul>
-        </div>
+      <div>
+        <p className="font-semibold text-foreground">{t(`${cardKey}.phase1Title`)}</p>
+        <p>{t(`${cardKey}.phase1Desc`)}</p>
+        {renderList(phase1Items)}
+        {phase1ApproachItems.length > 0 && (
+          <>
+            <p className="mt-3">{t(`${cardKey}.phase1Approach`)}</p>
+            {renderList(phase1ApproachItems)}
+          </>
+        )}
       </div>
-    ),
-  },
-  {
-    icon: Database,
-    title: "Knowledge Intelligence Systems",
-    description: "Turn your organization's information into a strategic advantage.\n\nWe build private AI systems that understand your documents, research, and internal knowledge — helping your teams find trusted answers instantly.\n\nMake better decisions with the knowledge you already own.",
-    bullets: [],
-    detailContent: (
-      <div className="space-y-6 text-sm leading-relaxed text-hl-muted max-h-[70vh] overflow-y-auto pr-2">
-        <p>We analyze your organization's information landscape to identify where valuable knowledge is difficult to access, distributed across documents, or locked inside disconnected systems.</p>
-        <p>Our process starts by understanding how your teams create, store, and use information: the documents they depend on, the questions they repeatedly answer, the knowledge gaps that slow decisions, and where important expertise is difficult to retrieve. We then design and deploy private AI knowledge systems that make your organization's information searchable and usable while keeping full control over your data.</p>
 
-        <h4 className="text-foreground font-semibold text-base">How we build knowledge systems</h4>
-
-        <div>
-          <p className="font-semibold text-foreground">1. Knowledge analysis</p>
-          <p>We study your information environment to identify:</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Important document collections and internal knowledge sources</li>
-            <li>Information stored across disconnected systems</li>
-            <li>Areas where employees spend time searching for answers</li>
-            <li>Repeated questions and knowledge requests across teams</li>
-            <li>Critical expertise that needs to be preserved and made accessible</li>
-          </ul>
-        </div>
-
-        <div>
-          <p className="font-semibold text-foreground">2. AI knowledge system design</p>
-          <p>We design retrieval systems around your organization's information:</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Connect only to approved documents, databases, and knowledge sources</li>
-            <li>Process and understand internal information using AI retrieval technologies</li>
-            <li>Provide answers based on your organization's own knowledge</li>
-            <li>Include source references and citations for verification</li>
-            <li>Define access rules based on your security requirements</li>
-          </ul>
-        </div>
-
-        <div>
-          <p className="font-semibold text-foreground">3. Private AI deployment</p>
-          <p>The knowledge system runs within your infrastructure or trusted private environment:</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Your documents and organizational knowledge remain under your control</li>
-            <li>AI models and retrieval systems can operate inside your own environment</li>
-            <li>No dependency on external AI platforms or third-party data processing</li>
-            <li>No unpredictable per-query or per-token costs from external AI providers</li>
-            <li>Your team controls access, security, updates, and future expansion</li>
-          </ul>
-        </div>
-
-        <h4 className="text-foreground font-semibold text-base">Business impact</h4>
-
-        <div>
-          <p className="font-semibold text-foreground">Reduce costs</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Reduce time spent manually searching through documents</li>
-            <li>Minimize repeated research and information requests</li>
-            <li>Decrease dependency on external knowledge platforms</li>
-            <li>Make existing organizational knowledge more valuable</li>
-          </ul>
-        </div>
-
-        <div>
-          <p className="font-semibold text-foreground">Increase speed</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Find relevant information in seconds instead of hours</li>
-            <li>Accelerate research, analysis, and decision-making</li>
-            <li>Give employees immediate access to trusted internal knowledge</li>
-            <li>Reduce delays caused by fragmented information</li>
-          </ul>
-        </div>
-
-        <div>
-          <p className="font-semibold text-foreground">Protect your data</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Documents remain inside your controlled environment</li>
-            <li>Information access follows your organization's permissions</li>
-            <li>AI responses are generated from approved internal sources</li>
-            <li>Sensitive knowledge does not need to leave your infrastructure</li>
-          </ul>
-        </div>
-
-        <div>
-          <p className="font-semibold text-foreground">Create competitive advantage</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Transform internal knowledge into an operational capability</li>
-            <li>Preserve expertise accumulated across years of work</li>
-            <li>Enable faster and better-informed decisions</li>
-            <li>Build organizational intelligence that competitors cannot simply purchase</li>
-          </ul>
-        </div>
-
-        <div>
-          <p className="font-semibold text-foreground">Maintain ownership</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Your organization owns the knowledge system, data, and infrastructure</li>
-            <li>Your teams control deployment, access, and operations</li>
-            <li>The system is built around your knowledge and requirements, not a third-party platform</li>
-          </ul>
-        </div>
+      <div>
+        <p className="font-semibold text-foreground">{t(`${cardKey}.phase2Title`)}</p>
+        <p>{t(`${cardKey}.phase2Desc`)}</p>
+        {renderList(phase2Items)}
       </div>
-    ),
-  },
-  {
-    icon: ServerCog,
-    title: "Private AI Infrastructure",
-    description: "Adopt AI without giving up control.\n\nWe deploy AI systems inside your infrastructure or private environment, keeping your data, security, and operations under your control.\n\nEnterprise AI without external dependency.",
-    bullets: [],
-    detailContent: (
-      <div className="space-y-6 text-sm leading-relaxed text-hl-muted max-h-[70vh] overflow-y-auto pr-2">
-        <p>We design and deploy the technical foundation required for organizations that want to adopt AI while maintaining full control over their data, models, infrastructure, and operations.</p>
-        <p>Our process starts by understanding your existing technology environment, security requirements, AI objectives, and operational constraints. We then build a private AI infrastructure that allows your organization to run, manage, and scale AI systems within your own controlled environment.</p>
 
-        <h4 className="text-foreground font-semibold text-base">How we build private AI infrastructure</h4>
-
-        <div>
-          <p className="font-semibold text-foreground">1. Infrastructure assessment</p>
-          <p>We analyze your technical environment to identify:</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Existing servers, cloud resources, and computing capabilities</li>
-            <li>Security, compliance, and data protection requirements</li>
-            <li>AI workloads and performance expectations</li>
-            <li>Data storage, processing, and integration requirements</li>
-            <li>Future AI adoption goals and scalability needs</li>
-          </ul>
-        </div>
-
-        <div>
-          <p className="font-semibold text-foreground">2. Infrastructure design</p>
-          <p>We design the foundation required for reliable AI operations:</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Private AI deployment environments</li>
-            <li>Local or private model serving systems</li>
-            <li>GPU and compute optimization</li>
-            <li>AI application and retrieval infrastructure</li>
-            <li>Data processing pipelines</li>
-            <li>Monitoring, evaluation, and operational management systems</li>
-          </ul>
-        </div>
-
-        <div>
-          <p className="font-semibold text-foreground">3. Private AI deployment</p>
-          <p>The infrastructure operates within your controlled environment:</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>AI models and systems run on your own servers or private cloud</li>
-            <li>Your organization owns the AI production environment</li>
-            <li>No requirement to send sensitive data to external AI providers</li>
-            <li>No dependency on external API availability or changing pricing models</li>
-            <li>Your team controls access, security, maintenance, and future expansion</li>
-          </ul>
-        </div>
-
-        <h4 className="text-foreground font-semibold text-base">Business impact</h4>
-
-        <div>
-          <p className="font-semibold text-foreground">Reduce costs</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Reduce long-term dependency on external AI platforms</li>
-            <li>Avoid unpredictable usage-based AI API costs</li>
-            <li>Optimize AI workloads for your available infrastructure</li>
-            <li>Build reusable AI foundations across your organization</li>
-          </ul>
-        </div>
-
-        <div>
-          <p className="font-semibold text-foreground">Increase speed</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Deploy AI capabilities faster across departments</li>
-            <li>Create a reliable foundation for new AI applications</li>
-            <li>Reduce integration complexity between AI systems and business operations</li>
-            <li>Enable faster experimentation and adoption</li>
-          </ul>
-        </div>
-
-        <div>
-          <p className="font-semibold text-foreground">Protect your data</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Sensitive information remains inside your controlled environment</li>
-            <li>Security policies are defined and enforced by your organization</li>
-            <li>AI operations are transparent and observable</li>
-            <li>Data processing follows your internal requirements</li>
-          </ul>
-        </div>
-
-        <div>
-          <p className="font-semibold text-foreground">Create competitive advantage</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Build internal AI capabilities instead of renting temporary access</li>
-            <li>Create a foundation for long-term AI adoption</li>
-            <li>Develop systems aligned with your organization's unique requirements</li>
-            <li>Reduce strategic dependency on external AI providers</li>
-          </ul>
-        </div>
-
-        <div>
-          <p className="font-semibold text-foreground">Maintain ownership</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Your organization owns and controls the AI infrastructure</li>
-            <li>Your teams control models, deployment, data, and operations</li>
-            <li>The infrastructure becomes a long-term organizational asset, not a subscription dependency</li>
-          </ul>
-        </div>
+      <div>
+        <p className="font-semibold text-foreground">{t(`${cardKey}.phase3Title`)}</p>
+        <p>{t(`${cardKey}.phase3Desc`)}</p>
+        {renderList(phase3Items)}
       </div>
-    ),
-  },
-  {
-    icon: Brain,
-    title: "Custom AI Models & Training",
-    description: "Build AI capabilities designed specifically for your organization.\n\nWe fine-tune and train AI models for specialized tasks where general-purpose AI is not accurate, efficient, or private enough.\n\nCreate unique AI capabilities around your data and expertise.",
-    bullets: [],
-    detailContent: (
-      <div className="space-y-6 text-sm leading-relaxed text-hl-muted max-h-[70vh] overflow-y-auto pr-2">
-        <p>We develop and adapt AI models for organizations that require specialized capabilities beyond general-purpose AI systems.</p>
-        <p>Our process starts by understanding the specific tasks your organization needs AI to solve, the data available for training or adaptation, the required performance level, and the deployment environment. We then fine-tune, optimize, or train AI models designed around your organization's requirements while keeping control over the final system.</p>
 
-        <h4 className="text-foreground font-semibold text-base">How we build custom AI models</h4>
+      <h4 className="text-foreground font-semibold text-base">{t(`${cardKey}.impactTitle`)}</h4>
 
-        <div>
-          <p className="font-semibold text-foreground">1. Task and data analysis</p>
-          <p>We analyze your AI requirements to identify:</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>The specific business problem the model needs to solve</li>
-            <li>Existing data sources and knowledge assets</li>
-            <li>Required accuracy, speed, and reliability targets</li>
-            <li>Domain-specific terminology and workflows</li>
-            <li>Security, privacy, and deployment requirements</li>
-          </ul>
-          <p className="mt-3">We determine the most suitable approach, including:</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Fine-tuning existing open-source models</li>
-            <li>Domain adaptation</li>
-            <li>Custom training pipelines</li>
-            <li>Retrieval-enhanced model systems</li>
-            <li>Specialized AI architectures</li>
-          </ul>
-        </div>
-
-        <div>
-          <p className="font-semibold text-foreground">2. Model development and optimization</p>
-          <p>We build and improve AI models through:</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Fine-tuning models on organization-specific data</li>
-            <li>Training models for specialized tasks and domains</li>
-            <li>Creating evaluation processes to measure performance</li>
-            <li>Optimizing models for your hardware and infrastructure</li>
-            <li>Reducing model size and resource requirements where needed</li>
-          </ul>
-        </div>
-
-        <div>
-          <p className="font-semibold text-foreground">3. Private AI deployment</p>
-          <p>The model operates within your controlled environment:</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Your organization owns the AI production environment</li>
-            <li>Models can run on your own infrastructure or private cloud</li>
-            <li>Training and inference can be performed without sending sensitive data to external providers</li>
-            <li>No dependency on external AI APIs or per-token pricing models</li>
-            <li>Your team controls access, updates, and the model lifecycle</li>
-          </ul>
-        </div>
-
-        <h4 className="text-foreground font-semibold text-base">Business impact</h4>
-
-        <div>
-          <p className="font-semibold text-foreground">Reduce costs</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Build smaller, efficient models optimized for specific tasks</li>
-            <li>Reduce unnecessary usage of expensive general-purpose AI services</li>
-            <li>Lower operational costs through optimized inference</li>
-            <li>Create predictable AI operating expenses</li>
-          </ul>
-        </div>
-
-        <div>
-          <p className="font-semibold text-foreground">Increase speed</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Deliver faster results for specialized workflows</li>
-            <li>Reduce manual analysis and processing time</li>
-            <li>Improve AI performance for organization-specific tasks</li>
-            <li>Enable faster decision-making with specialized capabilities</li>
-          </ul>
-        </div>
-
-        <div>
-          <p className="font-semibold text-foreground">Protect your data</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Training and model adaptation can happen inside controlled environments</li>
-            <li>Sensitive organizational data remains private</li>
-            <li>Data usage and model behavior remain governed by your organization</li>
-          </ul>
-        </div>
-
-        <div>
-          <p className="font-semibold text-foreground">Create competitive advantage</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Build AI capabilities based on your unique data and expertise</li>
-            <li>Develop models optimized for your organization's domain</li>
-            <li>Create specialized systems that competitors cannot simply access through public tools</li>
-            <li>Turn internal knowledge and processes into AI capabilities</li>
-          </ul>
-        </div>
-
-        <div>
-          <p className="font-semibold text-foreground">Maintain ownership</p>
-          <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Your organization controls the model, deployment, and operational lifecycle</li>
-            <li>The AI system is built around your requirements, infrastructure, and objectives</li>
-            <li>Your models become a long-term organizational asset rather than a dependency on external providers</li>
-          </ul>
-        </div>
+      <div>
+        <p className="font-semibold text-foreground">{t(`${cardKey}.impact1Title`)}</p>
+        {renderList(impact1Items)}
       </div>
-    ),
-  },
-];
+      <div>
+        <p className="font-semibold text-foreground">{t(`${cardKey}.impact2Title`)}</p>
+        {renderList(impact2Items)}
+      </div>
+      <div>
+        <p className="font-semibold text-foreground">{t(`${cardKey}.impact3Title`)}</p>
+        {renderList(impact3Items)}
+      </div>
+      <div>
+        <p className="font-semibold text-foreground">{t(`${cardKey}.impact4Title`)}</p>
+        {renderList(impact4Items)}
+      </div>
+      <div>
+        <p className="font-semibold text-foreground">{t(`${cardKey}.impact5Title`)}</p>
+        {renderList(impact5Items)}
+      </div>
+    </div>
+  );
+}
+
+function getSolutions(t: ReturnType<typeof useTranslations>): Solution[] {
+  return [
+    {
+      icon: MessagesSquare,
+      title: t("cards.card1.title"),
+      description: t("cards.card1.description"),
+      bullets: [],
+      detailContent: buildDetailContent(t, "cards.card1"),
+    },
+    {
+      icon: Database,
+      title: t("cards.card2.title"),
+      description: t("cards.card2.description"),
+      bullets: [],
+      detailContent: buildDetailContent(t, "cards.card2"),
+    },
+    {
+      icon: ServerCog,
+      title: t("cards.card3.title"),
+      description: t("cards.card3.description"),
+      bullets: [],
+      detailContent: buildDetailContent(t, "cards.card3"),
+    },
+    {
+      icon: Brain,
+      title: t("cards.card4.title"),
+      description: t("cards.card4.description"),
+      bullets: [],
+      detailContent: buildDetailContent(t, "cards.card4"),
+    },
+  ];
+}
 
 export function SolutionsSection() {
   const t = useTranslations("solutions");
+  const SOLUTIONS = getSolutions(t);
 
   return (
     <SectionShell id="solutions">
@@ -495,7 +191,7 @@ export function SolutionsSection() {
                   <DialogTrigger asChild>
                     <button className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-hl-cyan transition-colors hover:text-hl-cyan/80">
                       <Info className="h-4 w-4" />
-                      More info
+                      {t("moreInfo")}
                     </button>
                   </DialogTrigger>
                   <DialogContent className="sm:max-w-2xl">
@@ -515,17 +211,16 @@ export function SolutionsSection() {
       <Reveal delay={0.4}>
         <div className="mt-10 flex flex-col items-center gap-4 rounded-2xl border border-hl-border bg-hl-surface/40 p-8 text-center">
           <h3 className="text-lg font-semibold tracking-tight text-foreground">
-            Need an AI system tailored to your organization?
+            {t("ctaTitle")}
           </h3>
           <p className="max-w-2xl text-sm text-hl-muted">
-            Tell us about your requirements, technical environment, and goals. We'll evaluate
-            the most appropriate approach.
+            {t("ctaDescription")}
           </p>
           <Link
             href="/contact"
             className="group inline-flex items-center gap-2 rounded-full bg-hl-cyan px-6 py-3 text-sm font-bold text-gray-900 transition-all hover:bg-hl-cyan/90 hover:shadow-[0_0_30px_-8px_rgba(96,165,250,0.5)]"
           >
-            Request Technical Discussion
+            {t("ctaButton")}
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
           </Link>
         </div>
@@ -536,41 +231,36 @@ export function SolutionsSection() {
 
 /* ---------------- Featured Projects ---------------- */
 
-const PROJECTS: {
-  name: string;
-  description: string;
-  tags: string[];
-  metrics: { label: string; value: string }[];
-  accent: string;
-}[] = [
-  {
-    name: "GGUF Loader",
-    description:
-      "A platform that lets you run powerful AI models on your own computer , no internet needed, no data sent anywhere. Just install and go.",
-    tags: ["Python", "AI Models", "Offline", "Private"],
-    metrics: [
-      { label: "Runs", value: "On your PC" },
-      { label: "Internet", value: "Not needed" },
-      { label: "Data sent", value: "None" },
-    ],
-    accent: "from-[#4AF3F8]/20 to-transparent",
-  },
-  {
-    name: "Legal Intelligence System",
-    description:
-      "A smart search tool for legal documents. Ask a question in plain language and get the exact paragraph , with the source document cited , even across thousands of files.",
-    tags: ["Smart Search", "Multilingual", "Citations", "Document AI"],
-    metrics: [
-      { label: "Searches", value: "In plain language" },
-      { label: "Results", value: "With sources" },
-      { label: "Languages", value: "Multi" },
-    ],
-    accent: "from-[#29C4F8]/20 to-transparent",
-  },
-];
+function getProjects(t: ReturnType<typeof useTranslations>) {
+  return [
+    {
+      name: t("projectsList.item1.name"),
+      description: t("projectsList.item1.description"),
+      tags: (t.raw("projectsList.item1.tags") as string[]) || [],
+      metrics: [
+        { label: t("projectsList.item1.metrics.label1"), value: t("projectsList.item1.metrics.value1") },
+        { label: t("projectsList.item1.metrics.label2"), value: t("projectsList.item1.metrics.value2") },
+        { label: t("projectsList.item1.metrics.label3"), value: t("projectsList.item1.metrics.value3") },
+      ],
+      accent: "from-[#4AF3F8]/20 to-transparent",
+    },
+    {
+      name: t("projectsList.item2.name"),
+      description: t("projectsList.item2.description"),
+      tags: (t.raw("projectsList.item2.tags") as string[]) || [],
+      metrics: [
+        { label: t("projectsList.item2.metrics.label1"), value: t("projectsList.item2.metrics.value1") },
+        { label: t("projectsList.item2.metrics.label2"), value: t("projectsList.item2.metrics.value2") },
+        { label: t("projectsList.item2.metrics.label3"), value: t("projectsList.item2.metrics.value3") },
+      ],
+      accent: "from-[#29C4F8]/20 to-transparent",
+    },
+  ];
+}
 
 export function ProjectsSection() {
   const t = useTranslations("projects");
+  const PROJECTS = getProjects(t);
 
   return (
     <SectionShell id="projects" className="border-y border-hl-border bg-hl-surface/30">
@@ -603,7 +293,7 @@ export function ProjectsSection() {
                   <div>
                     <div className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.18em] text-hl-muted">
                       <span className="h-1.5 w-1.5 rounded-full bg-hl-cyan" />
-                      {String(i + 1).padStart(2, "0")} / Project
+                      {String(i + 1).padStart(2, "0")} {t("projectsList.projectPrefix")}
                     </div>
                     <h3 className="mt-3 text-2xl font-bold tracking-tight text-foreground">
                       {p.name}
@@ -649,34 +339,26 @@ export function ProjectsSection() {
 
 /* ---------------- Why Haal Lab (Premium version) ---------------- */
 
-const WHY: { icon: LucideIcon; title: string; description: string }[] = [
-  {
-    icon: Search,
-    title: "Research Before Building",
-    description:
-      "Every AI project starts with understanding, not implementation.\n\nWe study your organization's objectives, workflows, data environment, existing systems, and constraints before choosing an approach.\n\nHaal Lab evaluates different technologies, experiments with possible methods, and identifies the most suitable path based on evidence, ensuring the final system is designed around your actual needs.",
-  },
-  {
-    icon: Settings2,
-    title: "Engineered for Your Environment",
-    description:
-      "AI systems succeed when they fit naturally into the organization using them.\n\nWe design and develop solutions around your infrastructure, operational requirements, and security expectations, rather than forcing your organization to adapt to a predefined technology.\n\nFrom architecture to deployment, every decision is made with your environment and long-term goals in mind.",
-  },
-  {
-    icon: Shield,
-    title: "Your Data. Your Infrastructure. Your AI.",
-    description:
-      "AI should create independence, not dependency.\n\nHaal Lab builds systems where organizations maintain ownership of their data, control over their infrastructure, and visibility into how their AI capabilities operate.\n\nYour knowledge stays yours. Your AI capabilities stay yours.",
-  },
-];
+const WHY_ICONS = [Search, Settings2, Shield];
+
+function getWhyItems(t: ReturnType<typeof useTranslations>) {
+  return [
+    { icon: Search, title: t("items.item1.title"), description: t("items.item1.description") },
+    { icon: Settings2, title: t("items.item2.title"), description: t("items.item2.description") },
+    { icon: Shield, title: t("items.item3.title"), description: t("items.item3.description") },
+  ];
+}
 
 export function WhySection() {
+  const t = useTranslations("why");
+  const WHY = getWhyItems(t);
+
   return (
     <SectionShell id="why" className="border-y border-hl-border bg-hl-surface/30">
       <SectionHeader
-        eyebrow="Why HAAL Lab"
-        heading="Why Organizations Choose HAAL Lab"
-        lead="Three commitments that shape everything we build , and every relationship we have with clients."
+        eyebrow={t("sectionEyebrow")}
+        heading={t("sectionHeading")}
+        lead={t("sectionLead")}
       />
 
       <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -714,47 +396,22 @@ export function WhySection() {
 
 /* ---------------- Services ---------------- */
 
-const SERVICES: { icon: LucideIcon; title: string; description: string }[] = [
-  {
-    icon: Cpu,
-    title: "Custom AI Development",
-    description:
-      "AI systems built specifically for your business problem , not generic tools repackaged.",
-  },
-  {
-    icon: FileSearch,
-    title: "Smart Document Search",
-    description:
-      "AI that reads your documents and answers questions with sources you can verify.",
-  },
-  {
-    icon: GitBranch,
-    title: "AI Integration",
-    description:
-      "We connect AI capabilities into your existing software , safely and reliably.",
-  },
-  {
-    icon: Layers,
-    title: "Workflow Automation",
-    description:
-      "AI that handles repetitive tasks so your team can focus on higher-value work.",
-  },
-  {
-    icon: ServerCog,
-    title: "Private AI Setup",
-    description:
-      "We install and configure AI to run entirely on your own computers , no cloud required.",
-  },
-  {
-    icon: FlaskConical,
-    title: "AI Advisory",
-    description:
-      "Not sure where to start? We help you understand what AI can do for your business , in plain language.",
-  },
-];
+const SERVICE_ICONS = [Cpu, FileSearch, GitBranch, Layers, ServerCog, FlaskConical];
+
+function getServices(t: ReturnType<typeof useTranslations>) {
+  return [
+    { icon: Cpu, title: t("services.items.item1.title"), description: t("services.items.item1.description") },
+    { icon: FileSearch, title: t("services.items.item2.title"), description: t("services.items.item2.description") },
+    { icon: GitBranch, title: t("services.items.item3.title"), description: t("services.items.item3.description") },
+    { icon: Layers, title: t("services.items.item4.title"), description: t("services.items.item4.description") },
+    { icon: ServerCog, title: t("services.items.item5.title"), description: t("services.items.item5.description") },
+    { icon: FlaskConical, title: t("services.items.item6.title"), description: t("services.items.item6.description") },
+  ];
+}
 
 export function ServicesSection() {
   const t = useTranslations("services");
+  const SERVICES = getServices(t);
 
   return (
     <SectionShell id="services" className="border-t border-hl-border bg-hl-surface/30">
@@ -793,12 +450,14 @@ export function ServicesSection() {
 /* ---------------- Architecture Visual ---------------- */
 
 export function ArchitectureSection() {
+  const t = useTranslations("architecture");
+
   return (
     <SectionShell id="architecture">
       <SectionHeader
-        eyebrow="Architecture"
-        heading="From Data to Intelligence"
-        lead="A modern AI knowledge platform transforms your documents, databases, and data sources into actionable intelligence."
+        eyebrow={t("eyebrow")}
+        heading={t("heading")}
+        lead={t("lead")}
       />
 
       <div className="mt-14">
@@ -816,14 +475,13 @@ export function ArchitectureSection() {
         <Reveal delay={0.2}>
           <div className="mt-6 flex flex-col items-center gap-4 text-center">
             <p className="max-w-2xl text-sm leading-relaxed text-hl-muted">
-              Every system we build is designed for your specific data sources, workflows, and
-              requirements. No generic solutions.
+              {t("description")}
             </p>
             <Link
               href="/contact"
               className="group inline-flex items-center gap-2 rounded-full border border-hl-border bg-hl-surface/60 px-6 py-2.5 text-sm font-medium text-foreground backdrop-blur transition-colors hover:border-hl-cyan/40 hover:text-hl-cyan"
             >
-              Discuss Your Architecture
+              {t("ctaButton")}
               <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
             </Link>
           </div>
@@ -859,17 +517,12 @@ export function AboutTeaserSection() {
             </p>
 
             <dl className="mt-10 grid grid-cols-2 gap-6 border-t border-hl-border pt-8 sm:grid-cols-4">
-              {[
-                { label: "Focus", value: "Private AI" },
-                { label: "Approach", value: "Built for you" },
-                { label: "Delivery", value: "End-to-end" },
-                { label: "Method", value: "Research-led" },
-              ].map((s) => (
-                <div key={s.label}>
+              {(["focus", "approach", "delivery", "method"] as const).map((key) => (
+                <div key={key}>
                   <dt className="font-mono text-[10px] uppercase tracking-wider text-hl-muted">
-                    {s.label}
+                    {t(`details.${key}.label`)}
                   </dt>
-                  <dd className="mt-1 text-sm font-medium text-foreground">{s.value}</dd>
+                  <dd className="mt-1 text-sm font-medium text-foreground">{t(`details.${key}.value`)}</dd>
                 </div>
               ))}
             </dl>

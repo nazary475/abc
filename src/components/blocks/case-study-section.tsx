@@ -40,191 +40,93 @@ type CaseStudy = {
   accentGradient: string;
 };
 
-const CASE_STUDIES: CaseStudy[] = [
-  {
-    id: "knowledge-discovery",
-    eyebrow: "Research Engineering",
-    title: "Accelerating Knowledge Discovery Across Research Archives",
-    description:
-      "Engineering a semantic search architecture to enable researchers to efficiently locate relevant information across distributed document repositories.",
-    tags: ["Document Processing", "Semantic Search", "Knowledge Organization"],
-    contextTitle: "Context",
-    contextItems: [
-      "Research organization accumulated years of scientific papers, technical reports, and experimental documentation across multiple disconnected repositories",
-      "Information volume increased significantly, making it difficult for researchers to determine whether specific work had already been conducted",
-      "Researchers spent substantial time searching for existing knowledge rather than focusing on analysis and discovery",
-    ],
-    challengeTitle: "Challenge",
-    challengeItems: [
-      "Information distributed across disconnected systems with varying formats and organizational structures",
-      "Keyword-based search missed conceptually related documents using different terminology",
-      "Institutional knowledge resided in documents that were difficult to locate using traditional search methods",
-      "New researchers required significant time to understand what work had been completed and where to find relevant documentation",
-    ],
-    approachTitle: "Engineering Approach",
-    approachItems: [
-      "Designed document processing workflows to normalize and index content from heterogeneous sources",
-      "Implemented semantic retrieval architecture using embedding-based similarity matching rather than keyword search alone",
-      "Developed source-aware information access ensuring every retrieval links back to originating documents",
-      "Created research-focused search interface supporting both exploratory discovery and targeted queries",
-    ],
-    considerationsTitle: "Technical Considerations",
-    considerationsItems: [
-      "Processing large collections while maintaining reasonable indexing timeframes",
-      "Handling multilingual documents and cross-language information retrieval",
-      "Maintaining source traceability to support research reproducibility requirements",
-      "Addressing data ownership policies and access control across different document types",
-    ],
-    outcomeTitle: "Outcome",
-    outcomeItems: [
-      "Researchers gained faster access to existing work, reducing time spent searching and increasing focus on analysis",
-      "Improved discovery of related work across different terminology and conceptual frameworks",
-      "New team members could more efficiently understand completed research and locate relevant documentation",
-      "Organization improved utilization of existing institutional knowledge",
-    ],
-    accentGradient: "from-hl-cyan/20 to-transparent",
-  },
-  {
-    id: "intelligent-assistance",
-    eyebrow: "Operational Engineering",
-    title: "Supporting Research Operations Through Intelligent Assistance",
-    description:
-      "Developing an AI-assisted workflow system to handle internal knowledge retrieval and automate repetitive operational processes.",
-    tags: ["Workflow Automation", "Knowledge Access", "Process Integration"],
-    contextTitle: "Context",
-    contextItems: [
-      "Technical team handled increasing volumes of internal questions, documentation requests, and repetitive administrative workflows",
-      "Staff time was consumed answering repeated questions and performing routine information retrieval tasks",
-      "Organizational knowledge resided in various systems, making it difficult to locate information quickly",
-    ],
-    challengeTitle: "Challenge",
-    challengeItems: [
-      "Same questions repeated across teams, requiring manual responses each time",
-      "Time-consuming process to locate information scattered across documentation and systems",
-      "Repetitive administrative workflows reduced capacity for higher-value technical work",
-      "Difficulty connecting existing organizational knowledge with day-to-day operational questions",
-    ],
-    approachTitle: "Engineering Approach",
-    approachItems: [
-      "Designed knowledge-connected workflow system that provides contextual information for common operational questions",
-      "Integrated with existing tools and documentation systems rather than requiring workflow changes",
-      "Implemented assistance mechanisms for repetitive processes while maintaining appropriate human oversight",
-      "Developed internal query interface that retrieves information from organizational knowledge bases",
-    ],
-    considerationsTitle: "Technical Considerations",
-    considerationsItems: [
-      "Access control ensuring users only retrieve information they are authorized to access",
-      "Data privacy requirements for handling internal organizational information",
-      "Reliability requirements ensuring system availability for operational use",
-      "Integration points with existing workflow tools and knowledge management systems",
-      "Human oversight mechanisms for sensitive or consequential operations",
-    ],
-    outcomeTitle: "Outcome",
-    outcomeItems: [
-      "Reduced time spent on repetitive information retrieval and routine administrative tasks",
-      "Faster access to organizational knowledge when needed for operational decisions",
-      "Staff capacity freed for higher-value technical and analytical work",
-      "Improved consistency in how routine processes are executed",
-    ],
-    accentGradient: "from-[#6EA8FF]/20 to-transparent",
-  },
-  {
-    id: "secure-infrastructure",
-    eyebrow: "Infrastructure Engineering",
-    title: "Establishing Secure AI Capabilities Within Organizational Infrastructure",
-    description:
-      "Architecting private AI deployment infrastructure to enable modern capabilities while maintaining strict data control and security requirements.",
-    tags: ["Private Deployment", "Security Architecture", "Infrastructure"],
-    contextTitle: "Context",
-    contextItems: [
-      "Organization required modern AI capabilities for internal operations while maintaining strict control over sensitive information",
-      "External AI services posed unacceptable data privacy and security risks for the organization's use cases",
-      "Compliance and regulatory frameworks required that certain data never leave organizational boundaries",
-    ],
-    challengeTitle: "Challenge",
-    challengeItems: [
-      "Data privacy requirements prohibited sending sensitive information to external AI services",
-      "Security policies restricted which systems could process certain categories of information",
-      "Compliance considerations required documented data handling and processing controls",
-      "Organization needed AI capabilities without compromising established security boundaries",
-    ],
-    approachTitle: "Engineering Approach",
-    approachItems: [
-      "Designed private deployment architecture for AI operations within organizational infrastructure boundaries",
-      "Implemented secure data handling ensuring sensitive information remains under organization control",
-      "Developed infrastructure that operates without external dependencies for inference operations",
-      "Created operational procedures for organization-controlled model deployment and maintenance",
-    ],
-    considerationsTitle: "Technical Considerations",
-    considerationsItems: [
-      "Data sovereignty requirements ensuring information never crosses organizational boundaries",
-      "Security architecture meeting organizational policies and compliance frameworks",
-      "Infrastructure resource requirements for running capable models internally",
-      "Operational ownership model and ongoing maintenance responsibilities",
-      "Model update and improvement procedures under organizational control",
-    ],
-    outcomeTitle: "Outcome",
-    outcomeItems: [
-      "AI capabilities became available for internal use while meeting security requirements",
-      "Sensitive information processing maintained within organizational control boundaries",
-      "Organization retained ownership of deployed systems and operational procedures",
-      "Compliance requirements satisfied through controlled data handling architecture",
-    ],
-    accentGradient: "from-[#29C4F8]/20 to-transparent",
-  },
-  {
-    id: "specialized-models",
-    eyebrow: "Model Engineering",
-    title: "Improving Specialized Document Understanding Through Custom AI Models",
-    description:
-      "Developing task-specific AI models to handle specialized classification and analysis requirements more efficiently than general-purpose systems.",
-    tags: ["Custom Models", "Domain Adaptation", "Task Optimization"],
-    contextTitle: "Context",
-    contextItems: [
-      "Organization required AI capabilities for highly specific document classification and analysis task within a specialized domain",
-      "General-purpose AI models produced inconsistent results due to lack of domain-specific understanding",
-      "Manual processing was accurate but too slow to handle required document volumes",
-    ],
-    challengeTitle: "Challenge",
-    challengeItems: [
-      "General AI models lacked sufficient specificity for the organization's specialized requirements",
-      "Domain-specific terminology and context required understanding that broad models did not possess",
-      "Manual processing ensured accuracy but could not scale to meet processing volume requirements",
-      "Consistency was difficult to maintain across different human reviewers and over time",
-    ],
-    approachTitle: "Engineering Approach",
-    approachItems: [
-      "Developed task-specific model focused on the organization's narrow classification requirements",
-      "Applied domain adaptation techniques to incorporate specialized knowledge and terminology",
-      "Designed evaluation workflows to measure accuracy against organization's quality standards",
-      "Optimized model for efficient deployment given organization's infrastructure constraints",
-    ],
-    considerationsTitle: "Technical Considerations",
-    considerationsItems: [
-      "Model efficiency to enable practical deployment on available infrastructure",
-      "Accuracy evaluation methodologies aligned with organizational quality requirements",
-      "Deployment constraints including latency, throughput, and resource availability",
-      "Maintenance procedures for model updates as requirements evolve",
-      "Quality assurance processes to catch edge cases and unexpected inputs",
-    ],
-    outcomeTitle: "Outcome",
-    outcomeItems: [
-      "More consistent processing aligned with organizational standards and requirements",
-      "Better accuracy on domain-specific tasks compared to general-purpose alternatives",
-      "More efficient workflow enabling higher processing volumes",
-      "Organization gained understanding of where specialized models provide value versus general-purpose systems",
-    ],
-    accentGradient: "from-[#4AF3F8]/20 to-transparent",
-  },
-];
+function getCaseStudies(t: ReturnType<typeof useTranslations>): CaseStudy[] {
+  return [
+    {
+      id: "knowledge-discovery",
+      eyebrow: t("studies.study1.eyebrow"),
+      title: t("studies.study1.title"),
+      description: t("studies.study1.description"),
+      tags: (t.raw("studies.study1.tags") as string[]) || [],
+      contextTitle: t("contextTitle"),
+      contextItems: (t.raw("studies.study1.contextItems") as string[]) || [],
+      challengeTitle: t("challengeTitle"),
+      challengeItems: (t.raw("studies.study1.challengeItems") as string[]) || [],
+      approachTitle: t("approachTitle"),
+      approachItems: (t.raw("studies.study1.approachItems") as string[]) || [],
+      considerationsTitle: t("considerationsTitle"),
+      considerationsItems: (t.raw("studies.study1.considerationsItems") as string[]) || [],
+      outcomeTitle: t("outcomeTitle"),
+      outcomeItems: (t.raw("studies.study1.outcomeItems") as string[]) || [],
+      accentGradient: "from-hl-cyan/20 to-transparent",
+    },
+    {
+      id: "intelligent-assistance",
+      eyebrow: t("studies.study2.eyebrow"),
+      title: t("studies.study2.title"),
+      description: t("studies.study2.description"),
+      tags: (t.raw("studies.study2.tags") as string[]) || [],
+      contextTitle: t("contextTitle"),
+      contextItems: (t.raw("studies.study2.contextItems") as string[]) || [],
+      challengeTitle: t("challengeTitle"),
+      challengeItems: (t.raw("studies.study2.challengeItems") as string[]) || [],
+      approachTitle: t("approachTitle"),
+      approachItems: (t.raw("studies.study2.approachItems") as string[]) || [],
+      considerationsTitle: t("considerationsTitle"),
+      considerationsItems: (t.raw("studies.study2.considerationsItems") as string[]) || [],
+      outcomeTitle: t("outcomeTitle"),
+      outcomeItems: (t.raw("studies.study2.outcomeItems") as string[]) || [],
+      accentGradient: "from-[#6EA8FF]/20 to-transparent",
+    },
+    {
+      id: "secure-infrastructure",
+      eyebrow: t("studies.study3.eyebrow"),
+      title: t("studies.study3.title"),
+      description: t("studies.study3.description"),
+      tags: (t.raw("studies.study3.tags") as string[]) || [],
+      contextTitle: t("contextTitle"),
+      contextItems: (t.raw("studies.study3.contextItems") as string[]) || [],
+      challengeTitle: t("challengeTitle"),
+      challengeItems: (t.raw("studies.study3.challengeItems") as string[]) || [],
+      approachTitle: t("approachTitle"),
+      approachItems: (t.raw("studies.study3.approachItems") as string[]) || [],
+      considerationsTitle: t("considerationsTitle"),
+      considerationsItems: (t.raw("studies.study3.considerationsItems") as string[]) || [],
+      outcomeTitle: t("outcomeTitle"),
+      outcomeItems: (t.raw("studies.study3.outcomeItems") as string[]) || [],
+      accentGradient: "from-[#29C4F8]/20 to-transparent",
+    },
+    {
+      id: "specialized-models",
+      eyebrow: t("studies.study4.eyebrow"),
+      title: t("studies.study4.title"),
+      description: t("studies.study4.description"),
+      tags: (t.raw("studies.study4.tags") as string[]) || [],
+      contextTitle: t("contextTitle"),
+      contextItems: (t.raw("studies.study4.contextItems") as string[]) || [],
+      challengeTitle: t("challengeTitle"),
+      challengeItems: (t.raw("studies.study4.challengeItems") as string[]) || [],
+      approachTitle: t("approachTitle"),
+      approachItems: (t.raw("studies.study4.approachItems") as string[]) || [],
+      considerationsTitle: t("considerationsTitle"),
+      considerationsItems: (t.raw("studies.study4.considerationsItems") as string[]) || [],
+      outcomeTitle: t("outcomeTitle"),
+      outcomeItems: (t.raw("studies.study4.outcomeItems") as string[]) || [],
+      accentGradient: "from-[#4AF3F8]/20 to-transparent",
+    },
+  ];
+}
 
 export function CaseStudySection() {
+  const t = useTranslations("caseStudies");
+  const CASE_STUDIES = getCaseStudies(t);
+
   return (
     <SectionShell id="case-studies" className="border-t border-hl-border bg-hl-surface/30">
       <SectionHeader
-        eyebrow="Selected Engineering Case Studies"
-        heading="Practical AI Systems for Complex Challenges"
-        lead="Representative engagements demonstrating approaches to solving complex AI engineering problems for organizations, research groups, and technical teams."
+        eyebrow={t("eyebrow")}
+        heading={t("heading")}
+        lead={t("lead")}
       />
 
       <div className="mt-14 space-y-8">
@@ -241,17 +143,17 @@ export function CaseStudySection() {
           <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
             <div className="max-w-2xl">
               <h3 className="text-xl font-bold tracking-tight text-foreground">
-                Facing a Complex AI Engineering Challenge?
+                {t("ctaTitle")}
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-hl-muted">
-                Describe your technical requirements, constraints, and objectives. Our engineering team will evaluate potential approaches and provide a practical assessment.
+                {t("ctaDescription")}
               </p>
             </div>
             <Link
               href="/contact"
               className="group inline-flex items-center gap-2 rounded-full bg-hl-cyan px-6 py-3 text-sm font-bold text-gray-900 transition-all hover:bg-hl-cyan/90 hover:shadow-[0_0_30px_-8px_rgba(96,165,250,0.5)] md:shrink-0"
             >
-              Discuss Your Requirements
+              {t("ctaButton")}
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </Link>
           </div>

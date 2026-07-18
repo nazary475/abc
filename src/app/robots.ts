@@ -19,10 +19,13 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: "*",
-        allow: "/",
+        allow: [
+          "/",
+          "/_next/static/",  // Allow static assets (JS, CSS, fonts) - required for SEO
+        ],
         disallow: [
           "/api/",           // Protect API routes (if any in future)
-          "/_next/",         // Block Next.js internal files
+          "/_next/data/",    // Block Next.js data files
         ],
       },
       {

@@ -5,7 +5,7 @@ import { PageSchemas } from "@/components/site/json-ld";
 import { Breadcrumbs } from "@/components/site/breadcrumbs";
 import { FaqSection } from "@/components/site/faq-section";
 import { RelatedLinks } from "@/components/site/related-links";
-import { FAQS } from "@/lib/seo";
+import { FAQS, generateHreflangAlternates } from "@/lib/seo";
 import { Locale } from "@/i18n/routing";
 import { getPageMetadata } from "@/lib/page-metadata";
 
@@ -26,17 +26,8 @@ export async function generateMetadata({
     title: meta.title,
     description: meta.description,
     
-    // Canonical URL
-    alternates: {
-      canonical: pageUrl,
-      languages: {
-        en: `${siteUrl}/en/how-we-work`,
-        de: `${siteUrl}/de/how-we-work`,
-        fr: `${siteUrl}/fr/how-we-work`,
-        es: `${siteUrl}/es/how-we-work`,
-        it: `${siteUrl}/it/how-we-work`,
-      },
-    },
+    // Hreflang alternates + self-referencing canonical (professional multilingual SEO)
+    ...generateHreflangAlternates(currentLocale, "/how-we-work"),
     
     // Keywords for search engines
     keywords: [

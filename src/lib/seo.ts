@@ -13,6 +13,8 @@
  * question-answer content and explicit structured data.
  */
 
+import type { Locale } from "@/i18n/routing";
+
 export const SITE = {
   name: "Haal Lab",
   domain: "haal-lab.solutions",
@@ -27,6 +29,12 @@ export const SITE = {
   shortDescription:
     "Private AI systems for European organizations. On-premises LLMs, RAG, and custom AI with data sovereignty.",
 } as const;
+
+/**
+ * Supported locales for hreflang implementation.
+ * Must match i18n/routing.ts configuration.
+ */
+export const LOCALES = ["en", "de", "fr", "es", "it"] as const;
 
 export const NAV: { label: string; href: string; description: string }[] = [
   {
@@ -367,3 +375,136 @@ export const ENGAGEMENT_STEPS = [
       "We ship to your environment , cloud, on-prem, or air-gapped , with the observability, runbooks, and documentation your team needs to operate it confidently.",
   },
 ] as const;
+
+
+/**
+ * ============================================================================
+ * MULTILINGUAL SEO UTILITIES — Professional hreflang & canonical implementation
+ * ============================================================================
+ *
+ * Generates hreflang alternate links and self-referencing canonicals per
+ * Google's multilingual SEO best practices:
+ *
+ * 1. **Bidirectional hreflang clusters** — each page references ALL language
+ *    versions including itself.
+ * 2. **x-default fallback** — always points to English (/en) for users whose
+ *    browser language doesn't match any declared variant.
+ * 3. **Self-referencing canonicals** — each locale's canonical points to itself,
+ *    NOT to the default language (hreflang handles cross-language relationships).
+ * 4. **Single source of truth** — centralized function prevents drift across pages.
+ *
+ * Usage in generateMetadata():
+ * ```ts
+ * import { generateHreflangAlternates } from "@/lib/seo";
+ *
+ * return {
+ *   title: "...",
+ *   ...generateHreflangAlternates(currentLocale, "/pricing"),
+ * };
+ * ```
+ *
+ * References:
+ * - Google Search Central: https://developers.google.com/search/docs/specialty/international/localized-versions
+ * - hreflang validation: https://www.aleydasolis.com/english/international-seo-tools/hreflang-tags-generator/
+ */
+
+/**
+ * Generate hreflang alternates and canonical URL for a page.
+ *
+ * @param locale - Current page locale (e.g., "en", "de")
+ * @param path - Page path without locale prefix (e.g., "/pricing", "/research/article-slug")
+ * @returns Next.js metadata `alternates` object with canonical + languages
+ *
+ * @example
+ * ```ts
+ * // In /de/pricing page metadata:
+ * generateHreflangAlternates("de", "/pricing")
+ * // Returns:
+ * // {
+ * //   alternates: {
+ * //     canonical: "https://haal-lab.solutions/de/pricing",
+ * //     languages: {
+ * //       "x-default": "https://haal-lab.solutions/en/pricing",
+ * //       en: "https://haal-lab.solutions/en/pricing",
+ * //       de: "https://haal-lab.solutions/de/pricing",
+ * //       fr: "https://haal-lab.solutions/fr/pricing",
+ * //       es: "https://haal-lab.solutions/es/pricing",
+ * //       it: "https://haal-lab.solutions/it/pricing",
+ * //     }
+ * //   }
+ * // }
+ * ```
+ */
+export function generateHreflangAlternates(locale: Locale, path: string) {
+  const baseUrl = SITE.url;
+  
+  // Normalize path (ensure it starts with / but doesn't double up)
+  const normalizedPath = path.startsWith("/") ? path : `/${path}`;
+  
+  // Self-referencing canonical (CRITICAL: must point to current locale, not English)
+  const canonical = `${baseUrl}/${locale}${normalizedPath}`;
+  
+  // Build complete hreflang cluster (all locales + x-default)
+  const languages: Record<string, string> = {
+    "x-default": `${baseUrl}/en${normalizedPath}`, // Fallback always points to English
+  };
+  
+  for (const loc of LOCALES) {
+    languages[loc] = `${baseUrl}/${loc}${normalizedPath}`;
+  }
+  
+  return {
+    alternates: {
+      canonical,
+      languages,
+    },
+  };
+}
+
+/**
+ * Convenience function for homepage (empty path).
+ */
+export function generateHomeHreflangAlternates(locale: Locale) {
+  return generateHreflangAlternates(locale, "");
+}
+
+/**
+ * Generate hreflang alternates for research articles.
+ * Research articles use a different path structure: /research/[slug]
+ */
+export function generateResearchHreflangAlternates(locale: Locale, slug: string) {
+  return generateHreflangAlternates(locale, `/research/${slug}`);
+}
+
+/**
+ * Validation helper: check if hreflang cluster is complete.
+ * Use in development/testing to catch configuration errors.
+ *
+ * @param alternates - The alternates object from generateHreflangAlternates
+ * @returns Array of validation errors, empty if valid
+ */
+export function validateHreflangCluster(alternates: ReturnType<typeof generateHreflangAlternates>): string[] {
+  const errors: string[] = [];
+  const { languages } = alternates.alternates;
+  
+  // Check x-default exists
+  if (!languages["x-default"]) {
+    errors.push("Missing x-default fallback");
+  }
+  
+  // Check all locales present
+  for (const locale of LOCALES) {
+    if (!languages[locale]) {
+      errors.push(`Missing hreflang for locale: ${locale}`);
+    }
+  }
+  
+  // Check URLs are absolute
+  for (const [key, url] of Object.entries(languages)) {
+    if (!url.startsWith("https://")) {
+      errors.push(`Relative URL for ${key}: ${url} (must be absolute)`);
+    }
+  }
+  
+  return errors;
+}

@@ -7,6 +7,7 @@ import { PageSchemas } from "@/components/site/json-ld";
 import { Breadcrumbs } from "@/components/site/breadcrumbs";
 import { RelatedLinks } from "@/components/site/related-links";
 import { getArticleBySlug, getAllArticleSlugs } from "@/lib/research-articles";
+import { generateResearchHreflangAlternates } from "@/lib/seo";
 
 export async function generateStaticParams() {
   const slugs = getAllArticleSlugs();
@@ -51,14 +52,8 @@ export async function generateMetadata({
     publisher: "Haal Lab",
     applicationName: "Haal Lab Research",
     
-    alternates: {
-      canonical: `https://haal-lab.solutions/${locale}/research/${slug}`,
-      languages: {
-        en: `https://haal-lab.solutions/en/research/${slug}`,
-        de: `https://haal-lab.solutions/de/research/${slug}`,
-        fr: `https://haal-lab.solutions/fr/research/${slug}`,
-      },
-    },
+    // Professional multilingual SEO with x-default
+    ...generateResearchHreflangAlternates(locale as Locale, slug),
     
     openGraph: {
       title: article.title,

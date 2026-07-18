@@ -7,7 +7,7 @@ import { Navbar } from "@/components/site/navbar";
 import { Footer } from "@/components/site/footer";
 import { JsonLd } from "@/components/site/json-ld";
 import { ChatAssistant } from "@/components/chat-assistant";
-import { SITE } from "@/lib/seo";
+import { SITE, generateHomeHreflangAlternates } from "@/lib/seo";
 import { routing, locales, type Locale } from "@/i18n/routing";
 
 const siteUrl = SITE.url;
@@ -56,16 +56,9 @@ export async function generateMetadata({
       "air-gapped AI", "AI agents", "vector database", "llama.cpp",
       "vLLM", "open-weight models",
     ],
-    alternates: {
-      canonical: `${siteUrl}/${currentLocale}`,
-      languages: {
-        en: `${siteUrl}/en`,
-        de: `${siteUrl}/de`,
-        fr: `${siteUrl}/fr`,
-        es: `${siteUrl}/es`,
-        it: `${siteUrl}/it`,
-      },
-    },
+    
+    // Professional multilingual SEO with x-default fallback
+    ...generateHomeHreflangAlternates(currentLocale),
     manifest: "/manifest.json",
     icons: {
       icon: "/logo.svg",

@@ -6,7 +6,7 @@ import { Breadcrumbs } from "@/components/site/breadcrumbs";
 import { FaqSection } from "@/components/site/faq-section";
 import { RelatedLinks } from "@/components/site/related-links";
 import { GlossarySection } from "@/components/site/glossary-section";
-import { FAQS } from "@/lib/seo";
+import { FAQS, generateHreflangAlternates } from "@/lib/seo";
 import { Locale } from "@/i18n/routing";
 import { getPageMetadata } from "@/lib/page-metadata";
 
@@ -22,9 +22,7 @@ export async function generateMetadata({
   return {
     title: meta.title,
     description: meta.description,
-    alternates: {
-      canonical: `/${locale}/solutions`,
-    },
+    ...generateHreflangAlternates(currentLocale, "/solutions"),
     openGraph: {
       title: meta.title,
       description: meta.description,

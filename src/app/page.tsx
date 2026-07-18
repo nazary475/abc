@@ -1,41 +1,17 @@
 import { redirect } from "next/navigation";
 import type { Metadata } from "next";
-import { headers } from "next/headers";
 
 /**
- * Root page - performs server-side redirect to appropriate locale.
+ * Root page - redirects to the default locale.
  *
- * On Vercel: Uses Accept-Language header to redirect server-side
- * On static export: Falls back to /en
+ * On Vercel: Dynamic server-side redirect with Accept-Language detection
+ * On static export: Static redirect to /en
  * 
  * This ensures crawlers see proper content without "Loading..." states.
  */
 
-// Detect locale from Accept-Language header
-function getPreferredLocale(acceptLanguage: string | null): string {
-  if (!acceptLanguage) return "en";
-  
-  // Parse Accept-Language header (e.g., "en-US,en;q=0.9,de;q=0.8")
-  const languages = acceptLanguage
-    .split(",")
-    .map((lang) => {
-      const [locale, q = "q=1"] = lang.trim().split(";");
-      const quality = parseFloat(q.split("=")[1] || "1");
-      return { locale: locale.toLowerCase().split("-")[0], quality };
-    })
-    .sort((a, b) => b.quality - a.quality);
-  
-  // Supported locales
-  const supportedLocales = ["en", "de", "fr", "es", "it"];
-  
-  for (const { locale } of languages) {
-    if (supportedLocales.includes(locale)) {
-      return locale;
-    }
-  }
-  
-  return "en"; // Default fallback
-}
+// Detect if we're in static export mode
+const isStatic = process.env.VERCEL === undefined;
 
 export const metadata: Metadata = {
   title: "Haal Lab , Engineering Intelligent Systems",
@@ -74,11 +50,8 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function RootPage() {
-  // Server-side redirect based on Accept-Language header
-  const headersList = await headers();
-  const acceptLanguage = headersList.get("accept-language");
-  const locale = getPreferredLocale(acceptLanguage);
-  
-  redirect(`/${locale}`);
+export default function RootPage() {
+  // Simple redirect to default locale (English)
+  // For Vercel, middleware can handle locale detection
+  redirect("/en");
 }

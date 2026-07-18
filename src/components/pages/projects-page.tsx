@@ -29,11 +29,11 @@ const PROJECTS: Project[] = [
     summary:
       "An offline AI platform enabling users to run large language models locally with privacy and control.",
     problem:
-      "Running capable open-weight LLMs locally has historically required deep expertise — manual quantization, fragmented runtimes, GPU/CPU juggling, and no clean way to add retrieval. Most users gave up and routed private data through cloud APIs.",
+      "Running capable open-weight LLMs locally has historically required deep expertise , manual quantization, fragmented runtimes, GPU/CPU juggling, and no clean way to add retrieval. Most users gave up and routed private data through cloud APIs.",
     approach:
-      "GGUF Loader packages the entire local-inference stack behind a single interface: model loading via the GGUF format, CUDA-accelerated inference through llama.cpp, a retrieval layer for grounded answers, and a clean API for tool integration. The system is hardware-aware — it picks the right quantization, context length, and batch size for the GPU it detects.",
+      "GGUF Loader packages the entire local-inference stack behind a single interface: model loading via the GGUF format, CUDA-accelerated inference through llama.cpp, a retrieval layer for grounded answers, and a clean API for tool integration. The system is hardware-aware , it picks the right quantization, context length, and batch size for the GPU it detects.",
     outcome:
-      "A platform that turns local LLM deployment from a research project into a one-step operation — without surrendering data to a third-party endpoint.",
+      "A platform that turns local LLM deployment from a research project into a one-step operation , without surrendering data to a third-party endpoint.",
     tags: ["Python", "LLMs", "GGUF", "RAG", "CUDA"],
     architecture: [
       { label: "Runtime", value: "llama.cpp" },
@@ -51,9 +51,9 @@ const PROJECTS: Project[] = [
     problem:
       "Legal corpora are hostile to naive search. Documents span decades, mix scanned PDFs with structured text, cite each other across jurisdictions, and use terminology that defeats keyword retrieval. Lawyers waste hours finding the paragraph they already half-remember.",
     approach:
-      "The system ingests heterogeneous legal documents through an OCR + layout-aware pipeline, embeds them with BGE-M3 for multilingual dense + sparse representations, indexes them in a vector database tuned for high-recall retrieval, and applies a cross-encoder reranker on the shortlist. The result is search that understands intent — not just keywords — across contracts, statutes, and case law.",
+      "The system ingests heterogeneous legal documents through an OCR + layout-aware pipeline, embeds them with BGE-M3 for multilingual dense + sparse representations, indexes them in a vector database tuned for high-recall retrieval, and applies a cross-encoder reranker on the shortlist. The result is search that understands intent , not just keywords , across contracts, statutes, and case law.",
     outcome:
-      "A retrieval system that returns the right clause, in the right document, with citation — even when the query is paraphrased, multilingual, or spans multiple documents.",
+      "A retrieval system that returns the right clause, in the right document, with citation , even when the query is paraphrased, multilingual, or spans multiple documents.",
     tags: ["BGE-M3", "Vector Database", "Reranking", "OCR"],
     architecture: [
       { label: "Embedder", value: "BGE-M3" },
@@ -68,13 +68,13 @@ const CAPABILITIES_TEASER: { title: string; description: string; icon: typeof Cp
   {
     title: "From prototype to production",
     description:
-      "Every project we ship is built to operate — not just to demo. Evaluation, observability, and documentation are part of the deliverable.",
+      "Every project we ship is built to operate , not just to demo. Evaluation, observability, and documentation are part of the deliverable.",
     icon: Cpu,
   },
   {
     title: "Open and extensible by default",
     description:
-      "We build on open-weight models and open-source infrastructure. You own the system, the weights, and the data — no platform lock-in.",
+      "We build on open-weight models and open-source infrastructure. You own the system, the weights, and the data , no platform lock-in.",
     icon: FileSearch,
   },
 ];

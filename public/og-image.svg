@@ -8,87 +8,55 @@
       <stop stop-color="#00E0FF"/>
       <stop offset="1" stop-color="#6EA8FF"/>
     </linearGradient>
-    <radialGradient id="glow" cx="50%" cy="0%" r="80%">
-      <stop offset="0%" stop-color="rgba(0,224,255,0.25)"/>
-      <stop offset="60%" stop-color="rgba(0,224,255,0)"/>
-    </radialGradient>
     <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
-      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
     </pattern>
   </defs>
 
   <!-- Background -->
   <rect width="1200" height="630" fill="url(#bg-grad)"/>
   <rect width="1200" height="630" fill="url(#grid)"/>
-  <rect width="1200" height="630" fill="url(#glow)"/>
 
-  <!-- Logo -->
+  <!-- Logo (top left) -->
   <g transform="translate(80, 80)">
-    <rect width="56" height="56" rx="14" fill="rgba(0,224,255,0.04)" stroke="rgba(255,255,255,0.12)"/>
+    <rect width="56" height="56" rx="14" fill="rgba(0,224,255,0.05)" stroke="rgba(255,255,255,0.12)"/>
     <path d="M16 14 V42 M16 28 H30 M30 14 V42" stroke="url(#cyan-grad)" stroke-width="3.5" stroke-linecap="round"/>
     <circle cx="16" cy="14" r="2.8" fill="#00E0FF"/>
     <circle cx="30" cy="28" r="2.8" fill="#00E0FF"/>
     <circle cx="16" cy="42" r="2.8" fill="#6EA8FF"/>
-    <text x="76" y="36" font-family="Inter, -apple-system, sans-serif" font-size="24" font-weight="600" fill="#E6EAF2">
+    <text x="76" y="36" font-family="Inter, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#E6EAF2">
       Haal<tspan fill="#00E0FF">Lab</tspan>
     </text>
   </g>
 
-  <!-- Tagline pill -->
-  <g transform="translate(80, 200)">
-    <rect width="280" height="36" rx="18" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)"/>
-    <circle cx="22" cy="18" r="4" fill="#00E0FF"/>
-    <text x="38" y="23" font-family="monospace" font-size="13" fill="#8A93A6" letter-spacing="2">
-      DEEP-TECH AI ENGINEERING
+  <!-- Main Content (centered) -->
+  <g transform="translate(600, 315)" text-anchor="middle">
+    <!-- Services line -->
+    <text y="-80" font-family="Inter, -apple-system, sans-serif" font-size="32" font-weight="600" fill="#E6EAF2">
+      AI Automation <tspan fill="#8A93A6">•</tspan> AI Assistants <tspan fill="#8A93A6">•</tspan> AI Infrastructure
     </text>
+    
+    <!-- Checkmark 1 -->
+    <g transform="translate(-280, -10)">
+      <circle cx="0" cy="0" r="16" fill="rgba(0,224,255,0.15)"/>
+      <path d="M-5 0 L-2 4 L6 -4" stroke="#00E0FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <text x="30" y="6" font-family="Inter, -apple-system, sans-serif" font-size="26" font-weight="500" fill="#E6EAF2" text-anchor="start">
+        Designed for Private Environments
+      </text>
+    </g>
+    
+    <!-- Checkmark 2 -->
+    <g transform="translate(-280, 50)">
+      <circle cx="0" cy="0" r="16" fill="rgba(0,224,255,0.15)"/>
+      <path d="M-5 0 L-2 4 L6 -4" stroke="#00E0FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <text x="30" y="6" font-family="Inter, -apple-system, sans-serif" font-size="26" font-weight="500" fill="#E6EAF2" text-anchor="start">
+        Your Data Stays Under Your Control
+      </text>
+    </g>
   </g>
 
-  <!-- Main headline -->
-  <text x="80" y="320" font-family="Inter, -apple-system, sans-serif" font-size="72" font-weight="700" fill="#FFFFFF" letter-spacing="-2">
-    Engineering Intelligent
-  </text>
-  <text x="80" y="400" font-family="Inter, -apple-system, sans-serif" font-size="72" font-weight="700" fill="#FFFFFF" letter-spacing="-2">
-    Systems for the
-  </text>
-  <text x="80" y="480" font-family="Inter, -apple-system, sans-serif" font-size="72" font-weight="700" fill="url(#cyan-grad)" letter-spacing="-2">
-    Future.
-  </text>
-
-  <!-- Subtitle -->
-  <text x="80" y="540" font-family="Inter, -apple-system, sans-serif" font-size="22" font-weight="400" fill="#8A93A6">
-    Private AI systems · LLM applications · RAG · AI infrastructure
-  </text>
-
-  <!-- Domain -->
-  <text x="80" y="590" font-family="monospace" font-size="14" fill="#8A93A6" letter-spacing="1">
+  <!-- Website link (bottom right corner) -->
+  <text x="1120" y="590" font-family="monospace" font-size="16" fill="#8A93A6" text-anchor="end" letter-spacing="0.5">
     haal-lab.solutions
   </text>
-
-  <!-- Right-side abstract node graph -->
-  <g transform="translate(820, 180)" opacity="0.85">
-    <!-- Connection lines -->
-    <path d="M40 60 C 120 60, 140 120, 200 150 S 280 240, 320 300" stroke="rgba(0,224,255,0.4)" stroke-width="1.5" fill="none" stroke-dasharray="4 8"/>
-    <path d="M40 60 L 200 150" stroke="rgba(0,224,255,0.2)" stroke-width="1" fill="none"/>
-    <path d="M40 60 L 200 280" stroke="rgba(0,224,255,0.15)" stroke-width="0.8" fill="none"/>
-    <path d="M200 150 L 320 100" stroke="rgba(110,168,255,0.2)" stroke-width="0.8" fill="none"/>
-    <path d="M200 150 L 320 300" stroke="rgba(0,224,255,0.2)" stroke-width="0.8" fill="none"/>
-    <path d="M200 280 L 320 300" stroke="rgba(110,168,255,0.2)" stroke-width="0.8" fill="none"/>
-
-    <!-- Nodes -->
-    <circle cx="40" cy="60" r="8" fill="url(#cyan-grad)"/>
-    <circle cx="40" cy="60" r="16" fill="url(#cyan-grad)" opacity="0.2"/>
-
-    <circle cx="200" cy="150" r="8" fill="url(#cyan-grad)"/>
-    <circle cx="200" cy="150" r="16" fill="url(#cyan-grad)" opacity="0.2"/>
-
-    <circle cx="200" cy="280" r="8" fill="url(#cyan-grad)"/>
-    <circle cx="200" cy="280" r="16" fill="url(#cyan-grad)" opacity="0.2"/>
-
-    <circle cx="320" cy="100" r="8" fill="#6EA8FF"/>
-    <circle cx="320" cy="300" r="8" fill="#6EA8FF"/>
-
-    <!-- Block frames -->
-    <rect x="180" y="130" width="40" height="40" rx="6" fill="none" stroke="rgba(255,255,255,0.08)"/>
-    <rect x="180" y="260" width="40" height="40" rx="6" fill="none" stroke="rgba(0,224,255,0.3)"/>
-  </g>
 </svg>

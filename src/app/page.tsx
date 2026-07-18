@@ -14,9 +14,9 @@ import type { Metadata } from "next";
 const isStatic = process.env.VERCEL === undefined;
 
 export const metadata: Metadata = {
-  title: "Haal Lab , Engineering Intelligent Systems",
+  title: "Haal Lab — Private AI Systems for European Organizations",
   description:
-    "Deep-tech AI engineering company. We build private AI systems, LLM applications, RAG, and AI infrastructure for European organizations.",
+    "On-premises AI systems for European organizations. We build private LLMs, RAG systems, and custom AI applications deployed on your infrastructure with full data sovereignty.",
   metadataBase: new URL("https://haal-lab.solutions"),
   alternates: {
     canonical: "/",
@@ -29,20 +29,29 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Haal Lab , Engineering Intelligent Systems",
+    title: "Haal Lab — Private AI Systems for European Organizations",
     description:
-      "Deep-tech AI engineering company. Private AI systems, LLM applications, RAG, and AI infrastructure.",
+      "On-premises AI systems for European organizations. Private LLMs, RAG systems, and custom AI applications.",
     url: "https://haal-lab.solutions",
     siteName: "Haal Lab",
     locale: "en",
     type: "website",
+    images: [
+      {
+        url: "https://haal-lab.solutions/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Haal Lab — Private AI Systems",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Haal Lab , Engineering Intelligent Systems",
+    title: "Haal Lab — Private AI Systems for European Organizations",
     description:
-      "Deep-tech AI engineering company. Private AI systems, LLM applications, RAG, and AI infrastructure.",
+      "On-premises AI systems for European organizations. Private LLMs, RAG systems, and custom AI applications.",
     creator: "@haallab",
+    images: ["https://haal-lab.solutions/og-image.png"],
   },
   robots: {
     index: true,

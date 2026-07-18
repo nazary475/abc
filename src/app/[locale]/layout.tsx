@@ -21,12 +21,12 @@ const ogLocales: Record<Locale, string> = {
   it: "it_IT",
 };
 
-/** Generate static params for all locales — required for static export. */
+/** Generate static params for all locales , required for static export. */
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-/** Generate metadata per locale — includes hreflang alternates for SEO. */
+/** Generate metadata per locale , includes hreflang alternates for SEO. */
 export async function generateMetadata({
   params,
 }: {
@@ -38,7 +38,7 @@ export async function generateMetadata({
   return {
     metadataBase: new URL(siteUrl),
     title: {
-      default: "Haal Lab — Engineering Intelligent Systems for the Future",
+      default: "Haal Lab — Private AI Systems for European Organizations",
       template: "%s · Haal Lab",
     },
     description: SITE.description,
@@ -73,7 +73,7 @@ export async function generateMetadata({
       apple: "/logo.svg",
     },
     openGraph: {
-      title: "Haal Lab — Engineering Intelligent Systems for the Future",
+      title: "Haal Lab — Private AI Systems for European Organizations",
       description: SITE.description,
       url: `${siteUrl}/${currentLocale}`,
       siteName: SITE.name,
@@ -82,14 +82,27 @@ export async function generateMetadata({
         .filter((l) => l !== currentLocale)
         .map((l) => ogLocales[l]),
       type: "website",
-      images: "https://haal-lab.solutions/og-image.png",
+      images: [
+        {
+          url: "https://haal-lab.solutions/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: "Haal Lab - Private AI Systems for European Organizations",
+          type: "image/png",
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
-      title: "Haal Lab — Engineering Intelligent Systems for the Future",
+      title: "Haal Lab — Private AI Systems for European Organizations",
       description: SITE.shortDescription,
       creator: SITE.twitter,
-      images: ["https://haal-lab.solutions/og-image.png"],
+      images: [
+        {
+          url: "https://haal-lab.solutions/og-image.png",
+          alt: "Haal Lab - Private AI Systems for European Organizations",
+        },
+      ],
     },
     robots: {
       index: true,
@@ -133,7 +146,7 @@ export default async function LocaleLayout({
 
   const currentLocale = locale as Locale;
 
-  // Enable static rendering — must be called BEFORE getMessages()
+  // Enable static rendering , must be called BEFORE getMessages()
   setRequestLocale(currentLocale);
 
   const messages = await getMessages();

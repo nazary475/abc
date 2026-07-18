@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { detectBestLocale, getCookieLocale } from "@/lib/locale-detection";
 
 /**
- * LocaleRedirect — Client-side component that detects the best locale
+ * LocaleRedirect , Client-side component that detects the best locale
  * and redirects the user accordingly.
  * 
  * This works with static export (GitHub Pages) since it runs in the browser.
@@ -53,7 +53,7 @@ export function LocaleRedirect() {
           marginBottom: '1.5rem',
           color: '#E6EAF2',
         }}>
-          Haal Lab — Engineering Intelligent Systems
+          Haal Lab — Private AI Systems
         </h1>
         <div style={{
           width: '48px',

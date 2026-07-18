@@ -147,7 +147,7 @@ export function Footer() {
           </div>
           <div className="flex flex-col items-start gap-2 sm:items-end">
             <p className="font-mono font-bold uppercase tracking-wider text-foreground/80">
-              Engineering Intelligent Systems
+              Private AI for European Organizations
             </p>
             <p className="text-hl-muted">
               Founded: July 2026 • Founder: Ali-Zafar Najafi

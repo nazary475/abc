@@ -51,7 +51,7 @@ export function organizationSchema() {
     },
     email: SITE.email,
     description: SITE.description,
-    slogan: "Engineering Intelligent Systems for the Future",
+    slogan: "Private AI Systems for European Organizations",
     foundingDate: "2026-07-17",
     foundingLocation: {
       "@type": "Place",
@@ -73,7 +73,8 @@ export function organizationSchema() {
     },
     areaServed: {
       "@type": "Place",
-      name: "Worldwide",
+      name: "Europe",
+      description: "Primarily serving European organizations, institutions, and companies",
     },
     sameAs: [SITE.github, SITE.linkedin],
     // Official registration identifiers
@@ -97,7 +98,7 @@ export function organizationSchema() {
         email: SITE.email,
         contactType: "sales",
         availableLanguage: ["English", "German", "French", "Spanish", "Italian"],
-        areaServed: "Worldwide",
+        areaServed: "Europe",
       },
       {
         "@type": "ContactPoint",
@@ -111,7 +112,7 @@ export function organizationSchema() {
         email: SITE.email,
         contactType: "technical support",
         availableLanguage: ["English"],
-        areaServed: "Worldwide",
+        areaServed: "Europe",
       },
     ],
     founder: {
@@ -129,28 +130,28 @@ export function organizationSchema() {
         "@type": "Person",
         name: "Hussain Nazary",
         jobTitle: "Chief Technology Officer",
-        description: "AI Engineer & CTO at Haal Lab",
+        description: "AI Engineering & Private AI Systems",
         email: SITE.email,
         knowsAbout: [
-          "Artificial Intelligence",
-          "Machine Learning",
-          "Large Language Models",
-          "AI Engineering",
-          "Full Stack Development",
+          "Private AI Deployment",
+          "LLM Engineering",
+          "RAG Systems",
+          "AI Infrastructure",
+          "On-Premises AI",
         ],
       },
     ],
     knowsAbout: [
-      "Artificial Intelligence",
+      "Private AI Systems",
+      "On-Premises AI Deployment",
       "Large Language Models",
-      "Retrieval-Augmented Generation",
-      "Private AI Deployment",
-      "AI Infrastructure",
-      "Knowledge Intelligence",
-      "Semantic Search",
-      "LLM Applications",
-      "AI Automation",
-      "Machine Learning Engineering",
+      "Retrieval-Augmented Generation (RAG)",
+      "AI Data Sovereignty",
+      "European AI Compliance",
+      "Custom LLM Applications",
+      "AI Infrastructure Engineering",
+      "Semantic Search Systems",
+      "AI Evaluation and Testing",
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
@@ -171,8 +172,8 @@ export function organizationSchema() {
       "@type": "Offer",
       itemOffered: {
         "@type": "Service",
-        serviceType: "AI Engineering Services",
-        areaServed: "Worldwide",
+        serviceType: "Private AI Engineering Services",
+        areaServed: "Europe",
       },
     },
     industry: "Information Technology",
@@ -240,16 +241,17 @@ export function serviceSchema() {
       "@id": `${SITE.url}/#organization`,
     },
     serviceType: [
-      "Custom AI Development",
-      "Retrieval-Augmented Generation Systems",
-      "LLM Integration",
-      "AI Automation",
       "Private AI Deployment",
-      "AI Consulting",
+      "On-Premises LLM Systems",
+      "RAG System Development",
+      "Custom AI Applications",
+      "AI Infrastructure Engineering",
+      "Data Sovereignty Solutions",
     ],
     areaServed: {
       "@type": "Place",
-      name: "Worldwide",
+      name: "Europe",
+      description: "European organizations requiring data sovereignty and private AI",
     },
     availableChannel: {
       "@type": "ServiceChannel",
@@ -258,7 +260,11 @@ export function serviceSchema() {
     },
     audience: {
       "@type": "Audience",
-      audienceType: ["Enterprises", "Startups", "Research Institutions", "Government Agencies"],
+      audienceType: ["European Enterprises", "Research Institutions", "Government Organizations", "Regulated Industries"],
+      geographicArea: {
+        "@type": "Place",
+        name: "Europe",
+      },
     },
     category: "Information Technology Services",
     hasOfferCatalog: {
@@ -288,25 +294,25 @@ export function serviceSchema() {
     providerMobility: "static",
     serviceOutput: {
       "@type": "Thing",
-      name: "Custom AI Solutions",
-      description: "Fully deployed AI systems tailored to client needs",
+      name: "Private AI Systems",
+      description: "Production-ready AI systems deployed on client infrastructure with data sovereignty",
     },
   };
 }
 
-/** SoftwareApplication schema — represents our AI platform capabilities. */
+/** Service platform schema — represents concrete AI engineering services. */
 export function softwareApplicationSchema(locale: string) {
   const localePrefix = locale === "en" ? "en" : locale;
   return {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "Haal Lab AI Platform",
+    name: "Haal Lab Private AI Platform",
     applicationCategory: "BusinessApplication",
-    applicationSubCategory: "Artificial Intelligence Platform",
+    applicationSubCategory: "Private AI Infrastructure",
     description:
-      "Private AI systems platform for building LLM applications, RAG systems, and intelligent automation with on-premise deployment capabilities.",
+      "On-premises AI platform for European organizations requiring data sovereignty. Deploy LLMs, RAG systems, and custom AI applications on your own infrastructure.",
     url: `${SITE.url}/${localePrefix}`,
-    operatingSystem: "Linux, Windows, macOS",
+    operatingSystem: "Linux, Windows Server, macOS",
     offers: {
       "@type": "AggregateOffer",
       priceCurrency: "EUR",
@@ -345,18 +351,20 @@ export function softwareApplicationSchema(locale: string) {
       url: SITE.url,
     },
     featureList: [
-      "Private on-premise AI deployment",
-      "RAG (Retrieval-Augmented Generation) systems",
-      "LLM application development",
-      "Air-gapped deployment support",
-      "Open-weight model integration",
-      "GDPR & EU AI Act compliance",
-      "Multi-language support",
-      "Vector database integration",
-      "GPU optimization",
-      "Kubernetes orchestration",
+      "On-premises LLM deployment (no cloud required)",
+      "Air-gapped infrastructure support",
+      "RAG systems with private document processing",
+      "Custom LLM application development",
+      "Open-weight models (Llama, Mistral, Qwen)",
+      "GDPR and EU AI Act compliance",
+      "Data sovereignty and privacy controls",
+      "Multi-language AI support (EN, DE, FR, ES, IT)",
+      "Vector database integration (Qdrant, pgvector)",
+      "GPU optimization for on-prem hardware",
+      "Kubernetes deployment orchestration",
+      "Evaluation and testing frameworks",
     ],
-    softwareRequirements: "Docker, Kubernetes (optional), GPU (optional)",
+    softwareRequirements: "Linux or Windows Server, Docker, Kubernetes (optional), NVIDIA GPU (optional)",
     releaseNotes: `${SITE.url}/${localePrefix}/research`,
     screenshot: `${SITE.url}/og-image.png`,
   };
@@ -407,6 +415,264 @@ export function howToSchema() {
       name: s.name,
       text: s.description,
     })),
+  };
+}
+
+/** Research-driven AI engineering process schema for How We Work page */
+export function howWeWorkProcessSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": ["HowTo", "TechArticle"],
+    "@id": `${SITE.url}/how-we-work#process`,
+    name: "Haal Lab's Research-Driven AI Engineering Process",
+    description:
+      "A systematic approach to building AI systems: Understanding the Challenge, Research & Exploration, Experimentation & Evaluation, Engineering & Development, and Deployment & Continuous Improvement.",
+    abstract:
+      "Haal Lab believes successful AI systems are not created by applying the same solution to every organization. Every challenge has different requirements, data environments, security considerations, and operational goals.",
+    
+    // Process steps with detailed information
+    step: [
+      {
+        "@type": "HowToStep",
+        position: 1,
+        name: "Understanding the Challenge",
+        text: "We begin by understanding the organization's objectives, existing processes, available resources, and the problem that needs to be solved.",
+        itemListElement: [
+          { "@type": "HowToDirection", text: "Business goals" },
+          { "@type": "HowToDirection", text: "Operational challenges" },
+          { "@type": "HowToDirection", text: "Existing knowledge and data sources" },
+          { "@type": "HowToDirection", text: "Technical requirements" },
+          { "@type": "HowToDirection", text: "Security and privacy considerations" },
+        ],
+        url: `${SITE.url}/how-we-work#understanding`,
+      },
+      {
+        "@type": "HowToStep",
+        position: 2,
+        name: "Research & Exploration",
+        text: "Before committing to an approach, we investigate available technologies and possible architectures.",
+        itemListElement: [
+          { "@type": "HowToDirection", text: "Exploring different AI methods" },
+          { "@type": "HowToDirection", text: "Evaluating suitable models and techniques" },
+          { "@type": "HowToDirection", text: "Testing possible architectures" },
+          { "@type": "HowToDirection", text: "Studying trade-offs between performance, cost, security, and scalability" },
+        ],
+        url: `${SITE.url}/how-we-work#research`,
+      },
+      {
+        "@type": "HowToStep",
+        position: 3,
+        name: "Experimentation & Evaluation",
+        text: "AI development requires careful testing. We build experiments and prototypes to evaluate different solutions before full implementation.",
+        itemListElement: [
+          { "@type": "HowToDirection", text: "Effectiveness" },
+          { "@type": "HowToDirection", text: "Reliability" },
+          { "@type": "HowToDirection", text: "Performance" },
+          { "@type": "HowToDirection", text: "Integration requirements" },
+          { "@type": "HowToDirection", text: "Long-term sustainability" },
+        ],
+        url: `${SITE.url}/how-we-work#experimentation`,
+      },
+      {
+        "@type": "HowToStep",
+        position: 4,
+        name: "Engineering & Development",
+        text: "After identifying the most suitable approach, we design and develop the AI system according to the organization's environment and requirements.",
+        itemListElement: [
+          { "@type": "HowToDirection", text: "Practical" },
+          { "@type": "HowToDirection", text: "Secure" },
+          { "@type": "HowToDirection", text: "Maintainable" },
+          { "@type": "HowToDirection", text: "Ready for real-world use" },
+        ],
+        url: `${SITE.url}/how-we-work#engineering`,
+      },
+      {
+        "@type": "HowToStep",
+        position: 5,
+        name: "Deployment & Continuous Improvement",
+        text: "AI systems continue evolving after deployment. We support organizations in integrating AI into their workflows, monitoring performance, and improving capabilities as new requirements and technologies emerge.",
+        url: `${SITE.url}/how-we-work#deployment`,
+      },
+    ],
+    
+    // Tools and technologies
+    tool: [
+      { "@type": "HowToTool", name: "Open-weight Language Models" },
+      { "@type": "HowToTool", name: "Evaluation Frameworks" },
+      { "@type": "HowToTool", name: "Observability Systems" },
+      { "@type": "HowToTool", name: "Private Infrastructure" },
+    ],
+    
+    // Author and publisher
+    author: {
+      "@id": `${SITE.url}/#organization`,
+    },
+    publisher: {
+      "@id": `${SITE.url}/#organization`,
+    },
+    
+    // Additional properties
+    about: [
+      {
+        "@type": "Thing",
+        name: "AI Engineering Methodology",
+        description: "Systematic approach to building production AI systems",
+      },
+      {
+        "@type": "Thing",
+        name: "Research-Driven Development",
+        description: "Evidence-based AI system design and implementation",
+      },
+    ],
+    
+    keywords: [
+      "AI engineering process",
+      "research-driven AI",
+      "AI experimentation",
+      "AI evaluation",
+      "AI deployment",
+      "AI continuous improvement",
+      "AI methodology",
+    ].join(", "),
+    
+    // Indicates this is a guide/methodology
+    genre: ["Technology", "Methodology", "Process"],
+    learningResourceType: ["Guide", "Methodology", "Process Documentation"],
+    
+    // Audience
+    audience: {
+      "@type": "Audience",
+      audienceType: ["Business Leaders", "Technical Leaders", "Project Managers", "Engineering Teams"],
+      educationalLevel: "Professional",
+    },
+    
+    inLanguage: ["en", "de", "fr", "es", "it"],
+    isAccessibleForFree: true,
+    
+    // Time estimate
+    totalTime: "PT3M",
+    
+    // License
+    license: "https://creativecommons.org/licenses/by-sa/4.0/",
+  };
+}
+
+/** ItemList schema for the 5-phase process */
+export function howWeWorkItemListSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "@id": `${SITE.url}/how-we-work#phases`,
+    name: "AI Engineering Process Phases",
+    description: "The five phases of Haal Lab's research-driven AI engineering process",
+    numberOfItems: 5,
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Understanding the Challenge",
+        description: "Understand the real problem before designing a solution",
+        url: `${SITE.url}/how-we-work#understanding`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Research & Exploration",
+        description: "Find the approach that best fits the organization's needs",
+        url: `${SITE.url}/how-we-work#research`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Experimentation & Evaluation",
+        description: "Make informed decisions based on results",
+        url: `${SITE.url}/how-we-work#experimentation`,
+      },
+      {
+        "@type": "ListItem",
+        position: 4,
+        name: "Engineering & Development",
+        description: "Build practical, secure, and maintainable AI systems",
+        url: `${SITE.url}/how-we-work#engineering`,
+      },
+      {
+        "@type": "ListItem",
+        position: 5,
+        name: "Deployment & Continuous Improvement",
+        description: "Create a long-term AI capability, not just a one-time implementation",
+        url: `${SITE.url}/how-we-work#deployment`,
+      },
+    ],
+  };
+}
+
+/** WebPage schema specifically for How We Work page */
+export function howWeWorkWebPageSchema(locale: string) {
+  const pageUrl = `${SITE.url}/${locale}/how-we-work`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${pageUrl}#webpage`,
+    url: pageUrl,
+    name: "How We Work - Research-Driven AI Engineering",
+    description:
+      "Haal Lab's research-driven AI engineering process combines research, experimentation, engineering, and continuous evaluation to identify and build the most suitable AI approach for each organization.",
+    
+    isPartOf: {
+      "@id": `${SITE.url}/#website`,
+    },
+    
+    about: {
+      "@type": "Thing",
+      name: "AI Engineering Methodology",
+      description: "Research-driven process for building production AI systems",
+    },
+    
+    mainEntity: {
+      "@id": `${SITE.url}/how-we-work#process`,
+    },
+    
+    breadcrumb: {
+      "@id": `${pageUrl}#breadcrumb`,
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: SITE.url,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "How We Work",
+          item: pageUrl,
+        },
+      ],
+    },
+    
+    publisher: {
+      "@id": `${SITE.url}/#organization`,
+    },
+    
+    author: {
+      "@id": `${SITE.url}/#organization`,
+    },
+    
+    inLanguage: locale,
+    
+    datePublished: "2026-07-17",
+    dateModified: new Date().toISOString().split("T")[0],
+    
+    keywords: [
+      "AI engineering process",
+      "research-driven AI",
+      "AI methodology",
+      "AI development lifecycle",
+      "AI experimentation",
+      "AI evaluation",
+      "AI deployment",
+    ].join(", "),
   };
 }
 
@@ -640,6 +906,15 @@ export function PageSchemas({ path, locale }: { path: string; locale?: string })
   // Solutions page also gets the HowTo schema
   if (path === "/solutions") {
     schemas.push(howToSchema());
+  }
+
+  // How We Work page gets comprehensive process schemas
+  if (path === "/how-we-work") {
+    schemas.push(howWeWorkProcessSchema());
+    schemas.push(howWeWorkItemListSchema());
+    if (locale) {
+      schemas.push(howWeWorkWebPageSchema(locale));
+    }
   }
 
   return (

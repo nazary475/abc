@@ -27,8 +27,20 @@ export async function generateMetadata({
     openGraph: {
       title: meta.title,
       description: meta.description,
-      url: `/${locale}/about`,
+      url: `https://haal-lab.solutions/${locale}/about`,
       type: "website",
+      images: [meta.ogImage],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: meta.title,
+      description: meta.description,
+      images: [
+        {
+          url: meta.ogImage.url,
+          alt: meta.ogImage.alt,
+        },
+      ],
     },
     keywords: [
       "about Haal Lab",

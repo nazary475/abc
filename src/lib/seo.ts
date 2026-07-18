@@ -21,11 +21,11 @@ export const SITE = {
   github: "https://github.com/haal-lab",
   linkedin: "https://www.linkedin.com/company/haal-lab",
   twitter: "@haallab",
-  foundingDate: "2024",
+  foundingDate: "2026",
   description:
-    "Haal Lab is a deep-tech AI engineering company building private, intelligent, and reliable AI systems — including large language model applications, retrieval systems, automation platforms, and private AI infrastructure.",
+    "Haal Lab builds private, on-premises AI systems for European organizations. We deploy custom LLMs, RAG systems, and AI applications on your infrastructure with full data sovereignty and GDPR compliance.",
   shortDescription:
-    "Deep-tech AI engineering company. Private AI systems, LLM applications, RAG, and AI infrastructure.",
+    "Private AI systems for European organizations. On-premises LLMs, RAG, and custom AI with data sovereignty.",
 } as const;
 
 export const NAV: { label: string; href: string; description: string }[] = [
@@ -33,75 +33,75 @@ export const NAV: { label: string; href: string; description: string }[] = [
     label: "Solutions",
     href: "/solutions",
     description:
-      "Four AI capabilities: Local AI Systems, LLM Applications, Knowledge Intelligence, and AI Infrastructure.",
+      "Four AI capabilities: On-Premises LLM Systems, Custom AI Applications, RAG & Knowledge Systems, and Private AI Infrastructure.",
   },
   {
     label: "How We Work",
     href: "/how-we-work",
     description:
-      "Research-driven AI engineering process — from discovery and exploration to experimentation, development, and deployment.",
+      "Research-driven engineering process: understanding requirements, evaluating solutions, building custom systems, deploying on your infrastructure.",
   },
   {
     label: "Research",
     href: "/research",
     description:
-      "Technical articles and experiments on local LLM inference, RAG, reranking, BGE-M3, evaluation CI, and agent orchestration.",
+      "Technical articles on on-premises LLM deployment, RAG architecture, BGE-M3, evaluation frameworks, and private AI infrastructure.",
   },
   {
     label: "Network",
     href: "/network",
     description:
-      "Technology, infrastructure, cloud, and research partners — plus our advisory board of AI, security, and privacy experts.",
+      "European technology partners: NVIDIA, Hugging Face, Qdrant, Mistral AI, Aleph Alpha, Hetzner, Scaleway, and research institutions.",
   },
   {
     label: "About",
     href: "/about",
     description:
-      "Haal Lab is an AI engineering company focused on intelligent software systems using modern ML and LLM technologies.",
+      "AI engineering company focused on private, on-premises AI systems for European organizations requiring data sovereignty.",
   },
   {
     label: "Pricing",
     href: "/pricing",
     description:
-      "Four pricing tiers for AI engineering: Explorer, Professional, Enterprise, and Research & Academic.",
+      "Four packages for private AI deployment: Starter, Explorer, Professional, and Enterprise. Custom systems on your infrastructure.",
   },
   {
     label: "Contact",
     href: "/contact",
     description:
-      "Start a conversation with Haal Lab about your AI project. We respond within two business days.",
+      "Contact Haal Lab to discuss your private AI requirements. We build on-premises LLM systems and RAG applications.",
   },
 ];
 
 export const SERVICES = [
-  "Custom AI Development",
-  "Retrieval-Augmented Generation Systems",
-  "LLM Integration",
-  "AI Automation",
-  "Private AI Deployment",
-  "AI Consulting",
+  "On-Premises AI Deployment",
+  "Private LLM Systems",
+  "RAG System Development",
+  "Custom AI Applications",
+  "AI Infrastructure Engineering",
+  "Data Sovereignty Solutions",
 ] as const;
 
 export const CAPABILITIES = [
   {
-    name: "Local AI Systems",
+    name: "On-Premises LLM Systems",
     description:
-      "Private AI solutions that run securely on your infrastructure — on-prem, air-gapped, or on workstations.",
+      "Deploy large language models on your infrastructure. Air-gapped, on-prem, or private cloud. Full data control with open-weight models like Llama, Mistral, and Qwen.",
   },
   {
-    name: "LLM Applications",
+    name: "Custom AI Applications",
     description:
-      "Custom AI assistants, agents, and intelligent automation systems built with evaluation and observability.",
+      "Build AI assistants, document processing, and automation systems tailored to your organization. Research-driven development with evaluation and testing frameworks.",
   },
   {
-    name: "Knowledge Intelligence",
+    name: "RAG & Knowledge Systems",
     description:
-      "Advanced RAG systems, semantic search, and document intelligence with hybrid retrieval and reranking.",
+      "Retrieval-augmented generation systems for your private documents. Semantic search, hybrid retrieval, BGE-M3 embeddings, and cross-encoder reranking.",
   },
   {
-    name: "AI Infrastructure",
+    name: "Private AI Infrastructure",
     description:
-      "Deployment, optimization, and scalable AI engineering — model serving, GPU tuning, and observability.",
+      "Engineering support for AI deployment: GPU optimization, model serving (vLLM, llama.cpp), vector databases, Kubernetes orchestration, and observability.",
   },
 ] as const;
 
@@ -139,11 +139,11 @@ export const BREADCRUMBS: Record<string, { name: string; path: string }[]> = {
 };
 
 /**
- * FAQ content — used both as visible Q&A on the site AND as FAQPage JSON-LD.
+ * FAQ content , used both as visible Q&A on the site AND as FAQPage JSON-LD.
  *
  * These questions are written to match the natural-language queries that
  * users type into AI chatbots ("What companies build private AI?",
- * "How to deploy LLMs locally?", etc.) — so that ChatGPT, Perplexity,
+ * "How to deploy LLMs locally?", etc.) , so that ChatGPT, Perplexity,
  * Claude, and Gemini can retrieve and cite the answers.
  */
 export type FAQ = { question: string; answer: string };
@@ -154,81 +154,81 @@ export const FAQS: LocaleFAQs = {
     {
       question: "What does Haal Lab do?",
       answer:
-        "Haal Lab is a deep-tech AI engineering company that builds private, intelligent, and reliable AI systems. We deliver four capabilities: Local AI Systems (private on-prem inference), LLM Applications (assistants and agents), Knowledge Intelligence (RAG and semantic search), and AI Infrastructure (deployment and optimization).",
+        "Haal Lab builds private, on-premises AI systems for European organizations. We deploy LLMs, RAG systems, and custom AI applications on your infrastructure with full data sovereignty. No cloud APIs, no data sharing — everything runs on your servers.",
     },
     {
       question: "Who is Haal Lab for?",
       answer:
-        "Haal Lab works with businesses, startups, researchers, and organizations that need custom AI solutions — particularly those with privacy, compliance, or data-sovereignty requirements that rule out generic cloud AI services.",
+        "Haal Lab serves European enterprises, research institutions, government organizations, and regulated industries (healthcare, finance, legal) that require data sovereignty, GDPR compliance, and cannot use cloud-based AI services.",
     },
     {
       question: "Does Haal Lab build private or on-premises AI?",
       answer:
-        "Yes. Privacy-first architecture is one of our core principles. We build AI systems that run entirely on your infrastructure — on workstations, on-prem servers, or air-gapped clusters — using open-weight models so your data never leaves your environment.",
+        "Yes. All our systems run entirely on your infrastructure — on-premises servers, private cloud, or air-gapped networks. We use open-weight models (Llama, Mistral, Qwen) so your data never leaves your environment. No external API calls, complete data control.",
     },
     {
       question: "What technologies does Haal Lab use?",
       answer:
-        "Our stack includes open-weight LLMs, llama.cpp, vLLM, Triton, GGUF format, BGE-M3 embeddings, vector databases (Qdrant, Postgres with pgvector), LangGraph for agent orchestration, Kubernetes, and CUDA for GPU acceleration. We build on open-source by default — no platform lock-in.",
+        "We use open-weight LLMs (Llama 3, Mistral, Qwen), llama.cpp and vLLM for inference, GGUF quantized models, BGE-M3 embeddings, vector databases (Qdrant, pgvector), Kubernetes for orchestration, and NVIDIA GPUs for acceleration. Everything is open-source — no vendor lock-in.",
     },
     {
-      question: "How is Haal Lab different from a generic AI agency?",
+      question: "Why choose Haal Lab over cloud AI services?",
       answer:
-        "Haal Lab treats AI as an engineering discipline, not a demo factory. Every system we ship includes evaluation harnesses, observability, and documentation. We build on open-weight models and open-source infrastructure so you own the system, the weights, and the data — no platform lock-in.",
+        "Cloud AI services require sending your data to external servers. Haal Lab deploys AI on your infrastructure with complete data sovereignty, GDPR compliance, and European data residency. You control the models, the data, and the infrastructure.",
     },
     {
-      question: "How do I engage Haal Lab?",
+      question: "How do I start working with Haal Lab?",
       answer:
-        "We work in four stages: Discovery (understand the problem), Architecture (design the system end-to-end), Build (engineering in demonstrable increments), and Deploy (ship to your environment with runbooks and observability). Start by contacting us at hussain.nazary@haal-lab.solutions.",
+        "Contact us at hussain.nazary@haal-lab.solutions to discuss your requirements. We start with understanding your data sovereignty needs, existing infrastructure, and AI objectives, then design a custom deployment plan.",
     },
   ],
   solutions: [
     {
-      question: "What is a local AI system?",
+      question: "What is an on-premises AI system?",
       answer:
-        "A local AI system runs entirely on your own hardware — workstations, on-prem servers, or air-gapped clusters — without sending data to a cloud API. Haal Lab builds local AI systems using open-weight models in GGUF format, with llama.cpp and vLLM runtimes, and CUDA acceleration where GPUs are available.",
+        "An on-premises AI system runs entirely on your own infrastructure — your servers, your data center, your private cloud — without sending data to external APIs. Haal Lab deploys LLMs using open-weight models (Llama, Mistral), llama.cpp or vLLM for inference, with optional GPU acceleration.",
     },
     {
-      question: "What is a RAG system and does Haal Lab build them?",
+      question: "What is RAG and how does Haal Lab implement it?",
       answer:
-        "RAG (Retrieval-Augmented Generation) is an architecture that grounds language model responses in your own documents. A RAG system retrieves relevant passages from a knowledge base, then feeds them to the LLM as context. Haal Lab builds production RAG systems with hybrid retrieval (BM25 + dense embeddings), cross-encoder reranking, and source attribution.",
+        "RAG (Retrieval-Augmented Generation) grounds LLM responses in your private documents. Haal Lab builds production RAG systems with: hybrid retrieval (BM25 + BGE-M3 embeddings), vector databases (Qdrant, pgvector), cross-encoder reranking, and source citation. All runs on your infrastructure.",
     },
     {
-      question: "What is BGE-M3 and why does Haal Lab use it?",
+      question: "Why use BGE-M3 for embeddings?",
       answer:
-        "BGE-M3 is a multilingual embedding model that produces dense, sparse, and ColBERT-style representations in a single pass. Haal Lab uses BGE-M3 for production retrieval because it handles multilingual corpora (such as legal documents across jurisdictions) and supports multi-vector indexing for higher recall.",
+        "BGE-M3 is a multilingual embedding model that produces dense, sparse, and ColBERT representations in one pass. Ideal for European organizations with multilingual documents (legal contracts, technical docs across EU languages). Better retrieval quality than single-language models.",
     },
     {
-      question: "Can Haal Lab deploy AI on air-gapped infrastructure?",
+      question: "Can Haal Lab deploy AI in air-gapped environments?",
       answer:
-        "Yes. We build air-gapped deployments for regulated environments — healthcare, finance, government, and legal. The entire stack (models, runtime, retrieval layer, application) runs inside your network with no outbound calls. We use offline model registries and version control to keep the system maintainable.",
+        "Yes. We deploy AI systems in air-gapped, offline environments for maximum security. All models, dependencies, and tools are transferred offline. Common for defense, finance, and government organizations with strict data isolation requirements.",
     },
     {
-      question: "What is AI infrastructure engineering?",
+      question: "What is private AI infrastructure engineering?",
       answer:
-        "AI infrastructure engineering is the practice of building the serving, scaling, and observability layer that makes AI systems run reliably in production. Haal Lab builds infrastructure around vLLM, Triton, and Kubernetes — including GPU scheduling, batching, memory tuning, and evaluation-driven CI/CD for prompts and models.",
+        "Infrastructure engineering means: deploying model serving (vLLM, llama.cpp), GPU optimization, vector database setup, Kubernetes orchestration, monitoring, and evaluation pipelines. We ensure your AI systems run reliably on your hardware.",
     },
     {
-      question: "How long does an AI engagement with Haal Lab take?",
+      question: "How long does an AI deployment take?",
       answer:
-        "It depends on scope. A focused prototype can ship in 4–6 weeks. A production system with infrastructure, evaluation, and observability typically takes 3–6 months. Discovery (1–2 weeks) gives us enough context to give you a concrete timeline before any commitment.",
+        "A focused proof-of-concept takes 4-6 weeks. Production deployment with evaluation, documentation, and team training takes 3-6 months. Timeline depends on infrastructure complexity, data preparation, and custom requirements.",
     },
   ],
   about: [
     {
       question: "Is Haal Lab a startup or an agency?",
       answer:
-        "Neither, exactly. Haal Lab is an AI engineering company — closer to a specialized engineering consultancy than a software agency. We take on a small number of engagements at a time and ship production AI systems, not demos. Our work is research-driven and engineering-led.",
+        "Neither, exactly. Haal Lab is an AI engineering company , closer to a specialized engineering consultancy than a software agency. We take on a small number of engagements at a time and ship production AI systems, not demos. Our work is research-driven and engineering-led.",
     },
     {
       question: "What is Haal Lab's mission?",
       answer:
-        "Haal Lab's mission is to make advanced AI systems private, reliable, and useful in production. We exist to close the gap between AI research and AI in production — particularly for organizations that cannot deploy cloud-hosted models due to privacy, latency, cost, or compliance constraints.",
+        "Haal Lab's mission is to make advanced AI systems private, reliable, and useful in production. We exist to close the gap between AI research and AI in production , particularly for organizations that cannot deploy cloud-hosted models due to privacy, latency, cost, or compliance constraints.",
     },
     {
       question: "Is Haal Lab's AI open source?",
       answer:
-        "Haal Lab builds on open-weight models (LLMs you can download and run yourself) and open-source infrastructure (llama.cpp, vLLM, Qdrant, Kubernetes). The systems we build for clients are owned by the client — weights, code, and data. We do not lock you into a proprietary platform.",
+        "Haal Lab builds on open-weight models (LLMs you can download and run yourself) and open-source infrastructure (llama.cpp, vLLM, Qdrant, Kubernetes). The systems we build for clients are owned by the client , weights, code, and data. We do not lock you into a proprietary platform.",
     },
     {
       question: "Where is Haal Lab based?",
@@ -240,7 +240,7 @@ export const FAQS: LocaleFAQs = {
     {
       question: "How quickly does Haal Lab respond to inquiries?",
       answer:
-        "We typically respond within two business days. If your inquiry is time-sensitive, mention it in your message and we will prioritize it. Every serious inquiry gets a concrete technical perspective in the first reply — not a sales script.",
+        "We typically respond within two business days. If your inquiry is time-sensitive, mention it in your message and we will prioritize it. Every serious inquiry gets a concrete technical perspective in the first reply , not a sales script.",
     },
     {
       question: "What should I include in my inquiry to Haal Lab?",
@@ -250,7 +250,7 @@ export const FAQS: LocaleFAQs = {
     {
       question: "Does Haal Lab sign NDAs?",
       answer:
-        "Yes. We routinely sign mutual NDAs before detailed technical discussions. We treat your data and your problem description as confidential by default — and because we build private AI systems, data sovereignty is part of our engineering practice, not just a policy.",
+        "Yes. We routinely sign mutual NDAs before detailed technical discussions. We treat your data and your problem description as confidential by default , and because we build private AI systems, data sovereignty is part of our engineering practice, not just a policy.",
     },
   ],
   howWeWork: [
@@ -274,12 +274,12 @@ export const FAQS: LocaleFAQs = {
     {
       question: "Does Haal Lab publish research?",
       answer:
-        "Yes. We publish technical articles on the systems we build — what worked, what didn't, and the reasoning behind the choices. Topics include local LLM inference, reranking tradeoffs, BGE-M3 in production, evaluation-driven CI, agent orchestration patterns, and private AI threat modeling.",
+        "Yes. We publish technical articles on the systems we build , what worked, what didn't, and the reasoning behind the choices. Topics include local LLM inference, reranking tradeoffs, BGE-M3 in production, evaluation-driven CI, agent orchestration patterns, and private AI threat modeling.",
     },
     {
       question: "Where can I read Haal Lab's technical writing?",
       answer:
-        "Our research articles are published on the Research page at haal-lab.solutions/research. We publish when we have something to say — no newsletter spam, no growth funnels.",
+        "Our research articles are published on the Research page at haal-lab.solutions/research. We publish when we have something to say , no newsletter spam, no growth funnels.",
     },
   ],
   network: [
@@ -308,7 +308,7 @@ export const FAQS: LocaleFAQs = {
     {
       question: "What is included in the Explorer package?",
       answer:
-        "The Explorer package (€4,900) includes a 2-hour discovery workshop, a written feasibility report with architecture sketch, and a working proof-of-concept on your sample data — delivered in 2 weeks. It is designed to validate whether AI can solve your specific problem before committing further budget.",
+        "The Explorer package (€4,900) includes a 2-hour discovery workshop, a written feasibility report with architecture sketch, and a working proof-of-concept on your sample data , delivered in 2 weeks. It is designed to validate whether AI can solve your specific problem before committing further budget.",
     },
     {
       question: "What is the difference between Professional and Enterprise?",
@@ -328,23 +328,23 @@ export const FAQS: LocaleFAQs = {
   ],
 };
 
-/** Glossary of AI terms — used for inline definitions (GEO-friendly). */
+/** Glossary of AI terms , used for inline definitions (GEO-friendly). */
 export const GLOSSARY: Record<string, string> = {
-  RAG: "Retrieval-Augmented Generation — an architecture that grounds LLM responses in your own documents by retrieving relevant passages and feeding them as context.",
-  LLM: "Large Language Model — a neural network trained on large text corpora that generates text, answers questions, and performs natural language tasks.",
-  GGUF: "GPT-Generated Unified Format — a file format for storing quantized language models so they can run efficiently on consumer hardware.",
+  RAG: "Retrieval-Augmented Generation , an architecture that grounds LLM responses in your own documents by retrieving relevant passages and feeding them as context.",
+  LLM: "Large Language Model , a neural network trained on large text corpora that generates text, answers questions, and performs natural language tasks.",
+  GGUF: "GPT-Generated Unified Format , a file format for storing quantized language models so they can run efficiently on consumer hardware.",
   "BGE-M3": "A multilingual embedding model that produces dense, sparse, and ColBERT-style representations in a single pass, used for semantic search.",
   Reranking: "A second-stage retrieval step that uses a more expensive model (usually a cross-encoder) to re-score and reorder the top results for higher precision.",
   "Vector Database": "A database optimized for storing and querying high-dimensional vectors (embeddings), used for semantic search and RAG.",
-  "Open-weight model": "A language model whose weights are publicly available for download and local execution — such as Llama, Mistral, or Qwen.",
-  "Air-gapped": "A deployment with no network connection to the outside world — used in regulated environments where data cannot leave the premises.",
+  "Open-weight model": "A language model whose weights are publicly available for download and local execution , such as Llama, Mistral, or Qwen.",
+  "Air-gapped": "A deployment with no network connection to the outside world , used in regulated environments where data cannot leave the premises.",
   "Fine-tuning": "The process of further training a pre-trained model on domain-specific data to specialize its behavior.",
   Embedding: "A numerical vector representation of text that captures semantic meaning, enabling similarity search.",
-  "Cross-encoder": "A model that takes a query and a document together and outputs a single relevance score — slower than bi-encoder retrieval but more accurate.",
+  "Cross-encoder": "A model that takes a query and a document together and outputs a single relevance score , slower than bi-encoder retrieval but more accurate.",
   "Agent orchestration": "Coordinating multiple LLM calls, tool uses, and reasoning steps to accomplish a complex task autonomously.",
 };
 
-/** Engagement model — also used for HowTo schema. */
+/** Engagement model , also used for HowTo schema. */
 export const ENGAGEMENT_STEPS = [
   {
     name: "Discovery",
@@ -354,7 +354,7 @@ export const ENGAGEMENT_STEPS = [
   {
     name: "Architecture",
     description:
-      "We design the system end-to-end — model choices, retrieval strategy, infrastructure, evaluation harness — and pressure-test it against your real workloads before committing.",
+      "We design the system end-to-end , model choices, retrieval strategy, infrastructure, evaluation harness , and pressure-test it against your real workloads before committing.",
   },
   {
     name: "Build",
@@ -364,6 +364,6 @@ export const ENGAGEMENT_STEPS = [
   {
     name: "Deploy",
     description:
-      "We ship to your environment — cloud, on-prem, or air-gapped — with the observability, runbooks, and documentation your team needs to operate it confidently.",
+      "We ship to your environment , cloud, on-prem, or air-gapped , with the observability, runbooks, and documentation your team needs to operate it confidently.",
   },
 ] as const;

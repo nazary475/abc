@@ -2,7 +2,7 @@ import { Reveal, SectionShell, Eyebrow, SectionHeading } from "@/components/bloc
 import { GLOSSARY } from "@/lib/seo";
 
 /**
- * GlossarySection — visible definitions of AI terms.
+ * GlossarySection , visible definitions of AI terms.
  *
  * Why this matters for GEO (Generative Engine Optimization):
  * AI chatbots (ChatGPT, Perplexity, Claude, Gemini) frequently answer
@@ -24,7 +24,7 @@ export function GlossarySection() {
           AI engineering terms, defined.
         </SectionHeading>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-hl-muted md:text-lg">
-          The vocabulary we use across this site — defined plainly so anyone
+          The vocabulary we use across this site , defined plainly so anyone
           evaluating AI systems can follow along.
         </p>
       </Reveal>

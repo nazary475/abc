@@ -18,6 +18,7 @@ import {
   Search,
   Settings2,
   Shield,
+  Info,
   type LucideIcon,
 } from "lucide-react";
 import {
@@ -31,6 +32,13 @@ import {
 } from "@/components/blocks/primitives";
 import { ModelSchematic } from "@/components/visuals/model-schematic";
 import { ArchitectureDiagram } from "@/components/visuals/architecture-diagram";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 /* ---------------- Solutions section ---------------- */
 
@@ -40,35 +48,118 @@ type Solution = {
   description: string;
   bullets: string[];
   hasDiagram?: boolean;
+  detailContent?: React.ReactNode;
 };
 
 const SOLUTIONS: Solution[] = [
   {
     icon: MessagesSquare,
-    title: "AI Assistants",
-    description: "Custom AI helpers that understand your business and get real work done.",
-    bullets: ["Answer questions about your data", "Automate repetitive tasks", "Connect to your tools"],
+    title: "AI Agents & Business Automation",
+    description: "Automate the workflows slowing your organization down.\n\nWe build private AI agents that analyze your processes, identify automation opportunities, and handle repetitive tasks inside your existing environment.\n\nReduce operational costs. Increase team speed. Keep control of your data.",
+    bullets: [],
+    detailContent: (
+      <div className="space-y-6 text-sm leading-relaxed text-hl-muted max-h-[70vh] overflow-y-auto pr-2">
+        <p>We analyze your existing workflows to identify processes where AI can reduce manual effort, improve response times, and increase operational efficiency.</p>
+        <p>Our process starts by understanding how your teams work: the repetitive tasks they perform, the information they use, the systems they depend on, and where delays or unnecessary costs occur. We then design and deploy private AI agents that automate specific tasks while keeping your organization in control.</p>
+
+        <h4 className="text-foreground font-semibold text-base">How we build automation systems</h4>
+
+        <div>
+          <p className="font-semibold text-foreground">1. Workflow analysis</p>
+          <p>We study your business processes to identify:</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>Time-consuming manual tasks</li>
+            <li>Repetitive decision processes</li>
+            <li>Information bottlenecks</li>
+            <li>Areas where employees spend time searching, reviewing, or processing data</li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-semibold text-foreground">2. AI system design</p>
+          <p>We design agents around your actual operations:</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>Connect only to approved internal systems</li>
+            <li>Define what the AI can access and execute</li>
+            <li>Create workflows with human approval where required</li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-semibold text-foreground">3. Private deployment</p>
+          <p>The AI system runs within your infrastructure or trusted private environment:</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>Your business data remains under your control</li>
+            <li>No dependency on external AI platforms</li>
+            <li>Your team controls access, operations, and future changes</li>
+          </ul>
+        </div>
+
+        <h4 className="text-foreground font-semibold text-base">Business impact</h4>
+
+        <div>
+          <p className="font-semibold text-foreground">Reduce costs</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>Automate repetitive tasks</li>
+            <li>Reduce time spent on manual processing</li>
+            <li>Allow teams to focus on higher-value activities</li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-semibold text-foreground">Increase speed</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>Faster access to information</li>
+            <li>Faster execution of routine workflows</li>
+            <li>Shorter response and processing times</li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-semibold text-foreground">Protect your data</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>AI systems can run inside your own environment</li>
+            <li>Data access is controlled by your organization</li>
+            <li>Sensitive information does not need to leave your infrastructure</li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-semibold text-foreground">Create competitive advantage</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>Build AI capabilities around your unique workflows</li>
+            <li>Preserve operational knowledge</li>
+            <li>Create systems competitors cannot simply purchase from a vendor</li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-semibold text-foreground">Maintain ownership</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>Your organization controls the deployment, data, and operations</li>
+            <li>The system is built around your requirements, not a third-party platform</li>
+          </ul>
+        </div>
+      </div>
+    ),
   },
   {
     icon: Database,
-    title: "Smart Document Search",
-    description: "Find the right answer in thousands of documents — instantly, with sources.",
-    bullets: ["Search across all your files", "Get answers with citations", "Works in multiple languages"],
+    title: "Knowledge Intelligence Systems",
+    description: "Turn your organization's information into a strategic advantage.\n\nWe build private AI systems that understand your documents, research, and internal knowledge — helping your teams find trusted answers instantly.\n\nMake better decisions with the knowledge you already own.",
+    bullets: [],
   },
   {
     icon: ServerCog,
     title: "Private AI Infrastructure",
-    description:
-      "We deploy AI systems directly within your organization's infrastructure, ensuring full control over data, security, and operations.",
-    bullets: ["Full data control", "Secure by design", "You run the operations"],
+    description: "Adopt AI without giving up control.\n\nWe deploy AI systems inside your infrastructure or private environment, keeping your data, security, and operations under your control.\n\nEnterprise AI without external dependency.",
+    bullets: [],
   },
   {
     icon: Brain,
-    title: "Custom AI Models",
-    description:
-      "We build small, efficient AI models trained specifically for your task — not generic tools that try to do everything.",
-    bullets: ["Built for one specific job", "Faster and cheaper to run", "You own the model"],
-    hasDiagram: true,
+    title: "Custom AI Models & Training",
+    description: "Build AI capabilities designed specifically for your organization.\n\nWe fine-tune and train AI models for specialized tasks where general-purpose AI is not accurate, efficient, or private enough.\n\nCreate unique AI capabilities around your data and expertise.",
+    bullets: [],
   },
 ];
 
@@ -96,27 +187,25 @@ export function SolutionsSection() {
               <h3 className="mt-5 text-lg font-bold tracking-tight text-foreground">
                 {s.title}
               </h3>
-              <p className="mt-2 text-sm font-medium leading-relaxed text-hl-muted">
+              <p className="mt-2 text-sm font-medium leading-relaxed text-hl-muted whitespace-pre-line">
                 {s.description}
               </p>
-              <ul className="mt-4 space-y-1.5">
-                {s.bullets.map((b) => (
-                  <li
-                    key={b}
-                    className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-hl-muted/80"
-                  >
-                    <span className="h-1 w-1 rounded-full bg-hl-cyan/60" />
-                    {b}
-                  </li>
-                ))}
-              </ul>
-              <Link
-                href="/solutions"
-                className="mt-6 inline-flex items-center gap-1 text-sm font-medium text-foreground opacity-0 transition-all group-hover:opacity-100"
-              >
-                {t("learnMore")}
-                <ArrowRight className="h-3.5 w-3.5" />
-              </Link>
+              {s.detailContent && (
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <button className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-hl-cyan transition-colors hover:text-hl-cyan/80">
+                      <Info className="h-4 w-4" />
+                      More info
+                    </button>
+                  </DialogTrigger>
+                  <DialogContent className="sm:max-w-2xl">
+                    <DialogHeader>
+                      <DialogTitle>{s.title}</DialogTitle>
+                    </DialogHeader>
+                    {s.detailContent}
+                  </DialogContent>
+                </Dialog>
+              )}
             </article>
           </Reveal>
         ))}
@@ -157,7 +246,7 @@ const PROJECTS: {
   {
     name: "GGUF Loader",
     description:
-      "A platform that lets you run powerful AI models on your own computer — no internet needed, no data sent anywhere. Just install and go.",
+      "A platform that lets you run powerful AI models on your own computer , no internet needed, no data sent anywhere. Just install and go.",
     tags: ["Python", "AI Models", "Offline", "Private"],
     metrics: [
       { label: "Runs", value: "On your PC" },
@@ -169,7 +258,7 @@ const PROJECTS: {
   {
     name: "Legal Intelligence System",
     description:
-      "A smart search tool for legal documents. Ask a question in plain language and get the exact paragraph — with the source document cited — even across thousands of files.",
+      "A smart search tool for legal documents. Ask a question in plain language and get the exact paragraph , with the source document cited , even across thousands of files.",
     tags: ["Smart Search", "Multilingual", "Citations", "Document AI"],
     metrics: [
       { label: "Searches", value: "In plain language" },
@@ -287,7 +376,7 @@ export function WhySection() {
       <SectionHeader
         eyebrow="Why HAAL Lab"
         heading="Why Organizations Choose HAAL Lab"
-        lead="Three commitments that shape everything we build — and every relationship we have with clients."
+        lead="Three commitments that shape everything we build , and every relationship we have with clients."
       />
 
       <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -330,7 +419,7 @@ const SERVICES: { icon: LucideIcon; title: string; description: string }[] = [
     icon: Cpu,
     title: "Custom AI Development",
     description:
-      "AI systems built specifically for your business problem — not generic tools repackaged.",
+      "AI systems built specifically for your business problem , not generic tools repackaged.",
   },
   {
     icon: FileSearch,
@@ -342,7 +431,7 @@ const SERVICES: { icon: LucideIcon; title: string; description: string }[] = [
     icon: GitBranch,
     title: "AI Integration",
     description:
-      "We connect AI capabilities into your existing software — safely and reliably.",
+      "We connect AI capabilities into your existing software , safely and reliably.",
   },
   {
     icon: Layers,
@@ -354,13 +443,13 @@ const SERVICES: { icon: LucideIcon; title: string; description: string }[] = [
     icon: ServerCog,
     title: "Private AI Setup",
     description:
-      "We install and configure AI to run entirely on your own computers — no cloud required.",
+      "We install and configure AI to run entirely on your own computers , no cloud required.",
   },
   {
     icon: FlaskConical,
     title: "AI Advisory",
     description:
-      "Not sure where to start? We help you understand what AI can do for your business — in plain language.",
+      "Not sure where to start? We help you understand what AI can do for your business , in plain language.",
   },
 ];
 

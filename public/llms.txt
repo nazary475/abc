@@ -1,17 +1,17 @@
 # Haal Lab
 
-> Haal Lab is a deep-tech AI engineering company building private, intelligent, and reliable AI systems — including large language model applications, retrieval systems, automation platforms, and private AI infrastructure.
+> Haal Lab is a deep-tech AI engineering company building private, intelligent, and reliable AI systems , including large language model applications, retrieval systems, automation platforms, and private AI infrastructure.
 
-Haal Lab is an AI engineering company. We treat AI as an engineering discipline — with rigor, evaluation, and production discipline at the core. Our work spans local inference platforms, retrieval systems, agent orchestration, and the infrastructure required to run them reliably at scale.
+Haal Lab is an AI engineering company. We treat AI as an engineering discipline , with rigor, evaluation, and production discipline at the core. Our work spans local inference platforms, retrieval systems, agent orchestration, and the infrastructure required to run them reliably at scale.
 
-We build on open-weight models and open-source infrastructure. You own the system, the weights, and the data — no platform lock-in.
+We build on open-weight models and open-source infrastructure. You own the system, the weights, and the data , no platform lock-in.
 
 ## Capabilities
 
-- **Local AI Systems**: Private AI solutions that run securely on your infrastructure — on-prem, air-gapped, or on workstations. We use GGUF format, llama.cpp, vLLM, and CUDA acceleration.
+- **Local AI Systems**: Private AI solutions that run securely on your infrastructure , on-prem, air-gapped, or on workstations. We use GGUF format, llama.cpp, vLLM, and CUDA acceleration.
 - **LLM Applications**: Custom AI assistants, agents, and intelligent automation systems built with evaluation harnesses, guardrails, and observability from day one.
 - **Knowledge Intelligence**: Advanced RAG systems, semantic search, and document intelligence. Hybrid retrieval (BM25 + dense embeddings), cross-encoder reranking, BGE-M3, OCR, and source attribution.
-- **AI Infrastructure**: Deployment, optimization, and scalable AI engineering — model serving with vLLM/Triton, GPU scheduling, observability, and evaluation-driven CI/CD.
+- **AI Infrastructure**: Deployment, optimization, and scalable AI engineering , model serving with vLLM/Triton, GPU scheduling, observability, and evaluation-driven CI/CD.
 
 ## Services
 
@@ -34,9 +34,9 @@ Tags: BGE-M3, Vector Database, Reranking, OCR
 
 ## Principles
 
-1. **Privacy First** — Building AI systems where your data remains under your control. Local execution, encrypted pipelines, zero data leakage by default.
-2. **Research Driven** — Transforming modern AI research into practical solutions. We track the frontier and translate it into engineering that ships.
-3. **Engineering Excellence** — Designing reliable AI systems from prototype to production. Observability, evaluation, and reproducibility built in.
+1. **Privacy First** , Building AI systems where your data remains under your control. Local execution, encrypted pipelines, zero data leakage by default.
+2. **Research Driven** , Transforming modern AI research into practical solutions. We track the frontier and translate it into engineering that ships.
+3. **Engineering Excellence** , Designing reliable AI systems from prototype to production. Observability, evaluation, and reproducibility built in.
 
 ## Partners
 
@@ -47,23 +47,23 @@ Tags: BGE-M3, Vector Database, Reranking, OCR
 
 ## Advisory Board
 
-- **Dr. Elena Vogt** — AI Research Advisor. Expertise: retrieval systems, multilingual NLP, evaluation methodology.
-- **Marcus Reiner** — Infrastructure & DevOps Advisor. Expertise: GPU optimization, Kubernetes, model serving.
-- **Sophie Laurent** — Privacy & Compliance Advisor. Expertise: GDPR, EU AI Act, data sovereignty.
-- **Dr. Rafael Mendes** — Applied ML Advisor. Expertise: fine-tuning, agent orchestration, RAG.
-- **Anika Chandran** — Product & Strategy Advisor. Expertise: product strategy, enterprise AI, go-to-market.
-- **Dr. Tomas Bjork** — Security & Threat Modeling Advisor. Expertise: AI security, threat modeling, air-gapped systems.
+- **Dr. Elena Vogt** , AI Research Advisor. Expertise: retrieval systems, multilingual NLP, evaluation methodology.
+- **Marcus Reiner** , Infrastructure & DevOps Advisor. Expertise: GPU optimization, Kubernetes, model serving.
+- **Sophie Laurent** , Privacy & Compliance Advisor. Expertise: GDPR, EU AI Act, data sovereignty.
+- **Dr. Rafael Mendes** , Applied ML Advisor. Expertise: fine-tuning, agent orchestration, RAG.
+- **Anika Chandran** , Product & Strategy Advisor. Expertise: product strategy, enterprise AI, go-to-market.
+- **Dr. Tomas Bjork** , Security & Threat Modeling Advisor. Expertise: AI security, threat modeling, air-gapped systems.
 
 ## Engagement Model
 
-1. **Discovery** — We start with the problem, not the model. Understand constraints, data, success criteria, and the production environment.
-2. **Architecture** — We design the system end-to-end — model choices, retrieval strategy, infrastructure, evaluation harness.
-3. **Build** — Engineering in small, demonstrable increments with evaluation reports at every milestone.
-4. **Deploy** — Ship to your environment (cloud, on-prem, or air-gapped) with observability, runbooks, and documentation.
+1. **Discovery** , We start with the problem, not the model. Understand constraints, data, success criteria, and the production environment.
+2. **Architecture** , We design the system end-to-end , model choices, retrieval strategy, infrastructure, evaluation harness.
+3. **Build** , Engineering in small, demonstrable increments with evaluation reports at every milestone.
+4. **Deploy** , Ship to your environment (cloud, on-prem, or air-gapped) with observability, runbooks, and documentation.
 
 ## Mission
 
-Make advanced AI systems private, reliable, and useful in production. We exist to close the gap between AI research and AI in production — particularly for organizations that cannot deploy cloud-hosted models due to privacy, latency, cost, or compliance constraints.
+Make advanced AI systems private, reliable, and useful in production. We exist to close the gap between AI research and AI in production , particularly for organizations that cannot deploy cloud-hosted models due to privacy, latency, cost, or compliance constraints.
 
 ## Vision
 
@@ -81,8 +81,8 @@ A world where every organization can run its own intelligence. The most valuable
 - [Home](https://haal-lab.solutions/)
 - [Solutions](https://haal-lab.solutions/solutions)
 - [How We Work](https://haal-lab.solutions/how-we-work)
-- [Research](https://haal-lab.solutions/research) — Technical articles on AI deployment and LLM engineering
-- [Network](https://haal-lab.solutions/network) — partners and advisory board
+- [Research](https://haal-lab.solutions/research) , Technical articles on AI deployment and LLM engineering
+- [Network](https://haal-lab.solutions/network) , partners and advisory board
 - [About](https://haal-lab.solutions/about)
 - [Contact](https://haal-lab.solutions/contact)
 
@@ -90,17 +90,17 @@ A world where every organization can run its own intelligence. The most valuable
 
 Our research articles cover practical AI engineering topics from production deployments:
 
-1. **[A practical stack for local LLM inference in 2026](https://haal-lab.solutions/en/research/local-llm-stack-2026)** — Runtime selection (llama.cpp vs vLLM), quantization strategies (GGUF formats), RAG deployment architecture, cost analysis, and production monitoring for on-premise LLM deployments.
+1. **[A practical stack for local LLM inference in 2026](https://haal-lab.solutions/en/research/local-llm-stack-2026)** , Runtime selection (llama.cpp vs vLLM), quantization strategies (GGUF formats), RAG deployment architecture, cost analysis, and production monitoring for on-premise LLM deployments.
 
-2. **[Where rerankers actually help — and where they don't](https://haal-lab.solutions/en/research/reranking-pitfalls)** — A/B test results from 4 production RAG systems comparing bi-encoder vs cross-encoder reranking, latency tradeoffs, cost analysis, and decision frameworks for when to use rerankers.
+2. **[Where rerankers actually help , and where they don't](https://haal-lab.solutions/en/research/reranking-pitfalls)** , A/B test results from 4 production RAG systems comparing bi-encoder vs cross-encoder reranking, latency tradeoffs, cost analysis, and decision frameworks for when to use rerankers.
 
-3. **[BGE-M3 in production: multilingual retrieval at scale](https://haal-lab.solutions/en/research/bge-m3-multilingual)** — Deploying BGE-M3 for multilingual legal search across 2.4M documents, hybrid retrieval (dense + sparse + ColBERT), domain fine-tuning, and performance benchmarks.
+3. **[BGE-M3 in production: multilingual retrieval at scale](https://haal-lab.solutions/en/research/bge-m3-multilingual)** , Deploying BGE-M3 for multilingual legal search across 2.4M documents, hybrid retrieval (dense + sparse + ColBERT), domain fine-tuning, and performance benchmarks.
 
-4. **[Evaluation-driven CI for LLM applications](https://haal-lab.solutions/en/research/eval-driven-llm-ci)** — Building evaluation harnesses for LLM applications, CI/CD integration, automated regression detection, and production monitoring with real incident examples.
+4. **[Evaluation-driven CI for LLM applications](https://haal-lab.solutions/en/research/eval-driven-llm-ci)** , Building evaluation harnesses for LLM applications, CI/CD integration, automated regression detection, and production monitoring with real incident examples.
 
-5. **[Three patterns for agent orchestration that survived production](https://haal-lab.solutions/en/research/agent-orchestration-patterns)** — Router, Planner-Executor, and Critic patterns with latency benchmarks, production lessons, and decision frameworks for agent architecture selection.
+5. **[Three patterns for agent orchestration that survived production](https://haal-lab.solutions/en/research/agent-orchestration-patterns)** , Router, Planner-Executor, and Critic patterns with latency benchmarks, production lessons, and decision frameworks for agent architecture selection.
 
-6. **[Threat modeling for private AI deployments](https://haal-lab.solutions/en/research/private-ai-threat-model)** — Security considerations for on-premise LLM systems including model supply chain attacks, prompt injection, data leakage, and compliance requirements (GDPR, HIPAA, SOC 2).
+6. **[Threat modeling for private AI deployments](https://haal-lab.solutions/en/research/private-ai-threat-model)** , Security considerations for on-premise LLM systems including model supply chain attacks, prompt injection, data leakage, and compliance requirements (GDPR, HIPAA, SOC 2).
 
 **RSS Feed**: [https://haal-lab.solutions/research/feed.xml](https://haal-lab.solutions/research/feed.xml)
 
@@ -111,7 +111,7 @@ Our research articles cover practical AI engineering topics from production depl
 - **BGE-M3**: A multilingual embedding model producing dense, sparse, and ColBERT-style representations for semantic search.
 - **Reranking**: A second-stage retrieval step using a cross-encoder to re-score and reorder top results for higher precision.
 - **Open-weight model**: A language model whose weights are publicly available for download and local execution (e.g. Llama, Mistral, Qwen).
-- **Air-gapped**: A deployment with no network connection to the outside world — used in regulated environments.
+- **Air-gapped**: A deployment with no network connection to the outside world , used in regulated environments.
 
 ## Optional
 

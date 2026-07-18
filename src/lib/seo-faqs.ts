@@ -17,22 +17,22 @@ export const FAQS_EN: Record<string, FAQ[]> = {
     {
       question: "Who is Haal Lab for?",
       answer:
-        "Haal Lab works with businesses, startups, researchers, and organizations that need custom AI solutions — particularly those with privacy, compliance, or data-sovereignty requirements that rule out generic cloud AI services.",
+        "Haal Lab works with businesses, startups, researchers, and organizations that need custom AI solutions , particularly those with privacy, compliance, or data-sovereignty requirements that rule out generic cloud AI services.",
     },
     {
       question: "Does Haal Lab build private or on-premises AI?",
       answer:
-        "Yes. Privacy-first architecture is one of our core principles. We build AI systems that run entirely on your infrastructure — on workstations, on-prem servers, or air-gapped clusters — using open-weight models so your data never leaves your environment.",
+        "Yes. Privacy-first architecture is one of our core principles. We build AI systems that run entirely on your infrastructure , on workstations, on-prem servers, or air-gapped clusters , using open-weight models so your data never leaves your environment.",
     },
     {
       question: "What technologies does Haal Lab use?",
       answer:
-        "Our stack includes open-weight LLMs, llama.cpp, vLLM, Triton, GGUF format, BGE-M3 embeddings, vector databases (Qdrant, Postgres with pgvector), LangGraph for agent orchestration, Kubernetes, and CUDA for GPU acceleration. We build on open-source by default — no platform lock-in.",
+        "Our stack includes open-weight LLMs, llama.cpp, vLLM, Triton, GGUF format, BGE-M3 embeddings, vector databases (Qdrant, Postgres with pgvector), LangGraph for agent orchestration, Kubernetes, and CUDA for GPU acceleration. We build on open-source by default , no platform lock-in.",
     },
     {
       question: "How is Haal Lab different from a generic AI agency?",
       answer:
-        "Haal Lab treats AI as an engineering discipline, not a demo factory. Every system we ship includes evaluation harnesses, observability, and documentation. We build on open-weight models and open-source infrastructure so you own the system, the weights, and the data — no platform lock-in.",
+        "Haal Lab treats AI as an engineering discipline, not a demo factory. Every system we ship includes evaluation harnesses, observability, and documentation. We build on open-weight models and open-source infrastructure so you own the system, the weights, and the data , no platform lock-in.",
     },
     {
       question: "How do I engage Haal Lab?",
@@ -44,7 +44,7 @@ export const FAQS_EN: Record<string, FAQ[]> = {
     {
       question: "What is a local AI system?",
       answer:
-        "A local AI system runs entirely on your own hardware — workstations, on-prem servers, or air-gapped clusters — without sending data to a cloud API. Haal Lab builds local AI systems using open-weight models in GGUF format, with llama.cpp and vLLM runtimes, and CUDA acceleration where GPUs are available.",
+        "A local AI system runs entirely on your own hardware , workstations, on-prem servers, or air-gapped clusters , without sending data to a cloud API. Haal Lab builds local AI systems using open-weight models in GGUF format, with llama.cpp and vLLM runtimes, and CUDA acceleration where GPUs are available.",
     },
     {
       question: "What is a RAG system and does Haal Lab build them?",
@@ -59,12 +59,12 @@ export const FAQS_EN: Record<string, FAQ[]> = {
     {
       question: "Can Haal Lab deploy AI on air-gapped infrastructure?",
       answer:
-        "Yes. We build air-gapped deployments for regulated environments — healthcare, finance, government, and legal. The entire stack (models, runtime, retrieval layer, application) runs inside your network with no outbound calls. We use offline model registries and version control to keep the system maintainable.",
+        "Yes. We build air-gapped deployments for regulated environments , healthcare, finance, government, and legal. The entire stack (models, runtime, retrieval layer, application) runs inside your network with no outbound calls. We use offline model registries and version control to keep the system maintainable.",
     },
     {
       question: "What is AI infrastructure engineering?",
       answer:
-        "AI infrastructure engineering is the practice of building the serving, scaling, and observability layer that makes AI systems run reliably in production. Haal Lab builds infrastructure around vLLM, Triton, and Kubernetes — including GPU scheduling, batching, memory tuning, and evaluation-driven CI/CD for prompts and models.",
+        "AI infrastructure engineering is the practice of building the serving, scaling, and observability layer that makes AI systems run reliably in production. Haal Lab builds infrastructure around vLLM, Triton, and Kubernetes , including GPU scheduling, batching, memory tuning, and evaluation-driven CI/CD for prompts and models.",
     },
     {
       question: "How long does an AI engagement with Haal Lab take?",
@@ -76,17 +76,17 @@ export const FAQS_EN: Record<string, FAQ[]> = {
     {
       question: "Is Haal Lab a startup or an agency?",
       answer:
-        "Neither, exactly. Haal Lab is an AI engineering company — closer to a specialized engineering consultancy than a software agency. We take on a small number of engagements at a time and ship production AI systems, not demos. Our work is research-driven and engineering-led.",
+        "Neither, exactly. Haal Lab is an AI engineering company , closer to a specialized engineering consultancy than a software agency. We take on a small number of engagements at a time and ship production AI systems, not demos. Our work is research-driven and engineering-led.",
     },
     {
       question: "What is Haal Lab's mission?",
       answer:
-        "Haal Lab's mission is to make advanced AI systems private, reliable, and useful in production. We exist to close the gap between AI research and AI in production — particularly for organizations that cannot deploy cloud-hosted models due to privacy, latency, cost, or compliance constraints.",
+        "Haal Lab's mission is to make advanced AI systems private, reliable, and useful in production. We exist to close the gap between AI research and AI in production , particularly for organizations that cannot deploy cloud-hosted models due to privacy, latency, cost, or compliance constraints.",
     },
     {
       question: "Is Haal Lab's AI open source?",
       answer:
-        "Haal Lab builds on open-weight models (LLMs you can download and run yourself) and open-source infrastructure (llama.cpp, vLLM, Qdrant, Kubernetes). The systems we build for clients are owned by the client — weights, code, and data. We do not lock you into a proprietary platform.",
+        "Haal Lab builds on open-weight models (LLMs you can download and run yourself) and open-source infrastructure (llama.cpp, vLLM, Qdrant, Kubernetes). The systems we build for clients are owned by the client , weights, code, and data. We do not lock you into a proprietary platform.",
     },
     {
       question: "Where is Haal Lab based?",
@@ -98,7 +98,7 @@ export const FAQS_EN: Record<string, FAQ[]> = {
     {
       question: "How quickly does Haal Lab respond to inquiries?",
       answer:
-        "We typically respond within two business days. If your inquiry is time-sensitive, mention it in your message and we will prioritize it. Every serious inquiry gets a concrete technical perspective in the first reply — not a sales script.",
+        "We typically respond within two business days. If your inquiry is time-sensitive, mention it in your message and we will prioritize it. Every serious inquiry gets a concrete technical perspective in the first reply , not a sales script.",
     },
     {
       question: "What should I include in my inquiry to Haal Lab?",
@@ -108,14 +108,14 @@ export const FAQS_EN: Record<string, FAQ[]> = {
     {
       question: "Does Haal Lab sign NDAs?",
       answer:
-        "Yes. We routinely sign mutual NDAs before detailed technical discussions. We treat your data and your problem description as confidential by default — and because we build private AI systems, data sovereignty is part of our engineering practice, not just a policy.",
+        "Yes. We routinely sign mutual NDAs before detailed technical discussions. We treat your data and your problem description as confidential by default , and because we build private AI systems, data sovereignty is part of our engineering practice, not just a policy.",
     },
   ],
   projects: [
     {
       question: "What is GGUF Loader?",
       answer:
-        "GGUF Loader is an offline AI platform built by Haal Lab that enables users to run large language models locally with privacy and control. It uses the GGUF model format, CUDA acceleration via llama.cpp, and includes a retrieval layer for grounded answers — all without sending data to a cloud API.",
+        "GGUF Loader is an offline AI platform built by Haal Lab that enables users to run large language models locally with privacy and control. It uses the GGUF model format, CUDA acceleration via llama.cpp, and includes a retrieval layer for grounded answers , all without sending data to a cloud API.",
     },
     {
       question: "What is the Legal Intelligence System?",
@@ -132,12 +132,12 @@ export const FAQS_EN: Record<string, FAQ[]> = {
     {
       question: "Does Haal Lab publish research?",
       answer:
-        "Yes. We publish technical articles on the systems we build — what worked, what didn't, and the reasoning behind the choices. Topics include local LLM inference, reranking tradeoffs, BGE-M3 in production, evaluation-driven CI, agent orchestration patterns, and private AI threat modeling.",
+        "Yes. We publish technical articles on the systems we build , what worked, what didn't, and the reasoning behind the choices. Topics include local LLM inference, reranking tradeoffs, BGE-M3 in production, evaluation-driven CI, agent orchestration patterns, and private AI threat modeling.",
     },
     {
       question: "Where can I read Haal Lab's technical writing?",
       answer:
-        "Our research articles are published on the Research page at haal-lab.solutions/research. We publish when we have something to say — no newsletter spam, no growth funnels.",
+        "Our research articles are published on the Research page at haal-lab.solutions/research. We publish when we have something to say , no newsletter spam, no growth funnels.",
     },
   ],
   network: [
@@ -166,7 +166,7 @@ export const FAQS_EN: Record<string, FAQ[]> = {
     {
       question: "What is included in the Explorer package?",
       answer:
-        "The Explorer package (€4,900) includes a 2-hour discovery workshop, a written feasibility report with architecture sketch, and a working proof-of-concept on your sample data — delivered in 2 weeks. It is designed to validate whether AI can solve your specific problem before committing further budget.",
+        "The Explorer package (€4,900) includes a 2-hour discovery workshop, a written feasibility report with architecture sketch, and a working proof-of-concept on your sample data , delivered in 2 weeks. It is designed to validate whether AI can solve your specific problem before committing further budget.",
     },
     {
       question: "What is the difference between Professional and Enterprise?",

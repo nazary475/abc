@@ -35,7 +35,7 @@
   "solutions": {
     "eyebrow": "Lo que hacemos",
     "title": "Cuatro formas de ayudarlo a usar IA",
-    "lead": "Cada servicio funciona por sí solo o en conjunto como un sistema completo. Nos enfocamos en lo que su negocio necesita — no en perseguir la última tendencia.",
+    "lead": "Cada servicio funciona por sí solo o en conjunto como un sistema completo. Nos enfocamos en lo que su negocio necesita , no en perseguir la última tendencia.",
     "learnMore": "Saber más"
   },
   "projects": {
@@ -47,7 +47,7 @@
   "why": {
     "eyebrow": "Por qué Haal Lab",
     "title": "Lo que nos distingue",
-    "lead": "Tres compromisos que dan forma a todo lo que construimos — y cada relación que tenemos con los clientes."
+    "lead": "Tres compromisos que dan forma a todo lo que construimos , y cada relación que tenemos con los clientes."
   },
   "services": {
     "eyebrow": "Servicios",
@@ -58,25 +58,25 @@
   "aboutTeaser": {
     "eyebrow": "Acerca de Haal Lab",
     "title": "Somos ingenieros, no vendedores.",
-    "body1": "Haal Lab es una empresa de ingeniería IA. Construimos sistemas de software inteligentes que ayudan a las organizaciones a trabajar de manera más inteligente — sin enviar sus datos a servicios de terceros.",
+    "body1": "Haal Lab es una empresa de ingeniería IA. Construimos sistemas de software inteligentes que ayudan a las organizaciones a trabajar de manera más inteligente , sin enviar sus datos a servicios de terceros.",
     "body2": "Tratamos la IA como un oficio, no como una palabra de moda. Nuestro trabajo abarca desde IA que se ejecuta completamente en sus propias computadoras, hasta búsqueda inteligente en sus documentos, hasta modelos IA personalizados construidos específicamente para sus tareas.",
     "readMission": "Leer nuestra misión"
   },
   "contactCta": {
     "eyebrow": "Iniciar una conversación",
     "title": "¿Tiene un problema que la IA podría resolver?",
-    "lead": "Díganos lo que está tratando de lograr. Le daremos una respuesta honesta y práctica — generalmente en dos días hábiles. Sin presión de ventas, sin jerga.",
+    "lead": "Díganos lo que está tratando de lograr. Le daremos una respuesta honesta y práctica , generalmente en dos días hábiles. Sin presión de ventas, sin jerga.",
     "contactUs": "Hable con nosotros"
   },
   "partners": {
     "eyebrow": "Socios",
     "title": "Trabajando con los mejores",
-    "lead": "Hemos construido relaciones con las empresas de tecnología e instituciones de investigación que importan — para que usted se beneficie de las herramientas adecuadas para sus necesidades específicas.",
+    "lead": "Hemos construido relaciones con las empresas de tecnología e instituciones de investigación que importan , para que usted se beneficie de las herramientas adecuadas para sus necesidades específicas.",
     "viewAll": "Ver todos los socios",
     "count": "{count} socios"
   },
   "footer": {
-    "description": "Construimos sistemas IA personalizados que se ejecutan de forma privada en sus propias computadoras — desde búsqueda inteligente de documentos hasta asistentes IA que hacen el trabajo.",
+    "description": "Construimos sistemas IA personalizados que se ejecutan de forma privada en sus propias computadoras , desde búsqueda inteligente de documentos hasta asistentes IA que hacen el trabajo.",
     "pages": "Páginas",
     "home": "Inicio",
     "getInTouch": "Ponerse en contacto",
@@ -162,7 +162,7 @@
     "solutions": {
       "eyebrow": "Lo que hacemos",
       "title": "Soluciones IA diseñadas para su negocio.",
-      "lead": "Cuatro formas de ayudar a las organizaciones a usar IA — cada una puede funcionar por sí sola o en conjunto como un sistema completo. Nos enfocamos en resolver su problema real, no en impulsar una tecnología particular.",
+      "lead": "Cuatro formas de ayudar a las organizaciones a usar IA , cada una puede funcionar por sí sola o en conjunto como un sistema completo. Nos enfocamos en resolver su problema real, no en impulsar una tecnología particular.",
       "meta": "haal-lab.solutions / lo-que-hacemos"
     },
     "projects": {
@@ -174,7 +174,7 @@
     "research": {
       "eyebrow": "Artículos de Investigación",
       "title": "Lo que estamos aprendiendo sobre IA.",
-      "lead": "Compartimos lo que aprendemos mientras construimos — qué funciona, qué no y qué viene después. Escrito en lenguaje sencillo para líderes empresariales y equipos técnicos por igual.",
+      "lead": "Compartimos lo que aprendemos mientras construimos , qué funciona, qué no y qué viene después. Escrito en lenguaje sencillo para líderes empresariales y equipos técnicos por igual.",
       "meta": "haal-lab.solutions / investigacion"
     },
     "network": {
@@ -186,7 +186,7 @@
     "about": {
       "eyebrow": "Acerca de",
       "title": "Una empresa IA basada en ingeniería, no en publicidad.",
-      "lead": "Haal Lab construye sistemas de software inteligentes que ayudan a las organizaciones a trabajar de manera más inteligente — sin enviar sus datos a servicios de terceros.",
+      "lead": "Haal Lab construye sistemas de software inteligentes que ayudan a las organizaciones a trabajar de manera más inteligente , sin enviar sus datos a servicios de terceros.",
       "meta": "haal-lab.solutions / acerca-de"
     },
     "contact": {
@@ -198,7 +198,7 @@
     "pricing": {
       "eyebrow": "Precios",
       "title": "Precios transparentes para sistemas IA reales.",
-      "lead": "Cuatro paquetes diseñados para startups, empresas, grandes empresas e instituciones de investigación. Cada nivel entrega un sistema funcional — no una presentación de diapositivas.",
+      "lead": "Cuatro paquetes diseñados para startups, empresas, grandes empresas e instituciones de investigación. Cada nivel entrega un sistema funcional , no una presentación de diapositivas.",
       "meta": "haal-lab.solutions / precios"
     }
   }

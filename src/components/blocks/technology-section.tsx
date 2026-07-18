@@ -95,7 +95,7 @@ export function TechnologySection() {
       <SectionHeader
         eyebrow="Technology Stack"
         heading="Technology Foundations"
-        lead="Production-grade AI systems built on proven technologies — not experimental frameworks."
+        lead="Production-grade AI systems built on proven technologies , not experimental frameworks."
       />
 
       <div className="mt-14 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-hl-border bg-hl-border sm:grid-cols-2 lg:grid-cols-3">

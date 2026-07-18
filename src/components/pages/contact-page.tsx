@@ -74,7 +74,7 @@ export function ContactPage() {
                   <p className="mt-4 text-sm leading-relaxed text-hl-muted">
                     We typically reply within{" "}
                     <span className="text-foreground">two business days</span>. If your
-                    inquiry is time-sensitive, mention it in the form — we will prioritize
+                    inquiry is time-sensitive, mention it in the form , we will prioritize
                     accordingly.
                   </p>
                 </div>

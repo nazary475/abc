@@ -13,7 +13,7 @@ export function Logo({ size = 28, withWordmark = true, className = "" }: LogoPro
     <Link
       href="/"
       className={`group inline-flex items-center gap-2.5 ${className}`}
-      aria-label="Haal Lab — home"
+      aria-label="Haal Lab , home"
     >
       <svg
         width={size}

@@ -49,7 +49,7 @@ export default async function Home({
         faqs={localeFAQs.home || FAQS.home}
         eyebrow="FAQ"
         title="Frequently asked questions"
-        intro="Answers to the questions we hear most often — from organizations evaluating AI engineering partners."
+        intro="Answers to the questions we hear most often , from organizations evaluating AI engineering partners."
       />
       <RelatedLinks current="/" title="Explore Haal Lab" eyebrow="Continue" />
     </>

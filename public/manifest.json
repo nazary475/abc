@@ -1,7 +1,7 @@
 {
-  "name": "Haal Lab — Engineering Intelligent Systems for the Future",
+  "name": "Haal Lab — Private AI Systems for European Organizations",
   "short_name": "Haal Lab",
-  "description": "A deep-tech AI engineering company building private, intelligent, and reliable AI systems.",
+  "description": "On-premises AI systems for European organizations. Deploy LLMs, RAG systems, and custom AI on your infrastructure with data sovereignty.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#080B12",

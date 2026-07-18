@@ -35,7 +35,7 @@
   "solutions": {
     "eyebrow": "Was wir tun",
     "title": "Vier Wege, wie wir Ihnen helfen, AI zu nutzen",
-    "lead": "Jeder Service steht für sich allein oder funktioniert zusammen als vollständiges System. Wir konzentrieren uns auf das, was Ihr Unternehmen braucht — nicht darauf, dem neuesten Trend hinterherzulaufen.",
+    "lead": "Jeder Service steht für sich allein oder funktioniert zusammen als vollständiges System. Wir konzentrieren uns auf das, was Ihr Unternehmen braucht , nicht darauf, dem neuesten Trend hinterherzulaufen.",
     "learnMore": "Mehr erfahren"
   },
   "projects": {
@@ -47,7 +47,7 @@
   "why": {
     "eyebrow": "Warum Haal Lab",
     "title": "Was uns auszeichnet",
-    "lead": "Drei Verpflichtungen, die alles prägen, was wir bauen — und jede Beziehung, die wir mit Kunden haben."
+    "lead": "Drei Verpflichtungen, die alles prägen, was wir bauen , und jede Beziehung, die wir mit Kunden haben."
   },
   "services": {
     "eyebrow": "Dienstleistungen",
@@ -57,25 +57,25 @@
   "aboutTeaser": {
     "eyebrow": "Über Haal Lab",
     "title": "Wir sind Ingenieure, keine Vermarkter.",
-    "body1": "Haal Lab ist ein AI-Engineering-Unternehmen. Wir bauen intelligente Softwaresysteme, die Organisationen helfen, intelligenter zu arbeiten — ohne ihre Daten an Drittanbieterdienste zu senden.",
+    "body1": "Haal Lab ist ein AI-Engineering-Unternehmen. Wir bauen intelligente Softwaresysteme, die Organisationen helfen, intelligenter zu arbeiten , ohne ihre Daten an Drittanbieterdienste zu senden.",
     "body2": "Wir behandeln AI als Handwerk, nicht als Schlagwort. Unsere Arbeit reicht von AI, die vollständig auf Ihren eigenen Computern läuft, über intelligente Suche in Ihren Dokumenten bis hin zu benutzerdefinierten AI-Modellen, die speziell für Ihre Aufgaben entwickelt wurden.",
     "readMission": "Unsere Mission lesen"
   },
   "contactCta": {
     "eyebrow": "Gespräch beginnen",
     "title": "Haben Sie ein Problem, das AI lösen könnte?",
-    "lead": "Sagen Sie uns, was Sie erreichen möchten. Wir geben Ihnen eine ehrliche, praktische Antwort — normalerweise innerhalb von zwei Werktagen. Kein Verkaufsdruck, kein Fachjargon.",
+    "lead": "Sagen Sie uns, was Sie erreichen möchten. Wir geben Ihnen eine ehrliche, praktische Antwort , normalerweise innerhalb von zwei Werktagen. Kein Verkaufsdruck, kein Fachjargon.",
     "contactUs": "Sprechen Sie mit uns"
   },
   "partners": {
     "eyebrow": "Partner",
     "title": "Mit den Besten zusammenarbeiten",
-    "lead": "Wir haben Beziehungen zu den Technologieunternehmen und Forschungseinrichtungen aufgebaut, die zählen — damit Sie von den richtigen Tools für Ihre spezifischen Bedürfnisse profitieren.",
+    "lead": "Wir haben Beziehungen zu den Technologieunternehmen und Forschungseinrichtungen aufgebaut, die zählen , damit Sie von den richtigen Tools für Ihre spezifischen Bedürfnisse profitieren.",
     "viewAll": "Alle Partner ansehen",
     "count": "{count} Partner"
   },
   "footer": {
-    "description": "Wir bauen maßgeschneiderte AI-Systeme, die privat auf Ihren eigenen Computern laufen — von intelligenter Dokumentensuche bis zu AI-Assistenten, die Arbeit erledigen.",
+    "description": "Wir bauen maßgeschneiderte AI-Systeme, die privat auf Ihren eigenen Computern laufen , von intelligenter Dokumentensuche bis zu AI-Assistenten, die Arbeit erledigen.",
     "pages": "Seiten",
     "home": "Startseite",
     "getInTouch": "Kontakt aufnehmen",
@@ -161,7 +161,7 @@
     "solutions": {
       "eyebrow": "Was wir tun",
       "title": "AI-Lösungen für Ihr Unternehmen entwickelt.",
-      "lead": "Vier Wege, wie wir Organisationen helfen, AI zu nutzen — jeder kann eigenständig oder zusammen als vollständiges System funktionieren. Wir konzentrieren uns darauf, Ihr tatsächliches Problem zu lösen, nicht darauf, eine bestimmte Technologie zu verkaufen.",
+      "lead": "Vier Wege, wie wir Organisationen helfen, AI zu nutzen , jeder kann eigenständig oder zusammen als vollständiges System funktionieren. Wir konzentrieren uns darauf, Ihr tatsächliches Problem zu lösen, nicht darauf, eine bestimmte Technologie zu verkaufen.",
       "meta": "haal-lab.solutions / was-wir-tun"
     },
     "projects": {
@@ -173,7 +173,7 @@
     "research": {
       "eyebrow": "Forschungsartikel",
       "title": "Was wir über AI lernen.",
-      "lead": "Wir teilen, was wir beim Bauen lernen — was funktioniert, was nicht und was als Nächstes kommt. In einfacher Sprache für Führungskräfte und technische Teams geschrieben.",
+      "lead": "Wir teilen, was wir beim Bauen lernen , was funktioniert, was nicht und was als Nächstes kommt. In einfacher Sprache für Führungskräfte und technische Teams geschrieben.",
       "meta": "haal-lab.solutions / forschung"
     },
     "network": {
@@ -185,7 +185,7 @@
     "about": {
       "eyebrow": "Über uns",
       "title": "Ein AI-Unternehmen, das auf Engineering aufbaut, nicht auf Hype.",
-      "lead": "Haal Lab baut intelligente Softwaresysteme, die Organisationen helfen, intelligenter zu arbeiten — ohne ihre Daten an Drittanbieterdienste zu senden.",
+      "lead": "Haal Lab baut intelligente Softwaresysteme, die Organisationen helfen, intelligenter zu arbeiten , ohne ihre Daten an Drittanbieterdienste zu senden.",
       "meta": "haal-lab.solutions / über-uns"
     },
     "contact": {
@@ -197,7 +197,7 @@
     "pricing": {
       "eyebrow": "Preise",
       "title": "Transparente Preise für echte AI-Systeme.",
-      "lead": "Vier Pakete für Startups, Unternehmen, Großunternehmen und Forschungseinrichtungen. Jede Stufe liefert ein funktionierendes System — kein Foliendeck.",
+      "lead": "Vier Pakete für Startups, Unternehmen, Großunternehmen und Forschungseinrichtungen. Jede Stufe liefert ein funktionierendes System , kein Foliendeck.",
       "meta": "haal-lab.solutions / preise"
     }
   }

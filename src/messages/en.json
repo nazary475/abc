@@ -35,7 +35,7 @@
   "solutions": {
     "eyebrow": "What We Do",
     "title": "Four ways we help you use AI",
-    "lead": "Each service stands on its own or works together as a complete system. We focus on what your business needs — not on chasing the latest trend.",
+    "lead": "Each service stands on its own or works together as a complete system. We focus on what your business needs , not on chasing the latest trend.",
     "learnMore": "Learn more"
   },
   "projects": {
@@ -47,7 +47,7 @@
   "why": {
     "eyebrow": "Why Haal Lab",
     "title": "What sets us apart",
-    "lead": "Three commitments that shape everything we build — and every relationship we have with clients."
+    "lead": "Three commitments that shape everything we build , and every relationship we have with clients."
   },
   "services": {
     "eyebrow": "Services",
@@ -57,25 +57,25 @@
   "aboutTeaser": {
     "eyebrow": "About Haal Lab",
     "title": "We're engineers, not marketers.",
-    "body1": "Haal Lab is an AI engineering company. We build intelligent software systems that help organizations work smarter — without sending their data to third-party services.",
+    "body1": "Haal Lab is an AI engineering company. We build intelligent software systems that help organizations work smarter , without sending their data to third-party services.",
     "body2": "We treat AI as a craft, not a buzzword. Our work spans from AI that runs entirely on your own computers, to smart search across your documents, to custom AI models built specifically for your tasks.",
     "readMission": "Read our mission"
   },
   "contactCta": {
     "eyebrow": "Start a Conversation",
     "title": "Have a problem AI could solve?",
-    "lead": "Tell us what you're trying to achieve. We'll give you an honest, practical answer — usually within two business days. No sales pressure, no jargon.",
+    "lead": "Tell us what you're trying to achieve. We'll give you an honest, practical answer , usually within two business days. No sales pressure, no jargon.",
     "contactUs": "Talk to Us"
   },
   "partners": {
     "eyebrow": "Partners",
     "title": "Working with the best",
-    "lead": "We've built relationships with the technology companies and research institutions that matter — so you benefit from the right tools for your specific needs.",
+    "lead": "We've built relationships with the technology companies and research institutions that matter , so you benefit from the right tools for your specific needs.",
     "viewAll": "See all partners",
     "count": "{count} partners"
   },
   "footer": {
-    "description": "We build custom AI systems that run privately on your own computers — from smart document search to AI assistants that get work done.",
+    "description": "We build custom AI systems that run privately on your own computers , from smart document search to AI assistants that get work done.",
     "pages": "Pages",
     "home": "Home",
     "getInTouch": "Get in touch",
@@ -161,7 +161,7 @@
     "solutions": {
       "eyebrow": "What We Do",
       "title": "AI solutions built for your business.",
-      "lead": "Four ways we help organizations use AI — each can work on its own or together as a complete system. We focus on solving your actual problem, not on pushing a particular technology.",
+      "lead": "Four ways we help organizations use AI , each can work on its own or together as a complete system. We focus on solving your actual problem, not on pushing a particular technology.",
       "meta": "haal-lab.solutions / what-we-do"
     },
     "projects": {
@@ -173,7 +173,7 @@
     "research": {
       "eyebrow": "Research Articles",
       "title": "What we're learning about AI.",
-      "lead": "We share what we learn as we build — what works, what doesn't, and what's coming next. Written in plain language for business leaders and technical teams alike.",
+      "lead": "We share what we learn as we build , what works, what doesn't, and what's coming next. Written in plain language for business leaders and technical teams alike.",
       "meta": "haal-lab.solutions / research"
     },
     "network": {
@@ -185,7 +185,7 @@
     "about": {
       "eyebrow": "About",
       "title": "An AI company built on engineering, not hype.",
-      "lead": "Haal Lab builds intelligent software systems that help organizations work smarter — without sending their data to third-party services.",
+      "lead": "Haal Lab builds intelligent software systems that help organizations work smarter , without sending their data to third-party services.",
       "meta": "haal-lab.solutions / about"
     },
     "contact": {
@@ -197,7 +197,7 @@
     "pricing": {
       "eyebrow": "Pricing",
       "title": "Transparent pricing for real AI systems.",
-      "lead": "Four packages designed for startups, businesses, enterprises, and research institutions. Every tier delivers a working system — not a slide deck.",
+      "lead": "Four packages designed for startups, businesses, enterprises, and research institutions. Every tier delivers a working system , not a slide deck.",
       "meta": "haal-lab.solutions / pricing"
     }
   }

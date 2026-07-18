@@ -6,7 +6,7 @@ import { Reveal, Eyebrow, SectionHeading, Lead } from "@/components/blocks/primi
 import { PARTNERS, PARTNER_CATEGORIES } from "@/lib/network";
 
 /**
- * PartnersSection — logo grid showing technology, infrastructure, cloud,
+ * PartnersSection , logo grid showing technology, infrastructure, cloud,
  * and research partners.
  */
 export function PartnersSection({
@@ -62,7 +62,7 @@ export function PartnersSection({
               target="_blank"
               rel="noopener noreferrer"
               className="group flex h-full flex-col items-start gap-4 bg-hl-surface/80 p-6 transition-colors hover:bg-hl-surface-2"
-              aria-label={`${partner.name} — ${partner.category} partner (opens in new tab)`}
+              aria-label={`${partner.name} , ${partner.category} partner (opens in new tab)`}
             >
               <div className="flex w-full items-center justify-between">
                 {partner.logoUrl ? (

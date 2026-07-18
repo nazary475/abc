@@ -487,7 +487,7 @@ export function PricingPage() {
                 </SectionHeading>
                 <Lead className="mt-4">
                   Tell us what you&apos;re trying to achieve and we&apos;ll recommend
-                  the right engagement — honestly, with no upsell pressure.
+                  the right engagement , honestly, with no upsell pressure.
                 </Lead>
               </div>
               <div className="lg:col-span-4 lg:justify-self-end">

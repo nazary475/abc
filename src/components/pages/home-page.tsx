@@ -5,8 +5,6 @@ import {
   WhySection,
   ContactCtaSection,
 } from "@/components/blocks/home-sections";
-import { TechnologySection } from "@/components/blocks/technology-section";
-import { CaseStudySection } from "@/components/blocks/case-study-section";
 
 export function HomePage() {
   return (
@@ -15,8 +13,6 @@ export function HomePage() {
       <SolutionsSection />
       <ArchitectureSection />
       <WhySection />
-      <TechnologySection />
-      <CaseStudySection />
       <ContactCtaSection />
     </>
   );

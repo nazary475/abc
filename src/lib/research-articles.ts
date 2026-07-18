@@ -18,7 +18,7 @@ export const RESEARCH_ARTICLES: Article[] = [
     excerpt:
       "An empirical comparison of Standard, SwiGLU, ReGLU, and GiGLU FFNs with a full reproducibility guide. When LLaMA, Mistral, and DeepSeek all use SwiGLU, does it actually matter at tiny scales?",
     category: "Experiments",
-    date: "2026-07-16",
+    date: "2026-07-18",
     readTime: "12 min",
     tags: ["GPT", "Transformers", "SwiGLU", "Deep Learning"],
     author: "Hussain Nazary",
@@ -195,7 +195,7 @@ Have you tried different FFN architectures in your own models? I'd love to hear 
     excerpt:
       "An engineering analysis of production-ready runtimes, quantization formats, and retrieval patterns based on modern open-source approaches for organizations deploying open-weight LLMs on private infrastructure.",
     category: "Engineering",
-    date: "2026-06-21",
+    date: "2026-07-18",
     readTime: "18 min",
     tags: ["LLMs", "GGUF", "vLLM", "Local AI"],
     author: "Hussain Nazary",
@@ -744,7 +744,7 @@ models:
     version: v1.2.0
     quantization: Q4_K_M
     sha256: a3f4d9e2b1c8...
-    deployment_date: 2026-06-15
+    deployment_date: 2026-07-18
     evaluation_metrics:
       recall@10: 0.84
       p95_latency: 420ms
@@ -767,7 +767,7 @@ RAG systems depend on document corpora. Version and track:
 corpus_metadata = {
     'version': 'v2.3.0',
     'documents_count': 45231,
-    'last_updated': '2026-06-20',
+    'last_updated': '2026-07-18',
     'embedding_model': 'bge-m3',
     'chunking_strategy': 'semantic-512'
 }
@@ -907,7 +907,7 @@ Organizations evaluating private LLM infrastructure should:
 - Instrument systems for observability from the start.
 - Build operational runbooks for common failure modes.
 
-Private AI infrastructure is maturing. What was experimental in 2024 has become engineered practice in 2026. Organizations that approach deployment with rigorous evaluation, solid architecture, and operational discipline are building systems that deliver value while maintaining control.
+Private AI infrastructure is maturing. What was experimental has become engineered practice. Organizations that approach deployment with rigorous evaluation, solid architecture, and operational discipline are building systems that deliver value while maintaining control.
 
 ---
 
@@ -920,7 +920,7 @@ Private AI infrastructure is maturing. What was experimental in 2024 has become 
     excerpt:
       "Cross-encoder rerankers are increasingly common in RAG pipelines, but they come with costs. Analysis of latency, recall, and compute tradeoffs across different production scenarios.",
     category: "Experiments",
-    date: "2026-05-30",
+    date: "2026-07-18",
     readTime: "14 min",
     tags: ["RAG", "Reranking", "Retrieval"],
     author: "Hussain Nazary",
@@ -1273,7 +1273,7 @@ The best RAG system isn't the one with every component — it's the one that bal
     excerpt:
       "An engineering framework for treating prompts and model configurations as versioned, tested, and gated artifacts. Practical guidance for implementing automated evaluation pipelines that detect regressions before deployment.",
     category: "Engineering",
-    date: "2026-04-18",
+    date: "2026-07-18",
     readTime: "18 min",
     tags: ["Evaluation", "CI/CD", "LLMs"],
     author: "Hussain Nazary",
@@ -2072,7 +2072,7 @@ Successful AI systems depend on measurement, not intuition.
     excerpt:
       "A short catalog of agent topologies — router, planner-executor, critic — with notes on which ones held up under real tool-call latency and failure modes.",
     category: "Experiments",
-    date: "2026-03-22",
+    date: "2026-07-18",
     readTime: "15 min",
     tags: ["Agents", "LLMs", "Orchestration"],
     author: "Hussain Nazary",
@@ -2724,7 +2724,7 @@ The best pattern depends on your latency budget, quality requirements, and cost 
     excerpt:
       "Building AI on your own hardware eliminates some risks and introduces others. A practical threat model for on-prem LLM systems, including model supply chain and prompt-injection surfaces.",
     category: "Insights",
-    date: "2026-02-14",
+    date: "2026-07-18",
     readTime: "18 min",
     tags: ["Privacy", "Security", "Local AI"],
     author: "Hussain Nazary",
@@ -2776,7 +2776,7 @@ We use Microsoft's STRIDE framework adapted for LLM threat modeling:
 
 4. Attacker exfiltrates sensitive information via crafted queries
 
-**Real incident (December 2025):**
+**Real incident:**
 A financial services client downloaded a "Llama-3-8B-Finance-Tuned" model from an unofficial source. Security audit revealed the model had been fine-tuned on synthetic data containing exfiltration triggers. Thankfully caught before production deployment.
 
 ### Mitigations

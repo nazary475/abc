@@ -35,7 +35,7 @@
   "solutions": {
     "eyebrow": "Ce que nous faisons",
     "title": "Quatre façons de vous aider à utiliser l'IA",
-    "lead": "Chaque service fonctionne seul ou ensemble comme un système complet. Nous nous concentrons sur ce dont votre entreprise a besoin — pas sur la poursuite de la dernière tendance.",
+    "lead": "Chaque service fonctionne seul ou ensemble comme un système complet. Nous nous concentrons sur ce dont votre entreprise a besoin , pas sur la poursuite de la dernière tendance.",
     "learnMore": "En savoir plus"
   },
   "projects": {
@@ -47,7 +47,7 @@
   "why": {
     "eyebrow": "Pourquoi Haal Lab",
     "title": "Ce qui nous distingue",
-    "lead": "Trois engagements qui façonnent tout ce que nous construisons — et chaque relation que nous avons avec les clients."
+    "lead": "Trois engagements qui façonnent tout ce que nous construisons , et chaque relation que nous avons avec les clients."
   },
   "services": {
     "eyebrow": "Services",
@@ -57,25 +57,25 @@
   "aboutTeaser": {
     "eyebrow": "À propos de Haal Lab",
     "title": "Nous sommes des ingénieurs, pas des marketeurs.",
-    "body1": "Haal Lab est une entreprise d'ingénierie IA. Nous construisons des systèmes logiciels intelligents qui aident les organisations à travailler plus intelligemment — sans envoyer leurs données à des services tiers.",
+    "body1": "Haal Lab est une entreprise d'ingénierie IA. Nous construisons des systèmes logiciels intelligents qui aident les organisations à travailler plus intelligemment , sans envoyer leurs données à des services tiers.",
     "body2": "Nous traitons l'IA comme un artisanat, pas comme un mot à la mode. Notre travail va de l'IA qui fonctionne entièrement sur vos propres ordinateurs, à la recherche intelligente dans vos documents, jusqu'aux modèles IA personnalisés construits spécifiquement pour vos tâches.",
     "readMission": "Lire notre mission"
   },
   "contactCta": {
     "eyebrow": "Commencer une conversation",
     "title": "Avez-vous un problème que l'IA pourrait résoudre ?",
-    "lead": "Dites-nous ce que vous essayez d'accomplir. Nous vous donnerons une réponse honnête et pratique — généralement dans les deux jours ouvrables. Pas de pression commerciale, pas de jargon.",
+    "lead": "Dites-nous ce que vous essayez d'accomplir. Nous vous donnerons une réponse honnête et pratique , généralement dans les deux jours ouvrables. Pas de pression commerciale, pas de jargon.",
     "contactUs": "Parlez-nous"
   },
   "partners": {
     "eyebrow": "Partenaires",
     "title": "Travailler avec les meilleurs",
-    "lead": "Nous avons établi des relations avec les entreprises technologiques et les institutions de recherche qui comptent — afin que vous bénéficiez des bons outils pour vos besoins spécifiques.",
+    "lead": "Nous avons établi des relations avec les entreprises technologiques et les institutions de recherche qui comptent , afin que vous bénéficiez des bons outils pour vos besoins spécifiques.",
     "viewAll": "Voir tous les partenaires",
     "count": "{count} partenaires"
   },
   "footer": {
-    "description": "Nous construisons des systèmes IA personnalisés qui fonctionnent en privé sur vos propres ordinateurs — de la recherche intelligente de documents aux assistants IA qui font le travail.",
+    "description": "Nous construisons des systèmes IA personnalisés qui fonctionnent en privé sur vos propres ordinateurs , de la recherche intelligente de documents aux assistants IA qui font le travail.",
     "pages": "Pages",
     "home": "Accueil",
     "getInTouch": "Entrer en contact",
@@ -161,7 +161,7 @@
     "solutions": {
       "eyebrow": "Ce que nous faisons",
       "title": "Solutions IA conçues pour votre entreprise.",
-      "lead": "Quatre façons d'aider les organisations à utiliser l'IA — chacune peut fonctionner seule ou ensemble comme un système complet. Nous nous concentrons sur la résolution de votre problème réel, pas sur la promotion d'une technologie particulière.",
+      "lead": "Quatre façons d'aider les organisations à utiliser l'IA , chacune peut fonctionner seule ou ensemble comme un système complet. Nous nous concentrons sur la résolution de votre problème réel, pas sur la promotion d'une technologie particulière.",
       "meta": "haal-lab.solutions / ce-que-nous-faisons"
     },
     "projects": {
@@ -173,7 +173,7 @@
     "research": {
       "eyebrow": "Articles de Recherche",
       "title": "Ce que nous apprenons sur l'IA.",
-      "lead": "Nous partageons ce que nous apprenons en construisant — ce qui fonctionne, ce qui ne fonctionne pas et ce qui vient ensuite. Rédigé en langage simple pour les dirigeants d'entreprise et les équipes techniques.",
+      "lead": "Nous partageons ce que nous apprenons en construisant , ce qui fonctionne, ce qui ne fonctionne pas et ce qui vient ensuite. Rédigé en langage simple pour les dirigeants d'entreprise et les équipes techniques.",
       "meta": "haal-lab.solutions / recherche"
     },
     "network": {
@@ -185,7 +185,7 @@
     "about": {
       "eyebrow": "À propos",
       "title": "Une entreprise IA basée sur l'ingénierie, pas le battage médiatique.",
-      "lead": "Haal Lab construit des systèmes logiciels intelligents qui aident les organisations à travailler plus intelligemment — sans envoyer leurs données à des services tiers.",
+      "lead": "Haal Lab construit des systèmes logiciels intelligents qui aident les organisations à travailler plus intelligemment , sans envoyer leurs données à des services tiers.",
       "meta": "haal-lab.solutions / a-propos"
     },
     "contact": {
@@ -197,7 +197,7 @@
     "pricing": {
       "eyebrow": "Tarifs",
       "title": "Tarification transparente pour de vrais systèmes IA.",
-      "lead": "Quatre forfaits conçus pour les startups, les entreprises, les grandes entreprises et les institutions de recherche. Chaque niveau fournit un système fonctionnel — pas une présentation de diapositives.",
+      "lead": "Quatre forfaits conçus pour les startups, les entreprises, les grandes entreprises et les institutions de recherche. Chaque niveau fournit un système fonctionnel , pas une présentation de diapositives.",
       "meta": "haal-lab.solutions / tarifs"
     }
   }

@@ -102,7 +102,7 @@ export function ResearchPage() {
                 </SectionHeading>
                 <Lead className="mt-4">
                   No newsletter spam, no growth funnels. Just technical writing on the AI
-                  systems we are actually building — sent when there is something worth reading.
+                  systems we are actually building , sent when there is something worth reading.
                 </Lead>
               </div>
               <div className="lg:col-span-4 lg:justify-self-end">

@@ -21,13 +21,13 @@ export function FounderSection() {
                 </span>
               </div>
               <div className="relative overflow-hidden rounded-3xl border-2 border-hl-border bg-hl-surface/60 p-8 hl-card-glow">
-                {/* Photo Container - Even larger size */}
-                <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border-2 border-hl-border bg-hl-surface-2">
+                {/* Photo Container */}
+                <div className="relative aspect-[3/4] overflow-hidden rounded-2xl border-2 border-hl-border bg-hl-surface-2">
                   <Image
-                    src="/jaafar-najafi-rad.jpg"
-                    alt="Jaafar Najafi Rad - Founder of Haal Lab"
+                    src="/alizafar-najafi.jpeg"
+                    alt="Ali-Zafar Najafi - Founder of Haal Lab"
                     fill
-                    className="object-contain"
+                    className="object-cover object-top"
                     sizes="(max-width: 768px) 100vw, 55vw"
                     priority
                   />
@@ -36,10 +36,10 @@ export function FounderSection() {
                 {/* Info Card - Name and Title */}
                 <div className="relative mt-6 rounded-2xl border-2 border-hl-border bg-hl-surface/80 p-6 backdrop-blur">
                   <h3 className="text-2xl font-bold tracking-tight text-foreground md:text-3xl">
-                    Jaafar Najafi Rad
+                    Ali-Zafar Najafi
                   </h3>
-                  <p className="mt-2 font-mono text-xl font-bold uppercase tracking-wider text-hl-cyan md:text-2xl">
-                    Phd, Smart Aerospace an autonomous System
+                  <p className="mt-2 text-sm leading-relaxed text-hl-muted">
+                    Electrical Engineering graduate<br />focused on artificial intelligence, machine learning systems, and computational solutions.
                   </p>
                 </div>
               </div>

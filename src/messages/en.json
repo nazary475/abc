@@ -4,14 +4,14 @@
     "localeFlag": "EN"
   },
   "nav": {
-    "solutions": "What We Do?",
+    "solutions": "Vision",
     "howWeWork": "How We Work?",
     "research": "Research Articles",
     "network": "Partners",
     "about": "About",
     "contact": "Contact",
     "pricing": "Pricing",
-    "exploreSolutions": "See What We Do",
+    "exploreSolutions": "See Our Vision",
     "discussProject": "Discuss Your AI Project",
     "toggleNav": "Toggle navigation"
   },
@@ -24,7 +24,7 @@
     "title2": "Your Data.",
     "title3": "Your Control.",
     "subtitle": "Every solution is deployed within your environment, giving you complete ownership of your data, models, and operations.",
-    "exploreSolutions": "See What We Do",
+    "exploreSolutions": "See Our Vision",
     "contactUs": "Talk to Us",
     "discussProject": "Discuss Your AI Project",
     "exploreWork": "Explore Our Work",
@@ -33,8 +33,8 @@
     "feature3": "Cost Efficient"
   },
   "solutions": {
-    "eyebrow": "What We Do",
-    "title": "Four ways we help you use AI",
+    "eyebrow": "Vision",
+    "title": "Four AI capabilities we build for organizations",
     "lead": "Each service stands on its own or works together as a complete system. We focus on what your business needs , not on chasing the latest trend.",
     "learnMore": "Learn more"
   },
@@ -152,17 +152,17 @@
     "submitSuccess": "Request received",
     "submitSuccessMessage": "Thank you for your inquiry. Our engineering team will review your requirements and respond within two business days.",
     "submitError": "Something went wrong",
-    "submitErrorMessage": "Could not send the form. Please email us directly at contact@haal-lab.solutions.",
+    "submitErrorMessage": "Could not send the form. Please email us directly at hussain.nazary@haal-lab.solutions.",
     "privacyNotice": "By submitting, you agree to be contacted about your inquiry. We never share your data.",
     "sendAnother": "Send another inquiry",
     "optional": "(optional)"
   },
   "pageHeaders": {
     "solutions": {
-      "eyebrow": "What We Do",
+      "eyebrow": "Vision",
       "title": "AI solutions built for your business.",
-      "lead": "Four ways we help organizations use AI , each can work on its own or together as a complete system. We focus on solving your actual problem, not on pushing a particular technology.",
-      "meta": "haal-lab.solutions / what-we-do"
+      "lead": "Four AI capabilities we build for organizations, each can work on its own or together as a complete system. We focus on solving your actual problem, not on pushing a particular technology.",
+      "meta": "haal-lab.solutions / vision"
     },
     "projects": {
       "eyebrow": "Our Work",

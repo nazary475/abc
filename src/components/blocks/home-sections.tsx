@@ -82,16 +82,18 @@ const SOLUTIONS: Solution[] = [
             <li>Connect only to approved internal systems</li>
             <li>Define what the AI can access and execute</li>
             <li>Create workflows with human approval where required</li>
+            <li>Select the appropriate models and infrastructure based on your requirements</li>
           </ul>
         </div>
 
         <div>
-          <p className="font-semibold text-foreground">3. Private deployment</p>
+          <p className="font-semibold text-foreground">3. Private AI deployment</p>
           <p>The AI system runs within your infrastructure or trusted private environment:</p>
           <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Your business data remains under your control</li>
-            <li>No dependency on external AI platforms</li>
-            <li>Your team controls access, operations, and future changes</li>
+            <li>Your organization owns and controls the AI production environment</li>
+            <li>Models and AI services operate within your infrastructure instead of relying on external platforms</li>
+            <li>No dependency on external API usage or unpredictable per-token costs</li>
+            <li>Your team controls access, operations, security, and future changes</li>
           </ul>
         </div>
 
@@ -102,7 +104,8 @@ const SOLUTIONS: Solution[] = [
           <ul className="mt-1 list-disc pl-5 space-y-1">
             <li>Automate repetitive tasks</li>
             <li>Reduce time spent on manual processing</li>
-            <li>Allow teams to focus on higher-value activities</li>
+            <li>Avoid ongoing dependency on external AI API costs</li>
+            <li>Build AI infrastructure with predictable operational expenses</li>
           </ul>
         </div>
 
@@ -112,6 +115,7 @@ const SOLUTIONS: Solution[] = [
             <li>Faster access to information</li>
             <li>Faster execution of routine workflows</li>
             <li>Shorter response and processing times</li>
+            <li>AI capabilities available directly within your organization</li>
           </ul>
         </div>
 
@@ -121,6 +125,7 @@ const SOLUTIONS: Solution[] = [
             <li>AI systems can run inside your own environment</li>
             <li>Data access is controlled by your organization</li>
             <li>Sensitive information does not need to leave your infrastructure</li>
+            <li>Your data is not used to operate third-party AI services</li>
           </ul>
         </div>
 
@@ -130,14 +135,16 @@ const SOLUTIONS: Solution[] = [
             <li>Build AI capabilities around your unique workflows</li>
             <li>Preserve operational knowledge</li>
             <li>Create systems competitors cannot simply purchase from a vendor</li>
+            <li>Develop internal AI capabilities that grow with your organization</li>
           </ul>
         </div>
 
         <div>
           <p className="font-semibold text-foreground">Maintain ownership</p>
           <ul className="mt-1 list-disc pl-5 space-y-1">
-            <li>Your organization controls the deployment, data, and operations</li>
+            <li>Your organization controls the deployment, models, data, and operations</li>
             <li>The system is built around your requirements, not a third-party platform</li>
+            <li>Your AI infrastructure remains a long-term organizational asset</li>
           </ul>
         </div>
       </div>
@@ -148,18 +155,311 @@ const SOLUTIONS: Solution[] = [
     title: "Knowledge Intelligence Systems",
     description: "Turn your organization's information into a strategic advantage.\n\nWe build private AI systems that understand your documents, research, and internal knowledge — helping your teams find trusted answers instantly.\n\nMake better decisions with the knowledge you already own.",
     bullets: [],
+    detailContent: (
+      <div className="space-y-6 text-sm leading-relaxed text-hl-muted max-h-[70vh] overflow-y-auto pr-2">
+        <p>We analyze your organization's information landscape to identify where valuable knowledge is difficult to access, distributed across documents, or locked inside disconnected systems.</p>
+        <p>Our process starts by understanding how your teams create, store, and use information: the documents they depend on, the questions they repeatedly answer, the knowledge gaps that slow decisions, and where important expertise is difficult to retrieve. We then design and deploy private AI knowledge systems that make your organization's information searchable and usable while keeping full control over your data.</p>
+
+        <h4 className="text-foreground font-semibold text-base">How we build knowledge systems</h4>
+
+        <div>
+          <p className="font-semibold text-foreground">1. Knowledge analysis</p>
+          <p>We study your information environment to identify:</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>Important document collections and internal knowledge sources</li>
+            <li>Information stored across disconnected systems</li>
+            <li>Areas where employees spend time searching for answers</li>
+            <li>Repeated questions and knowledge requests across teams</li>
+            <li>Critical expertise that needs to be preserved and made accessible</li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-semibold text-foreground">2. AI knowledge system design</p>
+          <p>We design retrieval systems around your organization's information:</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>Connect only to approved documents, databases, and knowledge sources</li>
+            <li>Process and understand internal information using AI retrieval technologies</li>
+            <li>Provide answers based on your organization's own knowledge</li>
+            <li>Include source references and citations for verification</li>
+            <li>Define access rules based on your security requirements</li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-semibold text-foreground">3. Private AI deployment</p>
+          <p>The knowledge system runs within your infrastructure or trusted private environment:</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>Your documents and organizational knowledge remain under your control</li>
+            <li>AI models and retrieval systems can operate inside your own environment</li>
+            <li>No dependency on external AI platforms or third-party data processing</li>
+            <li>No unpredictable per-query or per-token costs from external AI providers</li>
+            <li>Your team controls access, security, updates, and future expansion</li>
+          </ul>
+        </div>
+
+        <h4 className="text-foreground font-semibold text-base">Business impact</h4>
+
+        <div>
+          <p className="font-semibold text-foreground">Reduce costs</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>Reduce time spent manually searching through documents</li>
+            <li>Minimize repeated research and information requests</li>
+            <li>Decrease dependency on external knowledge platforms</li>
+            <li>Make existing organizational knowledge more valuable</li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-semibold text-foreground">Increase speed</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>Find relevant information in seconds instead of hours</li>
+            <li>Accelerate research, analysis, and decision-making</li>
+            <li>Give employees immediate access to trusted internal knowledge</li>
+            <li>Reduce delays caused by fragmented information</li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-semibold text-foreground">Protect your data</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>Documents remain inside your controlled environment</li>
+            <li>Information access follows your organization's permissions</li>
+            <li>AI responses are generated from approved internal sources</li>
+            <li>Sensitive knowledge does not need to leave your infrastructure</li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-semibold text-foreground">Create competitive advantage</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>Transform internal knowledge into an operational capability</li>
+            <li>Preserve expertise accumulated across years of work</li>
+            <li>Enable faster and better-informed decisions</li>
+            <li>Build organizational intelligence that competitors cannot simply purchase</li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-semibold text-foreground">Maintain ownership</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>Your organization owns the knowledge system, data, and infrastructure</li>
+            <li>Your teams control deployment, access, and operations</li>
+            <li>The system is built around your knowledge and requirements, not a third-party platform</li>
+          </ul>
+        </div>
+      </div>
+    ),
   },
   {
     icon: ServerCog,
     title: "Private AI Infrastructure",
     description: "Adopt AI without giving up control.\n\nWe deploy AI systems inside your infrastructure or private environment, keeping your data, security, and operations under your control.\n\nEnterprise AI without external dependency.",
     bullets: [],
+    detailContent: (
+      <div className="space-y-6 text-sm leading-relaxed text-hl-muted max-h-[70vh] overflow-y-auto pr-2">
+        <p>We design and deploy the technical foundation required for organizations that want to adopt AI while maintaining full control over their data, models, infrastructure, and operations.</p>
+        <p>Our process starts by understanding your existing technology environment, security requirements, AI objectives, and operational constraints. We then build a private AI infrastructure that allows your organization to run, manage, and scale AI systems within your own controlled environment.</p>
+
+        <h4 className="text-foreground font-semibold text-base">How we build private AI infrastructure</h4>
+
+        <div>
+          <p className="font-semibold text-foreground">1. Infrastructure assessment</p>
+          <p>We analyze your technical environment to identify:</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>Existing servers, cloud resources, and computing capabilities</li>
+            <li>Security, compliance, and data protection requirements</li>
+            <li>AI workloads and performance expectations</li>
+            <li>Data storage, processing, and integration requirements</li>
+            <li>Future AI adoption goals and scalability needs</li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-semibold text-foreground">2. Infrastructure design</p>
+          <p>We design the foundation required for reliable AI operations:</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>Private AI deployment environments</li>
+            <li>Local or private model serving systems</li>
+            <li>GPU and compute optimization</li>
+            <li>AI application and retrieval infrastructure</li>
+            <li>Data processing pipelines</li>
+            <li>Monitoring, evaluation, and operational management systems</li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-semibold text-foreground">3. Private AI deployment</p>
+          <p>The infrastructure operates within your controlled environment:</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>AI models and systems run on your own servers or private cloud</li>
+            <li>Your organization owns the AI production environment</li>
+            <li>No requirement to send sensitive data to external AI providers</li>
+            <li>No dependency on external API availability or changing pricing models</li>
+            <li>Your team controls access, security, maintenance, and future expansion</li>
+          </ul>
+        </div>
+
+        <h4 className="text-foreground font-semibold text-base">Business impact</h4>
+
+        <div>
+          <p className="font-semibold text-foreground">Reduce costs</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>Reduce long-term dependency on external AI platforms</li>
+            <li>Avoid unpredictable usage-based AI API costs</li>
+            <li>Optimize AI workloads for your available infrastructure</li>
+            <li>Build reusable AI foundations across your organization</li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-semibold text-foreground">Increase speed</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>Deploy AI capabilities faster across departments</li>
+            <li>Create a reliable foundation for new AI applications</li>
+            <li>Reduce integration complexity between AI systems and business operations</li>
+            <li>Enable faster experimentation and adoption</li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-semibold text-foreground">Protect your data</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>Sensitive information remains inside your controlled environment</li>
+            <li>Security policies are defined and enforced by your organization</li>
+            <li>AI operations are transparent and observable</li>
+            <li>Data processing follows your internal requirements</li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-semibold text-foreground">Create competitive advantage</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>Build internal AI capabilities instead of renting temporary access</li>
+            <li>Create a foundation for long-term AI adoption</li>
+            <li>Develop systems aligned with your organization's unique requirements</li>
+            <li>Reduce strategic dependency on external AI providers</li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-semibold text-foreground">Maintain ownership</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>Your organization owns and controls the AI infrastructure</li>
+            <li>Your teams control models, deployment, data, and operations</li>
+            <li>The infrastructure becomes a long-term organizational asset, not a subscription dependency</li>
+          </ul>
+        </div>
+      </div>
+    ),
   },
   {
     icon: Brain,
     title: "Custom AI Models & Training",
     description: "Build AI capabilities designed specifically for your organization.\n\nWe fine-tune and train AI models for specialized tasks where general-purpose AI is not accurate, efficient, or private enough.\n\nCreate unique AI capabilities around your data and expertise.",
     bullets: [],
+    detailContent: (
+      <div className="space-y-6 text-sm leading-relaxed text-hl-muted max-h-[70vh] overflow-y-auto pr-2">
+        <p>We develop and adapt AI models for organizations that require specialized capabilities beyond general-purpose AI systems.</p>
+        <p>Our process starts by understanding the specific tasks your organization needs AI to solve, the data available for training or adaptation, the required performance level, and the deployment environment. We then fine-tune, optimize, or train AI models designed around your organization's requirements while keeping control over the final system.</p>
+
+        <h4 className="text-foreground font-semibold text-base">How we build custom AI models</h4>
+
+        <div>
+          <p className="font-semibold text-foreground">1. Task and data analysis</p>
+          <p>We analyze your AI requirements to identify:</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>The specific business problem the model needs to solve</li>
+            <li>Existing data sources and knowledge assets</li>
+            <li>Required accuracy, speed, and reliability targets</li>
+            <li>Domain-specific terminology and workflows</li>
+            <li>Security, privacy, and deployment requirements</li>
+          </ul>
+          <p className="mt-3">We determine the most suitable approach, including:</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>Fine-tuning existing open-source models</li>
+            <li>Domain adaptation</li>
+            <li>Custom training pipelines</li>
+            <li>Retrieval-enhanced model systems</li>
+            <li>Specialized AI architectures</li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-semibold text-foreground">2. Model development and optimization</p>
+          <p>We build and improve AI models through:</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>Fine-tuning models on organization-specific data</li>
+            <li>Training models for specialized tasks and domains</li>
+            <li>Creating evaluation processes to measure performance</li>
+            <li>Optimizing models for your hardware and infrastructure</li>
+            <li>Reducing model size and resource requirements where needed</li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-semibold text-foreground">3. Private AI deployment</p>
+          <p>The model operates within your controlled environment:</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>Your organization owns the AI production environment</li>
+            <li>Models can run on your own infrastructure or private cloud</li>
+            <li>Training and inference can be performed without sending sensitive data to external providers</li>
+            <li>No dependency on external AI APIs or per-token pricing models</li>
+            <li>Your team controls access, updates, and the model lifecycle</li>
+          </ul>
+        </div>
+
+        <h4 className="text-foreground font-semibold text-base">Business impact</h4>
+
+        <div>
+          <p className="font-semibold text-foreground">Reduce costs</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>Build smaller, efficient models optimized for specific tasks</li>
+            <li>Reduce unnecessary usage of expensive general-purpose AI services</li>
+            <li>Lower operational costs through optimized inference</li>
+            <li>Create predictable AI operating expenses</li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-semibold text-foreground">Increase speed</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>Deliver faster results for specialized workflows</li>
+            <li>Reduce manual analysis and processing time</li>
+            <li>Improve AI performance for organization-specific tasks</li>
+            <li>Enable faster decision-making with specialized capabilities</li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-semibold text-foreground">Protect your data</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>Training and model adaptation can happen inside controlled environments</li>
+            <li>Sensitive organizational data remains private</li>
+            <li>Data usage and model behavior remain governed by your organization</li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-semibold text-foreground">Create competitive advantage</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>Build AI capabilities based on your unique data and expertise</li>
+            <li>Develop models optimized for your organization's domain</li>
+            <li>Create specialized systems that competitors cannot simply access through public tools</li>
+            <li>Turn internal knowledge and processes into AI capabilities</li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-semibold text-foreground">Maintain ownership</p>
+          <ul className="mt-1 list-disc pl-5 space-y-1">
+            <li>Your organization controls the model, deployment, and operational lifecycle</li>
+            <li>The AI system is built around your requirements, infrastructure, and objectives</li>
+            <li>Your models become a long-term organizational asset rather than a dependency on external providers</li>
+          </ul>
+        </div>
+      </div>
+    ),
   },
 ];
 
@@ -174,7 +474,7 @@ export function SolutionsSection() {
         lead={t("lead")}
       />
 
-      <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
         {SOLUTIONS.map((s, i) => (
           <Reveal key={s.title} delay={i * 0.08}>
             <article className="hl-card-hover group flex h-full flex-col rounded-2xl border border-hl-border bg-hl-surface/60 p-6 hl-card-glow">

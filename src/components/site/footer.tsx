@@ -40,11 +40,11 @@ export function Footer() {
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
               </Link>
               <a
-                href="mailto:contact@haal-lab.solutions"
+                href="mailto:hussain.nazary@haal-lab.solutions"
                 className="inline-flex items-center gap-2 rounded-full border border-hl-border bg-hl-surface/60 px-6 py-3.5 text-sm font-medium text-foreground backdrop-blur transition-colors hover:border-hl-cyan/40 hover:text-hl-cyan"
               >
                 <Mail className="h-4 w-4" />
-                contact@haal-lab.solutions
+                hussain.nazary@haal-lab.solutions
               </a>
             </div>
           </div>
@@ -100,19 +100,19 @@ export function Footer() {
             <div className="flex items-start gap-4">
               <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-xl border-2 border-hl-border bg-hl-surface-2">
                 <Image
-                  src="/jaafar-najafi-rad.jpg"
-                  alt="Jaafar Najafi Rad"
+                  src="/alizafar-najafi.jpeg"
+                  alt="Ali-Zafar Najafi"
                   fill
-                  className="object-contain"
+                  className="object-cover object-top"
                   sizes="96px"
                 />
               </div>
               <div>
                 <h3 className="text-base font-bold text-foreground">
-                  Jaafar Najafi Rad
+                  Ali-Zafar Najafi
                 </h3>
-                <p className="mt-1 font-mono text-sm font-bold uppercase tracking-wider text-hl-cyan">
-                  Phd, Smart Aerospace an autonomous System
+                <p className="mt-1 text-xs text-hl-muted">
+                  Electrical Engineering graduate<br />focused on artificial intelligence, machine learning systems, and computational solutions.
                 </p>
               </div>
             </div>

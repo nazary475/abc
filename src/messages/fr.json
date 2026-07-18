@@ -152,7 +152,7 @@
     "submitSuccess": "Demande reçue",
     "submitSuccessMessage": "Merci pour votre demande. Notre équipe d'ingénieurs examinera vos besoins et répondra dans les deux jours ouvrables.",
     "submitError": "Quelque chose s'est mal passé",
-    "submitErrorMessage": "Impossible d'envoyer le formulaire. Veuillez nous contacter directement à contact@haal-lab.solutions.",
+    "submitErrorMessage": "Impossible d'envoyer le formulaire. Veuillez nous contacter directement à hussain.nazary@haal-lab.solutions.",
     "privacyNotice": "En soumettant, vous acceptez d'être contacté concernant votre demande. Nous ne partageons jamais vos données.",
     "sendAnother": "Envoyer une autre demande",
     "optional": "(optionnel)"

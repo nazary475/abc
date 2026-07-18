@@ -31,11 +31,11 @@ export function ContactPage() {
                     Email
                   </h2>
                   <a
-                    href="mailto:contact@haal-lab.solutions"
+                    href="mailto:hussain.nazary@haal-lab.solutions"
                     className="group mt-2 inline-flex items-center gap-2 text-base text-hl-cyan hover:underline"
                   >
                     <Mail className="h-4 w-4" />
-                    contact@haal-lab.solutions
+                    hussain.nazary@haal-lab.solutions
                   </a>
                   <p className="mt-4 text-sm leading-relaxed text-hl-muted">
                     For AI project inquiries, technical discussions, and partnerships. Our engineering team reviews every message.
@@ -61,10 +61,10 @@ export function ContactPage() {
                       handle="Haal Lab"
                     />
                     <ChannelRow
-                      href="mailto:contact@haal-lab.solutions"
+                      href="mailto:hussain.nazary@haal-lab.solutions"
                       icon={<Mail className="h-4 w-4" />}
                       label="Email"
-                      handle="contact@haal-lab.solutions"
+                      handle="hussain.nazary@haal-lab.solutions"
                     />
                   </ul>
                 </div>

@@ -16,7 +16,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-const CONTACT_EMAIL = "contact@haal-lab.solutions";
+const CONTACT_EMAIL = "hussain.nazary@haal-lab.solutions";
 
 export function EnterpriseContactForm() {
   const t = useTranslations("contactForm");

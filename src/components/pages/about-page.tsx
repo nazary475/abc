@@ -59,7 +59,7 @@ export function AboutPage() {
         <Reveal>
           <div className="max-w-3xl space-y-6">
             <h2 className="text-2xl font-bold tracking-tight text-foreground">
-              What We Do
+              Vision
             </h2>
 
             <h3 className="text-xl font-semibold text-foreground">

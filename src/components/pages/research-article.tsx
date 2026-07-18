@@ -1,6 +1,7 @@
 "use client";
 
-import { Calendar, Clock, ArrowLeft, Tag as TagIcon } from "lucide-react";
+import { Calendar, Clock, ArrowLeft, Tag as TagIcon, Globe } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import {
   Reveal,
@@ -14,12 +15,15 @@ interface ResearchArticleProps {
 }
 
 export function ResearchArticle({ article }: ResearchArticleProps) {
+  const t = useTranslations("researchArticle");
+  const locale = useLocale();
+
   return (
     <>
       {/* Article Header */}
       <section className="relative overflow-hidden border-b border-hl-border bg-hl-surface/30 py-10 md:py-12">
         <div className="pointer-events-none absolute inset-0 hl-grid-bg opacity-60" />
-        
+
         <div className="hl-container hl-section-pad relative">
           <Reveal>
             <Link
@@ -27,9 +31,18 @@ export function ResearchArticle({ article }: ResearchArticleProps) {
               className="inline-flex items-center gap-2 text-sm font-medium text-hl-cyan transition-colors hover:text-hl-cyan/80"
             >
               <ArrowLeft className="h-4 w-4" />
-              Back to Research
+              {t("backToResearch")}
             </Link>
           </Reveal>
+
+          {locale !== "en" && (
+            <Reveal delay={0.05}>
+              <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-hl-cyan/30 bg-hl-cyan/10 px-4 py-2 text-xs font-medium text-hl-cyan">
+                <Globe className="h-3.5 w-3.5" />
+                {t("translatedNotice")}
+              </div>
+            </Reveal>
+          )}
 
           <Reveal delay={0.1}>
             <div className="mt-6 flex items-center gap-3">
@@ -95,17 +108,16 @@ export function ResearchArticle({ article }: ResearchArticleProps) {
         <Reveal>
           <div className="flex flex-col items-center gap-6 rounded-2xl border border-hl-border bg-hl-surface/60 p-10 text-center">
             <h3 className="text-2xl font-bold tracking-tight text-foreground">
-              Want to implement this in your organization?
+              {t("ctaTitle")}
             </h3>
             <p className="max-w-2xl text-base text-hl-muted">
-              We help teams deploy production-ready AI systems. Share your requirements and 
-              we'll discuss the best approach for your use case.
+              {t("ctaDescription")}
             </p>
             <Link
               href="/contact"
               className="inline-flex items-center gap-2 rounded-full bg-hl-cyan px-6 py-3.5 text-sm font-bold text-gray-900 transition-all hover:bg-hl-cyan/90"
             >
-              Discuss Your Project
+              {t("ctaButton")}
             </Link>
           </div>
         </Reveal>

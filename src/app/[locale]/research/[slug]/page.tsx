@@ -10,7 +10,7 @@ import { getArticleBySlug, getAllArticleSlugs } from "@/lib/research-articles";
 import { generateResearchHreflangAlternates } from "@/lib/seo";
 
 export async function generateStaticParams() {
-  const slugs = getAllArticleSlugs();
+  const slugs = getAllArticleSlugs("en");
   return slugs.map((slug) => ({ slug }));
 }
 
@@ -20,7 +20,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
   const { locale, slug } = await params;
-  const article = getArticleBySlug(slug);
+  const article = getArticleBySlug(slug, locale);
 
   if (!article) {
     return {
@@ -122,7 +122,7 @@ export default async function ResearchArticlePage({
   const { locale, slug } = await params;
   setRequestLocale(locale as Locale);
 
-  const article = getArticleBySlug(slug);
+  const article = getArticleBySlug(slug, locale);
 
   if (!article) {
     notFound();

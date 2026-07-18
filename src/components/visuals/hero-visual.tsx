@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { useTranslations } from "next-intl";
 
 /**
  * HeroVisual — Enterprise AI Architecture Diagram
@@ -20,6 +21,7 @@ import { useEffect, useRef } from "react";
  */
 export function HeroVisual() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const t = useTranslations("heroVisual");
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -84,12 +86,12 @@ export function HeroVisual() {
 
   // Input sources (top row, horizontally distributed)
   const sources = [
-    { x: 40, label: "PDFs", icon: "document" },
-    { x: 160, label: "Contracts", icon: "contract" },
-    { x: 280, label: "Research", icon: "research" },
-    { x: 400, label: "Emails", icon: "email" },
-    { x: 520, label: "Databases", icon: "database" },
-    { x: 640, label: "APIs", icon: "api" },
+    { x: 40, label: t("sources.pdfs"), icon: "document" },
+    { x: 160, label: t("sources.contracts"), icon: "contract" },
+    { x: 280, label: t("sources.research"), icon: "research" },
+    { x: 400, label: t("sources.emails"), icon: "email" },
+    { x: 520, label: t("sources.databases"), icon: "database" },
+    { x: 640, label: t("sources.apis"), icon: "api" },
   ];
 
   const sourceY = 40;
@@ -104,17 +106,17 @@ export function HeroVisual() {
 
   // Processing stages (inside platform)
   const stages = [
-    { x: 200, label: "Search" },
-    { x: 400, label: "Analysis" },
-    { x: 600, label: "Automation" },
+    { x: 200, label: t("stages.search") },
+    { x: 400, label: t("stages.analysis") },
+    { x: 600, label: t("stages.automation") },
   ];
 
   // Output results (bottom row)
   const outputs = [
-    { x: 80, label: "Reports" },
-    { x: 270, label: "Insights" },
-    { x: 460, label: "Workflows" },
-    { x: 650, label: "Decisions" },
+    { x: 80, label: t("outputs.reports") },
+    { x: 270, label: t("outputs.insights") },
+    { x: 460, label: t("outputs.workflows") },
+    { x: 650, label: t("outputs.decisions") },
   ];
 
   const outputY = 390;
@@ -144,14 +146,14 @@ export function HeroVisual() {
         className="absolute inset-0 h-full w-full"
         preserveAspectRatio="xMidYMid meet"
         role="img"
-        aria-label="Enterprise AI architecture: data sources flow through knowledge platform to produce reports, insights, workflows, and decisions"
+        aria-label={t("ariaLabel")}
       >
         <defs>
           <linearGradient id="hv-platform-grad" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" stopColor="#1E40AF" />
             <stop offset="100%" stopColor="#2563EB" />
           </linearGradient>
-          
+
           <linearGradient id="hv-flow-down" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" stopColor="rgba(37,99,235,0)" />
             <stop offset="50%" stopColor="rgba(37,99,235,0.8)" />
@@ -173,13 +175,13 @@ export function HeroVisual() {
 
         {/* ── Input Sources (Top Row) ── */}
         <text x={W / 2} y={20} fill="#2563EB" fontSize="11" fontFamily="monospace" fontWeight="700" textAnchor="middle" letterSpacing="2.5">
-          DATA SOURCES
+          {t("dataSources")}
         </text>
 
         {sources.map((s, i) => {
           const centerX = s.x + sourceWidth / 2;
           const bottomY = sourceY + sourceHeight;
-          
+
           return (
             <g key={`src-${i}`}>
               {/* Card */}
@@ -193,7 +195,7 @@ export function HeroVisual() {
                 stroke="#CBD5E1"
                 strokeWidth="1.5"
               />
-              
+
               {/* Icon container */}
               <rect
                 x={s.x + sourceWidth / 2 - 12}
@@ -205,7 +207,7 @@ export function HeroVisual() {
                 stroke="#BFDBFE"
                 strokeWidth="1"
               />
-              
+
               {/* Icon */}
               <g transform={`translate(${s.x + sourceWidth / 2 - 8}, ${sourceY + 18})`}>
                 <path
@@ -241,7 +243,7 @@ export function HeroVisual() {
                 strokeWidth="2"
                 strokeDasharray="4 4"
               />
-              
+
               {/* Animated flow pulse */}
               <line
                 x1={centerX}
@@ -276,7 +278,7 @@ export function HeroVisual() {
             fill="url(#hv-platform-grad)"
             filter="url(#hv-glow)"
           />
-          
+
           {/* Dot pattern overlay */}
           <rect
             x={platformX}
@@ -298,7 +300,7 @@ export function HeroVisual() {
             textAnchor="middle"
             letterSpacing="3"
           >
-            KNOWLEDGE PLATFORM
+            {t("knowledgePlatform")}
           </text>
 
           {/* Subtitle */}
@@ -311,7 +313,7 @@ export function HeroVisual() {
             fontWeight="500"
             textAnchor="middle"
           >
-            AI-Powered Intelligence Layer
+            {t("aiLayer")}
           </text>
 
           {/* Processing stages */}
@@ -338,7 +340,7 @@ export function HeroVisual() {
               >
                 {stage.label}
               </text>
-              
+
               {/* Processing indicator */}
               <circle
                 cx={stage.x}
@@ -375,13 +377,13 @@ export function HeroVisual() {
 
         {/* ── Output Results (Bottom Row) ── */}
         <text x={W / 2} y={outputY - 20} fill="#2563EB" fontSize="11" fontFamily="monospace" fontWeight="700" textAnchor="middle" letterSpacing="2.5">
-          INTELLIGENT OUTPUTS
+          {t("intelligentOutputs")}
         </text>
 
         {outputs.map((o, i) => {
           const centerX = o.x + outputWidth / 2;
           const platformBottom = platformY + platformHeight;
-          
+
           return (
             <g key={`out-${i}`}>
               {/* Flow line from platform */}
@@ -394,7 +396,7 @@ export function HeroVisual() {
                 strokeWidth="2"
                 strokeDasharray="4 4"
               />
-              
+
               {/* Animated flow pulse */}
               <line
                 x1={centerX}

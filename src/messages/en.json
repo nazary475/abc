@@ -285,8 +285,26 @@
     "home": "Home",
     "getInTouch": "Get in touch",
     "readyToStart": "Ready to build your AI system?",
+    "ctaDescription": "Tell us about your requirements and goals. Our engineering team will evaluate the best approach.",
     "contactHaalLab": "Contact HAAL Lab",
-    "rights": "© {year} Haal Lab. All rights reserved."
+    "rights": "© {year} Haal Lab. All rights reserved.",
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "email": "Email"
+    },
+    "founderBadge": "Founder",
+    "founderBio": "Electrical Engineering graduate<br />focused on artificial intelligence, machine learning systems, and computational solutions.",
+    "legal": {
+      "officiallyRegistered": "Officially Registered",
+      "rcsLabel": "RCS Évreux:",
+      "siretLabel": "SIRET:",
+      "legalNameLabel": "Legal Name:",
+      "legalName": "HAAL LAB",
+      "address": "1 Rue Auguste Delaune, 27000 Évreux, France"
+    },
+    "tagline": "Private AI for European Organizations",
+    "founded": "Founded: July 2026 • Founder: Ali-Zafar Najafi"
   },
   "relatedLinks": {
     "eyebrow": "Continue",
@@ -296,6 +314,28 @@
   "faq": {
     "eyebrow": "FAQ",
     "title": "Frequently asked questions"
+  },
+  "localeBanner": {
+    "title": "Language Suggestion",
+    "description": "Would you like to view this site in",
+    "switchTo": "Switch to {locale}",
+    "stayIn": "Stay in {locale}",
+    "dismiss": "Dismiss"
+  },
+  "researchArticle": {
+    "backToResearch": "Back to Research",
+    "englishOnlyNotice": "This article is only available in English.",
+    "translatedNotice": "Translated from English",
+    "ctaTitle": "Want to implement this in your organization?",
+    "ctaDescription": "We help teams deploy production-ready AI systems. Share your requirements and we'll discuss the best approach for your use case.",
+    "ctaButton": "Discuss Your Project"
+  },
+  "researchPage": {
+    "stayCurrent": "Stay current",
+    "stayCurrentTitle": "We publish when we have something to say.",
+    "stayCurrentDescription": "No newsletter spam, no growth funnels. Just technical writing on the AI systems we are actually building , sent when there is something worth reading.",
+    "getInTouch": "Get in touch",
+    "articleCount": "{count} articles"
   },
   "languageSwitcher": {
     "label": "Language",
@@ -594,5 +634,50 @@
         "description": "Observe performance, quality, and reliability over time. Continuous optimization based on real-world usage patterns."
       }
     }
+  },
+  "founder": {
+    "badge": "Founder",
+    "name": "Ali-Zafar Najafi",
+    "bio": "Electrical Engineering graduate<br />focused on artificial intelligence, machine learning systems, and computational solutions.",
+    "alt": "Ali-Zafar Najafi - Founder of Haal Lab"
+  },
+  "heroVisual": {
+    "ariaLabel": "Enterprise AI architecture: data sources flow through knowledge platform to produce reports, insights, workflows, and decisions",
+    "dataSources": "DATA SOURCES",
+    "knowledgePlatform": "KNOWLEDGE PLATFORM",
+    "aiLayer": "AI-Powered Intelligence Layer",
+    "intelligentOutputs": "INTELLIGENT OUTPUTS",
+    "sources": {
+      "pdfs": "PDFs",
+      "contracts": "Contracts",
+      "research": "Research",
+      "emails": "Emails",
+      "databases": "Databases",
+      "apis": "APIs"
+    },
+    "stages": {
+      "search": "Search",
+      "analysis": "Analysis",
+      "automation": "Automation"
+    },
+    "outputs": {
+      "reports": "Reports",
+      "insights": "Insights",
+      "workflows": "Workflows",
+      "decisions": "Decisions"
+    }
+  },
+  "chat": {
+    "welcome": "Hi! I'm the Haal Lab AI assistant. Ask me anything about our services, projects, or how we can help with your AI needs.",
+    "title": "Haal Lab Assistant",
+    "subtitle": "AI-powered help",
+    "placeholder": "Ask me anything...",
+    "hint": "Press Enter to send, Shift+Enter for new line",
+    "openChat": "Open chat",
+    "minimizeChat": "Minimize chat",
+    "closeChat": "Close chat",
+    "removeAttachment": "Remove attachment",
+    "attachFile": "Attach file",
+    "sendMessage": "Send message"
   }
 }

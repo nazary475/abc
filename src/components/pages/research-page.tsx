@@ -1,5 +1,6 @@
 import { Link } from "@/i18n/routing";
 import { ArrowUpRight, Clock, ArrowRight } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 import { PageHeader } from "@/components/blocks/page-header";
 import {
   Reveal,
@@ -13,8 +14,9 @@ import { getAllArticles } from "@/lib/research-articles";
 
 const CATEGORIES = ["All", "Engineering", "Experiments", "Insights"] as const;
 
-export function ResearchPage() {
-  const articles = getAllArticles();
+export async function ResearchPage({ locale }: { locale: string }) {
+  const articles = getAllArticles(locale);
+  const t = await getTranslations("researchPage");
 
   return (
     <>
@@ -38,7 +40,7 @@ export function ResearchPage() {
               </span>
             ))}
             <span className="ml-auto font-mono text-[11px] uppercase tracking-wider text-hl-muted">
-              {articles.length} articles
+              {t("articleCount", { count: articles.length })}
             </span>
           </div>
         </Reveal>
@@ -96,13 +98,12 @@ export function ResearchPage() {
             <div className="pointer-events-none absolute -right-32 -top-32 h-80 w-80 rounded-full bg-hl-cyan/10 blur-3xl" />
             <div className="relative grid grid-cols-1 gap-8 lg:grid-cols-12">
               <div className="lg:col-span-8">
-                <Eyebrow>Stay current</Eyebrow>
+                <Eyebrow>{t("stayCurrent")}</Eyebrow>
                 <SectionHeading className="mt-4">
-                  We publish when we have something to say.
+                  {t("stayCurrentTitle")}
                 </SectionHeading>
                 <Lead className="mt-4">
-                  No newsletter spam, no growth funnels. Just technical writing on the AI
-                  systems we are actually building , sent when there is something worth reading.
+                  {t("stayCurrentDescription")}
                 </Lead>
               </div>
               <div className="lg:col-span-4 lg:justify-self-end">
@@ -110,7 +111,7 @@ export function ResearchPage() {
                   href="/contact"
                   className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-hl-cyan px-5 py-3 text-sm font-bold text-gray-900 transition-all hover:bg-hl-cyan/90 sm:w-auto"
                 >
-                  Get in touch
+                  {t("getInTouch")}
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                 </Link>
               </div>

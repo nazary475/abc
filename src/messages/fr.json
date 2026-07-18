@@ -285,8 +285,26 @@
     "home": "Accueil",
     "getInTouch": "Entrer en contact",
     "readyToStart": "Prêt à construire votre système IA ?",
+    "ctaDescription": "Parlez-nous de vos besoins et objectifs. Notre équipe d'ingénieurs évaluera la meilleure approche.",
     "contactHaalLab": "Contactez HAAL Lab",
-    "rights": "© {year} Haal Lab. Tous droits réservés."
+    "rights": "© {year} Haal Lab. Tous droits réservés.",
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "email": "E-mail"
+    },
+    "founderBadge": "Fondateur",
+    "founderBio": "Diplômé en génie électrique<br />axé sur l'intelligence artificielle, les systèmes d'apprentissage automatique et les solutions computationnelles.",
+    "legal": {
+      "officiallyRegistered": "Officiellement enregistré",
+      "rcsLabel": "RCS Évreux :",
+      "siretLabel": "SIRET :",
+      "legalNameLabel": "Nom légal :",
+      "legalName": "HAAL LAB",
+      "address": "1 Rue Auguste Delaune, 27000 Évreux, France"
+    },
+    "tagline": "IA privée pour les organisations européennes",
+    "founded": "Fondé : Juillet 2026 • Fondateur : Ali-Zafar Najafi"
   },
   "relatedLinks": {
     "eyebrow": "Continuer",
@@ -296,6 +314,28 @@
   "faq": {
     "eyebrow": "FAQ",
     "title": "Questions fréquemment posées"
+  },
+  "localeBanner": {
+    "title": "Suggestion de langue",
+    "description": "Souhaitez-vous consulter ce site en",
+    "switchTo": "Passer en {locale}",
+    "stayIn": "Rester en {locale}",
+    "dismiss": "Ignorer"
+  },
+  "researchArticle": {
+    "backToResearch": "Retour à la Recherche",
+    "englishOnlyNotice": "Cet article est uniquement disponible en anglais.",
+    "translatedNotice": "Traduit de l'anglais",
+    "ctaTitle": "Vous souhaitez implémenter cela dans votre organisation ?",
+    "ctaDescription": "Nous aidons les équipes à déployer des systèmes IA prêts pour la production. Partagez vos besoins et nous discuterons de la meilleure approche pour votre cas d'utilisation.",
+    "ctaButton": "Discuter de votre projet"
+  },
+  "researchPage": {
+    "stayCurrent": "Rester informé",
+    "stayCurrentTitle": "Nous publions lorsque nous avons quelque chose à dire.",
+    "stayCurrentDescription": "Pas de spam de newsletters, pas de tunnels de croissance. Juste des écrits techniques sur les systèmes IA que nous construisons réellement – envoyés lorsque quelque chose vaut la peine d'être lu.",
+    "getInTouch": "Entrer en contact",
+    "articleCount": "{count} articles"
   },
   "languageSwitcher": {
     "label": "Langue",
@@ -594,5 +634,50 @@
         "description": "Observer les performances, la qualité et la fiabilité au fil du temps. Optimisation continue basée sur les schémas d'utilisation réels."
       }
     }
+  },
+  "founder": {
+    "badge": "Fondateur",
+    "name": "Ali-Zafar Najafi",
+    "bio": "Diplômé en génie électrique<br />axé sur l'intelligence artificielle, les systèmes d'apprentissage automatique et les solutions informatiques.",
+    "alt": "Ali-Zafar Najafi - Fondateur de Haal Lab"
+  },
+  "heroVisual": {
+    "ariaLabel": "Architecture IA d'entreprise : les sources de données traversent la plateforme de connaissances pour produire des rapports, des insights, des flux de travail et des décisions",
+    "dataSources": "SOURCES DE DONNÉES",
+    "knowledgePlatform": "PLATEFORME DE CONNAISSANCES",
+    "aiLayer": "Couche d'intelligence augmentée par l'IA",
+    "intelligentOutputs": "SORTIES INTELLIGENTES",
+    "sources": {
+      "pdfs": "PDFs",
+      "contracts": "Contrats",
+      "research": "Recherche",
+      "emails": "E-mails",
+      "databases": "Bases de données",
+      "apis": "APIs"
+    },
+    "stages": {
+      "search": "Recherche",
+      "analysis": "Analyse",
+      "automation": "Automatisation"
+    },
+    "outputs": {
+      "reports": "Rapports",
+      "insights": "Insights",
+      "workflows": "Flux de travail",
+      "decisions": "Décisions"
+    }
+  },
+  "chat": {
+    "welcome": "Bonjour ! Je suis l'assistant IA de Haal Lab. Demandez-moi tout sur nos services, projets ou comment nous pouvons aider à vos besoins en IA.",
+    "title": "Assistant Haal Lab",
+    "subtitle": "Aide alimentée par l'IA",
+    "placeholder": "Demandez-moi tout...",
+    "hint": "Appuyez sur Entrée pour envoyer, Maj+Entrée pour une nouvelle ligne",
+    "openChat": "Ouvrir le chat",
+    "minimizeChat": "Minimiser le chat",
+    "closeChat": "Fermer le chat",
+    "removeAttachment": "Supprimer la pièce jointe",
+    "attachFile": "Joindre un fichier",
+    "sendMessage": "Envoyer le message"
   }
 }

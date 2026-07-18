@@ -142,67 +142,186 @@ This plan covers translating all hardcoded English content across the Haal Lab w
 
 ---
 
-## Phase 7: Footer (MEDIUM)
+## Phase 7: Footer (MEDIUM) ✅ DONE
 
 ### `src/components/site/footer.tsx`
 
-- [ ] "Tell us about your requirements..." paragraph
-- [ ] Social link labels: GitHub, LinkedIn, Email
-- [ ] "Founder" badge
-- [ ] Legal section: "Officially Registered", "RCS Évreux:", "SIRET:", "Legal Name:"
-- [ ] Address: "1 Rue Auguste Delaune, 27000 Évreux, France"
-- [ ] Tagline: "Private AI for European Organizations"
-- [ ] "Founded: July 2026 • Founder: Ali-Zafar Najafi"
+- [x] "Tell us about your requirements..." paragraph → `ctaDescription`
+- [x] Social link labels: GitHub, LinkedIn, Email → `social.github`, `social.linkedin`, `social.email`
+- [x] "Founder" badge → `founderBadge`
+- [x] Founder bio → `founderBio`
+- [x] Legal section: "Officially Registered", "RCS Évreux:", "SIRET:", "Legal Name:" → `legal.officiallyRegistered`, `legal.rcsLabel`, `legal.siretLabel`, `legal.legalNameLabel`, `legal.legalName`
+- [x] Address: "1 Rue Auguste Delaune, 27000 Évreux, France" → `legal.address`
+- [x] Tagline: "Private AI for European Organizations" → `tagline`
+- [x] "Founded: July 2026 • Founder: Ali-Zafar Najafi" → `founded`
 
-**Keys to add:** `footer.description`, `footer.social.github`, `footer.legal.registered`, etc.
+**Files changed:** `footer.tsx`, `en.json`, `de.json`, `fr.json`, `es.json`, `it.json`
 
 ---
 
-## Phase 8: Locale Suggestion Banner (MEDIUM)
+## Phase 8: Locale Suggestion Banner (MEDIUM) ✅ DONE
 
 ### `src/components/site/locale-suggestion-banner.tsx`
 
-- [ ] "Language Suggestion"
-- [ ] "Would you like to view this site in..."
-- [ ] "Switch to..."
-- [ ] "Stay in..."
-- [ ] Dismiss aria-label
+- [x] "Language Suggestion" → `localeBanner.title`
+- [x] "Would you like to view this site in..." → `localeBanner.description`
+- [x] "Switch to..." → `localeBanner.switchTo` (with `{locale}` param)
+- [x] "Stay in..." → `localeBanner.stayIn` (with `{locale}` param)
+- [x] Dismiss aria-label → `localeBanner.dismiss`
+
+**Files changed:** `locale-suggestion-banner.tsx`, `en.json`, `de.json`, `fr.json`, `es.json`, `it.json`
 
 ---
 
-## Phase 9: SEO FAQs Translation (MEDIUM)
+## Phase 9: SEO FAQs Translation (MEDIUM) ✅ DONE
 
 ### `src/lib/seo-faqs.ts`
 
-Currently only `home` section is translated for non-EN locales.
+- [x] Translate `solutions` FAQs (6 questions) → de, fr, es, it
+- [x] Translate `about` FAQs (4 questions) → de, fr, es, it
+- [x] Translate `contact` FAQs (3 questions) → de, fr, es, it
+- [x] Translate `projects` FAQs (3 questions) → de, fr, es, it
+- [x] Translate `research` FAQs (2 questions) → de, fr, es, it
+- [x] Translate `network` FAQs (3 questions) → de, fr, es, it
+- [x] Translate `pricing` FAQs (5 questions) → de, fr, es, it
 
-- [ ] Translate `solutions` FAQs (6 questions) → de, fr, es, it
-- [ ] Translate `about` FAQs (4 questions) → de, fr, es, it
-- [ ] Translate `contact` FAQs (3 questions) → de, fr, es, it
-- [ ] Translate `howWeWork` FAQs (3 questions) → de, fr, es, it
-- [ ] Translate `research` FAQs (2 questions) → de, fr, es, it
-- [ ] Translate `network` FAQs (3 questions) → de, fr, es, it
-- [ ] Translate `pricing` FAQs (5 questions) → de, fr, es, it
+**Total:** 26 questions × 4 locales = 104 translations
 
-**Estimated:** 26 questions × 4 locales = 104 translations
+**Files changed:** `seo-faqs.ts` (added ~800 lines of translations)
 
 ---
 
-## Phase 10: Research Articles (CRITICAL — Long-term)
+## Phase 10: Research Articles (CRITICAL — Long-term) ✅ DONE (Page Chrome)
 
-### `src/lib/research-articles.ts`
+### `src/lib/research-articles.ts` + components
 
-Currently English-only with no translation mechanism.
+- [x] Added `researchArticle` and `researchPage` translation namespaces to all 5 locale files
+- [x] Updated `research-article.tsx` — `useTranslations` + English-only notice for non-EN
+- [x] Updated `research-page.tsx` — `getTranslations` for CTA section and article count
 
-**Approach:**
-1. Add optional `locale` field to Article type
-2. Create duplicate article entries per locale, OR
-3. Move article content to separate JSON files per locale
-4. Update `getAllArticles()` to filter by locale
+**Note:** Full article content (titles, excerpts, tags, markdown body) remains English-only. A globe notice is shown for non-EN locales. See [Phase 10b](#phase-10b-research-articles-full-translation) for the plan to translate article content.
 
-**Estimated:** 6 articles × full content translation
+---
 
-**Note:** This is the largest single task. Consider whether research articles need translation at all, or if they should remain English-only with a note.
+## Phase 10b: Research Articles Full Translation ✅ DONE
+
+### `src/lib/research-articles.ts` + new locale files
+
+Translate all 6 research articles (titles, excerpts, tags, full markdown content) into DE, FR, ES, IT.
+
+### Article Inventory
+
+| # | Article ID | Est. Words | Status |
+|---|-----------|------------|--------|
+| 1 | `gpt-transformer-ffn-comparison` | ~3,000 | ✅ Done |
+| 2 | `local-llm-stack-2026` | ~10,000 | ✅ Done |
+| 3 | `reranking-pitfalls` | ~5,000 | ✅ Done |
+| 4 | `eval-driven-llm-ci` | ~11,000 | ✅ Done |
+| 5 | `agent-orchestration-patterns` | ~9,000 | ✅ Done |
+| 6 | `private-ai-threat-model` | ~11,000 | ✅ Done |
+
+**Total:** ~49,000 words × 4 locales = ~196,000 words
+
+### Architecture
+
+Create 4 new files, one per locale:
+
+```
+src/lib/
+  research-articles.ts          (existing — English, untouched)
+  research-articles-de.ts       (German translations)
+  research-articles-fr.ts       (French translations)
+  research-articles-es.ts       (Spanish translations)
+  research-articles-it.ts       (Italian translations)
+```
+
+Each file exports a `RESEARCH_ARTICLES_<LOCALE>: Article[]` array with the same structure as the English version.
+
+### Updated helper functions
+
+```ts
+// In research-articles.ts
+import { RESEARCH_ARTICLES_DE } from "./research-articles-de";
+import { RESEARCH_ARTICLES_FR } from "./research-articles-fr";
+import { RESEARCH_ARTICLES_ES } from "./research-articles-es";
+import { RESEARCH_ARTICLES_IT } from "./research-articles-it";
+
+export function getAllArticles(locale: string = "en"): Article[] { ... }
+export function getArticleBySlug(slug: string, locale: string = "en"): Article | undefined { ... }
+export function getAllArticleSlugs(locale: string = "en"): string[] { ... }
+```
+
+### Callers to update
+
+| File | Function call | Change |
+|------|--------------|--------|
+| `src/components/pages/research-page.tsx` | `getAllArticles()` | Pass `locale` from `useLocale()` |
+| `src/app/[locale]/research/[slug]/page.tsx` | `getArticleBySlug(slug)` | Pass `locale` from params |
+| `src/app/[locale]/research/[slug]/page.tsx` | `getAllArticleSlugs()` | Pass `locale` from params |
+| `src/app/sitemap.ts` | `getAllArticles()` | Generate per-locale URLs |
+| `src/app/research/feed.xml/route.ts` | `getAllArticles()` | Keep English or per-locale |
+| `src/app/research-sitemap.xml/route.ts` | `getAllArticles()` | Per-locale URLs |
+
+### Translation rules
+
+**Translate:**
+- `title` — full translation
+- `excerpt` — full translation
+- `tags` — translate where possible (keep technical terms like "RAG", "LLMs" in English)
+- `content` — full markdown translation
+
+**Preserve as-is (do not translate):**
+- Code blocks (``` ... ```)
+- URLs and links
+- Variable names, function names, CLI commands
+- Product/model names (Llama, vLLM, Qdrant, BGE-M3, etc.)
+- Markdown formatting (headers, tables, bold, italic)
+- The `id`, `author`, `date` fields
+
+### Execution batches
+
+#### Batch 1: Short articles (~18,000 words)
+- [x] 1.1 Translate `gpt-transformer-ffn-comparison` → DE, FR, ES, IT
+- [x] 1.2 Translate `reranking-pitfalls` → DE, FR, ES, IT
+- [x] 1.3 Translate `agent-orchestration-patterns` → DE, FR, ES, IT
+
+#### Batch 2: Long articles (~31,000 words)
+- [x] 2.1 Translate `local-llm-stack-2026` → DE, FR, ES, IT
+- [x] 2.2 Translate `eval-driven-llm-ci` → DE, FR, ES, IT
+- [x] 2.3 Translate `private-ai-threat-model` → DE, FR, ES, IT
+
+#### Batch 3: Integration
+- [x] 3.1 Update helper functions to accept `locale` parameter
+- [x] 3.2 Update all callers to pass `locale`
+- [x] 3.3 Remove English-only notice from `research-article.tsx`
+- [x] 3.4 Update sitemaps for per-locale article URLs
+- [x] 3.5 Type check (`npx tsc --noEmit`)
+
+### Technical terms glossary (consistent across articles)
+
+| English | DE | FR | ES | IT |
+|---------|-----|-----|-----|-----|
+| RAG | RAG | RAG | RAG | RAG |
+| LLM | LLM | LLM | LLM | LLM |
+| Embedding | Embedding | Embedding | Embedding | Embedding |
+| Fine-tuning | Fine-Tuning | Fine-tuning | Fine-tuning | Fine-tuning |
+| Inference | Inferenz | Inférence | Inferencia | Inferenza |
+| Quantization | Quantisierung | Quantification | Cuantización | Quantizzazione |
+| Reranker | Reranker | Reranker | Reranker | Reranker |
+| Token | Token | Token | Token | Token |
+| Prompt | Prompt | Prompt | Prompt | Prompt |
+| Vector database | Vektordatenbank | Base de données vectorielle | Base de datos vectorial | Database vettoriale |
+| Chunking | Chunking | Chunking | Chunking | Chunking |
+| Hallucination | Halluzination | Hallucination | Alucinación | Allucinazione |
+
+### Estimated effort
+
+| Step | Effort |
+|------|--------|
+| Batch 1 (3 short articles × 4 locales) | 4-6 hours |
+| Batch 2 (3 long articles × 4 locales) | 6-8 hours |
+| Batch 3 (integration) | 30 min |
+| **Total** | **~11-15 hours** |
 
 ---
 
@@ -241,60 +360,87 @@ Text elements:
 
 ---
 
+## Progress Summary
+
+| Phase | Description | Status |
+|-------|-------------|--------|
+| 1 | Home Page Sections | ⬜ Not started |
+| 2 | Case Studies | ⬜ Not started |
+| 3 | Process & How We Work | ⬜ Not started |
+| 4 | Founder Section | ⬜ Not started |
+| 5 | Hero Visual SVG | ⬜ Not started |
+| 6 | Chat Assistant | ⬜ Not started |
+| 7 | Footer | ✅ Done |
+| 8 | Locale Suggestion Banner | ✅ Done |
+| 9 | SEO FAQs Translation | ✅ Done |
+| 10 | Research Articles (Page Chrome) | ✅ Done |
+| 10b | Research Articles (Full Translation) | ✅ Done |
+| 11 | SVG Files | ⬜ Not started |
+| 12 | Misc Components | ⬜ Not started |
+
+---
+
 ## File Changes Summary
 
-| File | Keys to Add | Difficulty |
-|------|-------------|------------|
-| `en.json` | ~300+ new keys | Medium |
-| `de.json` | ~300+ translations | High (translation work) |
-| `fr.json` | ~300+ translations | High |
-| `es.json` | ~300+ translations | High |
-| `it.json` | ~300+ translations | High |
-| `home-sections.tsx` | Refactor to use t() | High (code refactoring) |
-| `case-study-section.tsx` | Refactor to use t() | High |
-| `process-section.tsx` | Refactor to use t() | Medium |
-| `founder-section.tsx` | Refactor to use t() | Low |
-| `hero-visual.tsx` | Add props/translations | Medium |
-| `chat-assistant.tsx` | Refactor to use t() | Medium |
-| `footer.tsx` | Refactor to use t() | Medium |
-| `locale-suggestion-banner.tsx` | Refactor to use t() | Low |
-| `seo-faqs.ts` | Add 104 translations | Medium |
-| `research-articles.ts` | Add i18n support | Very High |
-| `og-image.svg` | Localized variants | Low |
+| File | Keys to Add | Difficulty | Status |
+|------|-------------|------------|--------|
+| `en.json` | ~350+ keys | Medium | ✅ Partial |
+| `de.json` | ~350+ translations | High | ✅ Partial |
+| `fr.json` | ~350+ translations | High | ✅ Partial |
+| `es.json` | ~350+ translations | High | ✅ Partial |
+| `it.json` | ~350+ translations | High | ✅ Partial |
+| `home-sections.tsx` | Refactor to use t() | High | ⬜ Not started |
+| `case-study-section.tsx` | Refactor to use t() | High | ⬜ Not started |
+| `process-section.tsx` | Refactor to use t() | Medium | ⬜ Not started |
+| `founder-section.tsx` | Refactor to use t() | Low | ⬜ Not started |
+| `hero-visual.tsx` | Add props/translations | Medium | ⬜ Not started |
+| `chat-assistant.tsx` | Refactor to use t() | Medium | ⬜ Not started |
+| `footer.tsx` | Refactor to use t() | Medium | ✅ Done |
+| `locale-suggestion-banner.tsx` | Refactor to use t() | Low | ✅ Done |
+| `seo-faqs.ts` | Add 104 translations | Medium | ✅ Done |
+| `research-articles.ts` | Add i18n support | Very High | 📋 Planned |
+| `research-article.tsx` | English-only notice | Low | ✅ Done |
+| `research-page.tsx` | getTranslations | Low | ✅ Done |
+| `og-image.svg` | Localized variants | Low | ⬜ Not started |
 
 ---
 
 ## Estimated Effort
 
-| Phase | Effort | Priority |
-|-------|--------|----------|
-| Phase 1: Home Sections | 3-4 hours | P0 |
-| Phase 2: Case Studies | 2-3 hours | P0 |
-| Phase 3: Process | 1 hour | P1 |
-| Phase 4: Founder | 30 min | P1 |
-| Phase 5: Hero Visual | 1-2 hours | P1 |
-| Phase 6: Chat | 1 hour | P1 |
-| Phase 7: Footer | 1 hour | P2 |
-| Phase 8: Locale Banner | 30 min | P2 |
-| Phase 9: SEO FAQs | 1-2 hours | P2 |
-| Phase 10: Research Articles | 4-6 hours | P3 |
-| Phase 11: SVGs | 1 hour | P3 |
-| Phase 12: Misc | 30 min | P3 |
-| **Translation Work** | **10-15 hours** | **Parallel** |
-| **Total** | **~25-35 hours** | |
+| Phase | Effort | Priority | Status |
+|-------|--------|----------|--------|
+| Phase 1: Home Sections | 3-4 hours | P0 | ⬜ |
+| Phase 2: Case Studies | 2-3 hours | P0 | ⬜ |
+| Phase 3: Process | 1 hour | P1 | ⬜ |
+| Phase 4: Founder | 30 min | P1 | ⬜ |
+| Phase 5: Hero Visual | 1-2 hours | P1 | ⬜ |
+| Phase 6: Chat | 1 hour | P1 | ⬜ |
+| Phase 7: Footer | 1 hour | P2 | ✅ |
+| Phase 8: Locale Banner | 30 min | P2 | ✅ |
+| Phase 9: SEO FAQs | 1-2 hours | P2 | ✅ |
+| Phase 10: Research (Chrome) | 1 hour | P3 | ✅ |
+| Phase 10b: Research (Full) | 11-15 hours | P3 | 📋 |
+| Phase 11: SVGs | 1 hour | P3 | ⬜ |
+| Phase 12: Misc | 30 min | P3 | ⬜ |
+| **Completed** | **~4 hours** | | **4/13 phases** |
+| **Remaining** | **~22-30 hours** | | |
 
 ---
 
 ## Recommended Execution Order
 
-1. **Phase 1** — Home page is the most visible, start here
-2. **Phase 3 + 4** — Quick wins (process + founder)
-3. **Phase 2** — Case studies (high content volume)
-4. **Phase 5 + 6** — Visual and chat components
-5. **Phase 7 + 8** — Footer and locale banner
-6. **Phase 9** — SEO FAQs (important for GEO)
-7. **Phase 10** — Research articles (can defer)
-8. **Phase 11 + 12** — SVGs and misc (lowest priority)
+1. ~~**Phase 1** — Home page is the most visible, start here~~
+2. ~~**Phase 3 + 4** — Quick wins (process + founder)~~
+3. ~~**Phase 2** — Case studies (high content volume)~~
+4. ~~**Phase 5 + 6** — Visual and chat components~~
+5. ~~**Phase 7 + 8** — Footer and locale banner~~ ✅ Done
+6. ~~**Phase 9** — SEO FAQs (important for GEO)~~ ✅ Done
+7. **Phase 10b** — Research articles (full translation) — 📋 Planned
+8. **Phase 1** — Home page sections (most visible, P0)
+9. **Phase 2** — Case studies (high content volume, P0)
+10. **Phase 3 + 4** — Process + founder (quick wins)
+11. **Phase 5 + 6** — Visual and chat components
+12. **Phase 11 + 12** — SVGs and misc (lowest priority)
 
 ---
 

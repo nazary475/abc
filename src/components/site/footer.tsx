@@ -29,7 +29,7 @@ export function Footer() {
               {t("readyToStart")}
             </h2>
             <p className="mt-4 max-w-2xl text-base text-hl-muted md:text-lg">
-              Tell us about your requirements and goals. Our engineering team will evaluate the best approach.
+              {t("ctaDescription")}
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               <Link
@@ -60,13 +60,13 @@ export function Footer() {
               {t("description")}
             </p>
             <div className="mt-6 flex items-center gap-3">
-              <SocialLink href="https://github.com/haal-lab" label="GitHub">
+              <SocialLink href="https://github.com/haal-lab" label={t("social.github")}>
                 <Github className="h-4 w-4" />
               </SocialLink>
-              <SocialLink href="https://www.linkedin.com/company/haal-lab" label="LinkedIn">
+              <SocialLink href="https://www.linkedin.com/company/haal-lab" label={t("social.linkedin")}>
                 <Linkedin className="h-4 w-4" />
               </SocialLink>
-              <SocialLink href="mailto:hussain.nazary@haal-lab.solutions" label="Email">
+              <SocialLink href="mailto:hussain.nazary@haal-lab.solutions" label={t("social.email")}>
                 <Mail className="h-4 w-4" />
               </SocialLink>
             </div>
@@ -94,7 +94,7 @@ export function Footer() {
           <div className="md:col-span-4">
             <div className="mb-3">
               <span className="inline-block rounded-full border-2 border-hl-cyan bg-hl-cyan/20 px-4 py-1 font-mono text-xs font-extrabold uppercase tracking-widest text-hl-cyan shadow-[0_0_16px_-4px_rgba(96,165,250,0.6)]">
-                Founder
+                {t("founderBadge")}
               </span>
             </div>
             <div className="flex items-start gap-4">
@@ -111,9 +111,7 @@ export function Footer() {
                 <h3 className="text-base font-bold text-foreground">
                   Ali-Zafar Najafi
                 </h3>
-                <p className="mt-1 text-xs text-hl-muted">
-                  Electrical Engineering graduate<br />focused on artificial intelligence, machine learning systems, and computational solutions.
-                </p>
+                <p className="mt-1 text-xs text-hl-muted" dangerouslySetInnerHTML={{ __html: t("founderBio") }} />
               </div>
             </div>
           </div>
@@ -128,29 +126,29 @@ export function Footer() {
                   <svg className="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  Officially Registered
+                  {t("legal.officiallyRegistered")}
                 </span>
               </div>
               <p className="text-hl-muted">
-                <span className="font-semibold text-foreground/70">RCS Évreux:</span> 107 626 616
+                <span className="font-semibold text-foreground/70">{t("legal.rcsLabel")}</span> 107 626 616
               </p>
               <p className="text-hl-muted">
-                <span className="font-semibold text-foreground/70">SIRET:</span> 107 626 616 00018
+                <span className="font-semibold text-foreground/70">{t("legal.siretLabel")}</span> 107 626 616 00018
               </p>
               <p className="text-hl-muted">
-                <span className="font-semibold text-foreground/70">Legal Name:</span> HAAL LAB
+                <span className="font-semibold text-foreground/70">{t("legal.legalNameLabel")}</span> {t("legal.legalName")}
               </p>
               <p className="text-hl-muted">
-                1 Rue Auguste Delaune, 27000 Évreux, France
+                {t("legal.address")}
               </p>
             </div>
           </div>
           <div className="flex flex-col items-start gap-2 sm:items-end">
             <p className="font-mono font-bold uppercase tracking-wider text-foreground/80">
-              Private AI for European Organizations
+              {t("tagline")}
             </p>
             <p className="text-hl-muted">
-              Founded: July 2026 • Founder: Ali-Zafar Najafi
+              {t("founded")}
             </p>
           </div>
         </div>

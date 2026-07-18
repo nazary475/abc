@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { X, Globe } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { useLocaleSuggestion } from "@/hooks/use-locale-detection";
 import { localeNames } from "@/i18n/routing";
 import { saveLocalePreference } from "@/lib/locale-detection";
@@ -20,6 +21,7 @@ import { useRouter, usePathname } from "next/navigation";
  * - Dismiss: Stay on current language (dismissed until next session)
  */
 export function LocaleSuggestionBanner() {
+  const t = useTranslations("localeBanner");
   const { shouldSuggest, suggestedLocale, currentLocale } = useLocaleSuggestion();
   const [dismissed, setDismissed] = useState(false);
   const router = useRouter();
@@ -59,10 +61,10 @@ export function LocaleSuggestionBanner() {
           
           <div className="flex-1 min-w-0">
             <p className="text-sm font-medium text-foreground mb-1">
-              Language Suggestion
+              {t("title")}
             </p>
             <p className="text-xs text-hl-muted">
-              Would you like to view this site in{" "}
+              {t("description")}{" "}
               <span className="font-medium text-foreground">
                 {localeNames[suggestedLocale]}
               </span>
@@ -74,13 +76,13 @@ export function LocaleSuggestionBanner() {
                 onClick={handleAccept}
                 className="px-3 py-1.5 text-xs font-medium rounded-lg bg-hl-cyan text-gray-900 font-bold hover:bg-hl-cyan/90 transition-colors"
               >
-                Switch to {localeNames[suggestedLocale]}
+                {t("switchTo", { locale: localeNames[suggestedLocale] })}
               </button>
               <button
                 onClick={handleDismiss}
                 className="px-3 py-1.5 text-xs font-medium rounded-lg text-hl-muted hover:text-foreground hover:bg-hl-surface-2 transition-colors"
               >
-                Stay in {localeNames[currentLocale]}
+                {t("stayIn", { locale: localeNames[currentLocale] })}
               </button>
             </div>
           </div>
@@ -88,7 +90,7 @@ export function LocaleSuggestionBanner() {
           <button
             onClick={handleDismiss}
             className="flex-shrink-0 text-hl-muted hover:text-foreground transition-colors"
-            aria-label="Dismiss"
+            aria-label={t("dismiss")}
           >
             <X className="h-4 w-4" />
           </button>

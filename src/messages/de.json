@@ -285,8 +285,26 @@
     "home": "Startseite",
     "getInTouch": "Kontakt aufnehmen",
     "readyToStart": "Bereit, Ihr AI-System aufzubauen?",
+    "ctaDescription": "Erzählen Sie uns von Ihren Anforderungen und Zielen. Unser Engineering-Team wird den besten Ansatz bewerten.",
     "contactHaalLab": "Kontaktieren Sie HAAL Lab",
-    "rights": "© {year} Haal Lab. Alle Rechte vorbehalten."
+    "rights": "© {year} Haal Lab. Alle Rechte vorbehalten.",
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "email": "E-Mail"
+    },
+    "founderBadge": "Gründer",
+    "founderBio": "Absolvent der Elektrotechnik<br />mit Schwerpunkt auf Künstliche Intelligenz, maschinelle Lernsysteme und rechnergestützte Lösungen.",
+    "legal": {
+      "officiallyRegistered": "Offiziell registriert",
+      "rcsLabel": "RCS Évreux:",
+      "siretLabel": "SIRET:",
+      "legalNameLabel": "Rechtlicher Name:",
+      "legalName": "HAAL LAB",
+      "address": "1 Rue Auguste Delaune, 27000 Évreux, Frankreich"
+    },
+    "tagline": "Private KI für europäische Organisationen",
+    "founded": "Gegründet: Juli 2026 • Gründer: Ali-Zafar Najafi"
   },
   "relatedLinks": {
     "eyebrow": "Weiter",
@@ -296,6 +314,28 @@
   "faq": {
     "eyebrow": "FAQ",
     "title": "Häufig gestellte Fragen"
+  },
+  "localeBanner": {
+    "title": "Sprachvorschlag",
+    "description": "Möchten Sie diese Seite in",
+    "switchTo": "Zu {locale} wechseln",
+    "stayIn": "Bei {locale} bleiben",
+    "dismiss": "Ablehnen"
+  },
+  "researchArticle": {
+    "backToResearch": "Zurück zur Forschung",
+    "englishOnlyNotice": "Dieser Artikel ist nur auf Englisch verfügbar.",
+    "translatedNotice": "Aus dem Englischen übersetzt",
+    "ctaTitle": "Möchten Sie dies in Ihrer Organisation umsetzen?",
+    "ctaDescription": "Wir helfen Teams bei der Bereitstellung produktionsreifer KI-Systeme. Teilen Sie uns Ihre Anforderungen mit und wir besprechen den besten Ansatz für Ihren Anwendungsfall.",
+    "ctaButton": "Ihr Projekt besprechen"
+  },
+  "researchPage": {
+    "stayCurrent": "Aktuell bleiben",
+    "stayCurrentTitle": "Wir veröffentlichen, wenn wir etwas zu sagen haben.",
+    "stayCurrentDescription": "Kein Newsletter-Spam, keine Growth-Funnels. Nur technische Artikel über die KI-Systeme, die wir tatsächlich entwickeln – gesendet, wenn es etwas Worthles zu lesen gibt.",
+    "getInTouch": "Kontakt aufnehmen",
+    "articleCount": "{count} Artikel"
   },
   "languageSwitcher": {
     "label": "Sprache",
@@ -594,5 +634,50 @@
         "description": "Leistung, Qualität und Zuverlässigkeit im Laufe der Zeit beobachten. Kontinuierliche Optimierung basierend auf realen Nutzungsmustern."
       }
     }
+  },
+  "founder": {
+    "badge": "Gründer",
+    "name": "Ali-Zafar Najafi",
+    "bio": "Absolvent der Elektrotechnik<br />mit Schwerpunkt auf künstlicher Intelligenz, Systemen des maschinellen Lernens und computergestützten Lösungen.",
+    "alt": "Ali-Zafar Najafi - Gründer von Haal Lab"
+  },
+  "heroVisual": {
+    "ariaLabel": "Enterprise-AI-Architektur: Datenquellen fließen durch die Wissensplattform, um Berichte, Erkenntnisse, Workflows und Entscheidungen zu erzeugen",
+    "dataSources": "DATENQUELLEN",
+    "knowledgePlatform": "WISSENSPLATTFORM",
+    "aiLayer": "KI-gestützte Intelligenzschicht",
+    "intelligentOutputs": "INTELLIGENTE ERGEBNISSE",
+    "sources": {
+      "pdfs": "PDFs",
+      "contracts": "Verträge",
+      "research": "Forschung",
+      "emails": "E-Mails",
+      "databases": "Datenbanken",
+      "apis": "APIs"
+    },
+    "stages": {
+      "search": "Suche",
+      "analysis": "Analyse",
+      "automation": "Automatisierung"
+    },
+    "outputs": {
+      "reports": "Berichte",
+      "insights": "Erkenntnisse",
+      "workflows": "Workflows",
+      "decisions": "Entscheidungen"
+    }
+  },
+  "chat": {
+    "welcome": "Hallo! Ich bin der Haal Lab AI-Assistent. Fragen Sie mich alles über unsere Dienste, Projekte oder wie wir bei Ihren AI-Bedürfnissen helfen können.",
+    "title": "Haal Lab Assistent",
+    "subtitle": "KI-gestützte Hilfe",
+    "placeholder": "Fragen Sie mich alles...",
+    "hint": "Enter zum Senden, Shift+Enter für neue Zeile",
+    "openChat": "Chat öffnen",
+    "minimizeChat": "Chat minimieren",
+    "closeChat": "Chat schließen",
+    "removeAttachment": "Anhang entfernen",
+    "attachFile": "Datei anhängen",
+    "sendMessage": "Nachricht senden"
   }
 }

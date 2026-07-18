@@ -58,7 +58,7 @@ export default async function Research({
     <>
       <PageSchemas path="/research" locale={locale} />
       <Breadcrumbs path="/research" />
-      <ResearchPage />
+      <ResearchPage locale={locale} />
       <FaqSection
         faqs={FAQS.research}
         eyebrow="FAQ"

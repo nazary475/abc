@@ -3513,31 +3513,63 @@ The best time to build security into your private AI system was before deploymen
   },
 ];
 
+// Locale imports
+import { RESEARCH_ARTICLES_DE } from "./research-articles-de";
+import { RESEARCH_ARTICLES_FR } from "./research-articles-fr";
+import { RESEARCH_ARTICLES_ES } from "./research-articles-es";
+import { RESEARCH_ARTICLES_IT } from "./research-articles-it";
+
+function getLocaleArticles(locale: string): Article[] {
+  switch (locale) {
+    case "de":
+      return RESEARCH_ARTICLES_DE;
+    case "fr":
+      return RESEARCH_ARTICLES_FR;
+    case "es":
+      return RESEARCH_ARTICLES_ES;
+    case "it":
+      return RESEARCH_ARTICLES_IT;
+    default:
+      return RESEARCH_ARTICLES;
+  }
+}
+
 // Helper functions
-export function getAllArticles(): Article[] {
-  return RESEARCH_ARTICLES.sort(
+export function getAllArticles(locale: string = "en"): Article[] {
+  return getLocaleArticles(locale).sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
 }
 
-export function getArticleBySlug(slug: string): Article | undefined {
-  return RESEARCH_ARTICLES.find((article) => article.id === slug);
+export function getArticleBySlug(
+  slug: string,
+  locale: string = "en"
+): Article | undefined {
+  return getLocaleArticles(locale).find((article) => article.id === slug);
 }
 
-export function getAllArticleSlugs(): string[] {
-  return RESEARCH_ARTICLES.map((article) => article.id);
+export function getAllArticleSlugs(locale: string = "en"): string[] {
+  return getLocaleArticles(locale).map((article) => article.id);
 }
 
 export function getArticlesByCategory(
-  category: "Experiments" | "Insights" | "Engineering"
+  category: "Experiments" | "Insights" | "Engineering",
+  locale: string = "en"
 ): Article[] {
-  return RESEARCH_ARTICLES.filter((article) => article.category === category).sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-  );
+  return getLocaleArticles(locale)
+    .filter((article) => article.category === category)
+    .sort(
+      (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+    );
 }
 
-export function getArticlesByTag(tag: string): Article[] {
-  return RESEARCH_ARTICLES.filter((article) =>
-    article.tags.includes(tag)
-  ).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+export function getArticlesByTag(
+  tag: string,
+  locale: string = "en"
+): Article[] {
+  return getLocaleArticles(locale)
+    .filter((article) => article.tags.includes(tag))
+    .sort(
+      (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+    );
 }

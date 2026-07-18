@@ -285,8 +285,26 @@
     "home": "Home",
     "getInTouch": "Mettiti in contatto",
     "readyToStart": "Pronto a costruire il tuo sistema IA?",
+    "ctaDescription": "Raccontaci i tuoi requisiti e obiettivi. Il nostro team di ingegneri valuterà l'approccio migliore.",
     "contactHaalLab": "Contatta HAAL Lab",
-    "rights": "© {year} Haal Lab. Tutti i diritti riservati."
+    "rights": "© {year} Haal Lab. Tutti i diritti riservati.",
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "email": "E-mail"
+    },
+    "founderBadge": "Fondatore",
+    "founderBio": "Laureato in ingegneria elettrica<br />con specializzazione in intelligenza artificiale, sistemi di apprendimento automatico e soluzioni computazionali.",
+    "legal": {
+      "officiallyRegistered": "Ufficialmente registrato",
+      "rcsLabel": "RCS Évreux:",
+      "siretLabel": "SIRET:",
+      "legalNameLabel": "Nome legale:",
+      "legalName": "HAAL LAB",
+      "address": "1 Rue Auguste Delaune, 27000 Évreux, Francia"
+    },
+    "tagline": "IA privata per organizzazioni europee",
+    "founded": "Fondato: Luglio 2026 • Fondatore: Ali-Zafar Najafi"
   },
   "relatedLinks": {
     "eyebrow": "Continua",
@@ -296,6 +314,28 @@
   "faq": {
     "eyebrow": "FAQ",
     "title": "Domande frequenti"
+  },
+  "localeBanner": {
+    "title": "Suggerimento lingua",
+    "description": "Vuoi visualizzare questo sito in",
+    "switchTo": "Passa a {locale}",
+    "stayIn": "Rimani in {locale}",
+    "dismiss": "Chiudi"
+  },
+  "researchArticle": {
+    "backToResearch": "Torna alla Ricerca",
+    "englishOnlyNotice": "Questo articolo è disponibile solo in inglese.",
+    "translatedNotice": "Tradotto dall'inglese",
+    "ctaTitle": "Vuoi implementare questo nella tua organizzazione?",
+    "ctaDescription": "Aiutiamo i team a distribuire sistemi di IA pronti per la produzione. Condividi i tuoi requisiti e discuteremo del miglior approccio per il tuo caso d'uso.",
+    "ctaButton": "Discuti il tuo Progetto"
+  },
+  "researchPage": {
+    "stayCurrent": "Resta aggiornato",
+    "stayCurrentTitle": "Pubblichiamo quando abbiamo qualcosa da dire.",
+    "stayCurrentDescription": "Nessuno spam di newsletter, nessun funnel di crescita. Solo scritti tecnici sui sistemi di IA che stiamo effettivamente costruendo – inviati quando c'è qualcosa che vale la pena leggere.",
+    "getInTouch": "Mettiti in contatto",
+    "articleCount": "{count} articoli"
   },
   "languageSwitcher": {
     "label": "Lingua",
@@ -594,5 +634,50 @@
         "description": "Osservare prestazioni, qualità e affidabilità nel tempo. Ottimizzazione continua basata sui pattern di utilizzo reali."
       }
     }
+  },
+  "founder": {
+    "badge": "Fondatore",
+    "name": "Ali-Zafar Najafi",
+    "bio": "Laureato in ingegneria elettrica<br />focalizzato su intelligenza artificiale, sistemi di apprendimento automatico e soluzioni computazionali.",
+    "alt": "Ali-Zafar Najafi - Fondatore di Haal Lab"
+  },
+  "heroVisual": {
+    "ariaLabel": "Architettura IA aziendale: le fonti dati fluiscono attraverso la piattaforma di conoscenza per produrre report, insight, flussi di lavoro e decisioni",
+    "dataSources": "FONTI DATI",
+    "knowledgePlatform": "PIATTAFORMA DI CONOSCENZA",
+    "aiLayer": "Layer di intelligenza potenziata dall'IA",
+    "intelligentOutputs": "USCITE INTELLIGENTI",
+    "sources": {
+      "pdfs": "PDF",
+      "contracts": "Contratti",
+      "research": "Ricerca",
+      "emails": "Email",
+      "databases": "Database",
+      "apis": "API"
+    },
+    "stages": {
+      "search": "Ricerca",
+      "analysis": "Analisi",
+      "automation": "Automazione"
+    },
+    "outputs": {
+      "reports": "Report",
+      "insights": "Insight",
+      "workflows": "Flussi di lavoro",
+      "decisions": "Decisioni"
+    }
+  },
+  "chat": {
+    "welcome": "Ciao! Sono l'assistente IA di Haal Lab. Chiedimi qualsiasi cosa sui nostri servizi, progetti o come possiamo aiutare con le tue esigenze IA.",
+    "title": "Assistente Haal Lab",
+    "subtitle": "Aiuto basato sull'IA",
+    "placeholder": "Chiedimi qualsiasi cosa...",
+    "hint": "Premi Invio per inviare, Shift+Invio per nuova riga",
+    "openChat": "Apri chat",
+    "minimizeChat": "Minimizza chat",
+    "closeChat": "Chiudi chat",
+    "removeAttachment": "Rimuovi allegato",
+    "attachFile": "Allega file",
+    "sendMessage": "Invia messaggio"
   }
 }

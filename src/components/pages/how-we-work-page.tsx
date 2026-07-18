@@ -1,71 +1,52 @@
 import { Link } from "@/i18n/routing";
 import { ArrowRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 import {
   Reveal,
   SectionShell,
 } from "@/components/blocks/primitives";
 
-const STEPS = [
-  {
-    number: "1",
-    title: "Understanding the Challenge",
-    body: "We begin by understanding the organization's objectives, existing processes, available resources, and the problem that needs to be solved.",
-    items: [
-      "Business goals",
-      "Operational challenges",
-      "Existing knowledge and data sources",
-      "Technical requirements",
-      "Security and privacy considerations",
-    ],
-    goal: "Understand the real problem before designing a solution.",
-  },
-  {
-    number: "2",
-    title: "Research & Exploration",
-    body: "Before committing to an approach, we investigate available technologies and possible architectures.",
-    items: [
-      "Exploring different AI methods",
-      "Evaluating suitable models and techniques",
-      "Testing possible architectures",
-      "Studying trade-offs between performance, cost, security, and scalability",
-    ],
-    goal: "Find the approach that best fits the organization's needs.",
-  },
-  {
-    number: "3",
-    title: "Experimentation & Evaluation",
-    body: "AI development requires careful testing. We build experiments and prototypes to evaluate different solutions before full implementation.",
-    items: [
-      "Effectiveness",
-      "Reliability",
-      "Performance",
-      "Integration requirements",
-      "Long-term sustainability",
-    ],
-    goal: "Make informed decisions based on results.",
-  },
-  {
-    number: "4",
-    title: "Engineering & Development",
-    body: "After identifying the most suitable approach, we design and develop the AI system according to the organization's environment and requirements.",
-    items: [
-      "Practical",
-      "Secure",
-      "Maintainable",
-      "Ready for real-world use",
-    ],
-    goal: null,
-  },
-  {
-    number: "5",
-    title: "Deployment & Continuous Improvement",
-    body: "AI systems continue evolving after deployment. We support organizations in integrating AI into their workflows, monitoring performance, and improving capabilities as new requirements and technologies emerge.",
-    items: [],
-    goal: "Create a long-term AI capability, not just a one-time implementation.",
-  },
-];
-
 export function HowWeWorkPage() {
+  const t = useTranslations("process");
+
+  const STEPS = [
+    {
+      number: "1",
+      title: t("step1Title"),
+      body: t("step1Body"),
+      items: [t("step1Items.0"), t("step1Items.1"), t("step1Items.2"), t("step1Items.3"), t("step1Items.4")],
+      goal: t("step1Goal"),
+    },
+    {
+      number: "2",
+      title: t("step2Title"),
+      body: t("step2Body"),
+      items: [t("step2Items.0"), t("step2Items.1"), t("step2Items.2"), t("step2Items.3")],
+      goal: t("step2Goal"),
+    },
+    {
+      number: "3",
+      title: t("step3Title"),
+      body: t("step3Body"),
+      items: [t("step3Items.0"), t("step3Items.1"), t("step3Items.2"), t("step3Items.3"), t("step3Items.4")],
+      goal: t("step3Goal"),
+    },
+    {
+      number: "4",
+      title: t("step4Title"),
+      body: t("step4Body"),
+      items: [t("step4Items.0"), t("step4Items.1"), t("step4Items.2"), t("step4Items.3")],
+      goal: null,
+    },
+    {
+      number: "5",
+      title: t("step5Title"),
+      body: t("step5Body"),
+      items: [],
+      goal: t("step5Goal"),
+    },
+  ];
+
   return (
     <>
       {/* Intro */}
@@ -73,19 +54,13 @@ export function HowWeWorkPage() {
         <Reveal>
           <div className="max-w-3xl space-y-6">
             <p className="text-lg leading-relaxed text-justify text-hl-muted">
-              At Haal Lab, we believe successful AI systems are not created by applying
-              the same solution to every organization.
+              {t("introP1")}
             </p>
             <p className="text-lg leading-relaxed text-justify text-hl-muted">
-              Every challenge has different requirements, data environments, security
-              considerations, and operational goals. Our process combines research,
-              experimentation, engineering, and continuous evaluation to identify and build
-              the most suitable AI approach for each organization.
+              {t("introP2")}
             </p>
             <p className="text-lg leading-relaxed text-justify text-hl-muted">
-              We explore multiple possibilities, test different methods, evaluate their
-              strengths and limitations, and develop solutions based on evidence rather
-              than assumptions.
+              {t("introP3")}
             </p>
           </div>
         </Reveal>
@@ -128,7 +103,7 @@ export function HowWeWorkPage() {
 
               {step.goal && (
                 <p className="text-base font-medium text-foreground">
-                  The goal: {step.goal}
+                  {t("theGoal")} {step.goal}
                 </p>
               )}
             </div>
@@ -141,18 +116,16 @@ export function HowWeWorkPage() {
         <Reveal>
           <div className="max-w-3xl space-y-6">
             <h2 className="text-2xl font-bold tracking-tight text-foreground">
-              Our Philosophy
+              {t("philosophyTitle")}
             </h2>
             <p className="text-lg leading-relaxed text-justify text-hl-muted">
-              The best AI solution is not always the newest or largest technology.
+              {t("philosophyP1")}
             </p>
             <p className="text-lg leading-relaxed text-justify text-hl-muted">
-              It is the solution that best matches the organization's goals, constraints,
-              and future vision.
+              {t("philosophyP2")}
             </p>
             <p className="text-lg leading-relaxed text-justify text-hl-muted">
-              Haal Lab combines scientific exploration with engineering discipline to help
-              organizations build AI systems they can trust.
+              {t("philosophyP3")}
             </p>
           </div>
         </Reveal>
@@ -166,7 +139,7 @@ export function HowWeWorkPage() {
               href="/contact"
               className="inline-flex items-center gap-2 text-hl-cyan hover:underline"
             >
-              Start a conversation
+              {t("startConversation")}
               <ArrowRight className="h-4 w-4" />
             </Link>
           </div>

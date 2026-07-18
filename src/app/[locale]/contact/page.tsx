@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import { ContactPage } from "@/components/pages/contact-page";
 import { PageSchemas } from "@/components/site/json-ld";
 import { Breadcrumbs } from "@/components/site/breadcrumbs";
 import { FaqSection } from "@/components/site/faq-section";
 import { FAQS, generateHreflangAlternates } from "@/lib/seo";
+import { getFAQsByLocale } from "@/lib/seo-faqs";
 import { Locale } from "@/i18n/routing";
 import { getPageMetadata } from "@/lib/page-metadata";
 
@@ -48,16 +49,18 @@ export default async function Contact({
 }) {
   const { locale } = await params;
   setRequestLocale(locale as Locale);
+  const t = await getTranslations("contactPage");
+  const localeFAQs = getFAQsByLocale(locale);
   return (
     <>
       <PageSchemas path="/contact" locale={locale} />
       <Breadcrumbs path="/contact" />
       <ContactPage />
       <FaqSection
-        faqs={FAQS.contact}
-        eyebrow="FAQ"
-        title="Questions about working with us"
-        intro="Response times, what to include in your inquiry, NDAs, and how we handle your data."
+        faqs={localeFAQs.contact || FAQS.contact}
+        eyebrow={t("faqEyebrow")}
+        title={t("faqTitle")}
+        intro={t("faqIntro")}
       />
     </>
   );

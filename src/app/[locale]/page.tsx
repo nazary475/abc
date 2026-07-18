@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import { HomePage } from "@/components/pages/home-page";
 import { PageSchemas } from "@/components/site/json-ld";
 import { FaqSection } from "@/components/site/faq-section";
@@ -43,6 +43,7 @@ export default async function Home({
   const { locale } = await params;
   setRequestLocale(locale as Locale);
   const localeFAQs = getFAQsByLocale(locale);
+  const t = await getTranslations("homePage");
 
   return (
     <>
@@ -50,9 +51,9 @@ export default async function Home({
       <HomePage />
       <FaqSection
         faqs={localeFAQs.home || FAQS.home}
-        eyebrow="FAQ"
-        title="Frequently asked questions"
-        intro="Answers to the questions we hear most often , from organizations evaluating AI engineering partners."
+        eyebrow={t("faqEyebrow")}
+        title={t("faqTitle")}
+        intro={t("faqIntro")}
       />
       <RelatedLinks current="/" title="Explore Haal Lab" eyebrow="Continue" />
     </>

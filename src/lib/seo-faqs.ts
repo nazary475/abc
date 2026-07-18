@@ -184,6 +184,23 @@ export const FAQS_EN: Record<string, FAQ[]> = {
         "Yes. Haal Lab offers add-ons including extended support (€2,400/month), additional integrations (€3,900/integration), team training workshops (€1,900/session), and continuous evaluation & monitoring (€2,900/month). These can be added to any tier at any time.",
     },
   ],
+  howWeWork: [
+    {
+      question: "How does Haal Lab approach AI projects?",
+      answer:
+        "Haal Lab follows a research-driven engineering process: understanding the challenge, researching and exploring possible approaches, experimenting and evaluating solutions, engineering and developing the system, then deploying with continuous improvement. Every project starts with the problem, not the model.",
+    },
+    {
+      question: "What happens during the research and exploration phase?",
+      answer:
+        "Before committing to an approach, we investigate available technologies and possible architectures. We explore different AI methods, evaluate suitable models and techniques, test possible architectures, and study trade-offs between performance, cost, security, and scalability.",
+    },
+    {
+      question: "How does Haal Lab evaluate AI solutions?",
+      answer:
+        "We build experiments and prototypes to evaluate different solutions before full implementation. We measure effectiveness, reliability, performance, integration requirements, and long-term sustainability to make informed decisions based on results.",
+    },
+  ],
 };
 
 /** German FAQs */
@@ -362,6 +379,23 @@ export const FAQS_DE: Record<string, FAQ[]> = {
       question: "Kann ich später Dienstleistungen zu meinem Paket hinzufügen?",
       answer:
         "Ja. Haal Lab bietet Add-ons einschließlich erweitertem Support (€2.400/Monat), zusätzlichen Integrationen (€3.900/Integration), Team-Schulungsworkshops (€1.900/Sitzung) und kontinuierlicher Evaluierung & Überwachung (€2.900/Monat). Diese können jederzeit zu jedem Tier hinzugefügt werden.",
+    },
+  ],
+  howWeWork: [
+    {
+      question: "Wie geht Haal Lab mit KI-Projekten vor?",
+      answer:
+        "Haal Lab folgt einem forschergetriebenen Engineering-Prozess: Die Herausforderung verstehen, verfügbare Ansätze erforschen und erkunden, Lösungen experimentell bewerten, das System entwickeln, dann mit kontinuierlicher Verbesserung bereitstellen. Jedes Projekt beginnt mit dem Problem, nicht mit dem Modell.",
+    },
+    {
+      question: "Was passiert während der Forschungs- und Erkundungsphase?",
+      answer:
+        "Bevor wir uns für einen Ansatz entscheiden, untersuchen wir verfügbare Technologien und mögliche Architekturen. Wir erkunden verschiedene KI-Methoden, bewerten geeignete Modelle und Techniken, testen mögliche Architekturen und untersuchen Trade-offs zwischen Leistung, Kosten, Sicherheit und Skalierbarkeit.",
+    },
+    {
+      question: "Wie bewertet Haal Lab KI-Lösungen?",
+      answer:
+        "Wir bauen Experimente und Prototypen, um verschiedene Lösungen vor der vollständigen Implementierung zu bewerten. Wir messen Wirksamkeit, Zuverlässigkeit, Leistung, Integrationsanforderungen und langfristige Nachhaltigkeit, um informierte Entscheidungen auf Basis von Ergebnissen zu treffen.",
     },
   ],
 };
@@ -544,6 +578,23 @@ export const FAQS_FR: Record<string, FAQ[]> = {
         "Oui. Haal Lab propose des modules complémentaires incluant un support étendu (2 400 €/mois), des intégrations supplémentaires (3 900 €/intégration), des ateliers de formation d'équipe (1 900 €/session) et une évaluation et surveillance continues (2 900 €/mois). Ceux-ci peuvent être ajoutés à tout moment à tout niveau.",
     },
   ],
+  howWeWork: [
+    {
+      question: "Comment Haal Lab aborde-t-il les projets IA ?",
+      answer:
+        "Haal Lab suit un processus d'ingénierie axé sur la recherche : comprendre le défi, rechercher et explorer les approches possibles, expérimenter et évaluer les solutions, concevoir et développer le système, puis déployer avec une amélioration continue. Chaque projet commence par le problème, pas par le modèle.",
+    },
+    {
+      question: "Que se passe-t-il lors de la phase de recherche et d'exploration ?",
+      answer:
+        "Avant de nous engager sur une approche, nous étudions les technologies disponibles et les architectures possibles. Nous explorons différentes méthodes IA, évaluons les modèles et techniques adaptés, testons les architectures possibles et étudions les compromis entre performance, coût, sécurité et scalabilité.",
+    },
+    {
+      question: "Comment Haal Lab évalue-t-il les solutions IA ?",
+      answer:
+        "Nous construisons des expériences et des prototypes pour évaluer différentes solutions avant l'implémentation complète. Nous mesurons l'efficacité, la fiabilité, les performances, les exigences d'intégration et la durabilité à long terme pour prendre des décisions éclairées basées sur les résultats.",
+    },
+  ],
 };
 
 /** Spanish FAQs */
@@ -724,6 +775,23 @@ export const FAQS_ES: Record<string, FAQ[]> = {
         "Sí. Haal Lab ofrece complementos incluyendo soporte extendido (€2,400/mes), integraciones adicionales (€3,900/integración), talleres de capacitación de equipo (€1,900/sesión) y evaluación y monitoreo continuos (€2,900/mes). Estos pueden agregarse a cualquier nivel en cualquier momento.",
     },
   ],
+  howWeWork: [
+    {
+      question: "¿Cómo aborda Haal Lab los proyectos de IA?",
+      answer:
+        "Haal Lab sigue un proceso de ingeniería impulsado por la investigación: comprender el desafío, investigar y explorar posibles enfoques, experimentar y evaluar soluciones, diseñar y desarrollar el sistema, luego desplegar con mejora continua. Cada proyecto comienza con el problema, no con el modelo.",
+    },
+    {
+      question: "¿Qué sucede durante la fase de investigación y exploración?",
+      answer:
+        "Antes de comprometernos con un enfoque, investigamos las tecnologías disponibles y las arquitecturas posibles. Exploramos diferentes métodos de IA, evaluamos modelos y técnicas adecuados, probamos arquitecturas posibles y estudiamos compromisos entre rendimiento, costo, seguridad y escalabilidad.",
+    },
+    {
+      question: "¿Cómo evalúa Haal Lab las soluciones de IA?",
+      answer:
+        "Construimos experimentos y prototipos para evaluar diferentes soluciones antes de la implementación completa. Medimos efectividad, fiabilidad, rendimiento, requisitos de integración y sostenibilidad a largo plazo para tomar decisiones informadas basadas en resultados.",
+    },
+  ],
 };
 
 /** Italian FAQs */
@@ -902,6 +970,23 @@ export const FAQS_IT: Record<string, FAQ[]> = {
       question: "Posso aggiungere servizi al mio pacchetto in seguito?",
       answer:
         "Sì. Haal Lab offre add-on inclusi supporto esteso (€2.400/mese), integrazioni aggiuntive (€3.900/integrazione), workshop di formazione del team (€1.900/sessione) e valutazione e monitoraggio continuo (€2.900/mese). Questi possono essere aggiunti a qualsiasi livello in qualsiasi momento.",
+    },
+  ],
+  howWeWork: [
+    {
+      question: "Come Haal Lab affronta i progetti IA?",
+      answer:
+        "Haal Lab segue un processo di ingegneria guidato dalla ricerca: comprendere la sfida, ricercare e esplorare approcci possibili, sperimentare e valutare soluzioni, progettare e sviluppare il sistema, poi distribuire con miglioramento continuo. Ogni progetto inizia con il problema, non con il modello.",
+    },
+    {
+      question: "Cosa succede durante la fase di ricerca ed esplorazione?",
+      answer:
+        "Prima di impegnarci su un approccio, indaghiamo le tecnologie disponibili e le possibili architetture. Esploriamo diversi metodi IA, valutiamo modelli e tecniche adatti, testiamo possibili architetture e studiamo i compromessi tra prestazioni, costo, sicurezza e scalabilità.",
+    },
+    {
+      question: "Come Haal Lab valuta le soluzioni IA?",
+      answer:
+        "Costruiamo esperimenti e prototipi per valutare diverse soluzioni prima dell'implementazione completa. Misuriamo efficacia, affidabilità, prestazioni, requisiti di integrazione e sostenibilità a lungo termine per prendere decisioni informate basate sui risultati.",
     },
   ],
 };

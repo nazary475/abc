@@ -1,0 +1,62 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#080B12"/>
+      <stop offset="1" stop-color="#0E131D"/>
+    </linearGradient>
+    <linearGradient id="cyan-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#00E0FF"/>
+      <stop offset="1" stop-color="#6EA8FF"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg-grad)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Logo (top left) -->
+  <g transform="translate(80, 80)">
+    <rect width="56" height="56" rx="14" fill="rgba(0,224,255,0.05)" stroke="rgba(255,255,255,0.12)"/>
+    <path d="M16 14 V42 M16 28 H30 M30 14 V42" stroke="url(#cyan-grad)" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="16" cy="14" r="2.8" fill="#00E0FF"/>
+    <circle cx="30" cy="28" r="2.8" fill="#00E0FF"/>
+    <circle cx="16" cy="42" r="2.8" fill="#6EA8FF"/>
+    <text x="76" y="36" font-family="Inter, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#E6EAF2">
+      Haal<tspan fill="#00E0FF">Lab</tspan>
+    </text>
+  </g>
+
+  <!-- Main Content (centered) -->
+  <g transform="translate(600, 315)" text-anchor="middle">
+    <!-- Services line -->
+    <text y="-80" font-family="Inter, -apple-system, sans-serif" font-size="32" font-weight="600" fill="#E6EAF2">
+      Automatización IA <tspan fill="#8A93A6">•</tspan> Asistentes IA <tspan fill="#8A93A6">•</tspan> Infraestructura IA
+    </text>
+    
+    <!-- Checkmark 1 -->
+    <g transform="translate(-280, -10)">
+      <circle cx="0" cy="0" r="16" fill="rgba(0,224,255,0.15)"/>
+      <path d="M-5 0 L-2 4 L6 -4" stroke="#00E0FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <text x="30" y="6" font-family="Inter, -apple-system, sans-serif" font-size="26" font-weight="500" fill="#E6EAF2" text-anchor="start">
+        Diseñado para entornos privados
+      </text>
+    </g>
+    
+    <!-- Checkmark 2 -->
+    <g transform="translate(-280, 50)">
+      <circle cx="0" cy="0" r="16" fill="rgba(0,224,255,0.15)"/>
+      <path d="M-5 0 L-2 4 L6 -4" stroke="#00E0FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <text x="30" y="6" font-family="Inter, -apple-system, sans-serif" font-size="26" font-weight="500" fill="#E6EAF2" text-anchor="start">
+        Sus datos permanecen bajo su control
+      </text>
+    </g>
+  </g>
+
+  <!-- Website link (bottom right corner) -->
+  <text x="1120" y="590" font-family="monospace" font-size="16" fill="#8A93A6" text-anchor="end" letter-spacing="0.5">
+    haal-lab.solutions
+  </text>
+</svg>

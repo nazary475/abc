@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import { NetworkPage } from "@/components/pages/network-page";
 import { PageSchemas } from "@/components/site/json-ld";
 import { Breadcrumbs } from "@/components/site/breadcrumbs";
 import { FaqSection } from "@/components/site/faq-section";
 import { RelatedLinks } from "@/components/site/related-links";
 import { FAQS, generateHreflangAlternates } from "@/lib/seo";
+import { getFAQsByLocale } from "@/lib/seo-faqs";
 import { Locale } from "@/i18n/routing";
 import { getPageMetadata } from "@/lib/page-metadata";
 
@@ -51,16 +52,18 @@ export default async function Network({
 }) {
   const { locale } = await params;
   setRequestLocale(locale as Locale);
+  const t = await getTranslations("networkPage");
+  const localeFAQs = getFAQsByLocale(locale);
   return (
     <>
       <PageSchemas path="/network" locale={locale} />
       <Breadcrumbs path="/network" />
       <NetworkPage />
       <FaqSection
-        faqs={FAQS.network}
-        eyebrow="FAQ"
-        title="Questions about our network"
-        intro="Who we partner with and how to join the network."
+        faqs={localeFAQs.network || FAQS.network}
+        eyebrow={t("faqEyebrow")}
+        title={t("faqTitle")}
+        intro={t("faqIntro")}
       />
       <RelatedLinks current="/network" title="Continue exploring" eyebrow="Next" />
     </>

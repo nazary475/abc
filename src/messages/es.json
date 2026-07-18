@@ -18,6 +18,11 @@
   "brand": {
     "tagline": "Construyendo sistemas inteligentes"
   },
+  "homePage": {
+    "faqEyebrow": "FAQ",
+    "faqTitle": "Preguntas frecuentes",
+    "faqIntro": "Respuestas a las preguntas que más escuchamos, de organizaciones que evalúan socios de ingeniería IA."
+  },
   "hero": {
     "badge": "Laboratorio de ingeniería IA",
     "title1": "Tu IA.",
@@ -41,6 +46,54 @@
     "ctaTitle": "¿Necesita un sistema IA adaptado a su organización?",
     "ctaDescription": "Cuéntenos sobre sus requisitos, entorno técnico y objetivos. Evaluaremos el enfoque más adecuado.",
     "ctaButton": "Solicitar discusión técnica",
+    "faqEyebrow": "FAQ",
+    "faqTitle": "Preguntas sobre nuestras capacidades",
+    "faqIntro": "Preguntas comunes sobre IA local, RAG, BGE-M3, despliegue air-gapped e infraestructura IA.",
+    "capabilityLabel": "Capacidad",
+    "whatWeDeliver": "Lo que entregamos",
+    "stackLabel": "Stack",
+    "engagementEyebrow": "Colaboración",
+    "engagementTitle": "Cómo trabajamos",
+    "engagementLead": "Un modelo de colaboración en cuatro etapas diseñado para reducir los riesgos de los proyectos de IA y dejar a su equipo con un sistema que pueden operar y extender.",
+    "engagementSteps": [
+      {"step": "01", "title": "Descubrimiento", "description": "Comenzamos con el problema, no con el modelo. Un compromiso enfocado para entender las limitaciones, datos, criterios de éxito y el entorno de producción donde vivirá el sistema."},
+      {"step": "02", "title": "Arquitectura", "description": "Diseñamos el sistema de extremo a extremo — selección de modelos, estrategia de recuperación, infraestructura, marco de evaluación — y lo probamos contra sus cargas de trabajo reales antes de comprometernos."},
+      {"step": "03", "title": "Construcción", "description": "Ingeniería en incrementos pequeños y demostrables. Ve software funcionando temprano y con frecuencia, con reportes de evaluación adjuntos a cada hito."},
+      {"step": "04", "title": "Implementación", "description": "Entregamos en su entorno — nube, local o air-gapped — con la observabilidad, runbooks y documentación que su equipo necesita para operarlo con confianza."}
+    ],
+    "wantWalkthrough": "¿Quiere un recorrido más profundo?",
+    "walkthroughDesc": "Podemos adaptar cualquiera de estas capacidades a su caso de uso específico en una llamada de 45 minutos.",
+    "bookCall": "Reservar una llamada",
+    "caps": {
+      "local-ai": {
+        "title": "Sistemas de IA local",
+        "tagline": "Soluciones de IA privadas que se ejecutan de forma segura en su infraestructura.",
+        "overview": "Construimos sistemas de IA que operan completamente dentro de su entorno, en estaciones de trabajo, servidores locales o clústeres air-gapped. La ejecución local elimina las restricciones de confianza, latencia y cumplimiento de los modelos alojados en la nube, mientras preserva las capacidades completas de los LLM modernos de peso abierto. Nuestros despliegues están diseñados alrededor de runtimes de inferencia cuantificados, co-programación GPU/CPU y selección de modelos consciente del hardware, para que el sistema permanezca reactivo en cualquier hardware que ya posea.",
+        "capabilities": ["Inferencia local con GGUF, llama.cpp, vLLM y TGI", "Despliegue air-gapped para entornos regulados", "Cuantización consciente del hardware (INT4 / INT8 / FP8)", "Soberanía de datos por arquitectura, no por política", "Registro de modelos sin conexión y control de versiones"],
+        "stack": ["GGUF", "llama.cpp", "vLLM", "CUDA", "Docker", "Kubernetes"]
+      },
+      "llm-applications": {
+        "title": "Aplicaciones LLM",
+        "tagline": "Asistentes de IA personalizados, agentes y sistemas de automatización inteligente.",
+        "overview": "Diseñamos y desarrollamos aplicaciones LLM que van más allá del chat — asistentes que actúan, agentes que orquestan herramientas, y sistemas de automatización que se integran limpiamente con su software existente. Cada aplicación se construye con marcos de evaluación, salvaguardas y observabilidad desde el primer día, para que el comportamiento se mantenga predecible cuando escale de prototipo a tráfico de producción.",
+        "capabilities": ["Orquestación de agentes con llamadas de herramientas estructuradas", "LLMs aumentados con herramientas sobre sus APIs internas", "Automatización de flujos de trabajo con seguridad humana en el bucle", "Pipelines de evaluación de prompts y respuestas", "Streaming, salida estructurada y llamada de funciones"],
+        "stack": ["Python", "TypeScript", "OpenAI", "Anthropic", "Open weights", "LangGraph"]
+      },
+      "knowledge-intelligence": {
+        "title": "Inteligencia de conocimiento",
+        "tagline": "Sistemas RAG avanzados, búsqueda semántica e inteligencia documental.",
+        "overview": "Construimos sistemas de recuperación que realmente encuentran la respuesta correcta. Nuestros pipelines RAG combinan recuperación densa y dispersa, reranking por cross-encoder, reescritura de consultas y atribución de fuente en un sistema único y observable. Para dominios ricos en documentos, agregamos OCR, chunking sensible al diseño y comprensión de tablas, para que el sistema funcione con contratos, artículos de investigación y archivos escaneados — no solo texto limpio.",
+        "capabilities": ["Recuperación híbrida (BM25 + embeddings densos)", "Reranking por cross-encoder para precisión", "Indexación multi-vector y por documento padre", "OCR + chunking de documentos sensible al diseño", "Atribución de fuente y seguimiento de citaciones"],
+        "stack": ["BGE-M3", "Qdrant", "Postgres", "ColPali", "OCR", "rerankers"]
+      },
+      "ai-infrastructure": {
+        "title": "Infraestructura de IA",
+        "tagline": "Despliegue, optimización e ingeniería de IA escalable.",
+        "overview": "Construimos la capa de infraestructura que hace que los sistemas de IA funcionen de manera confiable en producción. Eso significa servicio de modelos ajustado para su hardware, autoscaling que respeta la memoria de GPU, observabilidad que muestra la deriva de latencia y calidad, y pipelines CI/CD que evalúan modelos, no solo pruebas unitarias. El resultado es una plataforma de IA en la que su equipo puede iterar sin tener que apagar incendios.",
+        "capabilities": ["Servicio de modelos con vLLM, TGI y Triton", "Programación de GPU, batching y optimización de memoria", "Observabilidad: trazas, métricas, evaluaciones, deriva", "CI/CD impulsado por evaluación para prompts y modelos", "Optimización de costos y rendimiento"],
+        "stack": ["vLLM", "Triton", "Prometheus", "OpenTelemetry", "Kubernetes", "Terraform"]
+      }
+    },
     "cards": {
       "card1": {
         "title": "Agentes IA y automatización empresarial",
@@ -335,7 +388,10 @@
     "stayCurrentTitle": "Publicamos cuando tenemos algo que decir.",
     "stayCurrentDescription": "Sin spam de newsletters, sin embudos de crecimiento. Solo escritos técnicos sobre los sistemas de IA que realmente estamos construyendo – enviados cuando hay algo que vale la pena leer.",
     "getInTouch": "Ponerse en contacto",
-    "articleCount": "{count} artículos"
+    "articleCount": "{count} artículos",
+    "faqEyebrow": "FAQ",
+    "faqTitle": "Preguntas sobre nuestra investigación",
+    "faqIntro": "Dónde encontrar nuestros artículos técnicos y qué cubrimos."
   },
   "languageSwitcher": {
     "label": "Idioma",
@@ -612,6 +668,33 @@
     "ctaTitle": "¿Necesita un sistema IA personalizado?",
     "ctaDescription": "Cuéntenos sobre su entorno técnico y sus requisitos.",
     "ctaButton": "Solicitar discusión técnica",
+    "introP1": "En Haal Lab, creemos que los sistemas de IA exitosos no se crean aplicando la misma solución a cada organización.",
+    "introP2": "Cada desafío tiene diferentes requisitos, entornos de datos, consideraciones de seguridad y objetivos operativos. Nuestro proceso combina investigación, experimentación, ingeniería e evaluación continua para identificar y construir el enfoque de IA más adecuado para cada organización.",
+    "introP3": "Exploramos múltiples posibilidades, probamos diferentes métodos, evaluamos sus fortalezas y limitaciones, y desarrollamos soluciones basadas en evidencia en lugar de suposiciones.",
+    "step1Title": "Entender el Desafío",
+    "step1Body": "Comenzamos entendiendo los objetivos de la organización, los procesos existentes, los recursos disponibles y el problema que necesita resolverse.",
+    "step1Items": ["Objetivos de negocio", "Desafíos operativos", "Conocimiento existente y fuentes de datos", "Requisitos técnicos", "Consideraciones de seguridad y privacidad"],
+    "step1Goal": "Entender el problema real antes de diseñar una solución.",
+    "step2Title": "Investigación & Exploración",
+    "step2Body": "Antes de comprometernos con un enfoque, investigamos las tecnologías disponibles y las arquitecturas posibles.",
+    "step2Items": ["Explorar diferentes métodos de IA", "Evaluar modelos y técnicas adecuados", "Probar arquitecturas posibles", "Estudiar compromisos entre rendimiento, costo, seguridad y escalabilidad"],
+    "step2Goal": "Encontrar el enfoque que mejor se adapte a las necesidades de la organización.",
+    "step3Title": "Experimentación & Evaluación",
+    "step3Body": "El desarrollo de IA requiere pruebas cuidadosas. Construimos experimentos y prototipos para evaluar diferentes soluciones antes de la implementación completa.",
+    "step3Items": ["Efectividad", "Fiabilidad", "Rendimiento", "Requisitos de integración", "Sostenibilidad a largo plazo"],
+    "step3Goal": "Tomar decisiones informadas basadas en resultados.",
+    "step4Title": "Ingeniería & Desarrollo",
+    "step4Body": "Después de identificar el enfoque más adecuado, diseñamos y desarrollamos el sistema de IA según el entorno y los requisitos de la organización.",
+    "step4Items": ["Práctico", "Seguro", "Mantenible", "Listo para uso real"],
+    "step5Title": "Despliegue & Mejora Continua",
+    "step5Body": "Los sistemas de IA continúan evolucionando después del despliegue. Ayudamos a las organizaciones a integrar la IA en sus flujos de trabajo, monitorear el rendimiento y mejorar las capacidades.",
+    "step5Goal": "Crear una capacidad de IA a largo plazo, no solo una implementación única.",
+    "philosophyTitle": "Nuestra Filosofía",
+    "philosophyP1": "La mejor solución de IA no siempre es la tecnología más nueva o más grande.",
+    "philosophyP2": "Es la solución que mejor se adapta a los objetivos, restricciones y visión future de la organización.",
+    "philosophyP3": "Haal Lab combina la exploración científica con la disciplina de ingeniería para ayudar a las organizaciones a construir sistemas de IA en los que puedan confiar.",
+    "startConversation": "Iniciar una conversación",
+    "theGoal": "El objetivo:",
     "phases": {
       "phase1": {
         "title": "Descubrimiento",
@@ -679,5 +762,56 @@
     "removeAttachment": "Eliminar adjunto",
     "attachFile": "Adjuntar archivo",
     "sendMessage": "Enviar mensaje"
+  },
+  "aboutPage": {
+    "intro1": "Haal Lab es un laboratorio de inteligencia artificial deep-tech enfocado en investigar, desarrollar e implementar sistemas de IA avanzados para organizaciones que buscan adoptar la inteligencia artificial con confianza.",
+    "intro2": "Ayudamos a empresas, instituciones de investigación y organizaciones a transformar la IA de una tecnología emergente en capacidades prácticas que mejoran la toma de decisiones, la eficiencia, la gestión del conocimiento y la innovación.",
+    "intro3": "Al combinar investigación en IA, ingeniería de software e implementación estratégica, Haal Lab desarrolla sistemas inteligentes diseñados para desafíos organizacionales del mundo real.",
+    "missionTitle": "Nuestra Misión",
+    "missionP1": "La inteligencia artificial se está convirtiendo en una tecnología fundamental que moldea el futuro de las organizaciones e industrias. Sin embargo, la adoptación exitosa de IA requiere más que acceso a modelos potentes. Las organizaciones necesitan una estrategia clara, tecnología confiable y sistemas que se alineen con sus objetivos operativos.",
+    "missionP2": "Haal Lab existe para cerrar la brecha entre la investigación en IA y la implementación real creando sistemas de IA que sean seguros, adaptables, transparentes y valiosos para las organizaciones.",
+    "visionTitle": "Visión",
+    "visionH3a": "Transformación IA e Implementación Estratégica",
+    "visionP1": "Haal Lab ayuda a las organizaciones a explorar, diseñar e implementar soluciones de inteligencia artificial que crean un impacto medible. Trabajamos con organizaciones para identificar oportunidades de IA significativas, desarrollar estrategias efectivas y construir sistemas que integren la IA en los flujos de trabajo y operaciones existentes.",
+    "visionH3b": "Sistemas de IA Empresarial e Infraestructura Inteligente",
+    "visionP2": "Las organizaciones modernas contienen conocimientos, datos y procesos valiosos que pueden mejorarse a través de la inteligencia artificial. Haal Lab diseña y desarrolla sistemas de IA empresarial que ayudan a las organizaciones a mejorar la eficiencia operativa, transformar el conocimiento interno en inteligencia accionable, automatizar flujos de trabajo complejos y desarrollar nuevas capacidades impulsadas por IA.",
+    "visionH3c": "Soluciones de IA Privadas y Confiables",
+    "visionP3": "Las organizaciones cada vez más requieren sistemas de IA que proporcionen seguridad, transparencia y control sobre su información. Haal Lab desarrolla arquitecturas de IA diseñadas alrededor de la privacidad de datos, implementación segura, prácticas de IA responsables, transparencia del sistema y confiabilidad a largo plazo.",
+    "researchTitle": "Investigación e Ingeniería",
+    "researchP1": "Como laboratorio de IA, Haal Lab combina la exploración científica con la ingeniería práctica. Nuestra investigación se centra en avanzar áreas como sistemas de inteligencia artificial, aplicaciones de modelos de lenguaje grandes, inteligencia del conocimiento, automatización de IA, sistemas de recuperación y razonamiento, y evaluación y confiabilidad de IA.",
+    "researchP2": "Nuestro objetivo no es solo explorar nuevas capacidades de IA, sino transformarlas en tecnologías confiables que resuelvan problemas organizacionales reales.",
+    "futureTitle": "Nuestra Visión",
+    "futureP1": "El futuro de la IA será moldeado por organizaciones que puedan integrar exitosamente la inteligencia en sus operaciones manteniendo el control, la confianza y la independencia estratégica.",
+    "futureP2": "Haal Lab imagina un futuro donde la inteligencia artificial se convierte en una base confiable para las organizaciones, ayudándolas a innovar, operar eficientemente y tomar mejores decisiones.",
+    "partnerTitle": "Asóciese con Haal Lab",
+    "partnerP1": "Haal Lab colabora con empresas, instituciones y organizaciones de investigación que buscan explorar las oportunidades de la inteligencia artificial y construir la próxima generación de sistemas inteligentes.",
+    "getInTouch": "Contáctenos",
+    "faqEyebrow": "FAQ",
+    "faqTitle": "Preguntas sobre Haal Lab",
+    "faqIntro": "Quiénes somos, cómo trabajamos y qué pensamos sobre la ingeniería IA."
+  },
+  "contactPage": {
+    "faqEyebrow": "FAQ",
+    "faqTitle": "Preguntas sobre trabajar con nosotros",
+    "faqIntro": "Tiempos de respuesta, qué incluir en su consulta, NDA y cómo manejamos sus datos."
+  },
+  "pricingPage": {
+    "faqEyebrow": "FAQ",
+    "faqTitle": "Preguntas sobre precios",
+    "faqIntro": "Preguntas comunes sobre costos, plazos y qué está incluido en cada paquete."
+  },
+  "processPage": {
+    "faqEyebrow": "FAQ",
+    "faqTitle": "Preguntas sobre nuestro proceso",
+    "faqIntro": "Cómo Haal Lab aborda la ingeniería IA, desde el descubreimiento hasta la implementación."
+  },
+  "networkPage": {
+    "partnershipEyebrow": "Asociación",
+    "partnershipHeading": "Construye con nosotros.",
+    "partnershipLead": "Nos asociamos con organizaciones que comparten nuestro compromiso con modelos de peso abierto, soberanía europea e ingeniería de grado de producción. Si eso suena como tú, hablemos.",
+    "becomePartner": "Conviértete en socio",
+    "faqEyebrow": "FAQ",
+    "faqTitle": "Preguntas sobre nuestra red",
+    "faqIntro": "Con quién nos asociamos y cómo unirse a la red."
   }
 }

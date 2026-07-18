@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import { HowWeWorkPage } from "@/components/pages/how-we-work-page";
 import { PageSchemas } from "@/components/site/json-ld";
 import { Breadcrumbs } from "@/components/site/breadcrumbs";
 import { FaqSection } from "@/components/site/faq-section";
 import { RelatedLinks } from "@/components/site/related-links";
 import { FAQS, generateHreflangAlternates } from "@/lib/seo";
+import { getFAQsByLocale } from "@/lib/seo-faqs";
 import { Locale } from "@/i18n/routing";
 import { getPageMetadata } from "@/lib/page-metadata";
 
@@ -132,16 +133,18 @@ export default async function HowWeWork({
 }) {
   const { locale } = await params;
   setRequestLocale(locale as Locale);
+  const t = await getTranslations("processPage");
+  const localeFAQs = getFAQsByLocale(locale);
   return (
     <>
       <PageSchemas path="/how-we-work" locale={locale} />
       <Breadcrumbs path="/how-we-work" />
       <HowWeWorkPage />
       <FaqSection
-        faqs={FAQS.howWeWork}
-        eyebrow="FAQ"
-        title="Questions about our process"
-        intro="How Haal Lab approaches AI engineering, from discovery to deployment."
+        faqs={localeFAQs.howWeWork || FAQS.howWeWork}
+        eyebrow={t("faqEyebrow")}
+        title={t("faqTitle")}
+        intro={t("faqIntro")}
       />
       <RelatedLinks current="/how-we-work" title="Continue exploring" eyebrow="Next" />
     </>

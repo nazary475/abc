@@ -18,6 +18,11 @@
   "brand": {
     "tagline": "Intelligente Systeme entwickeln"
   },
+  "homePage": {
+    "faqEyebrow": "FAQ",
+    "faqTitle": "Häufig gestellte Fragen",
+    "faqIntro": "Antworten auf die Fragen, die wir am häufigsten hören, von Organisationen, die KI-Engineering-Partner evaluieren."
+  },
   "hero": {
     "badge": "AI-Engineering-Labor",
     "title1": "Ihre AI.",
@@ -41,6 +46,54 @@
     "ctaTitle": "Benötigen Sie ein AI-System, das auf Ihre Organisation zugeschnitten ist?",
     "ctaDescription": "Erzählen Sie uns von Ihren Anforderungen, Ihrer technischen Umgebung und Ihren Zielen. Wir bewerten den geeignetsten Ansatz.",
     "ctaButton": "Technische Besprechung anfordern",
+    "faqEyebrow": "FAQ",
+    "faqTitle": "Fragen zu unseren Fähigkeiten",
+    "faqIntro": "Häufige Fragen zu lokaler KI, RAG, BGE-M3, Air-gapped-Deployment und KI-Infrastruktur.",
+    "capabilityLabel": "Fähigkeit",
+    "whatWeDeliver": "Was wir liefern",
+    "stackLabel": "Stack",
+    "engagementEyebrow": "Zusammenarbeit",
+    "engagementTitle": "Wie wir arbeiten",
+    "engagementLead": "Ein vierstufiges Zusammenarbeitsmodell, das darauf ausgelegt ist, KI-Projekte zu entlasten und Ihrem Team ein System zu hinterlassen, das es betreiben und erweitern kann.",
+    "engagementSteps": [
+      {"step": "01", "title": "Entdeckung", "description": "Wir beginnen mit dem Problem, nicht mit dem Modell. Ein fokussiertes Engagement, um Einschränkungen, Daten, Erfolgskriterien und die Produktionsumgebung zu verstehen, in der das System leben wird."},
+      {"step": "02", "title": "Architektur", "description": "Wir entwerfen das System Ende-zu-Ende: Modellauswahl, Abrufstrategie, Infrastruktur, Evaluierungsrahmen — und testen es gegen Ihre realen Arbeitslasten, bevor wir uns festlegen."},
+      {"step": "03", "title": "Entwicklung", "description": "Entwicklung in kleinen, demonstrierbaren Schritten. Sie sehen frühen und oft funktionierenden Code mit Evaluierungsberichten an jedem Meilenstein."},
+      {"step": "04", "title": "Bereitstellung", "description": "Wir liefern in Ihre Umgebung — Cloud, On-Premise oder Air-gapped — mit der Beobachtbarkeit, Betriebsanleitungen und Dokumentation, die Ihr Team benötigt, um es zuverlässig zu betreiben."}
+    ],
+    "wantWalkthrough": "Möchten Sie eine genauere Durchführung?",
+    "walkthroughDesc": "Wir können jede dieser Fähigkeiten in einem 45-minütigen Gespräch auf Ihren spezifischen Anwendungsfall zuschneiden.",
+    "bookCall": "Termin vereinbaren",
+    "caps": {
+      "local-ai": {
+        "title": "Lokale KI-Systeme",
+        "tagline": "Private KI-Lösungen, die sicher auf Ihrer Infrastruktur laufen.",
+        "overview": "Wir bauen KI-Systeme, die vollständig in Ihrer Umgebung betrieben werden — auf Workstations, On-Premise-Servern oder Air-gapped-Clustern. Die lokale Ausführung beseitigt die Vertrauens-, Latenz- und Compliance-Einschränkungen von Cloud-Modellen und bewahrt dabei die vollen Fähigkeiten moderner Open-Weight-LLMs. Unsere Bereitstellungen basieren auf quantisierten Inferenz-Laufzeiten, GPU/CPU-Co-Scheduling und hardwarebewusster Modellauswahl, damit das System auf jeder Hardware, die Sie bereits besitzen, reaktionsschnell bleibt.",
+        "capabilities": ["On-Premise-Inferenz mit GGUF, llama.cpp, vLLM und TGI", "Air-gapped-Bereitstellung für regulierte Umgebungen", "Hardwarebewusste Quantisierung (INT4 / INT8 / FP8)", "Datensouveränität durch Architektur, nicht durch Richtlinie", "Offline-Modellregister und Versionskontrolle"],
+        "stack": ["GGUF", "llama.cpp", "vLLM", "CUDA", "Docker", "Kubernetes"]
+      },
+      "llm-applications": {
+        "title": "LLM-Anwendungen",
+        "tagline": "Individuelle KI-Assistenten, Agenten und intelligente Automatisierungssysteme.",
+        "overview": "Wir entwerfen und entwickeln LLM-Anwendungen, die über Chat hinausgehen — Assistenten, die handeln, Agenten, die Werkzeuge orchestrieren, und Automatisierungssysteme, die sich nahtlos in Ihre bestehende Software integrieren. Jede Anwendung wird von Anfang an mit Evaluierungsrahmen, Guardrails und Beobachtbarkeit gebaut, damit das Verhalten vorhersagbar bleibt, wenn Sie von Prototypen zu Produktionsverkehr skalieren.",
+        "capabilities": ["Agenten-Orchestrierung mit strukturierter Werkzeugaufrufung", "Werkzeuggestützte LLMs über Ihre internen APIs", "Workflow-Automatisierung mit Mensch-in-der-Schleife-Sicherheit", "Prompt- und Antwort-Evaluierungspipelines", "Streaming, strukturierte Ausgabe und Funktionsaufruf"],
+        "stack": ["Python", "TypeScript", "OpenAI", "Anthropic", "Open weights", "LangGraph"]
+      },
+      "knowledge-intelligence": {
+        "title": "Wissensintelligenz",
+        "tagline": "Erweiterte RAG-Systeme, semantische Suche und Dokumentenintelligenz.",
+        "overview": "Wir bauen Abrufsysteme, die tatsächlich die richtige Antwort finden. Unsere RAG-Pipelines kombinieren dichte und sparse Abrufe, Cross-Encoder-Reranking, Query-Rewriting und Quellenzuordnung in ein einziges, beobachtbares System. Für dokumentenintensive Domänen fügen wir OCR, Layout-bewusstes Chunking und Tabellenverständnis hinzu, damit das System mit Verträgen, Forschungsartikeln und gescannten Archiven funktioniert — nicht nur mit sauberem Text.",
+        "capabilities": ["Hybrider Abruf (BM25 + dichte Embeddings)", "Cross-Encoder-Reranking für Präzision", "Multi-Vektor- und Elterndokument-Indexierung", "OCR + layout-bewusstes Dokumenten-Chunking", "Quellenzuordnung und Zitationsverfolgung"],
+        "stack": ["BGE-M3", "Qdrant", "Postgres", "ColPali", "OCR", "rerankers"]
+      },
+      "ai-infrastructure": {
+        "title": "KI-Infrastruktur",
+        "tagline": "Bereitstellung, Optimierung und skalierbare KI-Technik.",
+        "overview": "Wir bauen die Infrastrukturschicht, die KI-Systeme zuverlässig in der Produktion betreibt. Das bedeutet Modellserving, abgestimmt auf Ihre Hardware, Autoscaling unter Berücksichtigung des GPU-Speichers, Beobachtbarkeit, die Latenz- und Qualitätsabweichungen sichtbar macht, und CI/CD-Pipelines, die Modelle evaluieren — nicht nur Unit-Tests. Das Ergebnis ist eine KI-Plattform, an der Ihr Team iterieren kann, ohne ständig Probleme bekämpfen zu müssen.",
+        "capabilities": ["Modellserving mit vLLM, TGI und Triton", "GPU-Scheduling, Batching und Speicheroptimierung", "Beobachtbarkeit: Traces, Metriks, Evaluiertungen, Drift", "Evaluierungsgesteuertes CI/CD für Prompts und Modelle", "Kosten- und Durchsatzoptimierung"],
+        "stack": ["vLLM", "Triton", "Prometheus", "OpenTelemetry", "Kubernetes", "Terraform"]
+      }
+    },
     "cards": {
       "card1": {
         "title": "AI-Aganten & Geschäftsautomatisierung",
@@ -335,7 +388,10 @@
     "stayCurrentTitle": "Wir veröffentlichen, wenn wir etwas zu sagen haben.",
     "stayCurrentDescription": "Kein Newsletter-Spam, keine Growth-Funnels. Nur technische Artikel über die KI-Systeme, die wir tatsächlich entwickeln – gesendet, wenn es etwas Worthles zu lesen gibt.",
     "getInTouch": "Kontakt aufnehmen",
-    "articleCount": "{count} Artikel"
+    "articleCount": "{count} Artikel",
+    "faqEyebrow": "FAQ",
+    "faqTitle": "Fragen zu unserer Forschung",
+    "faqIntro": "Wo Sie unsere technischen Artikel finden und was wir abdecken."
   },
   "languageSwitcher": {
     "label": "Sprache",
@@ -612,6 +668,33 @@
     "ctaTitle": "Benötigen Sie ein individuelles AI-System?",
     "ctaDescription": "Erzählen Sie uns von Ihrer technischen Umgebung und Ihren Anforderungen.",
     "ctaButton": "Technische Besprechung anfordern",
+    "introP1": "Bei Haal Lab glauben wir, dass erfolgreiche KI-Systeme nicht durch die Anwendung derselben Lösung für jede Organisation entstehen.",
+    "introP2": "Jede Herausforderung hat unterschiedliche Anforderungen, Datenumgebungen, Sicherheitsüberlegungen und betriebliche Ziele. Unser Prozess kombiniert Forschung, Experimentierung, Technik und kontinuierliche Bewertung, um den geeignetsten KI-Ansatz für jede Organisation zu identifizieren und aufzubauen.",
+    "introP3": "Wir erkunden mehrere Möglichkeiten, testen verschiedene Methoden, bewerten Stärken und Einschränkungen und entwickeln Lösungen auf Basis von Evidenz statt Annahmen.",
+    "step1Title": "Die Herausforderung verstehen",
+    "step1Body": "Wir beginnen damit, die Ziele der Organisation, bestehende Prozesse, verfügbare Ressourcen und das zu lösende Problem zu verstehen.",
+    "step1Items": ["Geschäftsziele", "Betriebliche Herausforderungen", "Bestehendes Wissen und Datenquellen", "Technische Anforderungen", "Sicherheits- und Datenschutzüberlegungen"],
+    "step1Goal": "Das echte Problem verstehen, bevor eine Lösung entworfen wird.",
+    "step2Title": "Forschung & Erkundung",
+    "step2Body": "Bevor wir uns für einen Ansatz entscheiden, untersuchen wir verfügbare Technologien und mögliche Architekturen.",
+    "step2Items": ["Erforschung verschiedener KI-Methoden", "Bewertung geeigneter Modelle und Techniken", "Testen möglicher Architekturen", "Untersuchung von Trade-offs zwischen Leistung, Kosten, Sicherheit und Skalierbarkeit"],
+    "step2Goal": "Den Ansatz finden, der am besten zu den Bedürfnissen der Organisation passt.",
+    "step3Title": "Experimentierung & Bewertung",
+    "step3Body": "KI-Entwicklung erfordert sorgfältiges Testing. Wir bauen Experimente und Prototypen, um verschiedene Lösungen vor der vollständigen Implementierung zu bewerten.",
+    "step3Items": ["Wirksamkeit", "Zuverlässigkeit", "Leistung", "Integrationsanforderungen", "Langfristige Nachhaltigkeit"],
+    "step3Goal": "Informierte Entscheidungen auf Basis von Ergebnissen treffen.",
+    "step4Title": "Technik & Entwicklung",
+    "step4Body": "Nach der Identifizierung des geeignetsten Ansatzes entwerfen und entwickeln wir das KI-System gemäß der Umgebung und Anforderungen der Organisation.",
+    "step4Items": ["Praktisch", "Sicher", "Wartbar", "Einsatzbereit"],
+    "step5Title": "Deployment & Kontinuierliche Verbesserung",
+    "step5Body": "KI-Systeme entwickeln sich nach dem Deployment weiter. Wir unterstützen Organisationen bei der Integration von KI in ihre Workflows, der Leistungsüberwachung und der Verbesserung von Fähigkeiten.",
+    "step5Goal": "Eine langfristige KI-Fähigkeit schaffen, nicht nur eine einmalige Implementierung.",
+    "philosophyTitle": "Unsere Philosophie",
+    "philosophyP1": "Die beste KI-Lösung ist nicht immer die neueste oder größte Technologie.",
+    "philosophyP2": "Es ist die Lösung, die am besten zu den Zielen, Einschränkungen und der Zukunftsvision der Organisation passt.",
+    "philosophyP3": "Haal Lab kombiniert wissenschaftliche Erkundung mit technischer Disziplin, um Organisationen beim Aufbau vertrauenswürdiger KI-Systeme zu helfen.",
+    "startConversation": "Gespräch beginnen",
+    "theGoal": "Das Ziel:",
     "phases": {
       "phase1": {
         "title": "Entdeckung",
@@ -679,5 +762,56 @@
     "removeAttachment": "Anhang entfernen",
     "attachFile": "Datei anhängen",
     "sendMessage": "Nachricht senden"
+  },
+  "aboutPage": {
+    "intro1": "Haal Lab ist ein Deep-Tech-KI-Laboratorium, das sich auf die Erforschung, Entwicklung und den Einsatz fortschrittlicher KI-Systeme für Organisationen konzentriert, die KI mit Vertrauen einführen möchten.",
+    "intro2": "Wir helfen Unternehmen, Forschungseinrichtungen und Organisationen, KI von einer aufkommenden Technologie in praktische Fähigkeiten zu verwandeln, die Entscheidungsfindung, Effizienz, Wissensmanagement und Innovation verbessern.",
+    "intro3": "Durch die Kombination von KI-Forschung, Software-Engineering und strategischer Implementierung entwickelt Haal Lab intelligente Systeme, die für reale organisatorische Herausforderungen konzipiert sind.",
+    "missionTitle": "Unsere Mission",
+    "missionP1": "Künstliche Intelligenz wird zu einer grundlegenden Technologie, die die Zukunft von Organisationen und Branchen gestaltet. Eine erfolgreike KI-Einführung erfordert jedoch mehr als der Zugang zu leistungsstarken Modellen. Organisationen brauchen eine klare Strategie, zuverlässige Technologie und Systeme, die mit ihren betrieblichen Zielen übereinstimmen.",
+    "missionP2": "Haal Lab existiert, um die Kluft zwischen KI-Forschung und realer Implementierung zu überbrücken, indem sichere, anpassbare, transparente und wertvolle KI-Systeme für Organisationen geschaffen werden.",
+    "visionTitle": "Vision",
+    "visionH3a": "KI-Transformation und strategische Implementierung",
+    "visionP1": "Haal Lab hilft Organisationen, KI-Lösungen zu erkunden, zu entwerfen und zu implementieren, die messbare Auswirkungen erzielen. Wir arbeiten mit Organisationen zusammen, um bedeutungsvolle KI-Möglichkeiten zu identifizieren, effektive Strategien zu entwickeln und Systeme zu bauen, die KI in bestehende Workflows und Abläufe integrieren.",
+    "visionH3b": "Unternehmens-KI-Systeme und intelligente Infrastruktur",
+    "visionP2": "Moderne Organisationen verfügen über wertvolles Wissen, Daten und Prozesse, die durch künstliche Intelligenz verbessert werden können. Haal Lab entwirft und entwickelt Unternehmens-KI-Systeme, die Organisationen helfen, die betriebliche Effizienz zu steigern, internes Wissen in umsetzbares Wissen zu verwandeln, komplexe Workflows zu automatisieren und neue KI-gestützte Fähigkeiten zu entwickeln.",
+    "visionH3c": "Private und vertrauenswürdige KI-Lösungen",
+    "visionP3": "Organisationen benötigen zunehmend KI-Systeme, die Sicherheit, Transparenz und Kontrolle über ihre Informationen bieten. Haal Lab entwickelt KI-Architekturen, die auf Datenschutz, sicheres Deployment, verantwortungsvolle KI-Praktiken, Systemtransparenz und langfristige Zuverlässigkeit ausgelegt sind.",
+    "researchTitle": "Forschung und Technik",
+    "researchP1": "Als KI-Laboratorium verbindet Haal Lab wissenschaftliche Erkundung mit praktischer Technik. Unsere Forschung konzentriert sich auf die Weiterentwicklung von Bereichen wie KI-Systemen, Large-Language-Model-Anwendungen, Wissensintelligenz, KI-Automatisierung, Retrieval- und Reasoning-Systemen sowie KI-Evaluation und -Zuverlässigkeit.",
+    "researchP2": "Unser Ziel ist es nicht nur, neue KI-Fähigkeiten zu erforschen, sondern sie in zuverlässige Technologien zu verwandeln, die reale organisatorische Probleme lösen.",
+    "futureTitle": "Unsere Vision",
+    "futureP1": "Die Zukunft der KI wird von Organisationen geprägt sein, die es erfolgreich schaffen, Intelligenz in ihre Abläufe zu integrieren und dabei Kontrolle, Vertrauen und strategische Unabhängigkeit zu bewahren.",
+    "futureP2": "Haal Lab stellt sich eine Zukunft vor, in der künstliche Intelligenz zu einer zuverlässigen Grundlage für Organisationen wird, die ihnen hilft, zu innovieren, effizient zu arbeiten und bessere Entscheidungen zu treffen.",
+    "partnerTitle": "Partner werden Sie mit Haal Lab",
+    "partnerP1": "Haal Lab arbeitet mit Unternehmen, Institutionen und Forschungseinrichtungen zusammen, die die Möglichkeiten der künstlichen Intelligenz erkunden und die nächste Generation intelligenter Systeme aufbauen möchten.",
+    "getInTouch": "Kontakt aufnehmen",
+    "faqEyebrow": "FAQ",
+    "faqTitle": "Fragen zu Haal Lab",
+    "faqIntro": "Wer wir sind, wie wir arbeiten und was wir über KI-Technik denken."
+  },
+  "contactPage": {
+    "faqEyebrow": "FAQ",
+    "faqTitle": "Fragen zur Zusammenarbeit",
+    "faqIntro": "Antwortzeiten, was Sie in Ihrer Anfrage angeben sollten, NDAs und wie wir mit Ihren Daten umgehen."
+  },
+  "pricingPage": {
+    "faqEyebrow": "FAQ",
+    "faqTitle": "Fragen zu den Preisen",
+    "faqIntro": "Häufige Fragen zu Kosten, Zeitplänen und was in jedem Paket enthalten ist."
+  },
+  "processPage": {
+    "faqEyebrow": "FAQ",
+    "faqTitle": "Fragen zu unserem Prozess",
+    "faqIntro": "Wie Haal Lab KI-Technik angeht, von der Entdeckung bis zum Deployment."
+  },
+  "networkPage": {
+    "partnershipEyebrow": "Partnerschaft",
+    "partnershipHeading": "Bauen Sie mit uns.",
+    "partnershipLead": "Wir arbeiten mit Organisationen zusammen, die unser Engagement für Open-Weight-Modelle, europäische Souveränität und produktionsreife Technik teilen. Wenn das auf Sie zutrifft, lassen Sie uns sprechen.",
+    "becomePartner": "Partner werden",
+    "faqEyebrow": "FAQ",
+    "faqTitle": "Fragen zu unserem Netzwerk",
+    "faqIntro": "Mit wem wir zusammenarbeiten und wie Sie dem Netzwerk beitreten können."
   }
 }

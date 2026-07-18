@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import { PricingPage } from "@/components/pages/pricing-page";
 import { PageSchemas } from "@/components/site/json-ld";
 import { Breadcrumbs } from "@/components/site/breadcrumbs";
 import { FaqSection } from "@/components/site/faq-section";
 import { RelatedLinks } from "@/components/site/related-links";
 import { FAQS, generateHreflangAlternates } from "@/lib/seo";
+import { getFAQsByLocale } from "@/lib/seo-faqs";
 import { Locale } from "@/i18n/routing";
 import { getPageMetadata } from "@/lib/page-metadata";
 
@@ -50,6 +51,8 @@ export default async function Pricing({
 }) {
   const { locale } = await params;
   setRequestLocale(locale as Locale);
+  const t = await getTranslations("pricingPage");
+  const localeFAQs = getFAQsByLocale(locale);
 
   return (
     <>
@@ -57,10 +60,10 @@ export default async function Pricing({
       <Breadcrumbs path="/pricing" />
       <PricingPage />
       <FaqSection
-        faqs={FAQS.pricing}
-        eyebrow="FAQ"
-        title="Questions about pricing"
-        intro="Common questions about costs, timelines, and what's included in each package."
+        faqs={localeFAQs.pricing || FAQS.pricing}
+        eyebrow={t("faqEyebrow")}
+        title={t("faqTitle")}
+        intro={t("faqIntro")}
       />
       <RelatedLinks current="/pricing" title="Continue exploring" eyebrow="Next" />
     </>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import { SolutionsPage } from "@/components/pages/solutions-page";
 import { PageSchemas } from "@/components/site/json-ld";
 import { Breadcrumbs } from "@/components/site/breadcrumbs";
@@ -7,6 +7,7 @@ import { FaqSection } from "@/components/site/faq-section";
 import { RelatedLinks } from "@/components/site/related-links";
 import { GlossarySection } from "@/components/site/glossary-section";
 import { FAQS, generateHreflangAlternates } from "@/lib/seo";
+import { getFAQsByLocale } from "@/lib/seo-faqs";
 import { Locale } from "@/i18n/routing";
 import { getPageMetadata } from "@/lib/page-metadata";
 
@@ -57,6 +58,8 @@ export default async function Solutions({
 }) {
   const { locale } = await params;
   setRequestLocale(locale as Locale);
+  const t = await getTranslations("solutions");
+  const localeFAQs = getFAQsByLocale(locale);
 
   return (
     <>
@@ -65,10 +68,10 @@ export default async function Solutions({
       <SolutionsPage />
       <GlossarySection />
       <FaqSection
-        faqs={FAQS.solutions}
-        eyebrow="FAQ"
-        title="Questions about our capabilities"
-        intro="Common questions about local AI, RAG, BGE-M3, air-gapped deployment, and AI infrastructure."
+        faqs={localeFAQs.solutions || FAQS.solutions}
+        eyebrow={t("faqEyebrow")}
+        title={t("faqTitle")}
+        intro={t("faqIntro")}
       />
       <RelatedLinks current="/solutions" title="Continue exploring" eyebrow="Next" />
     </>

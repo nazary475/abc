@@ -18,6 +18,11 @@
   "brand": {
     "tagline": "Building Intelligent Systems"
   },
+  "homePage": {
+    "faqEyebrow": "FAQ",
+    "faqTitle": "Frequently asked questions",
+    "faqIntro": "Answers to the questions we hear most often , from organizations evaluating AI engineering partners."
+  },
   "hero": {
     "badge": "AI Engineering Lab",
     "title1": "Your AI.",
@@ -41,6 +46,54 @@
     "ctaTitle": "Need an AI system tailored to your organization?",
     "ctaDescription": "Tell us about your requirements, technical environment, and goals. We'll evaluate the most appropriate approach.",
     "ctaButton": "Request Technical Discussion",
+    "faqEyebrow": "FAQ",
+    "faqTitle": "Questions about our capabilities",
+    "faqIntro": "Common questions about local AI, RAG, BGE-M3, air-gapped deployment, and AI infrastructure.",
+    "capabilityLabel": "Capability",
+    "whatWeDeliver": "What we deliver",
+    "stackLabel": "Stack",
+    "engagementEyebrow": "Engagement",
+    "engagementTitle": "How we work",
+    "engagementLead": "A four-stage engagement model designed to de-risk AI projects, and to leave your team with a system they can operate and extend.",
+    "engagementSteps": [
+      {"step": "01", "title": "Discovery", "description": "We start with the problem, not the model. A focused engagement to understand constraints, data, success criteria, and the production environment the system will live in."},
+      {"step": "02", "title": "Architecture", "description": "We design the system end-to-end, model choices, retrieval strategy, infrastructure, evaluation harness, and pressure-test it against your real workloads before committing."},
+      {"step": "03", "title": "Build", "description": "Engineering in small, demonstrable increments. You see working software early and often, with evaluation reports attached to every milestone."},
+      {"step": "04", "title": "Deploy", "description": "We ship to your environment, cloud, on-prem, or air-gapped, with the observability, runbooks, and documentation your team needs to operate it confidently."}
+    ],
+    "wantWalkthrough": "Want a deeper walkthrough?",
+    "walkthroughDesc": "We can map any of these capabilities to your specific use case in a 45-minute call.",
+    "bookCall": "Book a call",
+    "caps": {
+      "local-ai": {
+        "title": "Local AI Systems",
+        "tagline": "Private AI solutions that run securely on your infrastructure.",
+        "overview": "We build AI systems that operate entirely inside your environment, on workstations, on-prem servers, or air-gapped clusters. Local execution removes the trust, latency, and compliance constraints of cloud-hosted models, while preserving the full capabilities of modern open-weight LLMs. Our deployments are designed around quantized inference runtimes, GPU/CPU co-scheduling, and hardware-aware model selection so that the system remains responsive on whatever hardware you already own.",
+        "capabilities": ["On-prem inference with GGUF, llama.cpp, vLLM, and TGI", "Air-gapped deployment for regulated environments", "Hardware-aware quantization (INT4 / INT8 / FP8)", "Data sovereignty by architecture, not policy", "Offline model registry and version control"],
+        "stack": ["GGUF", "llama.cpp", "vLLM", "CUDA", "Docker", "Kubernetes"]
+      },
+      "llm-applications": {
+        "title": "LLM Applications",
+        "tagline": "Custom AI assistants, agents, and intelligent automation systems.",
+        "overview": "We design and ship LLM applications that go beyond chat, assistants that take action, agents that orchestrate tools, and automation systems that integrate cleanly with your existing software. Every application is built with evaluation harnesses, guardrails, and observability from day one, so behaviour stays predictable as you scale from prototype to production traffic.",
+        "capabilities": ["Agent orchestration with structured tool calling", "Tool-augmented LLMs over your internal APIs", "Workflow automation with human-in-the-loop safety", "Prompt and response evaluation pipelines", "Streaming, structured output, and function calling"],
+        "stack": ["Python", "TypeScript", "OpenAI", "Anthropic", "Open weights", "LangGraph"]
+      },
+      "knowledge-intelligence": {
+        "title": "Knowledge Intelligence",
+        "tagline": "Advanced RAG systems, semantic search, and document intelligence.",
+        "overview": "We build retrieval systems that actually find the right answer. Our RAG pipelines combine dense and sparse retrieval, cross-encoder reranking, query rewriting, and source attribution into a single, observable system. For document-heavy domains we add OCR, layout-aware chunking, and table understanding, so the system works on contracts, research papers, and scanned archives, not just clean text.",
+        "capabilities": ["Hybrid retrieval (BM25 + dense embeddings)", "Cross-encoder reranking for precision", "Multi-vector and parent-document indexing", "OCR + layout-aware document chunking", "Source attribution and citation tracking"],
+        "stack": ["BGE-M3", "Qdrant", "Postgres", "ColPali", "OCR", "rerankers"]
+      },
+      "ai-infrastructure": {
+        "title": "AI Infrastructure",
+        "tagline": "Deployment, optimization, and scalable AI engineering.",
+        "overview": "We build the infrastructure layer that makes AI systems run reliably in production. That means model serving tuned for your hardware, autoscaling that respects GPU memory, observability that surfaces latency and quality drift, and CI/CD pipelines that evaluate models, not just unit tests. The result is an AI platform your team can iterate on without firefighting.",
+        "capabilities": ["Model serving with vLLM, TGI, and Triton", "GPU scheduling, batching, and memory tuning", "Observability: traces, metrics, evals, drift", "Evaluation-driven CI/CD for prompts and models", "Cost and throughput optimization"],
+        "stack": ["vLLM", "Triton", "Prometheus", "OpenTelemetry", "Kubernetes", "Terraform"]
+      }
+    },
     "cards": {
       "card1": {
         "title": "AI Agents & Business Automation",
@@ -335,7 +388,10 @@
     "stayCurrentTitle": "We publish when we have something to say.",
     "stayCurrentDescription": "No newsletter spam, no growth funnels. Just technical writing on the AI systems we are actually building , sent when there is something worth reading.",
     "getInTouch": "Get in touch",
-    "articleCount": "{count} articles"
+    "articleCount": "{count} articles",
+    "faqEyebrow": "FAQ",
+    "faqTitle": "Questions about our research",
+    "faqIntro": "Where to find our technical writing and what we cover."
   },
   "languageSwitcher": {
     "label": "Language",
@@ -612,6 +668,33 @@
     "ctaTitle": "Need a custom AI system?",
     "ctaDescription": "Tell us about your technical environment and requirements.",
     "ctaButton": "Request Technical Discussion",
+    "introP1": "At Haal Lab, we believe successful AI systems are not created by applying the same solution to every organization.",
+    "introP2": "Every challenge has different requirements, data environments, security considerations, and operational goals. Our process combines research, experimentation, engineering, and continuous evaluation to identify and build the most suitable AI approach for each organization.",
+    "introP3": "We explore multiple possibilities, test different methods, evaluate their strengths and limitations, and develop solutions based on evidence rather than assumptions.",
+    "step1Title": "Understanding the Challenge",
+    "step1Body": "We begin by understanding the organization's objectives, existing processes, available resources, and the problem that needs to be solved.",
+    "step1Items": ["Business goals", "Operational challenges", "Existing knowledge and data sources", "Technical requirements", "Security and privacy considerations"],
+    "step1Goal": "Understand the real problem before designing a solution.",
+    "step2Title": "Research & Exploration",
+    "step2Body": "Before committing to an approach, we investigate available technologies and possible architectures.",
+    "step2Items": ["Exploring different AI methods", "Evaluating suitable models and techniques", "Testing possible architectures", "Studying trade-offs between performance, cost, security, and scalability"],
+    "step2Goal": "Find the approach that best fits the organization's needs.",
+    "step3Title": "Experimentation & Evaluation",
+    "step3Body": "AI development requires careful testing. We build experiments and prototypes to evaluate different solutions before full implementation.",
+    "step3Items": ["Effectiveness", "Reliability", "Performance", "Integration requirements", "Long-term sustainability"],
+    "step3Goal": "Make informed decisions based on results.",
+    "step4Title": "Engineering & Development",
+    "step4Body": "After identifying the most suitable approach, we design and develop the AI system according to the organization's environment and requirements.",
+    "step4Items": ["Practical", "Secure", "Maintainable", "Ready for real-world use"],
+    "step5Title": "Deployment & Continuous Improvement",
+    "step5Body": "AI systems continue evolving after deployment. We support organizations in integrating AI into their workflows, monitoring performance, and improving capabilities as new requirements and technologies emerge.",
+    "step5Goal": "Create a long-term AI capability, not just a one-time implementation.",
+    "philosophyTitle": "Our Philosophy",
+    "philosophyP1": "The best AI solution is not always the newest or largest technology.",
+    "philosophyP2": "It is the solution that best matches the organization's goals, constraints, and future vision.",
+    "philosophyP3": "Haal Lab combines scientific exploration with engineering discipline to help organizations build AI systems they can trust.",
+    "startConversation": "Start a conversation",
+    "theGoal": "The goal:",
     "phases": {
       "phase1": {
         "title": "Discovery",
@@ -679,5 +762,56 @@
     "removeAttachment": "Remove attachment",
     "attachFile": "Attach file",
     "sendMessage": "Send message"
+  },
+  "aboutPage": {
+    "intro1": "Haal Lab is a deep-tech artificial intelligence laboratory focused on researching, engineering, and deploying advanced AI systems for organizations seeking to adopt artificial intelligence with confidence.",
+    "intro2": "We help companies, research institutions, and organizations transform AI from an emerging technology into practical capabilities that improve decision-making, efficiency, knowledge management, and innovation.",
+    "intro3": "By combining AI research, software engineering, and strategic implementation, Haal Lab develops intelligent systems designed for real-world organizational challenges.",
+    "missionTitle": "Our Mission",
+    "missionP1": "Artificial intelligence is becoming a fundamental technology shaping the future of organizations and industries. However, successful AI adoption requires more than access to powerful models. Organizations need a clear strategy, reliable technology, and systems that align with their operational goals.",
+    "missionP2": "Haal Lab exists to bridge the gap between AI research and real-world implementation by creating AI systems that are secure, adaptable, transparent, and valuable for organizations.",
+    "visionTitle": "Vision",
+    "visionH3a": "AI Transformation and Strategic Implementation",
+    "visionP1": "Haal Lab helps organizations explore, design, and implement artificial intelligence solutions that create measurable impact. We work with organizations to identify meaningful AI opportunities, develop effective strategies, and build systems that integrate AI into existing workflows and operations. Our focus is helping organizations move from AI experimentation toward practical and scalable AI adoption.",
+    "visionH3b": "Enterprise AI Systems and Intelligent Infrastructure",
+    "visionP2": "Modern organizations contain valuable knowledge, data, and processes that can be enhanced through artificial intelligence. Haal Lab designs and develops enterprise AI systems that help organizations improve operational efficiency, transform internal knowledge into actionable intelligence, automate complex workflows, enhance research and decision-making, and develop new AI-powered capabilities.",
+    "visionH3c": "Private and Trustworthy AI Solutions",
+    "visionP3": "Organizations increasingly require AI systems that provide security, transparency, and control over their information. Haal Lab develops AI architectures designed around data privacy, secure deployment, responsible AI practices, system transparency, and long-term reliability. We believe organizations should be able to understand, manage, and evolve the AI systems they depend on.",
+    "researchTitle": "Research and Engineering",
+    "researchP1": "As an AI laboratory, Haal Lab combines scientific exploration with practical engineering. Our research focuses on advancing areas such as artificial intelligence systems, large language model applications, knowledge intelligence, AI automation, retrieval and reasoning systems, and AI evaluation and reliability.",
+    "researchP2": "Our goal is not only to explore new AI capabilities, but to transform them into dependable technologies that solve real organizational problems.",
+    "futureTitle": "Our Vision",
+    "futureP1": "The future of AI will be shaped by organizations that can successfully integrate intelligence into their operations while maintaining control, trust, and strategic independence.",
+    "futureP2": "Haal Lab envisions a future where artificial intelligence becomes a reliable foundation for organizations, helping them innovate, operate efficiently, and make better decisions.",
+    "partnerTitle": "Partner With Haal Lab",
+    "partnerP1": "Haal Lab collaborates with companies, institutions, and research organizations looking to explore the opportunities of artificial intelligence and build the next generation of intelligent systems.",
+    "getInTouch": "Get in touch",
+    "faqEyebrow": "FAQ",
+    "faqTitle": "Questions about Haal Lab",
+    "faqIntro": "Who we are, how we work, and what we believe about AI engineering."
+  },
+  "contactPage": {
+    "faqEyebrow": "FAQ",
+    "faqTitle": "Questions about working with us",
+    "faqIntro": "Response times, what to include in your inquiry, NDAs, and how we handle your data."
+  },
+  "pricingPage": {
+    "faqEyebrow": "FAQ",
+    "faqTitle": "Questions about pricing",
+    "faqIntro": "Common questions about costs, timelines, and what's included in each package."
+  },
+  "processPage": {
+    "faqEyebrow": "FAQ",
+    "faqTitle": "Questions about our process",
+    "faqIntro": "How Haal Lab approaches AI engineering, from discovery to deployment."
+  },
+  "networkPage": {
+    "partnershipEyebrow": "Partnership",
+    "partnershipHeading": "Build with us.",
+    "partnershipLead": "We partner with organizations that share our commitment to open-weight models, European sovereignty, and production-grade engineering. If that sounds like you, let's talk.",
+    "becomePartner": "Become a partner",
+    "faqEyebrow": "FAQ",
+    "faqTitle": "Questions about our network",
+    "faqIntro": "Who we partner with and how to join the network."
   }
 }

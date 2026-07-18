@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import { ResearchPage } from "@/components/pages/research-page";
 import { PageSchemas } from "@/components/site/json-ld";
 import { Breadcrumbs } from "@/components/site/breadcrumbs";
 import { FaqSection } from "@/components/site/faq-section";
 import { RelatedLinks } from "@/components/site/related-links";
 import { FAQS, generateHreflangAlternates } from "@/lib/seo";
+import { getFAQsByLocale } from "@/lib/seo-faqs";
 import { Locale } from "@/i18n/routing";
 import { getPageMetadata } from "@/lib/page-metadata";
 
@@ -54,16 +55,18 @@ export default async function Research({
 }) {
   const { locale } = await params;
   setRequestLocale(locale as Locale);
+  const t = await getTranslations("researchPage");
+  const localeFAQs = getFAQsByLocale(locale);
   return (
     <>
       <PageSchemas path="/research" locale={locale} />
       <Breadcrumbs path="/research" />
       <ResearchPage locale={locale} />
       <FaqSection
-        faqs={FAQS.research}
-        eyebrow="FAQ"
-        title="Questions about our research"
-        intro="Where to find our technical writing and what we cover."
+        faqs={localeFAQs.research || FAQS.research}
+        eyebrow={t("faqEyebrow")}
+        title={t("faqTitle")}
+        intro={t("faqIntro")}
       />
       <RelatedLinks current="/research" title="Continue exploring" eyebrow="Next" />
     </>

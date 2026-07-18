@@ -1,5 +1,6 @@
 import { Link } from "@/i18n/routing";
 import { ArrowRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { PageHeader } from "@/components/blocks/page-header";
 import {
   Reveal,
@@ -7,6 +8,8 @@ import {
 } from "@/components/blocks/primitives";
 
 export function AboutPage() {
+  const t = useTranslations("aboutPage");
+
   return (
     <>
       <PageHeader pageKey="about" />
@@ -15,19 +18,13 @@ export function AboutPage() {
         <Reveal>
           <div className="max-w-3xl space-y-6">
             <p className="text-lg leading-relaxed text-justify text-hl-muted">
-              Haal Lab is a deep-tech artificial intelligence laboratory focused on
-              researching, engineering, and deploying advanced AI systems for organizations
-              seeking to adopt artificial intelligence with confidence.
+              {t("intro1")}
             </p>
             <p className="text-lg leading-relaxed text-justify text-hl-muted">
-              We help companies, research institutions, and organizations transform AI from
-              an emerging technology into practical capabilities that improve
-              decision-making, efficiency, knowledge management, and innovation.
+              {t("intro2")}
             </p>
             <p className="text-lg leading-relaxed text-justify text-hl-muted">
-              By combining AI research, software engineering, and strategic implementation,
-              Haal Lab develops intelligent systems designed for real-world organizational
-              challenges.
+              {t("intro3")}
             </p>
           </div>
         </Reveal>
@@ -37,19 +34,13 @@ export function AboutPage() {
         <Reveal>
           <div className="max-w-3xl space-y-6">
             <h2 className="text-2xl font-bold tracking-tight text-foreground">
-              Our Mission
+              {t("missionTitle")}
             </h2>
             <p className="text-lg leading-relaxed text-justify text-hl-muted">
-              Artificial intelligence is becoming a fundamental technology shaping the
-              future of organizations and industries. However, successful AI adoption
-              requires more than access to powerful models. Organizations need a clear
-              strategy, reliable technology, and systems that align with their operational
-              goals.
+              {t("missionP1")}
             </p>
             <p className="text-lg leading-relaxed text-justify text-hl-muted">
-              Haal Lab exists to bridge the gap between AI research and real-world
-              implementation by creating AI systems that are secure, adaptable,
-              transparent, and valuable for organizations.
+              {t("missionP2")}
             </p>
           </div>
         </Reveal>
@@ -59,43 +50,28 @@ export function AboutPage() {
         <Reveal>
           <div className="max-w-3xl space-y-6">
             <h2 className="text-2xl font-bold tracking-tight text-foreground">
-              Vision
+              {t("visionTitle")}
             </h2>
 
             <h3 className="text-xl font-semibold text-foreground">
-              AI Transformation and Strategic Implementation
+              {t("visionH3a")}
             </h3>
             <p className="text-lg leading-relaxed text-justify text-hl-muted">
-              Haal Lab helps organizations explore, design, and implement artificial
-              intelligence solutions that create measurable impact. We work with
-              organizations to identify meaningful AI opportunities, develop effective
-              strategies, and build systems that integrate AI into existing workflows and
-              operations. Our focus is helping organizations move from AI experimentation
-              toward practical and scalable AI adoption.
+              {t("visionP1")}
             </p>
 
             <h3 className="text-xl font-semibold text-foreground">
-              Enterprise AI Systems and Intelligent Infrastructure
+              {t("visionH3b")}
             </h3>
             <p className="text-lg leading-relaxed text-justify text-hl-muted">
-              Modern organizations contain valuable knowledge, data, and processes that can
-              be enhanced through artificial intelligence. Haal Lab designs and develops
-              enterprise AI systems that help organizations improve operational efficiency,
-              transform internal knowledge into actionable intelligence, automate complex
-              workflows, enhance research and decision-making, and develop new AI-powered
-              capabilities.
+              {t("visionP2")}
             </p>
 
             <h3 className="text-xl font-semibold text-foreground">
-              Private and Trustworthy AI Solutions
+              {t("visionH3c")}
             </h3>
             <p className="text-lg leading-relaxed text-justify text-hl-muted">
-              Organizations increasingly require AI systems that provide security,
-              transparency, and control over their information. Haal Lab develops AI
-              architectures designed around data privacy, secure deployment, responsible AI
-              practices, system transparency, and long-term reliability. We believe
-              organizations should be able to understand, manage, and evolve the AI systems
-              they depend on.
+              {t("visionP3")}
             </p>
           </div>
         </Reveal>
@@ -105,18 +81,13 @@ export function AboutPage() {
         <Reveal>
           <div className="max-w-3xl space-y-6">
             <h2 className="text-2xl font-bold tracking-tight text-foreground">
-              Research and Engineering
+              {t("researchTitle")}
             </h2>
             <p className="text-lg leading-relaxed text-justify text-hl-muted">
-              As an AI laboratory, Haal Lab combines scientific exploration with practical
-              engineering. Our research focuses on advancing areas such as artificial
-              intelligence systems, large language model applications, knowledge
-              intelligence, AI automation, retrieval and reasoning systems, and AI
-              evaluation and reliability.
+              {t("researchP1")}
             </p>
             <p className="text-lg leading-relaxed text-justify text-hl-muted">
-              Our goal is not only to explore new AI capabilities, but to transform them
-              into dependable technologies that solve real organizational problems.
+              {t("researchP2")}
             </p>
           </div>
         </Reveal>
@@ -126,17 +97,13 @@ export function AboutPage() {
         <Reveal>
           <div className="max-w-3xl space-y-6">
             <h2 className="text-2xl font-bold tracking-tight text-foreground">
-              Our Vision
+              {t("futureTitle")}
             </h2>
             <p className="text-lg leading-relaxed text-justify text-hl-muted">
-              The future of AI will be shaped by organizations that can successfully
-              integrate intelligence into their operations while maintaining control,
-              trust, and strategic independence.
+              {t("futureP1")}
             </p>
             <p className="text-lg leading-relaxed text-justify text-hl-muted">
-              Haal Lab envisions a future where artificial intelligence becomes a reliable
-              foundation for organizations, helping them innovate, operate efficiently,
-              and make better decisions.
+              {t("futureP2")}
             </p>
           </div>
         </Reveal>
@@ -146,18 +113,16 @@ export function AboutPage() {
         <Reveal>
           <div className="max-w-3xl">
             <h2 className="text-2xl font-bold tracking-tight text-foreground">
-              Partner With Haal Lab
+              {t("partnerTitle")}
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-justify text-hl-muted">
-              Haal Lab collaborates with companies, institutions, and research
-              organizations looking to explore the opportunities of artificial intelligence
-              and build the next generation of intelligent systems.
+              {t("partnerP1")}
             </p>
             <Link
               href="/contact"
               className="mt-6 inline-flex items-center gap-2 text-hl-cyan hover:underline"
             >
-              Get in touch
+              {t("getInTouch")}
               <ArrowRight className="h-4 w-4" />
             </Link>
           </div>

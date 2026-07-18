@@ -121,7 +121,7 @@ export function Footer() {
 
         <div className="mt-12 flex flex-col items-start justify-between gap-6 border-t border-hl-border pt-8 text-xs text-hl-muted sm:flex-row">
           <div className="flex flex-col gap-3">
-            <p>{t("rights", { year: new Date().getFullYear() })}</p>
+            <p>{t("rights", { year: 2026 })}</p>
             <div className="flex flex-col gap-1 font-mono text-[11px]">
               <div className="flex items-center gap-2">
                 <span className="inline-flex items-center gap-1 rounded-md bg-hl-surface/60 px-2 py-1 font-bold text-hl-cyan">

@@ -209,7 +209,7 @@ export function websiteSchema() {
         "@id": `${SITE.url}/#organization`,
       },
     },
-    copyrightYear: new Date().getFullYear(),
+    copyrightYear: 2026,
     copyrightHolder: {
       "@id": `${SITE.url}/#organization`,
     },
@@ -662,7 +662,7 @@ export function howWeWorkWebPageSchema(locale: string) {
     inLanguage: locale,
     
     datePublished: "2026-07-17",
-    dateModified: new Date().toISOString().split("T")[0],
+    dateModified: "2026-07-18",
     
     keywords: [
       "AI engineering process",
@@ -844,7 +844,7 @@ export function articleSchema(opts: {
     },
     
     // Copyright
-    copyrightYear: new Date(opts.date).getFullYear(),
+    copyrightYear: parseInt(opts.date.split('-')[0]),
     copyrightHolder: {
       "@id": `${SITE.url}/#organization`,
     },

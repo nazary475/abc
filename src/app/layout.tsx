@@ -15,7 +15,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 /**
- * Root layout — provides <html> and <body> wrappers.
+ * Root layout , provides <html> and <body> wrappers.
  * The locale-aware layout (Navbar, Footer, metadata, JSON-LD) lives in
  * src/app/[locale]/layout.tsx.
  */
@@ -23,7 +23,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://haal-lab.solutions"),
   title: {
-    default: "Haal Lab — Engineering Intelligent Systems",
+    default: "Haal Lab , Engineering Intelligent Systems",
     template: "%s · Haal Lab",
   },
   description:
@@ -88,7 +88,7 @@ export const metadata: Metadata = {
     locale: "en",
     url: "https://haal-lab.solutions",
     siteName: "Haal Lab",
-    title: "Haal Lab — Engineering Intelligent Systems",
+    title: "Haal Lab , Engineering Intelligent Systems",
     description:
       "Deep-tech AI engineering company. Private AI systems, LLM applications, RAG, and AI infrastructure.",
     images: [
@@ -96,7 +96,7 @@ export const metadata: Metadata = {
         url: "https://haal-lab.solutions/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Haal Lab — Engineering Intelligent Systems",
+        alt: "Haal Lab , Engineering Intelligent Systems",
       },
     ],
   },
@@ -104,14 +104,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@haallab",
     creator: "@haallab",
-    title: "Haal Lab — Engineering Intelligent Systems",
+    title: "Haal Lab , Engineering Intelligent Systems",
     description:
       "Deep-tech AI engineering company. Private AI systems, LLM applications, RAG, and AI infrastructure.",
     images: ["https://haal-lab.solutions/og-image.png"],
   },
-  verification: {
-    google: "your-google-verification-code", // Add your actual verification code
-  },
+  // Note: Site verified via DNS (Domain name provider method) in Google Search Console
   category: "technology",
 };
 
@@ -133,7 +131,7 @@ export default function RootLayout({
         <meta charSet="utf-8" />
         <meta name="language" content="English" />
         <meta name="author" content="Hussain Nazary, CTO & AI Engineer at Haal Lab" />
-        <meta name="copyright" content="Haal Lab © 2024-2025" />
+        <meta name="copyright" content="Haal Lab © 2026" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="alternate icon" href="/icon" type="image/png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

@@ -119,11 +119,40 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col items-start justify-between gap-4 border-t border-hl-border pt-6 text-xs text-hl-muted sm:flex-row sm:items-center">
-          <p>{t("rights", { year: new Date().getFullYear() })}</p>
-          <p className="font-mono uppercase tracking-wider">
-            Engineering Intelligent Systems
-          </p>
+        <div className="mt-12 flex flex-col items-start justify-between gap-6 border-t border-hl-border pt-8 text-xs text-hl-muted sm:flex-row">
+          <div className="flex flex-col gap-3">
+            <p>{t("rights", { year: new Date().getFullYear() })}</p>
+            <div className="flex flex-col gap-1 font-mono text-[11px]">
+              <div className="flex items-center gap-2">
+                <span className="inline-flex items-center gap-1 rounded-md bg-hl-surface/60 px-2 py-1 font-bold text-hl-cyan">
+                  <svg className="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  Officially Registered
+                </span>
+              </div>
+              <p className="text-hl-muted">
+                <span className="font-semibold text-foreground/70">RCS Évreux:</span> 107 626 616
+              </p>
+              <p className="text-hl-muted">
+                <span className="font-semibold text-foreground/70">SIRET:</span> 107 626 616 00018
+              </p>
+              <p className="text-hl-muted">
+                <span className="font-semibold text-foreground/70">Legal Name:</span> HAAL LAB
+              </p>
+              <p className="text-hl-muted">
+                1 Rue Auguste Delaune, 27000 Évreux, France
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col items-start gap-2 sm:items-end">
+            <p className="font-mono font-bold uppercase tracking-wider text-foreground/80">
+              Engineering Intelligent Systems
+            </p>
+            <p className="text-hl-muted">
+              Founded: July 2026 • Founder: Ali-Zafar Najafi
+            </p>
+          </div>
         </div>
       </div>
     </footer>

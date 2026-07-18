@@ -32,8 +32,8 @@ export function organizationSchema() {
     "@type": ["Organization", "Corporation", "TechnologyCompany"],
     "@id": `${SITE.url}/#organization`,
     name: SITE.name,
-    legalName: "Haal Lab Solutions",
-    alternateName: ["Haal Lab", "HaalLab"],
+    legalName: "HAAL LAB",
+    alternateName: ["Haal Lab", "HaalLab", "Haal Lab Solutions"],
     url: SITE.url,
     logo: {
       "@type": "ImageObject",
@@ -52,16 +52,45 @@ export function organizationSchema() {
     email: SITE.email,
     description: SITE.description,
     slogan: "Engineering Intelligent Systems for the Future",
-    foundingDate: SITE.foundingDate,
+    foundingDate: "2026-07-17",
     foundingLocation: {
       "@type": "Place",
-      name: "Europe",
+      name: "Évreux, France",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "1 Rue Auguste Delaune",
+        addressLocality: "Évreux",
+        postalCode: "27000",
+        addressCountry: "FR",
+      },
+    },
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "1 Rue Auguste Delaune",
+      addressLocality: "Évreux",
+      postalCode: "27000",
+      addressCountry: "FR",
     },
     areaServed: {
       "@type": "Place",
       name: "Worldwide",
     },
     sameAs: [SITE.github, SITE.linkedin],
+    // Official registration identifiers
+    identifier: [
+      {
+        "@type": "PropertyValue",
+        propertyID: "RCS",
+        value: "107 626 616 R.C.S. Évreux",
+      },
+      {
+        "@type": "PropertyValue",
+        propertyID: "SIRET",
+        value: "10762661600018",
+      },
+    ],
+    leiCode: "107626616",
+    taxID: "10762661600018",
     contactPoint: [
       {
         "@type": "ContactPoint",
@@ -87,9 +116,13 @@ export function organizationSchema() {
     ],
     founder: {
       "@type": "Person",
-      name: "Hussain Nazary",
+      name: "Ali-Zafar Najafi",
+      givenName: "Ali-Zafar",
+      familyName: "Najafi",
       jobTitle: "Founder & Chief Technology Officer",
       url: SITE.url,
+      nationality: "Afghan",
+      birthDate: "2001-05-14",
     },
     employee: [
       {

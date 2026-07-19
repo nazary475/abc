@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import createIntlMiddleware from "next-intl/middleware";
-import { routing } from "./i18n/routing";
+import { routing, locales } from "./i18n/routing";
 
 const intlMiddleware = createIntlMiddleware(routing);
 
@@ -19,8 +19,13 @@ export function middleware(request: NextRequest) {
   if (acceptHeader.includes("text/markdown")) {
     // Rewrite to markdown endpoint if it exists
     // Pattern: /en/about -> /en/about/md
+    // Ensure the path has a locale prefix before appending /md
+    const hasLocalePrefix = locales.some(
+      (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
+    );
+    const basePath = hasLocalePrefix ? pathname : `/en${pathname}`;
     const url = request.nextUrl.clone();
-    url.pathname = `${pathname}/md`;
+    url.pathname = `${basePath}/md`;
     return NextResponse.rewrite(url);
   }
 

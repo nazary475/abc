@@ -19,6 +19,10 @@
     "tagline": "Costruire sistemi intelligenti"
   },
   "homePage": {
+    "metaTitle": "Haal Lab — Sistemi IA privati",
+    "metaDescription": "Sistemi IA privati. LLM on-premise, RAG e applicazioni IA personalizzate con sovranità dei dati.",
+    "heroTitle": "La tua IA. I tuoi dati. Il tuo controllo.",
+    "heroDescription": "Ogni soluzione viene distribuita nel tuo ambiente, dando il controllo totale sui tuoi dati, modelli e operazioni.",
     "faqEyebrow": "FAQ",
     "faqTitle": "Domande frequenti",
     "faqIntro": "Risposte alle domande che riceviamo più spesso, da organizzazioni che valutano partner di ingegneria IA."
@@ -356,7 +360,7 @@
       "legalName": "HAAL LAB",
       "address": "1 Rue Auguste Delaune, 27000 Évreux, Francia"
     },
-    "tagline": "IA privata per organizzazioni europee",
+    "tagline": "IA privata per organizzazioni in tutto il mondo",
     "founded": "Fondato: Luglio 2026 • Fondatore: Ali-Zafar Najafi"
   },
   "relatedLinks": {
@@ -436,7 +440,7 @@
     "dataEnvironmentOptions": {
       "onPremise": "Infrastruttura on-premise",
       "privateCloud": "Cloud privato",
-      "europeanCloud": "Infrastruttura cloud europea",
+      "europeanCloud": "Infrastruttura cloud regionale",
       "notDecided": "Non deciso"
     },
     "projectDescription": "Descrizione del progetto",
@@ -480,7 +484,7 @@
     "network": {
       "eyebrow": "Partner",
       "title": "Le persone e le organizzazioni dietro il nostro lavoro.",
-      "lead": "Haal Lab è costruito su una rete di partner tecnologici e consulenti esperti. Insieme, ci aiutano a fornire sistemi IA che soddisfano le reali esigenze delle organizzazioni europee.",
+      "lead": "Haal Lab è costruito su una rete di partner tecnologici e consulenti esperti. Insieme, ci aiutano a fornire sistemi IA che soddisfano le reali esigenze delle organizzazioni in tutto il mondo.",
       "meta": "haal-lab.solutions / partner"
     },
     "about": {
@@ -764,6 +768,14 @@
     "sendMessage": "Invia messaggio"
   },
   "aboutPage": {
+    "metaTitle": "Chi siamo — Ingegneria IA privata",
+    "metaDescription": "Haal Lab è un'azienda di ingegneria IA focalizzata su sistemi IA privati on-premise. Approccio guidato dalla ricerca per applicazioni LLM personalizzate, sistemi RAG e sovranità dei dati.",
+    "title": "Chi siamo - Haal Lab",
+    "description": "Haal Lab è un laboratorio di intelligenza artificiale deep-tech focalizzato sulla ricerca, ingegneria e distribuzione di sistemi IA avanzati.",
+    "missionDescription": "Haal Lab esiste per colmare il divario tra la ricerca IA e l'implementazione reale creando sistemi IA sicuri, adattabili, trasparenti e utili.",
+    "privacyFirstDescription": "Costruiamo sistemi IA che girano interamente sulla tua infrastruttura. L'esecuzione locale elimina i vincoli di fiducia, latenza e conformità dei modelli cloud.",
+    "researchDrivenDescription": "Seguiamo la frontiera della ricerca IA e traduciamo gli sviluppi più avanzati in ingegneria pronta per la produzione.",
+    "engineeringExcellenceDescription": "Progettiamo sistemi IA affidabili dal prototipo alla produzione. Osservabilità, framework di valutazione e riproducibilità sono integrati fin dal primo giorno.",
     "intro1": "Haal Lab è un laboratorio di intelligenza artificiale deep-tech focalizzato sulla ricerca, ingegneria e distribuzione di sistemi IA avanzati per organizzazioni che cercano di adottare l'intelligenza artificiale con fiducia.",
     "intro2": "Aiutiamo aziende, istituzioni di ricerca e organizzazioni a trasformare l'IA da tecnologia emergente in capacità pratiche che migliorano la decision-making, l'efficienza, la gestione delle conoscenze e l'innovazione.",
     "intro3": "Combinando ricerca IA, ingegneria del software e implementazione strategica, Haal Lab sviluppa sistemi intelligenti progettati per le sfide organizzative del mondo reale.",
@@ -808,7 +820,7 @@
   "networkPage": {
     "partnershipEyebrow": "Partnership",
     "partnershipHeading": "Costruisci con noi.",
-    "partnershipLead": "Ci associamo con organizzazioni che condividono il nostro impegno per modelli open-weight, sovranità europea e ingegneria di livello produttivo. Se ti riconosci, parliamone.",
+    "partnershipLead": "Ci associamo con organizzazioni che condividono il nostro impegno per modelli open-weight, sovranità dei dati e ingegneria di livello produttivo. Se ti riconosci, parliamone.",
     "becomePartner": "Diventa partner",
     "faqEyebrow": "FAQ",
     "faqTitle": "Domande sulla nostra rete",

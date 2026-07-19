@@ -14,9 +14,9 @@ import type { Metadata } from "next";
 const isStatic = process.env.VERCEL === undefined;
 
 export const metadata: Metadata = {
-  title: "Haal Lab — Private AI Systems for European Organizations",
+  title: "Haal Lab — Private AI Systems",
   description:
-    "On-premises AI systems for European organizations. We build private LLMs, RAG systems, and custom AI applications deployed on your infrastructure with full data sovereignty.",
+    "On-premises AI systems. We build private LLMs, RAG systems, and custom AI applications deployed on your infrastructure with full data sovereignty.",
   metadataBase: new URL("https://haal-lab.solutions"),
   alternates: {
     canonical: "/",
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Haal Lab — Private AI Systems for European Organizations",
+    title: "Haal Lab — Private AI Systems",
     description:
-      "On-premises AI systems for European organizations. Private LLMs, RAG systems, and custom AI applications.",
+      "On-premises AI systems. Private LLMs, RAG systems, and custom AI applications.",
     url: "https://haal-lab.solutions",
     siteName: "Haal Lab",
     locale: "en",
@@ -47,9 +47,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Haal Lab — Private AI Systems for European Organizations",
+    title: "Haal Lab — Private AI Systems",
     description:
-      "On-premises AI systems for European organizations. Private LLMs, RAG systems, and custom AI applications.",
+      "On-premises AI systems. Private LLMs, RAG systems, and custom AI applications.",
     creator: "@haallab",
     images: ["https://haal-lab.solutions/og-image.png"],
   },

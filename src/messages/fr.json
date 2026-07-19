@@ -19,6 +19,10 @@
     "tagline": "Construire des systèmes intelligents"
   },
   "homePage": {
+    "metaTitle": "Haal Lab — Systèmes IA privés",
+    "metaDescription": "Systèmes IA privés. LLMs sur site, RAG et applications IA personnalisées avec souveraineté des données.",
+    "heroTitle": "Votre IA. Vos données. Votre contrôle.",
+    "heroDescription": "Chaque solution est déployée dans votre environnement, vous donnant un contrôle total sur vos données, modèles et opérations.",
     "faqEyebrow": "FAQ",
     "faqTitle": "Foire aux questions",
     "faqIntro": "Réponses aux questions que nous entendons le plus souvent, des organisations qui évaluent des partenaires d'ingénierie IA."
@@ -436,7 +440,7 @@
     "dataEnvironmentOptions": {
       "onPremise": "Infrastructure sur site",
       "privateCloud": "Cloud privé",
-      "europeanCloud": "Infrastructure cloud européenne",
+      "europeanCloud": "Infrastructure cloud régionale",
       "notDecided": "Pas encore décidé"
     },
     "projectDescription": "Description du projet",
@@ -764,6 +768,14 @@
     "sendMessage": "Envoyer le message"
   },
   "aboutPage": {
+    "metaTitle": "À propos — Ingénierie IA privée",
+    "metaDescription": "Haal Lab est une entreprise d'ingénierie IA axée sur les systèmes IA privés sur site. Approche basée sur la recherche pour applications LLM personnalisées, systèmes RAG et souveraineté des données.",
+    "title": "À propos de Haal Lab",
+    "description": "Haal Lab est un laboratoire d'intelligence artificielle deep-tech spécialisé dans la recherche, l'ingénierie et le déploiement de systèmes IA avancés.",
+    "missionDescription": "Haal Lab existe pour combler le fossé entre la recherche en IA et l'implémentation réelle en créant des systèmes IA sécurisés, adaptables, transparents et utiles.",
+    "privacyFirstDescription": "Nous construisons des systèmes IA qui s'exécutent entièrement sur votre infrastructure. L'exécution locale élimine les contraintes de confiance, de latence et de conformité des modèles hébergés dans le cloud.",
+    "researchDrivenDescription": "Nous suivons la frontière de la recherche en IA et transformons les développements de pointe en ingénierie prête pour la production.",
+    "engineeringExcellenceDescription": "Nous concevons des systèmes IA fiables du prototype à la production. L'observabilité, les cadres d'évaluation et la reproductibilité sont intégrés dès le premier jour.",
     "intro1": "Haal Lab est un laboratoire d'intelligence artificielle deep-tech spécialisé dans la recherche, l'ingénierie et le déploiement de systèmes IA avancés pour les organisations souhaitant adopter l'IA en toute confiance.",
     "intro2": "Nous aidons les entreprises, les institutions de recherche et les organisations à transformer l'IA d'une technologie émergente en des capacités pratiques qui améliorent la prise de décision, l'efficacité, la gestion des connaissances et l'innovation.",
     "intro3": "En combinant la recherche en IA, l'ingénierie logicielle et l'implémentation stratégique, Haal Lab développe des systèmes intelligents conçus pour les défis organisationnels du monde réel.",

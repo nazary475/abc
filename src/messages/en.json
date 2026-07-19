@@ -19,6 +19,10 @@
     "tagline": "Building Intelligent Systems"
   },
   "homePage": {
+    "metaTitle": "Haal Lab — Private AI Systems",
+    "metaDescription": "Private AI systems. On-premises LLMs, RAG, and custom AI with data sovereignty.",
+    "heroTitle": "Your AI. Your Data. Your Control.",
+    "heroDescription": "Every solution is deployed within your environment, giving you complete ownership of your data, models, and operations.",
     "faqEyebrow": "FAQ",
     "faqTitle": "Frequently asked questions",
     "faqIntro": "Answers to the questions we hear most often , from organizations evaluating AI engineering partners."
@@ -356,7 +360,7 @@
       "legalName": "HAAL LAB",
       "address": "1 Rue Auguste Delaune, 27000 Évreux, France"
     },
-    "tagline": "Private AI for European Organizations",
+    "tagline": "Private AI",
     "founded": "Founded: July 2026 • Founder: Ali-Zafar Najafi"
   },
   "relatedLinks": {
@@ -436,7 +440,7 @@
     "dataEnvironmentOptions": {
       "onPremise": "On-premise infrastructure",
       "privateCloud": "Private cloud",
-      "europeanCloud": "European cloud infrastructure",
+      "europeanCloud": "Regional cloud infrastructure",
       "notDecided": "Not decided"
     },
     "projectDescription": "Project Description",
@@ -480,7 +484,7 @@
     "network": {
       "eyebrow": "Partners",
       "title": "The people and organizations behind our work.",
-      "lead": "Haal Lab is built on a network of technology partners and expert advisors. Together, they help us deliver AI systems that meet the real needs of European organizations.",
+      "lead": "Haal Lab is built on a network of technology partners and expert advisors. Together, they help us deliver AI systems that meet real needs.",
       "meta": "haal-lab.solutions / partners"
     },
     "about": {
@@ -764,6 +768,14 @@
     "sendMessage": "Send message"
   },
   "aboutPage": {
+    "metaTitle": "About — Private AI Engineering",
+    "metaDescription": "Haal Lab is an AI engineering company focused on private, on-premises AI systems. Research-driven approach to custom LLM applications, RAG systems, and data sovereignty.",
+    "title": "About Haal Lab",
+    "description": "Haal Lab is a deep-tech artificial intelligence laboratory focused on researching, engineering, and deploying advanced AI systems.",
+    "missionDescription": "Haal Lab exists to bridge the gap between AI research and real-world implementation by creating AI systems that are secure, adaptable, transparent, and valuable.",
+    "privacyFirstDescription": "We build AI systems that run entirely on your infrastructure. Local execution removes the trust, latency, and compliance constraints of cloud-hosted models.",
+    "researchDrivenDescription": "We track the AI research frontier and translate cutting-edge developments into production-ready engineering.",
+    "engineeringExcellenceDescription": "We design reliable AI systems from prototype to production. Observability, evaluation harnesses, and reproducibility are built in from day one.",
     "intro1": "Haal Lab is a deep-tech artificial intelligence laboratory focused on researching, engineering, and deploying advanced AI systems for organizations seeking to adopt artificial intelligence with confidence.",
     "intro2": "We help companies, research institutions, and organizations transform AI from an emerging technology into practical capabilities that improve decision-making, efficiency, knowledge management, and innovation.",
     "intro3": "By combining AI research, software engineering, and strategic implementation, Haal Lab develops intelligent systems designed for real-world organizational challenges.",
@@ -808,7 +820,7 @@
   "networkPage": {
     "partnershipEyebrow": "Partnership",
     "partnershipHeading": "Build with us.",
-    "partnershipLead": "We partner with organizations that share our commitment to open-weight models, European sovereignty, and production-grade engineering. If that sounds like you, let's talk.",
+    "partnershipLead": "We partner with organizations that share our commitment to open-weight models, data sovereignty, and production-grade engineering. If that sounds like you, let's talk.",
     "becomePartner": "Become a partner",
     "faqEyebrow": "FAQ",
     "faqTitle": "Questions about our network",

@@ -19,56 +19,56 @@ export interface PageMetadata {
 export const PAGE_METADATA: Record<string, Record<Locale, PageMetadata>> = {
   home: {
     en: {
-      title: "Haal Lab — Private AI Systems for European Organizations",
+      title: "Haal Lab — Private AI Systems ",
       description:
-        "Haal Lab builds private, on-premises AI systems for European organizations. Deploy LLMs, RAG systems, and custom AI applications on your infrastructure with full data sovereignty.",
+        "Haal Lab builds private, on-premises AI systems. Deploy LLMs, RAG systems, and custom AI applications on your infrastructure with full data sovereignty.",
     },
     de: {
-      title: "Haal Lab — Private KI-Systeme für europäische Organisationen",
+      title: "Haal Lab — Private KI-Systeme für Organisationen weltweit",
       description:
-        "Haal Lab entwickelt private, lokale KI-Systeme für europäische Organisationen. LLMs, RAG-Systeme und maßgeschneiderte KI-Anwendungen auf Ihrer Infrastruktur mit vollständiger Datensouveränität.",
+        "Haal Lab entwickelt private, lokale KI-Systeme für Organisationen weltweit. LLMs, RAG-Systeme und maßgeschneiderte KI-Anwendungen auf Ihrer Infrastruktur mit vollständiger Datensouveränität.",
     },
     fr: {
-      title: "Haal Lab — Systèmes IA privés pour organisations européennes",
+      title: "Haal Lab — Systèmes IA privés pour organisations dans le monde entier",
       description:
-        "Haal Lab construit des systèmes IA privés sur site pour les organisations européennes. Déployez des LLMs, systèmes RAG et applications IA personnalisées sur votre infrastructure avec souveraineté des données.",
+        "Haal Lab construit des systèmes IA privés sur site pour les organisations dans le monde entier. Déployez des LLMs, systèmes RAG et applications IA personnalisées sur votre infrastructure avec souveraineté des données.",
     },
     es: {
-      title: "Haal Lab — Sistemas IA privados para organizaciones europeas",
+      title: "Haal Lab — Sistemas IA privados para organizaciones en todo el mundo",
       description:
-        "Haal Lab construye sistemas IA privados locales para organizaciones europeas. Implemente LLMs, sistemas RAG y aplicaciones IA personalizadas en su infraestructura con soberanía de datos completa.",
+        "Haal Lab construye sistemas IA privados locales para organizaciones en todo el mundo. Implemente LLMs, sistemas RAG y aplicaciones IA personalizadas en su infraestructura con soberanía de datos completa.",
     },
     it: {
-      title: "Haal Lab — Sistemi IA privati per organizzazioni europee",
+      title: "Haal Lab — Sistemi IA privati per organizzazioni in tutto il mondo",
       description:
-        "Haal Lab costruisce sistemi IA privati on-premise per organizzazioni europee. Implementa LLM, sistemi RAG e applicazioni IA personalizzate sulla tua infrastruttura con piena sovranità dei dati.",
+        "Haal Lab costruisce sistemi IA privati on-premise per organizzazioni in tutto il mondo. Implementa LLM, sistemi RAG e applicazioni IA personalizzate sulla tua infrastruttura con piena sovranità dei dati.",
     },
   },
   about: {
     en: {
-      title: "About — Private AI Engineering for European Organizations",
+      title: "About — Private AI Engineering ",
       description:
-        "Haal Lab is an AI engineering company focused on private, on-premises AI systems for European organizations. Research-driven approach to custom LLM applications, RAG systems, and data sovereignty.",
+        "Haal Lab is an AI engineering company focused on private, on-premises AI systems. Research-driven approach to custom LLM applications, RAG systems, and data sovereignty.",
     },
     de: {
-      title: "Über uns — Private KI-Engineering für europäische Organisationen",
+      title: "Über uns — Private KI-Engineering für Organisationen weltweit",
       description:
-        "Haal Lab ist ein KI-Engineering-Unternehmen, das sich auf private, lokale KI-Systeme für europäische Organisationen konzentriert. Forschungsgetriebener Ansatz für maßgeschneiderte LLM-Anwendungen, RAG-Systeme und Datensouveränität.",
+        "Haal Lab ist ein KI-Engineering-Unternehmen, das sich auf private, lokale KI-Systeme für Organisationen weltweit konzentriert. Forschungsgetriebener Ansatz für maßgeschneiderte LLM-Anwendungen, RAG-Systeme und Datensouveränität.",
     },
     fr: {
-      title: "À propos — Ingénierie IA privée pour organisations européennes",
+      title: "À propos — Ingénierie IA privée pour organisations dans le monde entier",
       description:
-        "Haal Lab est une entreprise d'ingénierie IA axée sur les systèmes IA privés sur site pour les organisations européennes. Approche basée sur la recherche pour applications LLM personnalisées, systèmes RAG et souveraineté des données.",
+        "Haal Lab est une entreprise d'ingénierie IA axée sur les systèmes IA privés sur site pour les organisations dans le monde entier. Approche basée sur la recherche pour applications LLM personnalisées, systèmes RAG et souveraineté des données.",
     },
     es: {
-      title: "Acerca de — Ingeniería IA privada para organizaciones europeas",
+      title: "Acerca de — Ingeniería IA privada para organizaciones en todo el mundo",
       description:
-        "Haal Lab es una empresa de ingeniería IA enfocada en sistemas IA privados locales para organizaciones europeas. Enfoque impulsado por investigación para aplicaciones LLM personalizadas, sistemas RAG y soberanía de datos.",
+        "Haal Lab es una empresa de ingeniería IA enfocada en sistemas IA privados locales para organizaciones en todo el mundo. Enfoque impulsado por investigación para aplicaciones LLM personalizadas, sistemas RAG y soberanía de datos.",
     },
     it: {
-      title: "Chi siamo — Ingegneria IA privata per organizzazioni europee",
+      title: "Chi siamo — Ingegneria IA privata per organizzazioni in tutto il mondo",
       description:
-        "Haal Lab è un'azienda di ingegneria IA focalizzata su sistemi IA privati on-premise per organizzazioni europee. Approccio guidato dalla ricerca per applicazioni LLM personalizzate, sistemi RAG e sovranità dei dati.",
+        "Haal Lab è un'azienda di ingegneria IA focalizzata su sistemi IA privati on-premise per organizzazioni in tutto il mondo. Approccio guidato dalla ricerca per applicazioni LLM personalizzate, sistemi RAG e sovranità dei dati.",
     },
   },
   solutions: {
@@ -100,27 +100,27 @@ export const PAGE_METADATA: Record<string, Record<Locale, PageMetadata>> = {
   },
   pricing: {
     en: {
-      title: "Pricing — Private AI Engineering Packages for European Organizations",
+      title: "Pricing — Private AI Engineering Packages ",
       description:
         "Four packages for private AI deployment: Starter (€1,900), Explorer (€4,900), Professional (€14,900), Enterprise (€39,900+). Custom systems deployed on your infrastructure.",
     },
     de: {
-      title: "Preise — Private KI-Engineering-Pakete für europäische Organisationen",
+      title: "Preise — Private KI-Engineering-Pakete für Organisationen weltweit",
       description:
         "Vier Pakete für private KI-Bereitstellung: Starter (1.900 €), Explorer (4.900 €), Professional (14.900 €), Enterprise (39.900 €+). Maßgeschneiderte Systeme auf Ihrer Infrastruktur.",
     },
     fr: {
-      title: "Tarifs — Packages d'ingénierie IA privée pour organisations européennes",
+      title: "Tarifs — Packages d'ingénierie IA privée pour organisations dans le monde entier",
       description:
         "Quatre packages pour déploiement IA privé : Starter (1 900 €), Explorer (4 900 €), Professional (14 900 €), Enterprise (39 900 €+). Systèmes personnalisés déployés sur votre infrastructure.",
     },
     es: {
-      title: "Precios — Paquetes de ingeniería IA privada para organizaciones europeas",
+      title: "Precios — Paquetes de ingeniería IA privada para organizaciones en todo el mundo",
       description:
         "Cuatro paquetes para implementación IA privada: Starter (1.900 €), Explorer (4.900 €), Professional (14.900 €), Enterprise (39.900 €+). Sistemas personalizados implementados en su infraestructura.",
     },
     it: {
-      title: "Prezzi — Pacchetti di ingegneria IA privata per organizzazioni europee",
+      title: "Prezzi — Pacchetti di ingegneria IA privata per organizzazioni in tutto il mondo",
       description:
         "Quattro pacchetti per distribuzione IA privata: Starter (1.900 €), Explorer (4.900 €), Professional (14.900 €), Enterprise (39.900 €+). Sistemi personalizzati distribuiti sulla tua infrastruttura.",
     },
@@ -156,81 +156,81 @@ export const PAGE_METADATA: Record<string, Record<Locale, PageMetadata>> = {
     en: {
       title: "Research — Technical Articles on Private AI Deployment",
       description:
-        "Technical articles on deploying LLMs on-premises, RAG system architecture, BGE-M3 embeddings, evaluation frameworks, and private AI infrastructure for European organizations.",
+        "Technical articles on deploying LLMs on-premises, RAG system architecture, BGE-M3 embeddings, evaluation frameworks, and private AI infrastructure.",
     },
     de: {
       title: "Forschung — Technische Artikel über private KI-Bereitstellung",
       description:
-        "Technische Artikel über die lokale Bereitstellung von LLMs, RAG-Systemarchitektur, BGE-M3-Embeddings, Bewertungsframeworks und private KI-Infrastruktur für europäische Organisationen.",
+        "Technische Artikel über die lokale Bereitstellung von LLMs, RAG-Systemarchitektur, BGE-M3-Embeddings, Bewertungsframeworks und private KI-Infrastruktur für Organisationen weltweit.",
     },
     fr: {
       title: "Recherche — Articles techniques sur le déploiement IA privé",
       description:
-        "Articles techniques sur le déploiement de LLMs sur site, architecture de systèmes RAG, embeddings BGE-M3, frameworks d'évaluation et infrastructure IA privée pour organisations européennes.",
+        "Articles techniques sur le déploiement de LLMs sur site, architecture de systèmes RAG, embeddings BGE-M3, frameworks d'évaluation et infrastructure IA privée pour organisations dans le monde entier.",
     },
     es: {
       title: "Investigación — Artículos técnicos sobre implementación IA privada",
       description:
-        "Artículos técnicos sobre implementación local de LLMs, arquitectura de sistemas RAG, embeddings BGE-M3, frameworks de evaluación e infraestructura IA privada para organizaciones europeas.",
+        "Artículos técnicos sobre implementación local de LLMs, arquitectura de sistemas RAG, embeddings BGE-M3, frameworks de evaluación e infraestructura IA privada para organizaciones en todo el mundo.",
     },
     it: {
       title: "Ricerca — Articoli tecnici sulla distribuzione IA privata",
       description:
-        "Articoli tecnici sulla distribuzione on-premise di LLM, architettura di sistemi RAG, embeddings BGE-M3, framework di valutazione e infrastruttura IA privata per organizzazioni europee.",
+        "Articoli tecnici sulla distribuzione on-premise di LLM, architettura di sistemi RAG, embeddings BGE-M3, framework di valutazione e infrastruttura IA privata per organizzazioni in tutto il mondo.",
     },
   },
   network: {
     en: {
-      title: "Network — European AI Technology Partners",
+      title: "Network — AI Technology Partners",
       description:
-        "Haal Lab's European technology partners: NVIDIA for GPU infrastructure, Hugging Face for open-weight models, Qdrant for vector databases, Mistral AI, Aleph Alpha, Hetzner, Scaleway for European cloud, and research partners.",
+        "Haal Lab's technology partners: NVIDIA for GPU infrastructure, Hugging Face for open-weight models, Qdrant for vector databases, Mistral AI, Aleph Alpha, and research partners.",
     },
     de: {
-      title: "Netzwerk — Europäische KI-Technologiepartner",
+      title: "Netzwerk — KI-Technologiepartner weltweit",
       description:
-        "Haal Labs europäische Technologiepartner: NVIDIA für GPU-Infrastruktur, Hugging Face für Open-Weight-Modelle, Qdrant für Vektordatenbanken, Mistral AI, Aleph Alpha, Hetzner, Scaleway für europäische Cloud und Forschungspartner.",
+        "Haal Labs Technologiepartner weltweit: NVIDIA für GPU-Infrastruktur, Hugging Face für Open-Weight-Modelle, Qdrant für Vektordatenbanken, Mistral AI, Aleph Alpha und Forschungspartner.",
     },
     fr: {
-      title: "Réseau — Partenaires technologiques IA européens",
+      title: "Réseau — Partenaires technologiques IA dans le monde entier",
       description:
-        "Partenaires technologiques européens de Haal Lab : NVIDIA pour infrastructure GPU, Hugging Face pour modèles open-weight, Qdrant pour bases vectorielles, Mistral AI, Aleph Alpha, Hetzner, Scaleway pour cloud européen et partenaires de recherche.",
+        "Partenaires technologiques de Haal Lab dans le monde entier : NVIDIA pour infrastructure GPU, Hugging Face pour modèles open-weight, Qdrant pour bases vectorielles, Mistral AI, Aleph Alpha et partenaires de recherche.",
     },
     es: {
-      title: "Red — Socios tecnológicos IA europeos",
+      title: "Red — Socios tecnológicos IA en todo el mundo",
       description:
-        "Socios tecnológicos europeos de Haal Lab: NVIDIA para infraestructura GPU, Hugging Face para modelos open-weight, Qdrant para bases vectoriales, Mistral AI, Aleph Alpha, Hetzner, Scaleway para nube europea y socios de investigación.",
+        "Socios tecnológicos de Haal Lab en todo el mundo: NVIDIA para infraestructura GPU, Hugging Face para modelos open-weight, Qdrant para bases vectoriales, Mistral AI, Aleph Alpha y socios de investigación.",
     },
     it: {
-      title: "Rete — Partner tecnologici IA europei",
+      title: "Rete — Partner tecnologici IA nel mondo",
       description:
-        "Partner tecnologici europei di Haal Lab: NVIDIA per infrastruttura GPU, Hugging Face per modelli open-weight, Qdrant per database vettoriali, Mistral AI, Aleph Alpha, Hetzner, Scaleway per cloud europeo e partner di ricerca.",
+        "Partner tecnologici di Haal Lab nel mondo: NVIDIA per infrastruttura GPU, Hugging Face per modelli open-weight, Qdrant per database vettoriali, Mistral AI, Aleph Alpha e partner di ricerca.",
     },
   },
   contact: {
     en: {
       title: "Contact — Start Your Private AI Project",
       description:
-        "Contact Haal Lab to discuss your private AI requirements. We build on-premises LLM systems, RAG applications, and custom AI for European organizations. Email: hussain.nazary@haal-lab.solutions",
+        "Contact Haal Lab to discuss your private AI requirements. We build on-premises LLM systems, RAG applications, and custom AI. Email: hussain.nazary@haal-lab.solutions",
     },
     de: {
       title: "Kontakt — Starten Sie Ihr privates KI-Projekt",
       description:
-        "Kontaktieren Sie Haal Lab, um Ihre privaten KI-Anforderungen zu besprechen. Wir entwickeln lokale LLM-Systeme, RAG-Anwendungen und maßgeschneiderte KI für europäische Organisationen. E-Mail: hussain.nazary@haal-lab.solutions",
+        "Kontaktieren Sie Haal Lab, um Ihre privaten KI-Anforderungen zu besprechen. Wir entwickeln lokale LLM-Systeme, RAG-Anwendungen und maßgeschneiderte KI für Organisationen weltweit. E-Mail: hussain.nazary@haal-lab.solutions",
     },
     fr: {
       title: "Contact — Démarrez votre projet IA privé",
       description:
-        "Contactez Haal Lab pour discuter de vos besoins en IA privée. Nous construisons des systèmes LLM sur site, applications RAG et IA personnalisée pour organisations européennes. Email : hussain.nazary@haal-lab.solutions",
+        "Contactez Haal Lab pour discuter de vos besoins en IA privée. Nous construisons des systèmes LLM sur site, applications RAG et IA personnalisée pour organisations dans le monde entier. Email : hussain.nazary@haal-lab.solutions",
     },
     es: {
       title: "Contacto — Inicie su proyecto IA privado",
       description:
-        "Contacte a Haal Lab para discutir sus requisitos de IA privada. Construimos sistemas LLM locales, aplicaciones RAG e IA personalizada para organizaciones europeas. Email: hussain.nazary@haal-lab.solutions",
+        "Contacte a Haal Lab para discutir sus requisitos de IA privada. Construimos sistemas LLM locales, aplicaciones RAG e IA personalizada para organizaciones en todo el mundo. Email: hussain.nazary@haal-lab.solutions",
     },
     it: {
       title: "Contatto — Avvia il tuo progetto IA privato",
       description:
-        "Contatta Haal Lab per discutere i tuoi requisiti di IA privata. Costruiamo sistemi LLM on-premise, applicazioni RAG e IA personalizzata per organizzazioni europee. Email: hussain.nazary@haal-lab.solutions",
+        "Contatta Haal Lab per discutere i tuoi requisiti di IA privata. Costruiamo sistemi LLM on-premise, applicazioni RAG e IA personalizzata per organizzazioni in tutto il mondo. Email: hussain.nazary@haal-lab.solutions",
     },
   },
 };
@@ -248,7 +248,7 @@ export function getPageMetadata(page: keyof typeof PAGE_METADATA, locale: Locale
       url: "https://haal-lab.solutions/og-image.png",
       width: 1200,
       height: 630,
-      alt: "Haal Lab - Private AI Systems for European Organizations",
+      alt: "Haal Lab - Private AI Systems ",
     },
   };
 }

@@ -51,7 +51,7 @@ export function organizationSchema() {
     },
     email: SITE.email,
     description: SITE.description,
-    slogan: "Private AI Systems for European Organizations",
+    slogan: "Private AI Systems",
     foundingDate: "2026-07-17",
     foundingLocation: {
       "@type": "Place",
@@ -73,8 +73,7 @@ export function organizationSchema() {
     },
     areaServed: {
       "@type": "Place",
-      name: "Europe",
-      description: "Primarily serving European organizations, institutions, and companies",
+      name: "Worldwide",
     },
     sameAs: [SITE.github, SITE.linkedin],
     // Official registration identifiers
@@ -98,21 +97,21 @@ export function organizationSchema() {
         email: SITE.email,
         contactType: "sales",
         availableLanguage: ["English", "German", "French", "Spanish", "Italian"],
-        areaServed: "Europe",
+        areaServed: "Worldwide",
       },
       {
         "@type": "ContactPoint",
         email: SITE.email,
         contactType: "customer support",
         availableLanguage: ["English", "German", "French"],
-        areaServed: "Europe",
+        areaServed: "Worldwide",
       },
       {
         "@type": "ContactPoint",
         email: SITE.email,
         contactType: "technical support",
         availableLanguage: ["English"],
-        areaServed: "Europe",
+        areaServed: "Worldwide",
       },
     ],
     founder: {
@@ -147,7 +146,7 @@ export function organizationSchema() {
       "Large Language Models",
       "Retrieval-Augmented Generation (RAG)",
       "AI Data Sovereignty",
-      "European AI Compliance",
+      "AI Compliance",
       "Custom LLM Applications",
       "AI Infrastructure Engineering",
       "Semantic Search Systems",
@@ -173,7 +172,7 @@ export function organizationSchema() {
       itemOffered: {
         "@type": "Service",
         serviceType: "Private AI Engineering Services",
-        areaServed: "Europe",
+        areaServed: "Worldwide",
       },
     },
     industry: "Information Technology",
@@ -250,8 +249,7 @@ export function serviceSchema() {
     ],
     areaServed: {
       "@type": "Place",
-      name: "Europe",
-      description: "European organizations requiring data sovereignty and private AI",
+      name: "Worldwide",
     },
     availableChannel: {
       "@type": "ServiceChannel",
@@ -260,10 +258,10 @@ export function serviceSchema() {
     },
     audience: {
       "@type": "Audience",
-      audienceType: ["European Enterprises", "Research Institutions", "Government Organizations", "Regulated Industries"],
+      audienceType: ["Enterprises", "Research Institutions", "Government Organizations", "Regulated Industries"],
       geographicArea: {
         "@type": "Place",
-        name: "Europe",
+        name: "Worldwide",
       },
     },
     category: "Information Technology Services",
@@ -310,7 +308,7 @@ export function softwareApplicationSchema(locale: string) {
     applicationCategory: "BusinessApplication",
     applicationSubCategory: "Private AI Infrastructure",
     description:
-      "On-premises AI platform for European organizations requiring data sovereignty. Deploy LLMs, RAG systems, and custom AI applications on your own infrastructure.",
+      "On-premises AI platform requiring data sovereignty. Deploy LLMs, RAG systems, and custom AI applications on your own infrastructure.",
     url: `${SITE.url}/${localePrefix}`,
     operatingSystem: "Linux, Windows Server, macOS",
     offers: {

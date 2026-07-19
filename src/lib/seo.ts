@@ -25,9 +25,9 @@ export const SITE = {
   twitter: "@haallab",
   foundingDate: "2026",
   description:
-    "Haal Lab builds private, on-premises AI systems for European organizations. We deploy custom LLMs, RAG systems, and AI applications on your infrastructure with full data sovereignty and GDPR compliance.",
+    "Haal Lab builds private, on-premises AI systems. We deploy custom LLMs, RAG systems, and AI applications on your infrastructure with full data sovereignty.",
   shortDescription:
-    "Private AI systems for European organizations. On-premises LLMs, RAG, and custom AI with data sovereignty.",
+    "Private AI systems. On-premises LLMs, RAG, and custom AI with data sovereignty.",
 } as const;
 
 /**
@@ -59,13 +59,13 @@ export const NAV: { label: string; href: string; description: string }[] = [
     label: "Network",
     href: "/network",
     description:
-      "European technology partners: NVIDIA, Hugging Face, Qdrant, Mistral AI, Aleph Alpha, Hetzner, Scaleway, and research institutions.",
+      "Technology partners: NVIDIA, Hugging Face, Qdrant, Mistral AI, Aleph Alpha, and research institutions.",
   },
   {
     label: "About",
     href: "/about",
     description:
-      "AI engineering company focused on private, on-premises AI systems for European organizations requiring data sovereignty.",
+      "AI engineering company focused on private, on-premises AI systems requiring data sovereignty.",
   },
   {
     label: "Pricing",
@@ -162,12 +162,12 @@ export const FAQS: LocaleFAQs = {
     {
       question: "What does Haal Lab do?",
       answer:
-        "Haal Lab builds private, on-premises AI systems for European organizations. We deploy LLMs, RAG systems, and custom AI applications on your infrastructure with full data sovereignty. No cloud APIs, no data sharing — everything runs on your servers.",
+        "Haal Lab builds private, on-premises AI systems. We deploy LLMs, RAG systems, and custom AI applications on your infrastructure with full data sovereignty. No cloud APIs, no data sharing — everything runs on your servers.",
     },
     {
       question: "Who is Haal Lab for?",
       answer:
-        "Haal Lab serves European enterprises, research institutions, government organizations, and regulated industries (healthcare, finance, legal) that require data sovereignty, GDPR compliance, and cannot use cloud-based AI services.",
+        "Haal Lab serves enterprises, research institutions, government organizations, and regulated industries (healthcare, finance, legal) that require data sovereignty and cannot use cloud-based AI services.",
     },
     {
       question: "Does Haal Lab build private or on-premises AI?",
@@ -182,7 +182,7 @@ export const FAQS: LocaleFAQs = {
     {
       question: "Why choose Haal Lab over cloud AI services?",
       answer:
-        "Cloud AI services require sending your data to external servers. Haal Lab deploys AI on your infrastructure with complete data sovereignty, GDPR compliance, and European data residency. You control the models, the data, and the infrastructure.",
+        "Cloud AI services require sending your data to external servers. Haal Lab deploys AI on your infrastructure with complete data sovereignty and data residency. You control the models, the data, and the infrastructure.",
     },
     {
       question: "How do I start working with Haal Lab?",
@@ -204,7 +204,7 @@ export const FAQS: LocaleFAQs = {
     {
       question: "Why use BGE-M3 for embeddings?",
       answer:
-        "BGE-M3 is a multilingual embedding model that produces dense, sparse, and ColBERT representations in one pass. Ideal for European organizations with multilingual documents (legal contracts, technical docs across EU languages). Better retrieval quality than single-language models.",
+        "BGE-M3 is a multilingual embedding model that produces dense, sparse, and ColBERT representations in one pass. Ideal for organizations with multilingual documents (legal contracts, technical docs across multiple languages). Better retrieval quality than single-language models.",
     },
     {
       question: "Can Haal Lab deploy AI in air-gapped environments?",
@@ -294,17 +294,17 @@ export const FAQS: LocaleFAQs = {
     {
       question: "Who are Haal Lab's partners?",
       answer:
-        "Haal Lab partners with technology providers (NVIDIA, Hugging Face, Qdrant, Mistral AI, Aleph Alpha), European cloud and infrastructure providers (Hetzner, Scaleway, Gaia-X), and research institutions (Fraunhofer, INRIA). We focus on open-weight models, open-source infrastructure, and European data sovereignty.",
+        "Haal Lab partners with technology providers (NVIDIA, Hugging Face, Qdrant, Mistral AI, Aleph Alpha) and research institutions (Fraunhofer, INRIA). We focus on open-weight models, open-source infrastructure, and data sovereignty.",
     },
     {
-      question: "Does Haal Lab work with European research institutions?",
+      question: "Does Haal Lab work with research institutions?",
       answer:
-        "Yes. We collaborate with European research organizations including Fraunhofer and INRIA on applied AI, retrieval systems, multilingual NLP, and evaluation methodology. These partnerships keep our engineering grounded in current research.",
+        "Yes. We collaborate with research organizations including Fraunhofer and INRIA on applied AI, retrieval systems, multilingual NLP, and evaluation methodology. These partnerships keep our engineering grounded in current research.",
     },
     {
       question: "How do I become a Haal Lab partner?",
       answer:
-        "We partner with organizations that share our commitment to open-weight models, European sovereignty, and production-grade engineering. If you build technology, infrastructure, or research that aligns with our practice, reach out at hussain.nazary@haal-lab.solutions.",
+        "We partner with organizations that share our commitment to open-weight models, data sovereignty, and production-grade engineering. If you build technology, infrastructure, or research that aligns with our practice, reach out at hussain.nazary@haal-lab.solutions.",
     },
   ],
   pricing: [

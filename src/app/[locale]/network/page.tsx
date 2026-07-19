@@ -36,7 +36,7 @@ export async function generateMetadata({
       "Qdrant partner",
       "Mistral AI partner",
       "Aleph Alpha partner",
-      "European AI research",
+      "AI research",
       "Fraunhofer",
       "INRIA",
       "Gaia-X partner",

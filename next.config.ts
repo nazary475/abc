@@ -42,6 +42,34 @@ const nextConfig: NextConfig = {
     "localhost:3000",
     "127.0.0.1:3000",
   ],
+  // RFC 8288 Link headers for agent discovery
+  async headers() {
+    return [
+      {
+        // Apply to homepage and all locale homepages
+        source: "/:locale(en|de|fr|es|it)?",
+        headers: [
+          {
+            key: "Link",
+            value: [
+              // AI agent discovery (llms.txt format)
+              '</llms.txt>; rel="ai-plugin"; type="text/plain"',
+              // AI plugin manifest
+              '</.well-known/ai-plugin.json>; rel="ai-plugin"; type="application/json"',
+              // OpenAPI specification for API documentation
+              '</.well-known/openapi.json>; rel="service-desc"; type="application/json"',
+              // RSS feed for research content
+              '</research/feed.xml>; rel="alternate"; type="application/rss+xml"; title="Research Feed"',
+              // Security policy
+              '</.well-known/security.txt>; rel="security-policy"',
+              // Web app manifest
+              '</manifest.json>; rel="manifest"',
+            ].join(", "),
+          },
+        ],
+      },
+    ];
+  },
 };
 
 export default withNextIntl(nextConfig);

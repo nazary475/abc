@@ -58,14 +58,14 @@ export function Navbar() {
         <Logo />
 
         {/* Desktop nav */}
-        <ul className="hidden items-center gap-1 md:flex">
+        <ul className="hidden flex-nowrap items-center gap-1 md:flex">
           {NAV_ITEMS.map((item) => {
             const active = isActive(item.href);
             return (
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className={`relative rounded-md px-3.5 py-2 text-sm font-medium transition-colors ${
+                  className={`relative whitespace-nowrap rounded-md px-3.5 py-2 text-sm font-medium transition-colors ${
                     active
                       ? "text-foreground"
                       : "text-hl-muted hover:text-foreground"

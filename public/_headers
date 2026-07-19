@@ -1,0 +1,59 @@
+# RFC 8288 Link headers for agent discovery
+# This file is used for static hosting (Netlify, Cloudflare Pages, etc.)
+# For Vercel, headers are configured in next.config.ts
+
+/*
+  Link: </llms.txt>; rel="ai-plugin"; type="text/plain"
+  Link: </.well-known/ai-plugin.json>; rel="ai-plugin"; type="application/json"
+  Link: </.well-known/openapi.json>; rel="service-desc"; type="application/json"
+  Link: </research/feed.xml>; rel="alternate"; type="application/rss+xml"; title="Research Feed"
+  Link: </.well-known/security.txt>; rel="security-policy"
+  Link: </manifest.json>; rel="manifest"
+
+/
+  Link: </llms.txt>; rel="ai-plugin"; type="text/plain"
+  Link: </.well-known/ai-plugin.json>; rel="ai-plugin"; type="application/json"
+  Link: </.well-known/openapi.json>; rel="service-desc"; type="application/json"
+  Link: </research/feed.xml>; rel="alternate"; type="application/rss+xml"; title="Research Feed"
+  Link: </.well-known/security.txt>; rel="security-policy"
+  Link: </manifest.json>; rel="manifest"
+
+/en
+  Link: </llms.txt>; rel="ai-plugin"; type="text/plain"
+  Link: </.well-known/ai-plugin.json>; rel="ai-plugin"; type="application/json"
+  Link: </.well-known/openapi.json>; rel="service-desc"; type="application/json"
+  Link: </research/feed.xml>; rel="alternate"; type="application/rss+xml"; title="Research Feed"
+  Link: </.well-known/security.txt>; rel="security-policy"
+  Link: </manifest.json>; rel="manifest"
+
+/de
+  Link: </llms.txt>; rel="ai-plugin"; type="text/plain"
+  Link: </.well-known/ai-plugin.json>; rel="ai-plugin"; type="application/json"
+  Link: </.well-known/openapi.json>; rel="service-desc"; type="application/json"
+  Link: </research/feed.xml>; rel="alternate"; type="application/rss+xml"; title="Research Feed"
+  Link: </.well-known/security.txt>; rel="security-policy"
+  Link: </manifest.json>; rel="manifest"
+
+/fr
+  Link: </llms.txt>; rel="ai-plugin"; type="text/plain"
+  Link: </.well-known/ai-plugin.json>; rel="ai-plugin"; type="application/json"
+  Link: </.well-known/openapi.json>; rel="service-desc"; type="application/json"
+  Link: </research/feed.xml>; rel="alternate"; type="application/rss+xml"; title="Research Feed"
+  Link: </.well-known/security.txt>; rel="security-policy"
+  Link: </manifest.json>; rel="manifest"
+
+/es
+  Link: </llms.txt>; rel="ai-plugin"; type="text/plain"
+  Link: </.well-known/ai-plugin.json>; rel="ai-plugin"; type="application/json"
+  Link: </.well-known/openapi.json>; rel="service-desc"; type="application/json"
+  Link: </research/feed.xml>; rel="alternate"; type="application/rss+xml"; title="Research Feed"
+  Link: </.well-known/security.txt>; rel="security-policy"
+  Link: </manifest.json>; rel="manifest"
+
+/it
+  Link: </llms.txt>; rel="ai-plugin"; type="text/plain"
+  Link: </.well-known/ai-plugin.json>; rel="ai-plugin"; type="application/json"
+  Link: </.well-known/openapi.json>; rel="service-desc"; type="application/json"
+  Link: </research/feed.xml>; rel="alternate"; type="application/rss+xml"; title="Research Feed"
+  Link: </.well-known/security.txt>; rel="security-policy"
+  Link: </manifest.json>; rel="manifest"

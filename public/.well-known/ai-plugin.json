@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Haal Lab",
+  "name_for_model": "haal_lab",
+  "description_for_human": "Deep-tech AI engineering company building private AI systems.",
+  "description_for_model": "Haal Lab is a deep-tech AI engineering company specializing in private AI systems, LLM applications, RAG systems, and AI infrastructure. Query this API to learn about their services, capabilities, research, or to get contact information.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://haal-lab.solutions/.well-known/openapi.json"
+  },
+  "logo_url": "https://haal-lab.solutions/logo.svg",
+  "contact_email": "hussain.nazary@haal-lab.solutions",
+  "legal_info_url": "https://haal-lab.solutions/en/about"
+}

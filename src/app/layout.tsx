@@ -23,11 +23,11 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://haal-lab.solutions"),
   title: {
-    default: "Haal Lab — Private AI Systems for European Organizations",
+    default: "Haal Lab — Private AI Systems",
     template: "%s · Haal Lab",
   },
   description:
-    "Deep-tech AI engineering company. We build private AI systems, LLM applications, RAG, and AI infrastructure for European organizations.",
+    "Deep-tech AI engineering company. We build private AI systems, LLM applications, RAG, and AI infrastructure.",
   applicationName: "Haal Lab",
   authors: [
     { name: "Hussain Nazary", url: "https://haal-lab.solutions" },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     "AI infrastructure",
     "on-premise AI",
     "GDPR compliant AI",
-    "European AI",
+    "AI sovereignty",
   ],
   referrer: "origin-when-cross-origin",
   creator: "Hussain Nazary",
@@ -88,15 +88,15 @@ export const metadata: Metadata = {
     locale: "en",
     url: "https://haal-lab.solutions",
     siteName: "Haal Lab",
-    title: "Haal Lab — Private AI Systems for European Organizations",
+    title: "Haal Lab — Private AI Systems",
     description:
-      "On-premises AI systems for European organizations. Deploy LLMs, RAG systems, and custom AI on your infrastructure with full data sovereignty.",
+      "On-premises AI systems. Deploy LLMs, RAG systems, and custom AI on your infrastructure with full data sovereignty.",
     images: [
       {
         url: "https://haal-lab.solutions/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Haal Lab — Private AI Systems for European Organizations",
+        alt: "Haal Lab — Private AI Systems",
       },
     ],
   },
@@ -104,13 +104,13 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@haallab",
     creator: "@haallab",
-    title: "Haal Lab — Private AI Systems for European Organizations",
+    title: "Haal Lab — Private AI Systems",
     description:
-      "On-premises AI systems for European organizations. Deploy LLMs, RAG systems, and custom AI on your infrastructure with full data sovereignty.",
+      "On-premises AI systems. Deploy LLMs, RAG systems, and custom AI on your infrastructure with full data sovereignty.",
     images: [
       {
         url: "https://haal-lab.solutions/og-image.png",
-        alt: "Haal Lab — Private AI Systems for European Organizations",
+        alt: "Haal Lab — Private AI Systems",
       },
     ],
   },
@@ -139,6 +139,7 @@ export default function RootLayout({
         <meta name="copyright" content="Haal Lab © 2026" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="alternate icon" href="/icon" type="image/png" />
+        <link rel="alternate" type="text/markdown" href="/sitemap.md" title="Markdown sitemap for AI agents" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         {/* Add .js class immediately so reveal animations only run with JS enabled. */}

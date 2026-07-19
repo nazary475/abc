@@ -19,6 +19,10 @@
     "tagline": "Intelligente Systeme entwickeln"
   },
   "homePage": {
+    "metaTitle": "Haal Lab — Private KI-Systeme",
+    "metaDescription": "Private KI-Systeme. On-Premise LLMs, RAG und maßgeschneiderte KI mit Datensouveränität.",
+    "heroTitle": "Ihre KI. Ihre Daten. Ihre Kontrolle.",
+    "heroDescription": "Jede Lösung wird in Ihrer Umgebung bereitgestellt und gibt Ihnen die vollständige Kontrolle über Ihre Daten, Modelle und Abläufe.",
     "faqEyebrow": "FAQ",
     "faqTitle": "Häufig gestellte Fragen",
     "faqIntro": "Antworten auf die Fragen, die wir am häufigsten hören, von Organisationen, die KI-Engineering-Partner evaluieren."
@@ -436,7 +440,7 @@
     "dataEnvironmentOptions": {
       "onPremise": "On-Premise-Infrastruktur",
       "privateCloud": "Private Cloud",
-      "europeanCloud": "Europäische Cloud-Infrastruktur",
+      "europeanCloud": "Regionale Cloud-Infrastruktur",
       "notDecided": "Noch nicht entschieden"
     },
     "projectDescription": "Projektbeschreibung",
@@ -764,6 +768,14 @@
     "sendMessage": "Nachricht senden"
   },
   "aboutPage": {
+    "metaTitle": "Über uns — Private KI-Engineering",
+    "metaDescription": "Haal Lab ist ein KI-Engineering-Unternehmen, das sich auf private, lokale KI-Systeme konzentriert. Forschungsgetriebener Ansatz für maßgeschneiderte LLM-Anwendungen, RAG-Systeme und Datensouveränität.",
+    "title": "Über Haal Lab",
+    "description": "Haal Lab ist ein Deep-Tech-KI-Laboratorium, das sich auf die Erforschung, Entwicklung und den Einsatz fortschrittlicher KI-Systeme konzentriert.",
+    "missionDescription": "Haal Lab existiert, um die Lücke zwischen KI-Forschung und realer Implementierung zu schließen, indem wir KI-Systeme entwickeln, die sicher, anpassungsfähig, transparent und wertvoll sind.",
+    "privacyFirstDescription": "Wir entwickeln KI-Systeme, die vollständig auf Ihrer Infrastruktur laufen. Lokale Execution eliminiert die Vertrauens-, Latenz- und Compliance-Beschränkungen von Cloud-Modellen.",
+    "researchDrivenDescription": "Wir verfolgen die KI-Forschungsfront und übersetzen neueste Entwicklungen in produktionsreifes Engineering.",
+    "engineeringExcellenceDescription": "Wir entwickeln zuverlässige KI-Systeme vom Prototyp bis zur Produktion. Observability, Evaluierungs-Frameworks und Reproduzierbarkeit sind von Anfang an eingebaut.",
     "intro1": "Haal Lab ist ein Deep-Tech-KI-Laboratorium, das sich auf die Erforschung, Entwicklung und den Einsatz fortschrittlicher KI-Systeme für Organisationen konzentriert, die KI mit Vertrauen einführen möchten.",
     "intro2": "Wir helfen Unternehmen, Forschungseinrichtungen und Organisationen, KI von einer aufkommenden Technologie in praktische Fähigkeiten zu verwandeln, die Entscheidungsfindung, Effizienz, Wissensmanagement und Innovation verbessern.",
     "intro3": "Durch die Kombination von KI-Forschung, Software-Engineering und strategischer Implementierung entwickelt Haal Lab intelligente Systeme, die für reale organisatorische Herausforderungen konzipiert sind.",

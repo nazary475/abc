@@ -4,15 +4,15 @@
 
 Copy these EXACT records into your Cloudflare DNS settings:
 
-┌─────────┬──────┬─────────────────────────┬───────────┬──────┐
-│  Type   │ Name │        Content          │   Proxy   │ TTL  │
-├─────────┼──────┼─────────────────────────┼───────────┼──────┤
-│    A    │  @   │   185.199.108.153       │ Proxied ☁ │ Auto │
-│    A    │  @   │   185.199.109.153       │ Proxied ☁ │ Auto │
-│    A    │  @   │   185.199.110.153       │ Proxied ☁ │ Auto │
-│    A    │  @   │   185.199.111.153       │ Proxied ☁ │ Auto │
-│  CNAME  │ www  │  nazary475.github.io    │ Proxied ☁ │ Auto │
-└─────────┴──────┴─────────────────────────┴───────────┴──────┘
+┌─────────┬─────────────────────────────┬──────────────────────────┬───────────┬──────┐
+│  Type   │           Name              │         Content          │   Proxy   │ TTL  │
+├─────────┼─────────────────────────────┼──────────────────────────┼───────────┼──────┤
+│    A    │  @                          │   185.199.108.153        │ Proxied ☁ │ Auto │
+│    A    │  @                          │   185.199.109.153        │ Proxied ☁ │ Auto │
+│    A    │  @                          │   185.199.110.153        │ Proxied ☁ │ Auto │
+│    A    │  @                          │   185.199.111.153        │ Proxied ☁ │ Auto │
+│  CNAME  │  www                        │  nazary475.github.io     │ Proxied ☁ │ Auto │
+└─────────┴─────────────────────────────┴──────────────────────────┴───────────┴──────┘
 
 IMPORTANT: 
 - "@" means root domain (haal-lab.solutions)
@@ -56,17 +56,132 @@ Your Website Files
 User Sees Website ✓
 
 ════════════════════════════════════════════════════════════════════════
+  DNS-AID RECORDS (AI AGENT DISCOVERY - RFC 9460)
+════════════════════════════════════════════════════════════════════════
+
+DNS for AI Discovery (DNS-AID) enables AI agents to discover your services
+via DNS using SVCB/HTTPS records. This follows IETF draft-mozleywilliams-dnsop-dnsaid.
+
+IMPORTANT: Cloudflare supports HTTPS records (SVCB for HTTPS services) but
+may not support custom SVCB records yet. If SVCB/HTTPS records are not available,
+use TXT records as a fallback (see below).
+
+┌──────────┬─────────────────────────────────┬──────────────────────────────────────────┬──────┐
+│  Type    │              Name               │              Content                     │ TTL  │
+├──────────┼─────────────────────────────────┼──────────────────────────────────────────┼──────┤
+│  HTTPS   │  _index._agents                 │  1 haal-lab.solutions. alpn="h2,h3"      │ 3600 │
+│          │                                 │  port=443                                │      │
+├──────────┼─────────────────────────────────┼──────────────────────────────────────────┼──────┤
+│  HTTPS   │  _chat._mcp._agents             │  1 haal-lab.solutions. alpn="mcp"        │ 3600 │
+│          │                                 │  port=443                                │      │
+├──────────┼─────────────────────────────────┼──────────────────────────────────────────┼──────┤
+│  HTTPS   │  _assistant._https._agents      │  1 haal-lab.solutions. alpn="h2"         │ 3600 │
+│          │                                 │  port=443                                │      │
+├──────────┼─────────────────────────────────┼──────────────────────────────────────────┼──────┤
+│  TXT     │  _agents                        │  "index=https://haal-lab.solutions       │ 3600 │
+│          │                                 │  /.well-known/ai-plugin.json"            │      │
+├──────────┼─────────────────────────────────┼──────────────────────────────────────────┼──────┤
+│  TXT     │  _capabilities._agents          │  "chat,research,consulting,ai-systems"   │ 3600 │
+└──────────┴─────────────────────────────────┴──────────────────────────────────────────┴──────┘
+
+DNS-AID Record Explanations:
+
+1. _index._agents.haal-lab.solutions
+   → Entry point for agent discovery
+   → Points to root domain with HTTPS support
+   → Agents query this to discover all available services
+
+2. _chat._mcp._agents.haal-lab.solutions
+   → Advertises the MCP (Model Context Protocol) chat endpoint
+   → alpn="mcp" indicates the MCP protocol
+   → Connects to /api/chat endpoint
+
+3. _assistant._https._agents.haal-lab.solutions
+   → HTTPS-based AI assistant endpoint
+   → alpn="h2" indicates HTTP/2 support
+   → General-purpose agent access
+
+4. _agents TXT record
+   → Fallback discovery mechanism
+   → Points to the ai-plugin.json manifest
+   → Works when SVCB/HTTPS records aren't supported
+
+5. _capabilities._agents TXT record
+   → Lists available agent capabilities
+   → Enables capability-based discovery
+   → Helps agents find services by function
+
+════════════════════════════════════════════════════════════════════════
+  CLOUDFLARE IMPLEMENTATION NOTES
+════════════════════════════════════════════════════════════════════════
+
+⚠️  HTTPS Record Support:
+Cloudflare supports HTTPS records (a type of SVCB record for HTTPS services).
+However, support for custom SVCB parameters may be limited.
+
+If Cloudflare doesn't support the full SVCB syntax:
+1. Use TXT records as fallback (included above)
+2. Consider using Cloudflare Workers for DNS-AID response
+3. Wait for full SVCB support in Cloudflare
+
+To add HTTPS records in Cloudflare:
+1. Go to DNS settings
+2. Click "Add record"
+3. Select "HTTPS" as type
+4. Enter the name and parameters as shown above
+
+For TXT records (easier fallback):
+1. Add TXT records with the names shown above
+2. Content should be exactly as specified
+3. These provide discovery even without SVCB support
+
+════════════════════════════════════════════════════════════════════════
+  DNSSEC CONFIGURATION
+════════════════════════════════════════════════════════════════════════
+
+DNSSEC is REQUIRED for DNS-AID to provide authenticated agent discovery.
+
+To enable DNSSEC in Cloudflare:
+1. Go to DNS → Settings
+2. Scroll to "DNSSEC" section
+3. Click "Enable DNSSEC"
+4. Follow the prompts to complete setup
+
+After enabling:
+- Cloudflare automatically signs your DNS records
+- Agents can verify authenticity of discovery records
+- Prevents DNS spoofing and tampering
+
+Verify DNSSEC is working:
+dig +dnssec haal-lab.solutions
+
+════════════════════════════════════════════════════════════════════════
   VERIFICATION COMMANDS
 ════════════════════════════════════════════════════════════════════════
 
 After setup, test with these commands in PowerShell:
 
-# Test DNS resolution
+# Test basic DNS resolution
 nslookup haal-lab.solutions
 
 # Test website connectivity
 curl https://haal-lab.solutions -I
 
 # Expected result: Should show Cloudflare in headers and 200 OK
+
+# Test DNS-AID discovery (requires dig or nslookup)
+# Check index entry point
+nslookup -type=HTTPS _index._agents.haal-lab.solutions
+
+# Check TXT fallback
+nslookup -type=TXT _agents.haal-lab.solutions
+
+# Verify DNSSEC (if enabled)
+# Use online tool: https://dnssec-debugger.verisignlabs.com/haal-lab.solutions
+
+# Test with isitagentready.com scanner
+curl -X POST https://isitagentready.com/api/scan \
+  -H "Content-Type: application/json" \
+  -d '{"url":"https://haal-lab.solutions"}'
 
 ════════════════════════════════════════════════════════════════════════

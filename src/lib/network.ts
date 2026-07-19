@@ -58,7 +58,7 @@ export const PARTNERS: Partner[] = [
     name: "Mistral AI",
     category: "Technology",
     description:
-      "European open-weight LLM provider. We deploy Mistral models on private infrastructure for EU clients with data-sovereignty requirements.",
+      "Open-weight LLM provider. We deploy Mistral models on private infrastructure for clients with data-sovereignty requirements.",
     url: "https://mistral.ai",
     monogram: "Mi",
     logoUrl: "https://sfile.chatglm.cn/images-ppt/6c1e33cf310a.jpg",
@@ -78,7 +78,7 @@ export const PARTNERS: Partner[] = [
     name: "Hetzner",
     category: "Cloud",
     description:
-      "European cloud and bare-metal GPU servers. GDPR-compliant infrastructure for our EU-hosted AI deployments.",
+      "Cloud and bare-metal GPU servers. GDPR-compliant infrastructure for AI deployments.",
     url: "https://www.hetzner.com",
     monogram: "Hz",
     logoUrl: "https://sfile.chatglm.cn/images-ppt/7ebfdac6506d.png",
@@ -88,7 +88,7 @@ export const PARTNERS: Partner[] = [
     name: "Scaleway",
     category: "Cloud",
     description:
-      "French sovereign cloud with GPU instances. Supports our European AI infrastructure stack.",
+      "Cloud provider with GPU instances. Supports our AI infrastructure stack.",
     url: "https://www.scaleway.com",
     monogram: "Sc",
     logoUrl: "https://sfile.chatglm.cn/images-ppt/f2d91dad2e7e.png",
@@ -98,7 +98,7 @@ export const PARTNERS: Partner[] = [
     name: "Gaia-X",
     category: "Infrastructure",
     description:
-      "European federated data infrastructure initiative. We align our deployments with Gaia-X sovereignty and interoperability standards.",
+      "Federated data infrastructure initiative. We align our deployments with Gaia-X sovereignty and interoperability standards.",
     url: "https://www.gaia-x.eu",
     monogram: "GX",
     logoUrl: "https://sfile.chatglm.cn/images-ppt/4b0c1dfe3b8d.jpg",
@@ -108,7 +108,7 @@ export const PARTNERS: Partner[] = [
     name: "Fraunhofer",
     category: "Research",
     description:
-      "Europe's largest applied research organization. Collaborative research on applied AI, retrieval systems, and document intelligence.",
+      "Applied research organization. Collaborative research on applied AI, retrieval systems, and document intelligence.",
     url: "https://www.fraunhofer.de",
     monogram: "Fh",
     logoUrl: "https://sfile.chatglm.cn/images-ppt/cfbaaff3cb7d.jpg",

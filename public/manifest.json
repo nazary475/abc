@@ -1,7 +1,7 @@
 {
-  "name": "Haal Lab — Private AI Systems for European Organizations",
+  "name": "Haal Lab — Private AI Systems",
   "short_name": "Haal Lab",
-  "description": "On-premises AI systems for European organizations. Deploy LLMs, RAG systems, and custom AI on your infrastructure with data sovereignty.",
+  "description": "On-premises AI systems. Deploy LLMs, RAG systems, and custom AI on your infrastructure with data sovereignty.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#080B12",

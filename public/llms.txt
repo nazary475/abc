@@ -40,9 +40,8 @@ Tags: BGE-M3, Vector Database, Reranking, OCR
 
 ## Partners
 
-- **Technology**: NVIDIA (GPU/CUDA), Hugging Face (open-weight models), Qdrant (vector database), Mistral AI (European LLMs), Aleph Alpha (sovereign AI), Apache Software Foundation (vLLM, Kafka, Spark)
-- **Cloud**: Hetzner (European GPU servers, GDPR-compliant), Scaleway (French sovereign cloud)
-- **Infrastructure**: Gaia-X (European federated data infrastructure), Linux Foundation (open governance)
+- **Technology**: NVIDIA (GPU/CUDA), Hugging Face (open-weight models), Qdrant (vector database), Mistral AI, Aleph Alpha (sovereign AI), Apache Software Foundation (vLLM, Kafka, Spark)
+- **Infrastructure**: Linux Foundation (open governance)
 - **Research**: Fraunhofer (applied AI research), INRIA (French national digital science research)
 
 ## Advisory Board

@@ -111,23 +111,6 @@ export const FAQS_EN: Record<string, FAQ[]> = {
         "Yes. We routinely sign mutual NDAs before detailed technical discussions. We treat your data and your problem description as confidential by default , and because we build private AI systems, data sovereignty is part of our engineering practice, not just a policy.",
     },
   ],
-  projects: [
-    {
-      question: "What is GGUF Loader?",
-      answer:
-        "GGUF Loader is an offline AI platform built by Haal Lab that enables users to run large language models locally with privacy and control. It uses the GGUF model format, CUDA acceleration via llama.cpp, and includes a retrieval layer for grounded answers , all without sending data to a cloud API.",
-    },
-    {
-      question: "What is the Legal Intelligence System?",
-      answer:
-        "The Legal Intelligence System is a semantic retrieval platform built by Haal Lab for complex legal document analysis. It uses BGE-M3 embeddings, a vector database, cross-encoder reranking, and OCR to ingest heterogeneous legal corpora (contracts, statutes, case law) and return the right clause with citation.",
-    },
-    {
-      question: "Can I see Haal Lab's code or projects?",
-      answer:
-        "Some of our work is open source and available on GitHub at github.com/haal-lab. Client engagements are proprietary and owned by the client. The case studies on our Projects page describe the problem, approach, and architecture of representative work.",
-    },
-  ],
   research: [
     {
       question: "Does Haal Lab publish research?",
@@ -144,17 +127,17 @@ export const FAQS_EN: Record<string, FAQ[]> = {
     {
       question: "Who are Haal Lab's partners?",
       answer:
-        "Haal Lab partners with technology providers (NVIDIA, Hugging Face, Qdrant, Mistral AI, Aleph Alpha), European cloud and infrastructure providers (Hetzner, Scaleway, Gaia-X), and research institutions (Fraunhofer, INRIA). We focus on open-weight models, open-source infrastructure, and European data sovereignty.",
+        "Haal Lab partners with technology providers (NVIDIA, Hugging Face, Qdrant, Mistral AI, Aleph Alpha), global infrastructure providers, and research institutions (Fraunhofer, INRIA). We focus on open-weight models, open-source infrastructure, and data sovereignty.",
     },
     {
-      question: "Does Haal Lab work with European research institutions?",
+      question: "Does Haal Lab work with research institutions?",
       answer:
-        "Yes. We collaborate with European research organizations including Fraunhofer and INRIA on applied AI, retrieval systems, multilingual NLP, and evaluation methodology. These partnerships keep our engineering grounded in current research.",
+        "Yes. We collaborate with research organizations including Fraunhofer and INRIA on applied AI, retrieval systems, multilingual NLP, and evaluation methodology. These partnerships keep our engineering grounded in current research.",
     },
     {
       question: "How do I become a Haal Lab partner?",
       answer:
-        "We partner with organizations that share our commitment to open-weight models, European sovereignty, and production-grade engineering. If you build technology, infrastructure, or research that aligns with our practice, reach out at hussain.nazary@haal-lab.solutions.",
+        "We partner with organizations that share our commitment to open-weight models, data sovereignty, and production-grade engineering. If you build technology, infrastructure, or research that aligns with our practice, reach out at hussain.nazary@haal-lab.solutions.",
     },
   ],
   pricing: [
@@ -308,23 +291,6 @@ export const FAQS_DE: Record<string, FAQ[]> = {
         "Ja. Wir unterschreiben routinemäßig gegenseitige NDAs vor detaillierten technischen Diskussionen. Wir behandeln Ihre Daten und Ihre Problembeschreibung standardmäßig als vertraulich – und weil wir private KI-Systeme entwickeln, ist Datensouveränität Teil unserer Engineering-Praxis, nicht nur eine Richtlinie.",
     },
   ],
-  projects: [
-    {
-      question: "Was ist GGUF Loader?",
-      answer:
-        "GGUF Loader ist eine Offline-KI-Plattform von Haal Lab, mit der Benutzer große Sprachmodelle lokal mit Privatsphäre und Kontrolle ausführen können. Sie verwendet das GGUF-Modellformat, CUDA-Beschleunigung über llama.cpp und enthält eine Suchschicht für fundierte Antworten – alles ohne Daten an eine Cloud-API zu senden.",
-    },
-    {
-      question: "Was ist das Legal Intelligence System?",
-      answer:
-        "Das Legal Intelligence System ist eine semantische Retrieval-Plattform von Haal Lab für komplexe juristische Dokumentenanalyse. Sie verwendet BGE-M3-Embeddings, eine Vektordatenbank, Cross-Encoder-Reranking und OCR, um heterogene juristische Korpora (Verträge, Gesetze, Rechtsprechung) zu verarbeiten und die richtige Klausel mit Zitation zurückzugeben.",
-    },
-    {
-      question: "Kann ich den Code oder Projekte von Haal Lab sehen?",
-      answer:
-        "Teile unserer Arbeit sind Open Source und auf GitHub unter github.com/haal-lab verfügbar. Kundengagements sind proprietär und gehören dem Kunden. Die Fallstudien auf unserer Projektseite beschreiben das Problem, den Ansatz und die Architektur repräsentativer Arbeit.",
-    },
-  ],
   research: [
     {
       question: "Veröffentlicht Haal Lab Forschung?",
@@ -341,17 +307,17 @@ export const FAQS_DE: Record<string, FAQ[]> = {
     {
       question: "Wer sind die Partner von Haal Lab?",
       answer:
-        "Haal Lab arbeitet mit Technologieanbietern (NVIDIA, Hugging Face, Qdrant, Mistral AI, Aleph Alpha), europäischen Cloud- und Infrastrukturprovidern (Hetzner, Scaleway, Gaia-X) und Forschungseinrichtungen (Fraunhofer, INRIA) zusammen. Wir konzentrieren uns auf Open-Weight-Modelle, Open-Source-Infrastruktur und europäische Datensouveränität.",
+        "Haal Lab arbeitet mit Technologieanbietern (NVIDIA, Hugging Face, Qdrant, Mistral AI, Aleph Alpha), globalen Infrastrukturprovidern und Forschungseinrichtungen (Fraunhofer, INRIA) zusammen. Wir konzentrieren uns auf Open-Weight-Modelle, Open-Source-Infrastruktur und Datensouveränität.",
     },
     {
-      question: "Arbeitet Haal Lab mit europäischen Forschungseinrichtungen zusammen?",
+      question: "Arbeitet Haal Lab mit Forschungseinrichtungen zusammen?",
       answer:
-        "Ja. Wir arbeiten mit europäischen Forschungsorganisationen einschließlich Fraunhofer und INRIA an angewandter KI, Retrieval-Systemen, mehrsprachigem NLP und Evaluierungsmethodik zusammen. Diese Partnerschaften halten unser Engineering in der aktuellen Forschung verankert.",
+        "Ja. Wir arbeiten mit Forschungsorganisationen einschließlich Fraunhofer und INRIA an angewandter KI, Retrieval-Systemen, mehrsprachigem NLP und Evaluierungsmethodik zusammen. Diese Partnerschaften halten unser Engineering in der aktuellen Forschung verankert.",
     },
     {
       question: "Wie werde ich Partner von Haal Lab?",
       answer:
-        "Wir arbeiten mit Organisationen zusammen, die sich wie wir für Open-Weight-Modelle, europäische Souveränität und produktionsreifes Engineering engagieren. Wenn Sie Technologie, Infrastruktur oder Forschung entwickeln, die mit unserer Praxis übereinstimmt, kontaktieren Sie uns unter hussain.nazary@haal-lab.solutions.",
+        "Wir arbeiten mit Organisationen zusammen, die sich wie wir für Open-Weight-Modelle, Datensouveränität und produktionsreifes Engineering engagieren. Wenn Sie Technologie, Infrastruktur oder Forschung entwickeln, die mit unserer Praxis übereinstimmt, kontaktieren Sie uns unter hussain.nazary@haal-lab.solutions.",
     },
   ],
   pricing: [
@@ -505,23 +471,6 @@ export const FAQS_FR: Record<string, FAQ[]> = {
         "Oui. Nous signons routinièrement des NDA mutuels avant les discussions techniques détaillées. Nous traitons vos données et votre description de problème comme confidentielles par défaut – et parce que nous construisons des systèmes IA privés, la souveraineté des données fait partie de notre pratique d'ingénierie, pas seulement une politique.",
     },
   ],
-  projects: [
-    {
-      question: "Qu'est-ce que GGUF Loader ?",
-      answer:
-        "GGUF Loader est une plateforme IA hors ligne construite par Haal Lab qui permet aux utilisateurs d'exécuter des grands modèles de langage localement avec confidentialité et contrôle. Elle utilise le format de modèle GGUF, l'accélération CUDA via llama.cpp, et comprend une couche de recherche pour des réponses fondées – le tout sans envoyer de données à une API cloud.",
-    },
-    {
-      question: "Qu'est-ce que le Legal Intelligence System ?",
-      answer:
-        "Le Legal Intelligence System est une plateforme de récupération sémantique construite par Haal Lab pour l'analyse complexe de documents juridiques. Elle utilise les embeddings BGE-M3, une base de données vectorielle, le reclassement par cross-encoder et l'OCR pour ingérer des corpus juridiques hétérogènes (contrats, statuts, jurisprudence) et retourner la bonne clause avec citation.",
-    },
-    {
-      question: "Puis-je voir le code ou les projets de Haal Lab ?",
-      answer:
-        "Une partie de notre travail est open source et disponible sur GitHub à github.com/haal-lab. Les engagements clients sont propriétaires et appartiennent au client. Les études de cas sur notre page Projets décrivent le problème, l'approche et l'architecture de travaux représentatifs.",
-    },
-  ],
   research: [
     {
       question: "Haal Lab publie-t-il des recherches ?",
@@ -538,10 +487,10 @@ export const FAQS_FR: Record<string, FAQ[]> = {
     {
       question: "Qui sont les partenaires de Haal Lab ?",
       answer:
-        "Haal Lab s'associe avec des fournisseurs technologiques (NVIDIA, Hugging Face, Qdrant, Mistral AI, Aleph Alpha), des fournisseurs cloud et d'infrastructure européens (Hetzner, Scaleway, Gaia-X) et des institutions de recherche (Fraunhofer, INRIA). Nous nous concentrons sur les modèles à poids ouverts, l'infrastructure open-source et la souveraineté des données européenne.",
+        "Haal Lab s'associe avec des fournisseurs technologiques (NVIDIA, Hugging Face, Qdrant, Mistral AI, Aleph Alpha), des fournisseurs d'infrastructure mondiaux et des institutions de recherche (Fraunhofer, INRIA). Nous nous concentrons sur les modèles à poids ouverts, l'infrastructure open-source et la souveraineté des données.",
     },
     {
-      question: "Haal Lab travaille-t-il avec des institutions de recherche européennes ?",
+      question: "Haal Lab travaille-t-il avec des institutions de recherche ?",
       answer:
         "Oui. Nous collaborons avec des organisations de recherche européennes dont Fraunhofer et INRIA sur l'IA appliquée, les systèmes de récupération, le NLP multilingue et la méthodologie d'évaluation. Ces partenariats ancrent notre ingénierie dans la recherche actuelle.",
     },
@@ -700,23 +649,6 @@ export const FAQS_ES: Record<string, FAQ[]> = {
       question: "¿Haal Lab firma NDAs?",
       answer:
         "Sí. Rutinariamente firmamos NDAs mutuos antes de discusiones técnicas detalladas. Tratamos sus datos y su descripción del problema como confidenciales por defecto – y porque construimos sistemas de IA privados, la soberanía de datos es parte de nuestra práctica de ingeniería, no solo una política.",
-    },
-  ],
-  projects: [
-    {
-      question: "¿Qué es GGUF Loader?",
-      answer:
-        "GGUF Loader es una plataforma de IA sin conexión construida por Haal Lab que permite a los usuarios ejecutar grandes modelos de lenguaje localmente con privacidad y control. Utiliza el formato de modelo GGUF, aceleración CUDA a través de llama.cpp e incluye una capa de recuperación para respuestas fundamentadas – todo sin enviar datos a una API en la nube.",
-    },
-    {
-      question: "¿Qué es el Legal Intelligence System?",
-      answer:
-        "El Legal Intelligence System es una plataforma de recuperación semántica construida por Haal Lab para el análisis complejo de documentos legales. Utiliza embeddings BGE-M3, una base de datos vectorial, reclasificación por cross-encoder y OCR para ingerir corpus legales heterogéneos (contratos, estatutos, jurisprudencia) y devolver la cláusula correcta con citación.",
-    },
-    {
-      question: "¿Puedo ver el código o los proyectos de Haal Lab?",
-      answer:
-        "Parte de nuestro trabajo es de código abierto y está disponible en GitHub en github.com/haal-lab. Los compromisos con clientes son propietarios y pertenecen al cliente. Los estudios de caso en nuestra página de Proyectos describen el problema, el enfoque y la arquitectura de trabajo representativo.",
     },
   ],
   research: [
@@ -897,23 +829,6 @@ export const FAQS_IT: Record<string, FAQ[]> = {
       question: "Haal Lab firma NDA?",
       answer:
         "Sì. Facciamo routine di NDA reciproci prima delle discussioni tecniche dettagliate. Trattiamo i vostri dati e la descrizione del vostro problema come riservati per impostazione predefinita – e perché costruiamo sistemi IA privati, la sovranità dei dati è parte della nostra pratica di ingegneria, non solo una policy.",
-    },
-  ],
-  projects: [
-    {
-      question: "Cos'è GGUF Loader?",
-      answer:
-        "GGUF Loader è una piattaforma IA offline costruita da Haal Lab che permette agli utenti di eseguire grandi modelli di linguaggio localmente con privacy e controllo. Utilizza il formato di modello GGUF, l'accelerazione CUDA tramite llama.cpp e include un livello di recupero per risposte fondate – tutto senza inviare dati a un'API cloud.",
-    },
-    {
-      question: "Cos'è il Legal Intelligence System?",
-      answer:
-        "Il Legal Intelligence System è una piattaforma di recupero semantico costruita da Haal Lab per l'analisi complessa di documenti legali. Utilizza embedding BGE-M3, un database vettoriale, riclassificazione cross-encoder e OCR per ingerire corpus legali eterogenei (contratti, statuti, giurisprudenza) e restituire la clausola corretta con citazione.",
-    },
-    {
-      question: "Posso vedere il codice o i progetti di Haal Lab?",
-      answer:
-        "Parte del nostro lavoro è open source e disponibile su GitHub su github.com/haal-lab. Gli impegni con i clienti sono proprietari e appartengono al client. Gli studi di caso nella nostra pagina Progetti descrivono il problema, l'approccio e l'architettura di lavoro rappresentativo.",
     },
   ],
   research: [

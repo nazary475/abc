@@ -19,9 +19,9 @@ export interface PageMetadata {
 export const PAGE_METADATA: Record<string, Record<Locale, PageMetadata>> = {
   home: {
     en: {
-      title: "Haal Lab — Private AI Systems ",
+      title: "Haal Lab | Private AI Infrastructure, RAG Systems & AI Agents",
       description:
-        "Haal Lab builds private, on-premises AI systems. Deploy LLMs, RAG systems, and custom AI applications on your infrastructure with full data sovereignty.",
+        "Enterprise AI infrastructure: Retrieval-Augmented Generation (RAG), agentic AI systems, and LLM applications deployed on-premises. Private AI automation platform with full data sovereignty for regulated industries.",
     },
     de: {
       title: "Haal Lab — Private KI-Systeme für Organisationen weltweit",

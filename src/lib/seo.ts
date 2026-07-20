@@ -25,9 +25,9 @@ export const SITE = {
   twitter: "@haallab",
   foundingDate: "2026",
   description:
-    "Haal Lab builds private, on-premises AI systems. We deploy custom LLMs, RAG systems, and AI applications on your infrastructure with full data sovereignty.",
+    "Enterprise AI infrastructure and automation platform. We build private AI systems including Retrieval-Augmented Generation (RAG), agentic AI, LLM applications, and AI automation deployed on your infrastructure with complete data sovereignty.",
   shortDescription:
-    "Private AI systems. On-premises LLMs, RAG, and custom AI with data sovereignty.",
+    "Private AI infrastructure: on-premises RAG systems, AI agents, LLM applications, and enterprise AI automation platform with data sovereignty.",
 } as const;
 
 /**
@@ -162,32 +162,32 @@ export const FAQS: LocaleFAQs = {
     {
       question: "What does Haal Lab do?",
       answer:
-        "Haal Lab builds private, on-premises AI systems. We deploy LLMs, RAG systems, and custom AI applications on your infrastructure with full data sovereignty. No cloud APIs, no data sharing — everything runs on your servers.",
+        "Haal Lab builds private, on-premises AI infrastructure including LLM applications, Retrieval-Augmented Generation (RAG) systems, agentic AI, and enterprise AI automation platforms. We deploy everything on your infrastructure with complete data sovereignty. No cloud APIs, no external data sharing — all AI models and systems run on your servers.",
     },
     {
       question: "Who is Haal Lab for?",
       answer:
-        "Haal Lab serves enterprises, research institutions, government organizations, and regulated industries (healthcare, finance, legal) that require data sovereignty and cannot use cloud-based AI services.",
+        "Haal Lab serves enterprises, research institutions, government organizations, and regulated industries (healthcare, finance, legal) that require private AI infrastructure, data sovereignty, and enterprise AI platforms without relying on cloud-based AI services.",
+    },
+    {
+      question: "What is Retrieval-Augmented Generation (RAG)?",
+      answer:
+        "RAG (Retrieval-Augmented Generation) is an AI architecture that grounds LLM responses in your private documents by retrieving relevant information first. Haal Lab builds production RAG systems with hybrid retrieval (BM25 + BGE-M3 embeddings), vector databases (Qdrant, pgvector), cross-encoder reranking, and source citations. All deployed on your infrastructure.",
+    },
+    {
+      question: "What are AI agents and agentic AI systems?",
+      answer:
+        "AI agents are autonomous systems that can plan, execute tasks, and use tools to accomplish complex goals. Haal Lab builds agentic AI systems using agent orchestration, tool-augmented LLMs, and workflow automation. These AI agents run entirely on your infrastructure for maximum data control and security.",
     },
     {
       question: "Does Haal Lab build private or on-premises AI?",
       answer:
-        "Yes. All our systems run entirely on your infrastructure — on-premises servers, private cloud, or air-gapped networks. We use open-weight models (Llama, Mistral, Qwen) so your data never leaves your environment. No external API calls, complete data control.",
+        "Yes. All our AI systems including LLM applications, RAG systems, AI agents, and enterprise AI platforms run entirely on your infrastructure — on-premises servers, private cloud, or air-gapped networks. We use open-weight models (Llama, Mistral, Qwen) so your data never leaves your environment. Complete data sovereignty with no external API dependencies.",
     },
     {
       question: "What technologies does Haal Lab use?",
       answer:
-        "We use open-weight LLMs (Llama 3, Mistral, Qwen), llama.cpp and vLLM for inference, GGUF quantized models, BGE-M3 embeddings, vector databases (Qdrant, pgvector), Kubernetes for orchestration, and NVIDIA GPUs for acceleration. Everything is open-source — no vendor lock-in.",
-    },
-    {
-      question: "Why choose Haal Lab over cloud AI services?",
-      answer:
-        "Cloud AI services require sending your data to external servers. Haal Lab deploys AI on your infrastructure with complete data sovereignty and data residency. You control the models, the data, and the infrastructure.",
-    },
-    {
-      question: "How do I start working with Haal Lab?",
-      answer:
-        "Contact us at hussain.nazary@haal-lab.solutions to discuss your requirements. We start with understanding your data sovereignty needs, existing infrastructure, and AI objectives, then design a custom deployment plan.",
+        "We use open-weight LLMs (Llama 3, Mistral, Qwen), llama.cpp and vLLM for inference, GGUF quantized models for efficient deployment, BGE-M3 embeddings for RAG systems, vector databases (Qdrant, pgvector) for semantic search, Kubernetes for orchestration, and NVIDIA GPUs for acceleration. Everything is open-source — no vendor lock-in for your enterprise AI infrastructure.",
     },
   ],
   solutions: [

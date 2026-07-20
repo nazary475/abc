@@ -48,13 +48,18 @@ export async function generateMetadata({
     publisher: SITE.name,
     category: "technology",
     keywords: [
-      "Haal Lab", "AI engineering", "private AI", "large language models",
-      "LLM applications", "RAG systems", "retrieval-augmented generation",
-      "AI infrastructure", "local AI", "GGUF", "BGE-M3", "semantic search",
-      "knowledge intelligence", "AI automation", "machine learning",
-      "AI consulting", "custom AI development", "on-prem AI",
-      "air-gapped AI", "AI agents", "vector database", "llama.cpp",
-      "vLLM", "open-weight models",
+      "Haal Lab", "AI engineering", "private AI", "enterprise AI",
+      "large language models", "LLM applications", "LLM deployment",
+      "RAG systems", "retrieval-augmented generation", "RAG deployment",
+      "AI infrastructure", "AI automation platform", "enterprise AI platform",
+      "local AI", "on-premises AI", "on-prem AI", "air-gapped AI",
+      "GGUF", "BGE-M3", "semantic search", "vector database",
+      "knowledge intelligence", "AI automation", "agentic AI", "AI agents",
+      "machine learning", "AI consulting", "custom AI development",
+      "AI agents", "intelligent agents", "agent orchestration",
+      "llama.cpp", "vLLM", "open-weight models", "open-source AI",
+      "data sovereignty", "GDPR compliant AI", "AI compliance",
+      "private LLM", "local LLM", "self-hosted AI", "private AI deployment"
     ],
     
     // Professional multilingual SEO with x-default fallback

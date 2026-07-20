@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     "Deep-tech AI engineering company. We build private AI systems, LLM applications, RAG, and AI infrastructure.",
   applicationName: "Haal Lab",
   authors: [
-    { name: "Hussain Nazary", url: "https://haal-lab.solutions" },
+    { name: "Ali-Zafar Najafi", url: "https://haal-lab.solutions" },
     { name: "Haal Lab", url: "https://haal-lab.solutions" }
   ],
   generator: "Next.js",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     "AI sovereignty",
   ],
   referrer: "origin-when-cross-origin",
-  creator: "Hussain Nazary",
+  creator: "Ali-Zafar Najafi",
   publisher: "Haal Lab",
   robots: {
     index: true,
@@ -135,8 +135,8 @@ export default function RootLayout({
       <head>
         <meta charSet="utf-8" />
         <meta name="language" content="English" />
-        <meta name="author" content="Hussain Nazary, CTO & AI Engineer at Haal Lab" />
-        <meta name="copyright" content="Haal Lab © 2026" />
+        <meta name="author" content="Ali-Zafar Najafi, Founder & CTO at Haal Lab" />
+        <meta name="copyright" content="Haal Lab © 2026. Founded July 2026." />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="alternate icon" href="/icon" type="image/png" />
         <link rel="alternate" type="text/markdown" href="/sitemap.md" title="Markdown sitemap for AI agents" />

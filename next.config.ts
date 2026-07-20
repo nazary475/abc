@@ -4,31 +4,20 @@ import createNextIntlPlugin from "next-intl/plugin";
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 /**
- * Next.js config for GitHub Pages deployment (static export) with
- * multilingual support via next-intl.
- *
- * - `output: "export"` generates a fully static site in `out/`.
- * - `trailingSlash: true` produces `/solutions/index.html` so GitHub
- *   Pages resolves URLs without a server.
- * - `images.unoptimized: true` disables the Next.js image optimization
- *   server (not available on static hosts).
- * - `basePath` is read from `NEXT_PUBLIC_BASE_PATH` for project pages.
- * - `allowedDevOrigins` allows the preview proxy to serve /_next/* assets
- *   in dev mode.
+ * Next.js config for Vercel production deployment with multilingual support.
+ * 
+ * PRODUCTION (haal-lab.solutions on Vercel):
+ * - Standard Next.js SSG/SSR mode for full HTML rendering
+ * - No static export, no trailing slashes
+ * - All pages server-rendered or statically generated with full content
+ * 
+ * This ensures crawlers (Google, Bing, AI chatbots) receive complete HTML
+ * on first byte, not a client-rendered shell.
  */
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
-
-// Detect if we're building for static export (GitHub Pages) or server (Vercel)
-// If VERCEL environment variable exists, we're on Vercel and should NOT use static export
-const isVercel = !!process.env.VERCEL;
-
 const nextConfig: NextConfig = {
-  // Only use static export for GitHub Pages, not for Vercel
-  ...(isVercel ? {} : { output: "export" }),
-  // Don't use trailing slash on Vercel (causes issues with API routes)
-  trailingSlash: !isVercel,
-  basePath: basePath || undefined,
+  // No output: "export" - use standard Next.js rendering for Vercel production
+  // This ensures pages are server-rendered or statically generated with full content
   images: {
     unoptimized: true,
   },

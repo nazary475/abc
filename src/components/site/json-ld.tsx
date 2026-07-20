@@ -241,8 +241,8 @@ export function websiteSchema() {
     },
     author: {
       "@type": "Person",
-      name: "Hussain Nazary",
-      jobTitle: "Chief Technology Officer & AI Engineer",
+      name: "Ali-Zafar Najafi",
+      jobTitle: "Founder & Chief Technology Officer",
       url: `${SITE.url}/about`,
       worksFor: {
         "@id": `${SITE.url}/#organization`,

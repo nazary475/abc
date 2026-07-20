@@ -2,16 +2,11 @@ import { redirect } from "next/navigation";
 import type { Metadata } from "next";
 
 /**
- * Root page - redirects to the default locale.
- *
- * On Vercel: Dynamic server-side redirect with Accept-Language detection
- * On static export: Static redirect to /en
+ * Root page - redirects to the default locale (/en).
  * 
- * This ensures crawlers see proper content without "Loading..." states.
+ * Server-side redirect ensures crawlers immediately see proper content
+ * without client-side JavaScript or "Loading..." placeholders.
  */
-
-// Detect if we're in static export mode
-const isStatic = process.env.VERCEL === undefined;
 
 export const metadata: Metadata = {
   title: "Haal Lab — Private AI Systems",

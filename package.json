@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "build:static": "next build && node -e \"const fs = require('fs'); if(!fs.existsSync('out/.nojekyll')) fs.writeFileSync('out/.nojekyll', '')\"",
+    "build": "next build && node scripts/post-build.js",
+    "build:static": "next build && node scripts/post-build.js",
     "start": "next start",
     "lint": "eslint .",
     "db:push": "prisma db push",
